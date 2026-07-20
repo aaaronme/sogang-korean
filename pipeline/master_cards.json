@@ -846,5 +846,1301 @@
    "Numbers"
   ],
   "ja": "五歳です。（歳 = age counter, new）"
+ },
+ {
+  "id": "9381a20ea8",
+  "ko": "미국",
+  "en": "United States",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "アメリカ"
+ },
+ {
+  "id": "a4a203870d",
+  "ko": "한국",
+  "en": "Korea",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "韓国（かんこく）"
+ },
+ {
+  "id": "b9f229f9a8",
+  "ko": "중국",
+  "en": "China",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "中国（ちゅうごく）"
+ },
+ {
+  "id": "06e22c2a5d",
+  "ko": "태국",
+  "en": "Thailand",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "タイ"
+ },
+ {
+  "id": "f548475c8d",
+  "ko": "일본",
+  "en": "Japan",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "日本（にほん）"
+ },
+ {
+  "id": "3d65097518",
+  "ko": "독일",
+  "en": "Germany",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "ドイツ"
+ },
+ {
+  "id": "8b59844251",
+  "ko": "베트남",
+  "en": "Vietnam",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "ベトナム"
+ },
+ {
+  "id": "620f3ce781",
+  "ko": "프랑스",
+  "en": "France",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "フランス"
+ },
+ {
+  "id": "c602b255ca",
+  "ko": "몽골",
+  "en": "Mongolia",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "モンゴル"
+ },
+ {
+  "id": "c88b89d348",
+  "ko": "브라질",
+  "en": "Brazil",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "ブラジル"
+ },
+ {
+  "id": "f3dab54f9d",
+  "ko": "학생",
+  "en": "Student",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "学生（がくせい）"
+ },
+ {
+  "id": "b560cedaf6",
+  "ko": "선생님",
+  "en": "Teacher",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "先生（せんせい）"
+ },
+ {
+  "id": "32f6dbe81b",
+  "ko": "회사원",
+  "en": "Office worker",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "会社員（かいしゃいん）"
+ },
+ {
+  "id": "1a95053c4c",
+  "ko": "의사",
+  "en": "Doctor",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "医者（いしゃ）"
+ },
+ {
+  "id": "8e87ebf6d9",
+  "ko": "간호사",
+  "en": "Nurse",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "看護師（かんごし）"
+ },
+ {
+  "id": "f38ef30f3a",
+  "ko": "요리사",
+  "en": "Cook",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "料理人（りょうりにん）"
+ },
+ {
+  "id": "f1e8d3a50c",
+  "ko": "가수",
+  "en": "Singer",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "歌手（かしゅ）"
+ },
+ {
+  "id": "cc74c9fbfa",
+  "ko": "배우",
+  "en": "Actor",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "俳優（はいゆう）"
+ },
+ {
+  "id": "bd8718fc1e",
+  "ko": "작가",
+  "en": "Writer, artist",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "作家（さっか）"
+ },
+ {
+  "id": "350916a1ec",
+  "ko": "패션 디자이너",
+  "en": "Fashion designer",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "ファッションデザイナー"
+ },
+ {
+  "id": "10f9cd9500",
+  "ko": "군인",
+  "en": "Soldier",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "軍人（ぐんじん）"
+ },
+ {
+  "id": "8d61ca3792",
+  "ko": "경찰",
+  "en": "Police officer",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "警察官（けいさつかん）"
+ },
+ {
+  "id": "f6739004c0",
+  "ko": "일본어 선생님",
+  "en": "Japanese language teacher",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "日本語（にほんご）の先生"
+ },
+ {
+  "id": "8c2a546ee2",
+  "ko": "가이드",
+  "en": "Tour guide",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "ガイド"
+ },
+ {
+  "id": "6ec6270bbb",
+  "ko": "프로그래머",
+  "en": "Programmer",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "プログラマー"
+ },
+ {
+  "id": "9bc106748d",
+  "ko": "운동",
+  "en": "Exercise",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "運動（うんどう）"
+ },
+ {
+  "id": "becd19b833",
+  "ko": "드라마",
+  "en": "TV drama",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "ドラマ"
+ },
+ {
+  "id": "cdbd62bda2",
+  "ko": "공부",
+  "en": "Studying",
+  "tags": [
+   "Book1A::Prep1::Vocab"
+  ],
+  "ja": "勉強（べんきょう）"
+ },
+ {
+  "id": "95805f8c23",
+  "ko": "안녕하세요? 미나예요.",
+  "en": "Hello? I'm Mina.",
+  "tags": [
+   "Book1A::Prep1::Sentences"
+  ],
+  "ja": "こんにちは。ミナです。"
+ },
+ {
+  "id": "0c2ce9a375",
+  "ko": "이름이 뭐예요?",
+  "en": "What's your name?",
+  "tags": [
+   "Book1A::Prep1::Sentences"
+  ],
+  "ja": "名前（なまえ）は何（なん）ですか？"
+ },
+ {
+  "id": "295908be55",
+  "ko": "앤디예요.",
+  "en": "I'm Andy.",
+  "tags": [
+   "Book1A::Prep1::Sentences"
+  ],
+  "ja": "アンディです。"
+ },
+ {
+  "id": "2e8f922e6c",
+  "ko": "앤디 씨, 어느 나라 사람이에요?",
+  "en": "Andy, what country are you from?",
+  "tags": [
+   "Book1A::Prep1::Sentences"
+  ],
+  "ja": "アンディさん、どこの国（くに）の人（ひと）ですか？"
+ },
+ {
+  "id": "c5362c19af",
+  "ko": "저는 미국 사람이에요.",
+  "en": "I'm American.",
+  "tags": [
+   "Book1A::Prep1::Sentences"
+  ],
+  "ja": "私（わたし）はアメリカ人（じん）です。"
+ },
+ {
+  "id": "c4c2d7b823",
+  "ko": "아, 그래요? 반갑습니다.",
+  "en": "Oh, really? Nice to meet you.",
+  "tags": [
+   "Book1A::Prep1::Sentences"
+  ],
+  "ja": "あ、そうですか？お会（あ）いできてうれしいです。"
+ },
+ {
+  "id": "5498c4624c",
+  "ko": "안녕하세요? 수잔이에요.",
+  "en": "Hello? I'm Susan.",
+  "tags": [
+   "Book1A::Prep1::Sentences"
+  ],
+  "ja": "こんにちは。スーザンです。"
+ },
+ {
+  "id": "300400de3b",
+  "ko": "수잔 씨, 안녕하세요?",
+  "en": "Hello, Susan.",
+  "tags": [
+   "Book1A::Prep1::Sentences"
+  ],
+  "ja": "スーザンさん、こんにちは。"
+ },
+ {
+  "id": "dcaba2454e",
+  "ko": "저는 앤디예요.",
+  "en": "I'm Andy.",
+  "tags": [
+   "Book1A::Prep1::Sentences"
+  ],
+  "ja": "私（わたし）はアンディです。"
+ },
+ {
+  "id": "7f66540c36",
+  "ko": "앤디 씨는 무슨 일을 하세요?",
+  "en": "Andy, what work do you do?",
+  "tags": [
+   "Book1A::Prep1::Sentences"
+  ],
+  "ja": "アンディさんは何（なん）のお仕事（しごと）をされていますか？"
+ },
+ {
+  "id": "b8b7ffd944",
+  "ko": "학생이에요.",
+  "en": "I'm a student.",
+  "tags": [
+   "Book1A::Prep1::Sentences"
+  ],
+  "ja": "学生（がくせい）です。"
+ },
+ {
+  "id": "a1631069c6",
+  "ko": "이분이 누구예요?",
+  "en": "Who is this?",
+  "tags": [
+   "Book1A::Prep1::Sentences"
+  ],
+  "ja": "この方（かた）はどなたですか？"
+ },
+ {
+  "id": "80c8210a2c",
+  "ko": "가브리엘 씨예요.",
+  "en": "This is Gabriel.",
+  "tags": [
+   "Book1A::Prep1::Sentences"
+  ],
+  "ja": "ガブリエルさんです。"
+ },
+ {
+  "id": "731d2efa95",
+  "ko": "만나서 반갑습니다.",
+  "en": "It's nice to meet you.",
+  "tags": [
+   "Book1A::Prep1::Sentences"
+  ],
+  "ja": "お会（あ）いできてうれしいです。"
+ },
+ {
+  "id": "aab47927bd",
+  "ko": "좋아해요.",
+  "en": "I like it.",
+  "tags": [
+   "Book1A::Prep1::Sentences"
+  ],
+  "ja": "好（す）きです。"
+ },
+ {
+  "id": "9579de4807",
+  "ko": "책",
+  "en": "Book",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "本（ほん）"
+ },
+ {
+  "id": "372ecba70b",
+  "ko": "공책",
+  "en": "Notebook",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "ノート"
+ },
+ {
+  "id": "6839173f74",
+  "ko": "필통",
+  "en": "Pencil case",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "筆箱（ふでばこ）"
+ },
+ {
+  "id": "48edfd01c1",
+  "ko": "연필",
+  "en": "Pencil",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "鉛筆（えんぴつ）"
+ },
+ {
+  "id": "3d2fbca6a6",
+  "ko": "샤프",
+  "en": "Mechanical pencil",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "シャープペンシル"
+ },
+ {
+  "id": "1389b05737",
+  "ko": "볼펜",
+  "en": "Ballpoint pen",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "ボールペン"
+ },
+ {
+  "id": "a0843e058c",
+  "ko": "지우개",
+  "en": "Eraser",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "消（け）しゴム"
+ },
+ {
+  "id": "e511f2f8a2",
+  "ko": "수정 테이프",
+  "en": "Correction tape",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "修正（しゅうせい）テープ"
+ },
+ {
+  "id": "902c06d66c",
+  "ko": "가위",
+  "en": "Scissors",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "はさみ"
+ },
+ {
+  "id": "a0065486b7",
+  "ko": "가방",
+  "en": "Bag",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "かばん"
+ },
+ {
+  "id": "fdd6831008",
+  "ko": "우산",
+  "en": "Umbrella",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "傘（かさ）"
+ },
+ {
+  "id": "a98ffe307e",
+  "ko": "달력",
+  "en": "Calendar",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "カレンダー"
+ },
+ {
+  "id": "685c17bb6e",
+  "ko": "책상",
+  "en": "Desk",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "机（つくえ）"
+ },
+ {
+  "id": "429f57daf2",
+  "ko": "의자",
+  "en": "Chair",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "椅子（いす）"
+ },
+ {
+  "id": "1b16952888",
+  "ko": "시계",
+  "en": "Clock",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "時計（とけい）"
+ },
+ {
+  "id": "b07a918f50",
+  "ko": "노트북",
+  "en": "Laptop computer",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "ノートパソコン"
+ },
+ {
+  "id": "cd0e08379c",
+  "ko": "텔레비전",
+  "en": "Television",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "テレビ"
+ },
+ {
+  "id": "b34e21b69e",
+  "ko": "에어컨",
+  "en": "Air conditioner",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "エアコン"
+ },
+ {
+  "id": "4a86ef9147",
+  "ko": "거울",
+  "en": "Mirror",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "鏡（かがみ）"
+ },
+ {
+  "id": "baab61d286",
+  "ko": "비누",
+  "en": "Soap",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "石（せっ）けん"
+ },
+ {
+  "id": "85809b64d7",
+  "ko": "수건",
+  "en": "Towel",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "タオル"
+ },
+ {
+  "id": "1d17322339",
+  "ko": "휴지",
+  "en": "Toilet paper",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "トイレットペーパー"
+ },
+ {
+  "id": "019e29a99d",
+  "ko": "칫솔",
+  "en": "Toothbrush",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "歯（は）ブラシ"
+ },
+ {
+  "id": "b3c7275540",
+  "ko": "치약",
+  "en": "Toothpaste",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "歯磨（はみが）き粉（こ）"
+ },
+ {
+  "id": "57ed5cbed7",
+  "ko": "접시",
+  "en": "Dish, plate",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "皿（さら）"
+ },
+ {
+  "id": "0d05caf2ef",
+  "ko": "컵",
+  "en": "Cup",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "コップ"
+ },
+ {
+  "id": "6b05527d49",
+  "ko": "숟가락",
+  "en": "Spoon",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "スプーン"
+ },
+ {
+  "id": "828ed76ed5",
+  "ko": "젓가락",
+  "en": "Chopsticks",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "箸（はし）"
+ },
+ {
+  "id": "45cbfa4e92",
+  "ko": "충전기",
+  "en": "Charger",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "充電器（じゅうでんき）"
+ },
+ {
+  "id": "132f122b12",
+  "ko": "핸드폰",
+  "en": "Mobile phone",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "携帯電話（けいたいでんわ）"
+ },
+ {
+  "id": "4513c9177f",
+  "ko": "그럼",
+  "en": "Then, in that case",
+  "tags": [
+   "Book1A::Prep2::Vocab"
+  ],
+  "ja": "それでは"
+ },
+ {
+  "id": "f5ec4cc44d",
+  "ko": "이게 뭐예요?",
+  "en": "What's this?",
+  "tags": [
+   "Book1A::Prep2::Sentences"
+  ],
+  "ja": "これは何（なん）ですか？"
+ },
+ {
+  "id": "9692bec15e",
+  "ko": "연필이에요.",
+  "en": "It's a pencil.",
+  "tags": [
+   "Book1A::Prep2::Sentences"
+  ],
+  "ja": "鉛筆（えんぴつ）です。"
+ },
+ {
+  "id": "107612910f",
+  "ko": "그럼 저게 뭐예요?",
+  "en": "Then what's that?",
+  "tags": [
+   "Book1A::Prep2::Sentences"
+  ],
+  "ja": "では、あれは何（なん）ですか？"
+ },
+ {
+  "id": "a7c624bc3c",
+  "ko": "시계예요.",
+  "en": "It's a clock.",
+  "tags": [
+   "Book1A::Prep2::Sentences"
+  ],
+  "ja": "時計（とけい）です。"
+ },
+ {
+  "id": "584c658608",
+  "ko": "저게 뭐예요?",
+  "en": "What's that?",
+  "tags": [
+   "Book1A::Prep2::Sentences"
+  ],
+  "ja": "あれは何（なん）ですか？"
+ },
+ {
+  "id": "10d8a33a6e",
+  "ko": "책이에요.",
+  "en": "It's a book.",
+  "tags": [
+   "Book1A::Prep2::Sentences"
+  ],
+  "ja": "本（ほん）です。"
+ },
+ {
+  "id": "595baf6b58",
+  "ko": "가방이에요.",
+  "en": "It's a bag.",
+  "tags": [
+   "Book1A::Prep2::Sentences"
+  ],
+  "ja": "かばんです。"
+ },
+ {
+  "id": "82955bbeeb",
+  "ko": "우산 누구 거예요?",
+  "en": "Whose umbrella is this?",
+  "tags": [
+   "Book1A::Prep2::Sentences"
+  ],
+  "ja": "この傘（かさ）は誰（だれ）のですか？"
+ },
+ {
+  "id": "f6f01a0886",
+  "ko": "제 거예요.",
+  "en": "It's mine.",
+  "tags": [
+   "Book1A::Prep2::Sentences"
+  ],
+  "ja": "私（わたし）のです。"
+ },
+ {
+  "id": "d913b7597d",
+  "ko": "여기 있어요.",
+  "en": "Here you go.",
+  "tags": [
+   "Book1A::Prep2::Sentences"
+  ],
+  "ja": "どうぞ。"
+ },
+ {
+  "id": "9d15da0068",
+  "ko": "고마워요.",
+  "en": "Thanks.",
+  "tags": [
+   "Book1A::Prep2::Sentences"
+  ],
+  "ja": "ありがとうございます。"
+ },
+ {
+  "id": "04fadd9279",
+  "ko": "아니에요.",
+  "en": "Don't mention it.",
+  "tags": [
+   "Book1A::Prep2::Sentences"
+  ],
+  "ja": "いいえ、どういたしまして。"
+ },
+ {
+  "id": "bd7e82d3a2",
+  "ko": "이게 한국어로 뭐예요?",
+  "en": "What's this in Korean?",
+  "tags": [
+   "Book1A::Prep2::Sentences"
+  ],
+  "ja": "これは韓国語（かんこくご）で何（なん）ですか？"
+ },
+ {
+  "id": "5fdcad9b7b",
+  "ko": "사라 씨 거예요.",
+  "en": "It's Sarah's.",
+  "tags": [
+   "Book1A::Prep2::Sentences"
+  ],
+  "ja": "サラさんのです。"
+ },
+ {
+  "id": "e91f1fc00c",
+  "ko": "공",
+  "en": "Zero (0)",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "ゼロ（0）"
+ },
+ {
+  "id": "04e037dc86",
+  "ko": "일",
+  "en": "One (1)",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "1（いち）"
+ },
+ {
+  "id": "16d29d9f6b",
+  "ko": "이",
+  "en": "Two (2)",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "2（に）"
+ },
+ {
+  "id": "b4c4c881ba",
+  "ko": "삼",
+  "en": "Three (3)",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "3（さん）"
+ },
+ {
+  "id": "4ed01d37ec",
+  "ko": "사",
+  "en": "Four (4)",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "4（よん）"
+ },
+ {
+  "id": "8295c6675c",
+  "ko": "오",
+  "en": "Five (5)",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "5（ご）"
+ },
+ {
+  "id": "460d067003",
+  "ko": "육",
+  "en": "Six (6)",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "6（ろく）"
+ },
+ {
+  "id": "ee371d3284",
+  "ko": "칠",
+  "en": "Seven (7)",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "7（なな）"
+ },
+ {
+  "id": "0c7e01f883",
+  "ko": "팔",
+  "en": "Eight (8)",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "8（はち）"
+ },
+ {
+  "id": "fff000bb7a",
+  "ko": "구",
+  "en": "Nine (9)",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "9（きゅう）"
+ },
+ {
+  "id": "5dfc486362",
+  "ko": "십",
+  "en": "Ten (10)",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "10（じゅう）"
+ },
+ {
+  "id": "14fbc9e83f",
+  "ko": "이십",
+  "en": "Twenty (20)",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "20（にじゅう）"
+ },
+ {
+  "id": "a8f8957c93",
+  "ko": "삼십",
+  "en": "Thirty (30)",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "30（さんじゅう）"
+ },
+ {
+  "id": "bad4e0c879",
+  "ko": "사십",
+  "en": "Forty (40)",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "40（よんじゅう）"
+ },
+ {
+  "id": "c1be821a1d",
+  "ko": "오십",
+  "en": "Fifty (50)",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "50（ごじゅう）"
+ },
+ {
+  "id": "9ca370e6fc",
+  "ko": "육십",
+  "en": "Sixty (60)",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "60（ろくじゅう）"
+ },
+ {
+  "id": "827e9a723a",
+  "ko": "칠십",
+  "en": "Seventy (70)",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "70（ななじゅう）"
+ },
+ {
+  "id": "44e75f25cb",
+  "ko": "팔십",
+  "en": "Eighty (80)",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "80（はちじゅう）"
+ },
+ {
+  "id": "e4a38b7890",
+  "ko": "구십",
+  "en": "Ninety (90)",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "90（きゅうじゅう）"
+ },
+ {
+  "id": "f055f7edaf",
+  "ko": "백",
+  "en": "One hundred (100)",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "100（ひゃく）"
+ },
+ {
+  "id": "63ab59572b",
+  "ko": "일월",
+  "en": "January",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "1月（いちがつ）"
+ },
+ {
+  "id": "5e423972a3",
+  "ko": "이월",
+  "en": "February",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "2月（にがつ）"
+ },
+ {
+  "id": "880f5b7eee",
+  "ko": "삼월",
+  "en": "March",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "3月（さんがつ）"
+ },
+ {
+  "id": "a6d37cd4b3",
+  "ko": "사월",
+  "en": "April",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "4月（しがつ）"
+ },
+ {
+  "id": "fcbff7b5b0",
+  "ko": "오월",
+  "en": "May",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "5月（ごがつ）"
+ },
+ {
+  "id": "886ca75cb3",
+  "ko": "유월",
+  "en": "June",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "6月（ろくがつ）"
+ },
+ {
+  "id": "8929b9e5c6",
+  "ko": "칠월",
+  "en": "July",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "7月（しちがつ）"
+ },
+ {
+  "id": "a139f95255",
+  "ko": "팔월",
+  "en": "August",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "8月（はちがつ）"
+ },
+ {
+  "id": "dd6fc740f6",
+  "ko": "구월",
+  "en": "September",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "9月（くがつ）"
+ },
+ {
+  "id": "a5fa4c9d42",
+  "ko": "시월",
+  "en": "October",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "10月（じゅうがつ）"
+ },
+ {
+  "id": "8ddb3e9334",
+  "ko": "십일월",
+  "en": "November",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "11月（じゅういちがつ）"
+ },
+ {
+  "id": "b945c62df0",
+  "ko": "십이월",
+  "en": "December",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "12月（じゅうにがつ）"
+ },
+ {
+  "id": "477422d7c6",
+  "ko": "지금",
+  "en": "Now",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "今（いま）"
+ },
+ {
+  "id": "91764e1f3b",
+  "ko": "안경",
+  "en": "Glasses",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "めがね"
+ },
+ {
+  "id": "b1f0c0c660",
+  "ko": "컴퓨터",
+  "en": "Computer",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "コンピューター"
+ },
+ {
+  "id": "d29d2f3a65",
+  "ko": "선글라스",
+  "en": "Sunglasses",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "サングラス"
+ },
+ {
+  "id": "1a19ae5b0a",
+  "ko": "교통카드",
+  "en": "Transportation card",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "交通（こうつう）カード"
+ },
+ {
+  "id": "6ceab5316d",
+  "ko": "여권",
+  "en": "Passport",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "パスポート"
+ },
+ {
+  "id": "3d6484eed1",
+  "ko": "전화번호",
+  "en": "Phone number",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "電話番号（でんわばんごう）"
+ },
+ {
+  "id": "fa05036d0a",
+  "ko": "생일",
+  "en": "Birthday",
+  "tags": [
+   "Book1A::Prep3::Vocab"
+  ],
+  "ja": "誕生日（たんじょうび）"
+ },
+ {
+  "id": "6cb6ce0dc4",
+  "ko": "우산 있어요?",
+  "en": "Do you have an umbrella?",
+  "tags": [
+   "Book1A::Prep3::Sentences"
+  ],
+  "ja": "傘（かさ）はありますか？"
+ },
+ {
+  "id": "fbafcf654f",
+  "ko": "네, 있어요.",
+  "en": "Yes, I do.",
+  "tags": [
+   "Book1A::Prep3::Sentences"
+  ],
+  "ja": "はい、あります。"
+ },
+ {
+  "id": "7f2c0980cd",
+  "ko": "아니요, 없어요.",
+  "en": "No, I don't.",
+  "tags": [
+   "Book1A::Prep3::Sentences"
+  ],
+  "ja": "いいえ、ありません。"
+ },
+ {
+  "id": "8d3397219e",
+  "ko": "책 있어요.",
+  "en": "I have a book.",
+  "tags": [
+   "Book1A::Prep3::Sentences"
+  ],
+  "ja": "本（ほん）があります。"
+ },
+ {
+  "id": "f887735b31",
+  "ko": "안경 없어요.",
+  "en": "I don't have glasses.",
+  "tags": [
+   "Book1A::Prep3::Sentences"
+  ],
+  "ja": "めがねはありません。"
+ },
+ {
+  "id": "de2f2116bf",
+  "ko": "지금 핸드폰 있어요?",
+  "en": "Do you have your phone now?",
+  "tags": [
+   "Book1A::Prep3::Sentences"
+  ],
+  "ja": "今（いま）、携帯電話（けいたいでんわ）はありますか？"
+ },
+ {
+  "id": "ec06faebca",
+  "ko": "네, 핸드폰 있어요.",
+  "en": "Yes, I have my phone.",
+  "tags": [
+   "Book1A::Prep3::Sentences"
+  ],
+  "ja": "はい、携帯電話（けいたいでんわ）があります。"
+ },
+ {
+  "id": "2baccdb4ac",
+  "ko": "아니요, 핸드폰 없어요.",
+  "en": "No, I don't have my phone.",
+  "tags": [
+   "Book1A::Prep3::Sentences"
+  ],
+  "ja": "いいえ、携帯電話（けいたいでんわ）はありません。"
+ },
+ {
+  "id": "02e9df6345",
+  "ko": "수잔 씨, 한국 전화번호 있어요?",
+  "en": "Susan, do you have a Korean phone number?",
+  "tags": [
+   "Book1A::Prep3::Sentences"
+  ],
+  "ja": "スーザンさん、韓国（かんこく）の電話番号（でんわばんごう）はありますか？"
+ },
+ {
+  "id": "cddcc9bf42",
+  "ko": "전화번호가 몇 번이에요?",
+  "en": "What's your phone number?",
+  "tags": [
+   "Book1A::Prep3::Sentences"
+  ],
+  "ja": "電話番号（でんわばんごう）は何番（なんばん）ですか？"
+ },
+ {
+  "id": "719c6677b6",
+  "ko": "010-4948-1287이에요.",
+  "en": "It's 010-4948-1287.",
+  "tags": [
+   "Book1A::Prep3::Sentences"
+  ],
+  "ja": "010-4948-1287です。"
+ },
+ {
+  "id": "374e654453",
+  "ko": "네, 맞아요.",
+  "en": "Yes, that's right.",
+  "tags": [
+   "Book1A::Prep3::Sentences"
+  ],
+  "ja": "はい、そうです。"
+ },
+ {
+  "id": "45cf017f2f",
+  "ko": "완 씨, 렌핑 씨 생일 알아요?",
+  "en": "Wan, do you know Lenping's birthday?",
+  "tags": [
+   "Book1A::Prep3::Sentences"
+  ],
+  "ja": "ワンさん、レンピンさんの誕生日（たんじょうび）を知（し）っていますか？"
+ },
+ {
+  "id": "6c95108d24",
+  "ko": "네, 알아요.",
+  "en": "Yes, I do.",
+  "tags": [
+   "Book1A::Prep3::Sentences"
+  ],
+  "ja": "はい、知（し）っています。"
+ },
+ {
+  "id": "8e3a879fb2",
+  "ko": "렌핑 씨 생일이 며칠이에요?",
+  "en": "What date is Lenping's birthday?",
+  "tags": [
+   "Book1A::Prep3::Sentences"
+  ],
+  "ja": "レンピンさんの誕生日（たんじょうび）は何日（なんにち）ですか？"
+ },
+ {
+  "id": "a22ddc7fe5",
+  "ko": "7월 15일이에요.",
+  "en": "It's July 15th.",
+  "tags": [
+   "Book1A::Prep3::Sentences"
+  ],
+  "ja": "7月（しちがつ）15日（じゅうごにち）です。"
  }
 ]

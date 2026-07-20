@@ -27,7 +27,7 @@ for c in master:
 if missing_audio:
     print(f"WARNING: missing audio for {len(missing_audio)} cards: {missing_audio}")
 
-with open(os.path.join(HERE, "..", "app_template.html"), encoding="utf-8") as f:
+with open(os.path.join(HERE, "app_template.html"), encoding="utf-8") as f:
     template = f.read()
 
 output = template.replace("__CARDS_JSON__", json.dumps(cards, ensure_ascii=False))

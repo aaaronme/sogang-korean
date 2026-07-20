@@ -1,0 +1,8 @@
+# Source photographs of the textbook. Kept locally as the extraction source,
+# deliberately not committed: hundreds of MB, and they're scans of a copyrighted
+# commercial textbook. The extracted cards in pipeline/master_cards.json are
+# what's version-controlled.
+raw/
+
+# build.py writes here; the deployed copy is the one at the repo root.
+pipeline/index.html

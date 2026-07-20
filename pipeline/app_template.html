@@ -165,19 +165,40 @@
   }
   #backBar button{background:none;border:none;color:var(--muted);font-size:14px;cursor:pointer;padding:6px 0;}
 
-  #menuSheet{
+  #menuSheet, #sectionsSheet{
     position:fixed;inset:0;background:#000000aa;display:none;align-items:flex-end;z-index:20;
   }
-  #menuSheet .sheet{
+  #sectionsSheet{z-index:21;}
+  #menuSheet .sheet, #sectionsSheet .sheet{
     background:var(--card);width:100%;border-radius:20px 20px 0 0;padding:20px 18px calc(20px + env(safe-area-inset-bottom));
   }
-  #menuSheet h3{margin:0 0 14px;font-size:16px;}
-  #menuSheet .row{
+  #menuSheet h3, #sectionsSheet h3{margin:0 0 14px;font-size:16px;}
+  #menuSheet .row, #sectionsSheet .row{
     display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--card-border);font-size:14px;
   }
-  #menuSheet .row:last-child{border-bottom:none;}
+  #menuSheet .row:last-child, #sectionsSheet .row:last-child{border-bottom:none;}
   #menuSheet button.action{background:var(--card-border);border:none;color:var(--text);border-radius:10px;padding:8px 14px;font-size:13px;cursor:pointer;}
-  #menuSheet .closeSheet{width:100%;margin-top:12px;}
+  #menuSheet .closeSheet, #sectionsSheet .closeSheet{width:100%;margin-top:12px;}
+
+  /* Manage sections: the list can be long, so it scrolls inside the sheet. */
+  #sectionsSheet .sheet-sub{color:var(--muted);font-size:13px;margin:0 0 10px;line-height:1.5;}
+  #sectionsList{max-height:52vh;overflow-y:auto;-webkit-overflow-scrolling:touch;}
+  #sectionsList .row{gap:12px;}
+  #sectionsList .row .name{flex:1;min-width:0;}
+  #sectionsList .row .name small{display:block;color:var(--muted);font-size:12px;margin-top:2px;}
+  .switch{position:relative;flex:none;width:46px;height:27px;cursor:pointer;}
+  .switch input{position:absolute;opacity:0;width:100%;height:100%;margin:0;cursor:pointer;display:block;}
+  .switch .track{
+    position:absolute;inset:0;background:var(--card-border);border-radius:999px;transition:background .18s ease;pointer-events:none;
+  }
+  .switch .thumb{
+    position:absolute;top:3px;left:3px;width:21px;height:21px;border-radius:50%;
+    background:#fff;transition:transform .18s ease;pointer-events:none;
+  }
+  .switch input:checked ~ .track{background:var(--good);}
+  .switch input:checked ~ .thumb{transform:translateX(19px);}
+  .switch input:focus-visible ~ .track{outline:2px solid var(--accent);outline-offset:2px;}
+  #emptySections{color:var(--muted);font-size:14px;line-height:1.6;padding:18px 4px;display:none;}
   input[type=file]{display:none;}
   .toast{
     position:fixed;bottom:24px;left:50%;transform:translateX(-50%);
@@ -202,6 +223,7 @@
     <h2 id="studyPromptText">What do you want to study?</h2>
     <p id="studyHintText">Tap a set below. Cards you've already seen come back on their own schedule.</p>
     <div class="tag-grid" id="tagGrid"></div>
+    <div id="emptySections"></div>
   </div>
 
   <div id="studyArea">
@@ -234,11 +256,21 @@
 <div id="menuSheet">
   <div class="sheet">
     <h3 id="menuTitleText">Progress &amp; sync</h3>
+    <div class="row"><span id="manageLabelText">Manage sections</span><button class="action" id="manageBtn">Choose</button></div>
     <div class="row"><span id="exportLabelText">Export progress</span><button class="action" id="exportBtn">Download file</button></div>
     <div class="row"><span id="importLabelText">Import progress</span><button class="action" id="importBtn">Choose file</button></div>
     <div class="row"><span id="resetLabelText">Reset all progress</span><button class="action" id="resetBtn">Reset</button></div>
     <input type="file" id="importFile" accept="application/json">
     <button class="ghostbtn closeSheet" id="closeSheetBtn">Close</button>
+  </div>
+</div>
+
+<div id="sectionsSheet">
+  <div class="sheet">
+    <h3 id="sectionsTitleText">Manage sections</h3>
+    <p class="sheet-sub" id="sectionsHintText"></p>
+    <div id="sectionsList"></div>
+    <button class="ghostbtn closeSheet" id="closeSectionsBtn">Close</button>
   </div>
 </div>
 
@@ -260,6 +292,12 @@ const TAG_LABELS = {
     "Expressions::Verbs": "Expressions — verbs",
     "Expressions::Requests": "Expressions — requests",
     "Numbers": "Numbers 1–5",
+    "Book1A::Prep1::Vocab": "Book 1A · Prep 1 — vocabulary",
+    "Book1A::Prep1::Sentences": "Book 1A · Prep 1 — sentences",
+    "Book1A::Prep2::Vocab": "Book 1A · Prep 2 — vocabulary",
+    "Book1A::Prep2::Sentences": "Book 1A · Prep 2 — sentences",
+    "Book1A::Prep3::Vocab": "Book 1A · Prep 3 — vocabulary",
+    "Book1A::Prep3::Sentences": "Book 1A · Prep 3 — sentences",
   },
   ja: {
     "Hangul1": "ハングル1 — 基礎",
@@ -270,9 +308,17 @@ const TAG_LABELS = {
     "Expressions::Verbs": "表現 — 動詞",
     "Expressions::Requests": "表現 — お願い",
     "Numbers": "数字 1〜5",
+    "Book1A::Prep1::Vocab": "教科書1A · 準備1 — 単語",
+    "Book1A::Prep1::Sentences": "教科書1A · 準備1 — 文",
+    "Book1A::Prep2::Vocab": "教科書1A · 準備2 — 単語",
+    "Book1A::Prep2::Sentences": "教科書1A · 準備2 — 文",
+    "Book1A::Prep3::Vocab": "教科書1A · 準備3 — 単語",
+    "Book1A::Prep3::Sentences": "教科書1A · 準備3 — 文",
   },
 };
-const TAG_ORDER = ["Hangul1","Hangul3","Hangul4","Expressions::To_Be","Expressions::Adjectives","Expressions::Verbs","Expressions::Requests","Numbers"];
+// Append-only. Reordering or removing an entry would rearrange sections that
+// students already navigate by muscle memory.
+const TAG_ORDER = ["Hangul1","Hangul3","Hangul4","Expressions::To_Be","Expressions::Adjectives","Expressions::Verbs","Expressions::Requests","Numbers","Book1A::Prep1::Vocab","Book1A::Prep1::Sentences","Book1A::Prep2::Vocab","Book1A::Prep2::Sentences","Book1A::Prep3::Vocab","Book1A::Prep3::Sentences"];
 
 const STRINGS = {
   en: {
@@ -292,6 +338,11 @@ const STRINGS = {
     exportLabel: "Export progress", exportBtn: "Download file",
     importLabel: "Import progress", importBtn: "Choose file",
     resetLabel: "Reset all progress", resetBtn: "Reset",
+    manageLabel: "Manage sections", manageBtn: "Choose",
+    sectionsTitle: "Manage sections",
+    sectionsHint: "Choose which sets show up on the study screen. New sections start hidden until you switch them on — turn them on as your class reaches them.",
+    sectionCards: n => `${n} cards`,
+    emptySections: "No sections are switched on. Tap ⋯ → Manage sections to pick some.",
     close: "Close",
     toastDownloaded: "Progress downloaded",
     toastImported: "Progress imported",
@@ -317,6 +368,11 @@ const STRINGS = {
     exportLabel: "進捗をエクスポート", exportBtn: "ファイルをダウンロード",
     importLabel: "進捗をインポート", importBtn: "ファイルを選ぶ",
     resetLabel: "進捗をすべてリセット", resetBtn: "リセット",
+    manageLabel: "セクションの管理", manageBtn: "選ぶ",
+    sectionsTitle: "セクションの管理",
+    sectionsHint: "学習画面に表示するセットを選んでください。新しいセクションは、オンにするまで表示されません。授業が進んだらオンにしてください。",
+    sectionCards: n => `${n}枚`,
+    emptySections: "オンになっているセクションがありません。⋯ →「セクションの管理」から選んでください。",
     close: "閉じる",
     toastDownloaded: "進捗をダウンロードしました",
     toastImported: "進捗をインポートしました",
@@ -330,6 +386,41 @@ const STRINGS = {
 const LANG_KEY = "sogangKoreanLang"; // separate from STORAGE_KEY — never touches SRS progress
 let lang = localStorage.getItem(LANG_KEY) || "en";
 function t(){ return STRINGS[lang]; }
+
+// ---- section visibility ----
+// Which sections a student has chosen to see. This is a display preference
+// only: it lives under its own key and never touches STORAGE_KEY, so hiding a
+// section keeps that section's review history intact for when it comes back.
+const SECTIONS_KEY = "sogangKoreanSections_v1";
+
+// Sections shown to a student who has never opened "Manage sections". Anything
+// NOT listed here defaults to hidden, which is what keeps a newly added unit
+// from appearing in someone's deck the day it ships. Leave this list alone when
+// adding new content — the student turns the new section on themselves.
+const DEFAULT_VISIBLE_TAGS = ["Hangul1","Hangul3","Hangul4","Expressions::To_Be","Expressions::Adjectives","Expressions::Verbs","Expressions::Requests","Numbers"];
+
+function loadSectionPrefs(){
+  try{
+    const parsed = JSON.parse(localStorage.getItem(SECTIONS_KEY));
+    // Guard against a null/array/string value left by a bad write or a hand-edit.
+    return (parsed && typeof parsed === "object" && !Array.isArray(parsed)) ? parsed : {};
+  }catch(e){ return {}; }
+}
+let sectionPrefs = loadSectionPrefs();
+function saveSectionPrefs(){
+  try{ localStorage.setItem(SECTIONS_KEY, JSON.stringify(sectionPrefs)); }catch(e){}
+}
+function isTagVisible(tag){
+  // An explicit choice always wins; absence of a choice falls back to the default.
+  if(Object.prototype.hasOwnProperty.call(sectionPrefs, tag)) return !!sectionPrefs[tag];
+  return DEFAULT_VISIBLE_TAGS.includes(tag);
+}
+function tagHasCards(tag){ return CARDS.some(c => c.tags.includes(tag)); }
+function visibleTags(){ return TAG_ORDER.filter(tag => tagHasCards(tag) && isTagVisible(tag)); }
+function visibleCards(){
+  const shown = new Set(visibleTags());
+  return CARDS.filter(c => c.tags.some(tag => shown.has(tag)));
+}
 
 // STORAGE_KEY must never change across future updates — it's how returning
 // students' saved progress is found again. If the saved-state shape ever
@@ -408,7 +499,9 @@ const headerStats = document.getElementById("headerStats");
 const progressFill = document.getElementById("progressFill");
 
 function cardsForTag(tag){
-  if(tag === "__ALL__") return CARDS;
+  // "All cards" means all *visible* cards — a section a student has switched
+  // off must not leak back in through the all-cards deck.
+  if(tag === "__ALL__") return visibleCards();
   return CARDS.filter(c => c.tags.includes(tag));
 }
 function dueCount(cardList){
@@ -418,13 +511,20 @@ function dueCount(cardList){
 
 function renderDeckPicker(){
   tagGrid.innerHTML = "";
-  const allBtn = makeTagBtn("__ALL__", t().allCards(CARDS.length), CARDS);
-  tagGrid.appendChild(allBtn);
-  TAG_ORDER.forEach(tag=>{
-    const list = cardsForTag(tag);
-    if(list.length === 0) return;
-    tagGrid.appendChild(makeTagBtn(tag, TAG_LABELS[lang][tag] || tag, list));
-  });
+  const shown = visibleTags();
+  const emptyEl = document.getElementById("emptySections");
+  if(shown.length === 0){
+    // Every section switched off — say so rather than showing a blank screen.
+    emptyEl.textContent = t().emptySections;
+    emptyEl.style.display = "block";
+  } else {
+    emptyEl.style.display = "none";
+    const all = visibleCards();
+    tagGrid.appendChild(makeTagBtn("__ALL__", t().allCards(all.length), all));
+    shown.forEach(tag=>{
+      tagGrid.appendChild(makeTagBtn(tag, TAG_LABELS[lang][tag] || tag, cardsForTag(tag)));
+    });
+  }
   updateHeaderStats();
   applyStaticStrings();
 }
@@ -439,7 +539,9 @@ function makeTagBtn(tag, label, list){
 }
 
 function updateHeaderStats(){
-  const dueAll = dueCount(CARDS);
+  // Counts only what the student can actually reach, so the badge never
+  // promises cards that no visible deck will hand them.
+  const dueAll = dueCount(visibleCards());
   headerStats.innerHTML = `<span>${t().dueHeader(dueAll)}</span>`;
 }
 
@@ -459,7 +561,7 @@ function startSession(tag){
   deckPicker.style.display = "none";
   doneScreen.style.display = "none";
   studyArea.style.display = "flex";
-  document.getElementById("deckLabel").textContent = tag === "__ALL__" ? t().allCards(CARDS.length) : (TAG_LABELS[lang][tag]||tag);
+  document.getElementById("deckLabel").textContent = tag === "__ALL__" ? t().allCards(visibleCards().length) : (TAG_LABELS[lang][tag]||tag);
   nextCard();
 }
 
@@ -552,6 +654,57 @@ document.getElementById("menuOpenBtn").onclick = ()=> menuSheet.style.display = 
 document.getElementById("closeSheetBtn").onclick = ()=> menuSheet.style.display = "none";
 menuSheet.addEventListener("click", (e)=>{ if(e.target === menuSheet) menuSheet.style.display="none"; });
 
+// ---- manage sections sheet ----
+const sectionsSheet = document.getElementById("sectionsSheet");
+const sectionsList = document.getElementById("sectionsList");
+
+function renderSectionsSheet(){
+  sectionsList.innerHTML = "";
+  TAG_ORDER.forEach(tag=>{
+    if(!tagHasCards(tag)) return; // a tag with no cards yet has nothing to show
+    const count = cardsForTag(tag).length;
+    const row = document.createElement("div");
+    row.className = "row";
+
+    const name = document.createElement("div");
+    name.className = "name";
+    name.appendChild(document.createTextNode(TAG_LABELS[lang][tag] || tag));
+    const sub = document.createElement("small");
+    sub.textContent = t().sectionCards(count);
+    name.appendChild(sub);
+
+    const sw = document.createElement("label");
+    sw.className = "switch";
+    const input = document.createElement("input");
+    input.type = "checkbox";
+    input.checked = isTagVisible(tag);
+    input.setAttribute("aria-label", TAG_LABELS[lang][tag] || tag);
+    input.dataset.tag = tag;
+    input.addEventListener("change", ()=>{
+      sectionPrefs[tag] = input.checked;
+      saveSectionPrefs();
+      renderDeckPicker(); // reflect immediately behind the sheet
+    });
+    const track = document.createElement("span"); track.className = "track";
+    const thumb = document.createElement("span"); thumb.className = "thumb";
+    sw.append(input, track, thumb);
+
+    row.append(name, sw);
+    sectionsList.appendChild(row);
+  });
+}
+
+function openSectionsSheet(){
+  renderSectionsSheet();
+  sectionsSheet.style.display = "flex";
+}
+document.getElementById("manageBtn").onclick = ()=>{
+  menuSheet.style.display = "none";
+  openSectionsSheet();
+};
+document.getElementById("closeSectionsBtn").onclick = ()=> sectionsSheet.style.display = "none";
+sectionsSheet.addEventListener("click", (e)=>{ if(e.target === sectionsSheet) sectionsSheet.style.display = "none"; });
+
 function toast(msg){
   const toastEl = document.getElementById("toast");
   toastEl.textContent = msg;
@@ -630,6 +783,11 @@ function applyStaticStrings(){
   document.getElementById("resetLabelText").textContent = s.resetLabel;
   document.getElementById("resetBtn").textContent = s.resetBtn;
   document.getElementById("closeSheetBtn").textContent = s.close;
+  document.getElementById("manageLabelText").textContent = s.manageLabel;
+  document.getElementById("manageBtn").textContent = s.manageBtn;
+  document.getElementById("sectionsTitleText").textContent = s.sectionsTitle;
+  document.getElementById("sectionsHintText").textContent = s.sectionsHint;
+  document.getElementById("closeSectionsBtn").textContent = s.close;
 }
 
 document.getElementById("langBtn").addEventListener("click", ()=>{
@@ -638,11 +796,12 @@ document.getElementById("langBtn").addEventListener("click", ()=>{
   localStorage.setItem(LANG_KEY, lang);
   applyStaticStrings();
   updateHeaderStats(); // header due-count badge is visible in both screens, not just the deck picker
+  if(sectionsSheet.style.display === "flex"){ renderSectionsSheet(); } // relabel toggles in place
   if(studyArea.style.display === "flex"){
     // refresh the in-progress card + grade-button interval previews in the new language
     document.getElementById("cardEn").textContent = currentCard[lang] || currentCard.en;
     document.getElementById("cardHint").textContent = revealed ? "" : t().tapReveal;
-    document.getElementById("deckLabel").textContent = currentTag === "__ALL__" ? t().allCards(CARDS.length) : (TAG_LABELS[lang][currentTag]||currentTag);
+    document.getElementById("deckLabel").textContent = currentTag === "__ALL__" ? t().allCards(visibleCards().length) : (TAG_LABELS[lang][currentTag]||currentTag);
     const labels = previewIntervals(getState(currentCard.id));
     document.getElementById("ivAgain").textContent = labels[0];
     document.getElementById("ivHard").textContent = labels[1];
