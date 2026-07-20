@@ -36,11 +36,19 @@ Then commit/push `index.html` as usual.
 1. Generate Korean audio for each new phrase — on a Mac, the built-in
    `say` command works well and is completely free/offline:
    ```bash
-   say -v Yuna -o audio_store/<new-id>.m4a "새로운 단어"
+   say -v Yuna -o /tmp/raw.m4a "새로운 단어"
+   afconvert -f m4af -d aac@22050 -b 32000 -c 1 /tmp/raw.m4a audio_store/<new-id>.m4a
    ```
    (Run `say -v '?' | grep -i ko_KR` to see what Korean voices are
    installed; prefer an Enhanced/Premium one if available — noticeably
    more natural than the default compact voice.)
+
+   **The `afconvert` step is not optional.** `say -o foo.m4a` writes
+   *uncompressed* 16-bit PCM into the m4a container — 352 kbps, roughly 8x
+   larger than it needs to be. Since every clip is base64'd into `index.html`,
+   skipping this makes the whole app 8x heavier. AAC mono 32 kbps is
+   transparent for a TTS voice; the whole 238-clip library is 2.1 MB encoded
+   versus 8.4 MB as PCM.
 2. Append new entries to `master_cards.json` with a **new, never-before-used
    id** (a short random/hash string is fine — just needs to be stable and
    unique), the Korean text, English + Japanese translations, and a
@@ -164,9 +172,17 @@ file were confirmed against the physical book on 2026-07-20.
 
 ### Note on file size
 
-`index.html` is now **10.6 MB** (was 3.9 MB), because every clip is base64'd
-inline to keep the app a single offline-capable file. That is a one-time load
-per student, cached afterwards, but it is worth watching — carding all ten
-remaining units at this rate would land somewhere north of 40 MB. If it gets
-uncomfortable, the fix is re-encoding the clips at a lower bitrate rather than
-splitting the file, which would cost the offline behaviour.
+`index.html` is **2.3 MB** for 238 cards, all audio base64'd inline so the app
+stays a single offline-capable file with no external requests.
+
+It was 10.6 MB until the clips were re-encoded — see the `afconvert` note
+above. Every clip in `audio_store/` should be AAC; if the directory ever
+balloons again, check for PCM with
+`afinfo audio_store/*.m4a | grep -c lpcm` (should be 0).
+
+Projecting the remaining units at ~10 KB/clip, a complete Book 1A lands around
+5–6 MB. If that becomes uncomfortable on mobile data, the next step is moving
+audio out of the HTML into `audio/<id>.m4a` files fetched on demand, with a
+service worker caching them — which keeps offline support but only for
+sections a student has actually opened. Don't reach for that before the codec
+is right; it is a much bigger change for a smaller win.
