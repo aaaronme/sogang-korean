@@ -212,6 +212,17 @@ tense consonants), Expressions (23, across To-Be/Adjectives/Verbs/Requests),
 Numbers (6). These nine are the only sections that default to **on**; every
 Book 1A section below defaults to off.
 
+`Numbers` holds only native 하나–다섯 plus one age sentence, and all six are
+also in 준비 4과. The real number vocabulary — 42 cards — is split across
+`Book1A::PrepUnit3::Vocab` (Sino-Korean 공 0 through 백 100, including the tens)
+and `Book1A::PrepUnit4::Vocab` (native 1–10, the 개 counters, money from 십 원
+to 오만 원). Because both Prep units default to off, a student who never opens
+the section picker sees numbers stopping at five, so the section label names
+where the rest lives. The stub was left in place rather than extended: filling
+it out would mean carding those 42 words a second time, and a student who later
+switched on Prep 3 and 4 would then review every number twice, under two
+separate review histories.
+
 Hangul 2 did not exist until 2026-07-21 — the deck ran 1, 3, 4, so the plain
 consonants ㄱㄷㅂㅅㅈ and the 받침 sounds were absent. Hangul 1 held only the ten
 words from its dictation slide, and Hangul 3 only the [t]-final 받침 words.
