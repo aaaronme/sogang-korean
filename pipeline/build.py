@@ -32,26 +32,49 @@ cards = []
 missing_audio = []
 total_audio = 0
 for c in master:
-    src = os.path.join(AUDIO, f'{c["id"]}.m4a')
-    if not os.path.exists(src):
-        missing_audio.append(c["id"])
-    else:
-        total_audio += os.path.getsize(src)
-    cards.append({
+    card = {
         "id": c["id"],
         "ko": c["ko"],
         "en": c["en"],
         "ja": c.get("ja", c["en"]),  # fall back to English if a translation is ever missing
         "tags": c["tags"],
-    })
+    }
+    # Optional fields, present only on grammar cards. Passed through rather than
+    # hardcoded so a future card kind doesn't need build.py changed again.
+    for key in ("type", "examples"):
+        if key in c:
+            card[key] = c[key]
+    cards.append(card)
+
+    # A grammar card has no clip of its own — its pattern isn't a speakable
+    # phrase — but each of its examples does.
+    if c.get("type") == "grammar":
+        for eg in c.get("examples", []):
+            if eg.get("audio"):
+                src = os.path.join(AUDIO, f'{eg["audio"]}.m4a')
+                if not os.path.exists(src):
+                    missing_audio.append(eg["audio"])
+        continue
+
+    src = os.path.join(AUDIO, f'{c["id"]}.m4a')
+    if not os.path.exists(src):
+        missing_audio.append(c["id"])
+
+for name in os.listdir(AUDIO):
+    if name.endswith(".m4a"):
+        total_audio += os.path.getsize(os.path.join(AUDIO, name))
 
 if missing_audio:
-    print(f"WARNING: missing audio for {len(missing_audio)} cards: {missing_audio[:5]}")
+    print(f"WARNING: missing audio for {len(missing_audio)} clips: {missing_audio[:5]}")
 
 # --- audio/ ---------------------------------------------------------------
 # Delete clips that no longer belong to any card, so retired audio doesn't
 # linger in the deploy.
+# Must include grammar examples' clip ids, not just card ids — those clips are
+# referenced from inside a card rather than being named after one, so a card-id-only
+# set would class every example clip as stale and delete it.
 wanted = {f'{c["id"]}.m4a' for c in cards}
+wanted |= {f'{eg["audio"]}.m4a' for c in cards for eg in c.get("examples", []) if eg.get("audio")}
 stale = [n for n in os.listdir(AUDIO) if n.endswith(".m4a") and n not in wanted]
 for name in stale:
     os.remove(os.path.join(AUDIO, name))

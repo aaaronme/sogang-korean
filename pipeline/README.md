@@ -52,13 +52,59 @@ deploy where half the cards are silent.
    **The `afconvert` step is not optional.** `say -o foo.m4a` writes
    *uncompressed* 16-bit PCM into the m4a container — 352 kbps, roughly 8x
    larger than it needs to be, and every one of those bytes is downloaded by a
-   student on mobile data. AAC mono 32 kbps is transparent for a TTS voice; the
-   1259-clip library is 11.5 MB encoded and would be near 90 MB as PCM.
+   student on mobile data. AAC mono 32 kbps is transparent for a TTS voice.
 2. Append new entries to `master_cards.json` with a **new, never-before-used
    id** (a short random/hash string is fine — just needs to be stable and
    unique), the Korean text, English + Japanese translations, and a
-   `tags` array.
-3. Run `python3 build.py` and commit the regenerated `index.html`.
+   `tags` array. In practice you want one of the generators rather than doing
+   this by hand — see *Generators* below.
+3. Run `python3 build.py` and commit the regenerated `index.html`, `sw.js` and
+   `audio/` together.
+
+## Generators
+
+All are idempotent — ids derive from content, so re-running never mints a new id
+for a card that already shipped — and all read transcription JSON produced by
+reading the book photographs.
+
+| Script | Produces |
+|---|---|
+| `add_book1a_prep.py` | first pass at Preparatory Units 1–3; superseded, kept for provenance |
+| `add_book1a_units.py` | vocabulary + sentence cards for all ten units |
+| `add_culture_cards.py` | the four Culture Corner sections |
+| `add_grammar_cards.py` | grammar cards (see below) |
+| `strip_m4a_padding.py` | post-processes `audio/`; run after any clip generation |
+
+`add_book1a_units.py` also reports **near-duplicate** strings within a section:
+because ids come from the exact Korean, a re-transcription differing by a single
+space would otherwise become a silent second card for the same phrase instead of
+matching the first. It squashes whitespace and punctuation to spot those. It
+reports rather than aborts, since the book does legitimately print e.g. a
+statement and a question that differ only in punctuation.
+
+## Grammar cards
+
+A grammar card has a different shape from a vocabulary card and is the reason
+`build.py` passes unknown keys through instead of hardcoding a field list:
+
+```json
+{"id": "...", "ko": "명이/가", "en": "<rule>", "ja": "<rule>",
+ "tags": ["Book1A::Unit1::Grammar"], "type": "grammar",
+ "examples": [{"ko": "...", "en": "...", "ja": "...", "audio": "<clip id>"}]}
+```
+
+The pattern is the front, the rule and 2–4 worked examples the back. Two things
+to know:
+
+- **A grammar card has no clip of its own** — a pattern like 명이에요/예요 is not
+  a speakable phrase. Its *examples* have audio instead, and the app hides the
+  card's speaker button rather than leaving a dead control. Everything in the
+  app guards on `type === "grammar"` and on the fields being absent, because a
+  student may be running a cached `index.html` from before grammar existed.
+- **Example clips are referenced from inside a card, not named after one.**
+  `build.py`'s stale-clip pruner must therefore include example ids in its
+  wanted set — without that it classes every example clip as orphaned and
+  deletes it.
 
 ## Tags / sections
 
@@ -76,19 +122,11 @@ be checked against the physical book without a decoder ring: 준비n과 is
 (`Book1A::UnitN::*`). They are different units — 준비 1 and 1과 both exist —
 so `Unit1` must stay reserved for 1과.
 
-Renaming a tag after it ships is possible but has two catches, both handled for
-the `Prep{n}` → `PrepUnit{n}` rename in commit `bb6d00d`'s successor:
-
-1. Card ids are `sha1(tag|ko)`. Re-deriving them from the new tag would give
-   every card a new id and orphan every student's progress, so
-   `add_book1a_prep.py` keeps an `ID_TAG` map and mints ids from the *original*
-   tag string forever.
-2. Section-visibility prefs are keyed by tag, so `RENAMED_TAGS` in
-   `app_template.html` migrates a student's old on/off choice to the new key on
-   load. An explicit choice under the new name always wins.
-
-The old strings stay in `TAG_ORDER` as retired entries. `tagHasCards()` filters
-them out of every list once no card carries them.
+**Renaming a tag is no longer an option** now that the app is shared: ids are
+`sha1(tag|ko)`, so a rename re-derives every id in that section and orphans the
+progress attached to it. Get the name right the first time. (The `Prep{n}` →
+`PrepUnit{n}` rename happened before release, when the deck could still be
+reshaped freely; the migration code that supported it has been removed.)
 
 ## Section visibility
 
@@ -135,6 +173,26 @@ the queue under the student's current card.
 
 ## Things that must never change (backward compatibility)
 
+**The app was shared with students on 2026-07-20. From that date real people
+have review history saved in their browsers, and there is no server-side copy of
+it — if a change orphans their progress, it is gone.** Everything in this
+section is now load-bearing. Before this date the deck was reshaped freely
+(ids reminted, a duplicate card deleted, tags renamed); none of that is
+acceptable any more.
+
+In particular, and in addition to the list below:
+
+- **Never delete a card.** Hide it by switching its section off if you must;
+  removing it discards whatever a student had learned about it.
+- **Never edit a card's `ko`.** The id is derived from it in the generators, so
+  changing `ko` and re-running mints a *new* card and abandons the old one's
+  progress. Fixing `en`/`ja` in place is still fine and keeps progress.
+- **Only append to `TAG_ORDER`**, and keep `DEFAULT_VISIBLE_TAGS` as it is, so
+  new content never appears in someone's deck uninvited.
+- New fields on a card record are fine — `build.py` passes them through and the
+  app must treat them as optional, because a student's cached `index.html` may
+  be a build old enough not to have them.
+
 - `STORAGE_KEY` in `app_template.html` (currently `"sogangKoreanProgress_v1"`)
   — this is the localStorage key holding every student's review history.
 - Any existing card's `id` in `master_cards.json`.
@@ -145,7 +203,7 @@ the queue under the student's current card.
 
 ## Current content (as of this file)
 
-**1259 cards.**
+**1496 cards.**
 
 The original 94, from the "서강한국어 1A 한글" (Sogang Korean 1A Hangul) intro
 unit slide decks — Hangul 1 (10 basics), Hangul 3 (41, diphthongs/aspirated),
@@ -153,20 +211,32 @@ Hangul 4 (16, tense consonants), Expressions (23, across To-Be/Adjectives/
 Verbs/Requests), Numbers (6). These eight are the only sections that default
 to **on**; every Book 1A section below defaults to off.
 
-Preparatory Units 1–4 and Units 1–6, book pp.16–167 — 1205 cards:
+Preparatory Units 1–4 and Units 1–6, book pp.16–169:
 
-| Tag | Vocab / Sentences | Book pages |
+| Tag | Vocab / Sentences / Grammar | Book pages |
 |---|---|---|
-| `Book1A::PrepUnit1::Vocab` / `::Sentences` | 28 / 39 | 16–25 |
-| `Book1A::PrepUnit2::Vocab` / `::Sentences` | 31 / 17 | 26–35 |
-| `Book1A::PrepUnit3::Vocab` / `::Sentences` | 48 / 22 | 36–45 |
-| `Book1A::PrepUnit4::Vocab` / `::Sentences` | 56 / 22 | 46–55 |
-| `Book1A::Unit1::Vocab` / `::Sentences` | 70 / 74 | 58–75 |
-| `Book1A::Unit2::Vocab` / `::Sentences` | 72 / 95 | 76–93 |
-| `Book1A::Unit3::Vocab` / `::Sentences` | 51 / 85 | 96–113 |
-| `Book1A::Unit4::Vocab` / `::Sentences` | 70 / 117 | 114–131 |
-| `Book1A::Unit5::Vocab` / `::Sentences` | 58 / 102 | 134–151 |
-| `Book1A::Unit6::Vocab` / `::Sentences` | 97 / 51 | 152–167 |
+| `Book1A::PrepUnit1::*` | 28 / 39 / 2 | 16–25 |
+| `Book1A::PrepUnit2::*` | 31 / 17 / 3 | 26–35 |
+| `Book1A::PrepUnit3::*` | 48 / 22 / 4 | 36–45 |
+| `Book1A::PrepUnit4::*` | 56 / 22 / 4 | 46–55 |
+| `Book1A::Unit1::*` | 70 / 74 / 3 | 58–75 |
+| `Book1A::Unit2::*` | 72 / 95 / 6 | 76–93 |
+| `Book1A::Unit3::*` | 51 / 85 / 3 | 96–113 |
+| `Book1A::Unit4::*` | 70 / 117 / 4 | 114–131 |
+| `Book1A::Unit5::*` | 58 / 102 / 6 | 134–151 |
+| `Book1A::Unit6::*` | 104 / 64 / 3 | 152–169 |
+
+The four Culture Corners are one section each rather than a vocab/sentences
+pair — each is a two-page spread, and splitting would give sections of three
+cards. 문화 1 has **no sentence cards at all**: that spread contains no finite
+verb, only holiday names, hotline numbers and app labels.
+
+| Tag | Cards | Book pages |
+|---|---|---|
+| `Book1A::Culture1` | 39 | 56–57 |
+| `Book1A::Culture2` | 34 | 94–95 |
+| `Book1A::Culture3` | 49 | 132–133 |
+| `Book1A::Culture4` | 17 | 170–171 |
 
 `add_book1a_units.py` generates all of it from the per-unit transcription JSON.
 (`add_book1a_prep.py` produced the first pass at Preparatory Units 1–3 and is
@@ -181,19 +251,27 @@ pp.36–47 wherever the word appears there; the rest, and all Japanese, are ours
 
 Grammar points per unit are recorded in `GRAMMAR_NOTES.md`.
 
-**Known gaps**, both missing photographs rather than missing work:
+**Known gap:** pp.16–17, the 준비 1과 opener, is the only spread never
+photographed. The PDF sample shows it is the unit contents map — no vocabulary,
+no example sentences — so nothing appears lost, but that is not visually
+verified. Everything else from pp.16–171 is covered.
 
-- pp.16–17, the 준비 1과 opener. The PDF sample shows this spread is the unit
-  contents map only — no vocabulary, no example sentences — so nothing appears
-  lost, but it is not visually verified.
-- pp.168–169, the tail of 6과 (its 과제 and 단원 마무리 pages).
+**Do not trust arithmetic on the photo sequence.** It is irregular in three
+places and every one of them caused a wrong page assignment at some point:
 
-Everything else from pp.16–167 is covered.
+- shots 040–043 are **single pages** (18, 19, 20, 21); from 044 on they are
+  two-page spreads
+- shots 110 and 111 are the same spread (pp.154–155) photographed twice
+- so `left page = 2 × seq − 66` holds only for 044–110, and everything after
+  111 is shifted by one
 
-Note on the photo set: shots 040–043 are **single pages** (18, 19, 20, 21);
-from 044 on they are two-page spreads, where the left page is `2 × seq − 66`.
-Shots 110 and 111 are the same spread (p.154–155) taken twice, which is why the
-sequence runs two pages short at the end.
+pp.168–169 were reported missing twice on the strength of that formula. They
+are not missing; they are shot 118. Always confirm against the printed folio.
+
+Both hazards for a future pass: this copy has a previous owner's **handwritten
+English glosses** next to the p.169 word list and handwritten answers in
+fill-in-the-blank exercises throughout. They are not book content and must not
+be transcribed as if they were.
 
 ### Note on file size
 

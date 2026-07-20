@@ -11691,5 +11691,2647 @@
    "Book1A::PrepUnit3::Sentences"
   ],
   "ja": "お誕生日（たんじょうび）おめでとうございます。"
+ },
+ {
+  "id": "26db03fb34",
+  "ko": "유용한 정보",
+  "en": "Useful Information (book's own English)",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "役立（やくだ）つ情報（じょうほう）"
+ },
+ {
+  "id": "c1d44325e4",
+  "ko": "공휴일",
+  "en": "Public Holidays (book's own English)",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "祝日（しゅくじつ）"
+ },
+ {
+  "id": "15aff627d9",
+  "ko": "전화번호",
+  "en": "Government Hotlines (book's own English for this panel; literally 'phone number')",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "電話番号（でんわばんごう）"
+ },
+ {
+  "id": "cd9a759728",
+  "ko": "새해 첫날",
+  "en": "New Year's Day",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "元日（がんじつ）"
+ },
+ {
+  "id": "862d2a1c8e",
+  "ko": "설날",
+  "en": "Seollal, Lunar New Year's Day",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "ソルラル（旧正月（きゅうしょうがつ））"
+ },
+ {
+  "id": "6904fea4bf",
+  "ko": "삼일절",
+  "en": "Independence Movement Day (March 1)",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "三一節（サミルジョル）、独立運動記念日（どくりつうんどうきねんび）"
+ },
+ {
+  "id": "ff25d888c4",
+  "ko": "석가탄신일",
+  "en": "Buddha's Birthday",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "お釈迦（しゃか）様（さま）の誕生日（たんじょうび）"
+ },
+ {
+  "id": "177bd46def",
+  "ko": "어린이날",
+  "en": "Children's Day",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "こどもの日（ひ）"
+ },
+ {
+  "id": "414f4734e9",
+  "ko": "현충일",
+  "en": "Memorial Day",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "顕忠日（けんちゅうじつ）、戦没者追悼（せんぼつしゃついとう）の日（ひ）"
+ },
+ {
+  "id": "26640f06b4",
+  "ko": "광복절",
+  "en": "National Liberation Day",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "光復節（こうふくせつ）"
+ },
+ {
+  "id": "b6dc400c7c",
+  "ko": "추석",
+  "en": "Chuseok, Korean Thanksgiving",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "秋夕（チュソク）"
+ },
+ {
+  "id": "3ca3a8bcd3",
+  "ko": "개천절",
+  "en": "National Foundation Day",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "開天節（かいてんせつ）"
+ },
+ {
+  "id": "5f68488a97",
+  "ko": "한글날",
+  "en": "Hangeul Day",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "ハングルの日（ひ）"
+ },
+ {
+  "id": "9143e8421e",
+  "ko": "크리스마스",
+  "en": "Christmas",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "クリスマス"
+ },
+ {
+  "id": "bce047d3c5",
+  "ko": "음력",
+  "en": "Lunar calendar",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "旧暦（きゅうれき）"
+ },
+ {
+  "id": "aea0b098ce",
+  "ko": "신고",
+  "en": "A report (to the authorities)",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "通報（つうほう）"
+ },
+ {
+  "id": "527717f6bc",
+  "ko": "범죄",
+  "en": "Crime",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "犯罪（はんざい）"
+ },
+ {
+  "id": "13a65afe87",
+  "ko": "분실",
+  "en": "Loss (of an item)",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "紛失（ふんしつ）"
+ },
+ {
+  "id": "8d9b078036",
+  "ko": "화재",
+  "en": "Fire",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "火災（かさい）"
+ },
+ {
+  "id": "e58178aa63",
+  "ko": "구조",
+  "en": "Rescue",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "救助（きゅうじょ）"
+ },
+ {
+  "id": "d5ae74e09c",
+  "ko": "구급",
+  "en": "First aid, emergency medical service",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "救急（きゅうきゅう）"
+ },
+ {
+  "id": "2e9db2e4f7",
+  "ko": "재난",
+  "en": "Disaster",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "災害（さいがい）"
+ },
+ {
+  "id": "c968709398",
+  "ko": "응급 의료",
+  "en": "Emergency medical care",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "救急医療（きゅうきゅういりょう）"
+ },
+ {
+  "id": "597008b136",
+  "ko": "병원",
+  "en": "Hospital",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "病院（びょういん）"
+ },
+ {
+  "id": "acffc3cdf3",
+  "ko": "외국인",
+  "en": "Foreigner",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "外国人（がいこくじん）"
+ },
+ {
+  "id": "4cd2b133a1",
+  "ko": "안내 센터",
+  "en": "Information center",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "案内（あんない）センター"
+ },
+ {
+  "id": "75817b7aa6",
+  "ko": "상담",
+  "en": "Consultation",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "相談（そうだん）"
+ },
+ {
+  "id": "0633041a2e",
+  "ko": "웹사이트",
+  "en": "Websites (book's own English)",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "ウェブサイト"
+ },
+ {
+  "id": "ba508a3594",
+  "ko": "앱",
+  "en": "Mobile Apps (book's own English)",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "アプリ"
+ },
+ {
+  "id": "1c4e55fecb",
+  "ko": "출입국 심사",
+  "en": "Immigration inspection",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "出入国審査（しゅつにゅうこくしんさ）"
+ },
+ {
+  "id": "98b9955157",
+  "ko": "방문 예약",
+  "en": "Visit reservation, appointment",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "訪問予約（ほうもんよやく）"
+ },
+ {
+  "id": "1b4744d8c0",
+  "ko": "여행 정보",
+  "en": "Travel information",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "旅行情報（りょこうじょうほう）"
+ },
+ {
+  "id": "63b4ffd86b",
+  "ko": "한국어 학습",
+  "en": "Korean language study",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "韓国語学習（かんこくごがくしゅう）"
+ },
+ {
+  "id": "1ca1d19176",
+  "ko": "한국어 능력 시험",
+  "en": "Test of Proficiency in Korean (TOPIK)",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "韓国語能力試験（かんこくごのうりょくしけん）"
+ },
+ {
+  "id": "b597d15315",
+  "ko": "접수",
+  "en": "Application, registration",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "受付（うけつけ）"
+ },
+ {
+  "id": "dfc9dffae7",
+  "ko": "사전",
+  "en": "Dictionary",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "辞書（じしょ）"
+ },
+ {
+  "id": "6e17ee9688",
+  "ko": "지하철",
+  "en": "Subway",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "地下鉄（ちかてつ）"
+ },
+ {
+  "id": "4b9c8972d8",
+  "ko": "택시",
+  "en": "Taxi",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "タクシー"
+ },
+ {
+  "id": "014a31c4b0",
+  "ko": "고속버스",
+  "en": "Express bus",
+  "tags": [
+   "Book1A::Culture1"
+  ],
+  "ja": "高速（こうそく）バス"
+ },
+ {
+  "id": "e0160778c0",
+  "ko": "서울",
+  "en": "Seoul (book's own English)",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "ソウル"
+ },
+ {
+  "id": "61e2131cda",
+  "ko": "경복궁",
+  "en": "Gyeongbokgung Palace (book prints '#Gyeongbokgung palace')",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "景福宮（キョンボックン）"
+ },
+ {
+  "id": "8ae94e920e",
+  "ko": "북촌한옥마을",
+  "en": "Bukchon Hanok Village",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "北村韓屋村（プクチョンハノクマウル）"
+ },
+ {
+  "id": "aadfcb0557",
+  "ko": "남산서울타워",
+  "en": "Namsan Seoul Tower (book's own English)",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "南山（ナムサン）ソウルタワー"
+ },
+ {
+  "id": "b7058e4d15",
+  "ko": "명동",
+  "en": "Myeongdong",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "明洞（ミョンドン）"
+ },
+ {
+  "id": "37794c871b",
+  "ko": "월드컵공원",
+  "en": "World Cup Park (book's own English)",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "ワールドカップ公園（こうえん）"
+ },
+ {
+  "id": "54c3a08bda",
+  "ko": "하늘공원",
+  "en": "Haneul Park (Sky Park)",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "ハヌル公園（こうえん）（空（そら）の公園（こうえん））"
+ },
+ {
+  "id": "b03b966abc",
+  "ko": "고척스카이돔",
+  "en": "Gocheok Sky Dome (book's own English)",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "高尺（コチョク）スカイドーム"
+ },
+ {
+  "id": "c1afff3c51",
+  "ko": "야구장",
+  "en": "Baseball stadium",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "野球場（やきゅうじょう）"
+ },
+ {
+  "id": "951c33286c",
+  "ko": "동대문디자인플라자",
+  "en": "Dongdaemun Design Plaza (DDP)",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "東大門（トンデムン）デザインプラザ"
+ },
+ {
+  "id": "031d743dca",
+  "ko": "서울패션위크",
+  "en": "Seoul Fashion Week",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "ソウルファッションウィーク"
+ },
+ {
+  "id": "2d136a2b8c",
+  "ko": "서울숲",
+  "en": "Seoul Forest (book's own English)",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "ソウルの森（もり）"
+ },
+ {
+  "id": "1f2e256803",
+  "ko": "카페",
+  "en": "Cafe",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "カフェ"
+ },
+ {
+  "id": "36af7104b6",
+  "ko": "팝업스토어",
+  "en": "Pop-up store",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "ポップアップストア"
+ },
+ {
+  "id": "58cad05974",
+  "ko": "롯데월드",
+  "en": "Lotte World (book's own English)",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "ロッテワールド"
+ },
+ {
+  "id": "b4fdf854c9",
+  "ko": "석촌호수",
+  "en": "Seokchon Lake",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "石村湖（ソクチョンホス）"
+ },
+ {
+  "id": "4baff6951a",
+  "ko": "별마당도서관",
+  "en": "Byeolmadang Library (book's own English)",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "ピョルマダン図書館（としょかん）"
+ },
+ {
+  "id": "c7f18fd829",
+  "ko": "코엑스",
+  "en": "COEX",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "コエックス（COEX）"
+ },
+ {
+  "id": "34b92091e5",
+  "ko": "수도",
+  "en": "Capital city",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "首都（しゅと）"
+ },
+ {
+  "id": "0c5a6a7ef6",
+  "ko": "대한민국",
+  "en": "The Republic of Korea",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "大韓民国（だいかんみんこく）"
+ },
+ {
+  "id": "184dcdc901",
+  "ko": "조선 시대",
+  "en": "The Joseon period",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "朝鮮時代（ちょうせんじだい）"
+ },
+ {
+  "id": "cd8751d0e0",
+  "ko": "한반도",
+  "en": "The Korean Peninsula",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "朝鮮半島（ちょうせんはんとう）"
+ },
+ {
+  "id": "fa230153d2",
+  "ko": "구",
+  "en": "Gu, district (administrative division of a city)",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "区（く）"
+ },
+ {
+  "id": "ab3b6bb1f5",
+  "ko": "역사",
+  "en": "History",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "歴史（れきし）"
+ },
+ {
+  "id": "d031339339",
+  "ko": "여러분의 나라는 수도가 어디예요?",
+  "en": "What is the capital of your country?",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "皆（みな）さんの国（くに）の首都（しゅと）はどこですか。"
+ },
+ {
+  "id": "4fbf4db364",
+  "ko": "대한민국의 수도는 서울이에요.",
+  "en": "The capital of the Republic of Korea is Seoul.",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "大韓民国（だいかんみんこく）の首都（しゅと）はソウルです。"
+ },
+ {
+  "id": "7ed274d80e",
+  "ko": "서울은 조선 시대(1392~1910) 때부터 수도였는데 600년 넘게 수도의 자리를 지키고 있어요.",
+  "en": "Seoul has been the capital since the Joseon period (1392-1910), holding that position for more than 600 years.",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "ソウルは朝鮮時代（ちょうせんじだい）（1392〜1910）から首都（しゅと）で、600年（ねん）以上（いじょう）その座（ざ）を守（まも）っています。"
+ },
+ {
+  "id": "9b6c60b477",
+  "ko": "서울은 한반도 중앙에 위치해 있어요.",
+  "en": "Seoul is located in the center of the Korean Peninsula.",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "ソウルは朝鮮半島（ちょうせんはんとう）の中央（ちゅうおう）に位置（いち）しています。"
+ },
+ {
+  "id": "20cb39bbcd",
+  "ko": "그리고 25개의 구로 이루어져 있어요.",
+  "en": "And it is made up of 25 districts.",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "そして25（にじゅうご）の区（く）から成（な）り立（た）っています。"
+ },
+ {
+  "id": "ce76a7f7bd",
+  "ko": "약 940만 명의 사람들이 살아요.",
+  "en": "About 9.4 million people live there.",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "約（やく）940万人（まんにん）の人（ひと）が住（す）んでいます。"
+ },
+ {
+  "id": "854dde11a3",
+  "ko": "서울은 오랜 역사를 지닌 옛 모습과 최신 트렌드가 함께 공존하는 곳이에요.",
+  "en": "Seoul is a place where old scenes with a long history and the newest trends coexist together.",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "ソウルは長（なが）い歴史（れきし）を持（も）つ昔（むかし）の姿（すがた）と最新（さいしん）のトレンドが共存（きょうぞん）する場所（ばしょ）です。"
+ },
+ {
+  "id": "a9550d5f1c",
+  "ko": "서울에서 어디에 가고 싶어요?",
+  "en": "Where do you want to go in Seoul?",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "ソウルでどこに行（い）きたいですか。"
+ },
+ {
+  "id": "97033eebae",
+  "ko": "거기가 어디에 있어요?",
+  "en": "Where is that place?",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "そこはどこにありますか。"
+ },
+ {
+  "id": "b66429a908",
+  "ko": "찾아보세요.",
+  "en": "Try to find it.",
+  "tags": [
+   "Book1A::Culture2"
+  ],
+  "ja": "探（さが）してみてください。"
+ },
+ {
+  "id": "b89bcc6185",
+  "ko": "한국의 관광지",
+  "en": "Tourist Attractions (book's own English); literally 'Korea's tourist destinations'",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "韓国（かんこく）の観光地（かんこうち）"
+ },
+ {
+  "id": "cf4007a2d2",
+  "ko": "관광지",
+  "en": "Tourist destination",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "観光地（かんこうち）"
+ },
+ {
+  "id": "e3ad582756",
+  "ko": "장소",
+  "en": "Place, location",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "場所（ばしょ）"
+ },
+ {
+  "id": "36a5ba10c7",
+  "ko": "음식",
+  "en": "Food",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "食（た）べ物（もの）"
+ },
+ {
+  "id": "a45af672ff",
+  "ko": "가는 방법",
+  "en": "How to get there",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "行（い）き方（かた）"
+ },
+ {
+  "id": "6c5a46187c",
+  "ko": "파주",
+  "en": "Paju",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "坡州（パジュ）"
+ },
+ {
+  "id": "b9ab9d5d74",
+  "ko": "임진각",
+  "en": "Imjingak",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "臨津閣（イムジンガク）"
+ },
+ {
+  "id": "21fa49dace",
+  "ko": "두부 보쌈",
+  "en": "Tofu bossam (boiled pork with tofu)",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "豆腐（とうふ）ポッサム"
+ },
+ {
+  "id": "3722a3a142",
+  "ko": "두부 전골",
+  "en": "Tofu hot pot",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "豆腐（とうふ）チゲ鍋（なべ）"
+ },
+ {
+  "id": "9538587a29",
+  "ko": "경의중앙선",
+  "en": "The Gyeongui-Jungang Line",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "京義中央線（キョンイチュンアンせん）"
+ },
+ {
+  "id": "71cbc060eb",
+  "ko": "마을버스",
+  "en": "Village bus, local community bus",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "村（むら）バス（地域（ちいき）の小型（こがた）バス）"
+ },
+ {
+  "id": "7f79d82934",
+  "ko": "전주",
+  "en": "Jeonju",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "全州（チョンジュ）"
+ },
+ {
+  "id": "0f2fa174f4",
+  "ko": "한옥 마을",
+  "en": "Hanok village (traditional house village)",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "韓屋村（ハノクマウル）"
+ },
+ {
+  "id": "01c702bd91",
+  "ko": "경기전",
+  "en": "Gyeonggijeon Shrine",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "慶基殿（キョンギジョン）"
+ },
+ {
+  "id": "2033d9c52e",
+  "ko": "비빔밥",
+  "en": "Bibimbap",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "ビビンバ"
+ },
+ {
+  "id": "cbbf575ceb",
+  "ko": "콩나물국밥",
+  "en": "Bean sprout soup with rice",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "豆（まめ）もやしのクッパ"
+ },
+ {
+  "id": "43440f2a07",
+  "ko": "제주도",
+  "en": "Jeju Island",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "済州島（チェジュド）"
+ },
+ {
+  "id": "46396cd14d",
+  "ko": "한라산",
+  "en": "Hallasan (Mt. Halla)",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "漢拏山（ハルラサン）"
+ },
+ {
+  "id": "22cbac8e24",
+  "ko": "협재 해수욕장",
+  "en": "Hyeopjae Beach",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "挟才（ヒョプチェ）海水浴場（かいすいよくじょう）"
+ },
+ {
+  "id": "d2455731cf",
+  "ko": "흑돼지구이",
+  "en": "Grilled black pork",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "黒豚（くろぶた）の焼（や）き肉（にく）"
+ },
+ {
+  "id": "ceadb663fe",
+  "ko": "고기국수",
+  "en": "Gogi-guksu (pork noodle soup)",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "肉（にく）ククス（豚肉（ぶたにく）の麺料理（めんりょうり））"
+ },
+ {
+  "id": "7bca746596",
+  "ko": "비행기",
+  "en": "Airplane",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "飛行機（ひこうき）"
+ },
+ {
+  "id": "6a9d48aee7",
+  "ko": "서해",
+  "en": "The West Sea (Yellow Sea)",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "西海（ソヘ）、黄海（こうかい）"
+ },
+ {
+  "id": "ebd40ba60e",
+  "ko": "강릉",
+  "en": "Gangneung",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "江陵（カンヌン）"
+ },
+ {
+  "id": "cdf072c157",
+  "ko": "경포대",
+  "en": "Gyeongpodae",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "鏡浦台（キョンポデ）"
+ },
+ {
+  "id": "dc085c7218",
+  "ko": "안목 해변",
+  "en": "Anmok Beach",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "安木（アンモク）海岸（かいがん）"
+ },
+ {
+  "id": "9a23ba2189",
+  "ko": "순두부",
+  "en": "Sundubu (soft tofu)",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "スンドゥブ（おぼろ豆腐（どうふ））"
+ },
+ {
+  "id": "67f08cae3e",
+  "ko": "막국수",
+  "en": "Makguksu (buckwheat noodles)",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "マッククス（そば粉（こ）の冷（ひ）やし麺（めん））"
+ },
+ {
+  "id": "cb7c31b0f6",
+  "ko": "단양",
+  "en": "Danyang",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "丹陽（タニャン）"
+ },
+ {
+  "id": "3c8bbadd88",
+  "ko": "고수 동굴",
+  "en": "Gosu Cave",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "古藪洞窟（コスどうくつ）"
+ },
+ {
+  "id": "729137a862",
+  "ko": "소백산",
+  "en": "Sobaeksan (Mt. Sobaek)",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "小白山（ソベクサン）"
+ },
+ {
+  "id": "5422887f43",
+  "ko": "떡갈비",
+  "en": "Tteok-galbi (grilled short rib patties)",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "トッカルビ（ハンバーグ状（じょう）のカルビ）"
+ },
+ {
+  "id": "bcb343f4d6",
+  "ko": "마늘 만두",
+  "en": "Garlic dumplings",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "にんにく餃子（ぎょうざ）"
+ },
+ {
+  "id": "91063ce76a",
+  "ko": "경주",
+  "en": "Gyeongju",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "慶州（キョンジュ）"
+ },
+ {
+  "id": "6133f394c8",
+  "ko": "불국사",
+  "en": "Bulguksa Temple",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "仏国寺（プルグクサ）"
+ },
+ {
+  "id": "855b94de81",
+  "ko": "석굴암",
+  "en": "Seokguram Grotto",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "石窟庵（ソックラム）"
+ },
+ {
+  "id": "6b8990a1bd",
+  "ko": "쌈밥",
+  "en": "Ssambap (rice wrapped in leaves)",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "サムパプ（葉（は）で包（つつ）むご飯（はん））"
+ },
+ {
+  "id": "7fa2d469cd",
+  "ko": "황남빵",
+  "en": "Hwangnam bread (red bean pastry)",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "皇南（ファンナム）パン（あん入（い）り焼（や）き菓子（がし））"
+ },
+ {
+  "id": "039b79bdd2",
+  "ko": "부산",
+  "en": "Busan",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "釜山（プサン）"
+ },
+ {
+  "id": "424a5c4f12",
+  "ko": "해운대",
+  "en": "Haeundae",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "海雲台（ヘウンデ）"
+ },
+ {
+  "id": "eed83e6373",
+  "ko": "감천문화마을",
+  "en": "Gamcheon Culture Village",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "甘川文化村（カムチョンムナマウル）"
+ },
+ {
+  "id": "4d7d37497d",
+  "ko": "돼지국밥",
+  "en": "Dwaeji-gukbap (pork soup with rice)",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "テジクッパ（豚肉（ぶたにく）のクッパ）"
+ },
+ {
+  "id": "634d750a9f",
+  "ko": "밀면",
+  "en": "Milmyeon (cold wheat noodles)",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "ミルミョン（小麦（こむぎ）の冷麺（れいめん））"
+ },
+ {
+  "id": "df1cac38ad",
+  "ko": "동해",
+  "en": "The East Sea",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "東海（トンヘ）、日本海（にほんかい）"
+ },
+ {
+  "id": "ae82451364",
+  "ko": "한국은 다양하고 매력적인 관광지로 가득한 나라입니다.",
+  "en": "Korea is a country full of diverse and attractive tourist destinations.",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "韓国（かんこく）は多様（たよう）で魅力的（みりょくてき）な観光地（かんこうち）に満（み）ちた国（くに）です。"
+ },
+ {
+  "id": "5e2673fb72",
+  "ko": "다음은 한국 사람들도 외국 사람들도 자주 찾는 한국의 관광 명소예요.",
+  "en": "The following are famous tourist spots in Korea that both Koreans and foreigners often visit.",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "次（つぎ）は韓国人（かんこくじん）も外国人（がいこくじん）もよく訪（おとず）れる韓国（かんこく）の観光名所（かんこうめいしょ）です。"
+ },
+ {
+  "id": "2824ac2849",
+  "ko": "지역마다 다른 분위기의 관광지들을 볼 수 있어요.",
+  "en": "You can see tourist destinations with a different atmosphere in each region.",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "地域（ちいき）ごとに違（ちが）う雰囲気（ふんいき）の観光地（かんこうち）を見（み）ることができます。"
+ },
+ {
+  "id": "1e1d34e957",
+  "ko": "여러분은 가 보고 싶은 곳이 있어요?",
+  "en": "Is there a place you would like to visit?",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "皆（みな）さんは行（い）ってみたい所（ところ）がありますか。"
+ },
+ {
+  "id": "2115809d91",
+  "ko": "어디예요?",
+  "en": "Where is it?",
+  "tags": [
+   "Book1A::Culture3"
+  ],
+  "ja": "どこですか。"
+ },
+ {
+  "id": "38244bef42",
+  "ko": "대중교통",
+  "en": "Public Transport (book's own English)",
+  "tags": [
+   "Book1A::Culture4"
+  ],
+  "ja": "公共交通機関（こうきょうこうつうきかん）"
+ },
+ {
+  "id": "a172e6d68e",
+  "ko": "타는 곳",
+  "en": "Boarding area, platform (station signage)",
+  "tags": [
+   "Book1A::Culture4"
+  ],
+  "ja": "乗（の）り場（ば）"
+ },
+ {
+  "id": "c6eea0a642",
+  "ko": "임산부 배려석",
+  "en": "A seat for pregnant women (book's own English)",
+  "tags": [
+   "Book1A::Culture4"
+  ],
+  "ja": "妊産婦優先席（にんさんぷゆうせんせき）"
+ },
+ {
+  "id": "2c5c148391",
+  "ko": "교통약자 배려석",
+  "en": "Transportation weak seat (book's own English; i.e. priority seat for those with reduced mobility)",
+  "tags": [
+   "Book1A::Culture4"
+  ],
+  "ja": "交通弱者優先席（こうつうじゃくしゃゆうせんせき）"
+ },
+ {
+  "id": "25de4dcc45",
+  "ko": "버스",
+  "en": "Bus (book's own English)",
+  "tags": [
+   "Book1A::Culture4"
+  ],
+  "ja": "バス"
+ },
+ {
+  "id": "7439bee4ae",
+  "ko": "지하철",
+  "en": "Subway (book's own English)",
+  "tags": [
+   "Book1A::Culture4"
+  ],
+  "ja": "地下鉄（ちかてつ）"
+ },
+ {
+  "id": "ed8b87e3c5",
+  "ko": "버스 정류장",
+  "en": "Bus stop",
+  "tags": [
+   "Book1A::Culture4"
+  ],
+  "ja": "バス停（てい）"
+ },
+ {
+  "id": "dc12f4fee1",
+  "ko": "지하철역",
+  "en": "Subway station",
+  "tags": [
+   "Book1A::Culture4"
+  ],
+  "ja": "地下鉄（ちかてつ）の駅（えき）"
+ },
+ {
+  "id": "db9af6e704",
+  "ko": "교통카드",
+  "en": "Transit card",
+  "tags": [
+   "Book1A::Culture4"
+  ],
+  "ja": "交通（こうつう）カード"
+ },
+ {
+  "id": "8736a81dc7",
+  "ko": "목적지",
+  "en": "Destination",
+  "tags": [
+   "Book1A::Culture4"
+  ],
+  "ja": "目的地（もくてきち）"
+ },
+ {
+  "id": "345748ed33",
+  "ko": "승하차",
+  "en": "Boarding and alighting",
+  "tags": [
+   "Book1A::Culture4"
+  ],
+  "ja": "乗降（じょうこう）"
+ },
+ {
+  "id": "2a861e7cd7",
+  "ko": "환승",
+  "en": "Transfer (between lines/vehicles)",
+  "tags": [
+   "Book1A::Culture4"
+  ],
+  "ja": "乗（の）り換（か）え"
+ },
+ {
+  "id": "82dc599fbd",
+  "ko": "할인",
+  "en": "Discount",
+  "tags": [
+   "Book1A::Culture4"
+  ],
+  "ja": "割引（わりびき）"
+ },
+ {
+  "id": "a13419a3ad",
+  "ko": "한국은 대중교통이 아주 편리해요.",
+  "en": "Public transport in Korea is very convenient.",
+  "tags": [
+   "Book1A::Culture4"
+  ],
+  "ja": "韓国（かんこく）は公共交通機関（こうきょうこうつうきかん）がとても便利（べんり）です。"
+ },
+ {
+  "id": "9c94bbf011",
+  "ko": "버스와 지하철을 이용해서 목적지까지 편하게 갈 수 있어요.",
+  "en": "You can get to your destination comfortably by using the bus and the subway.",
+  "tags": [
+   "Book1A::Culture4"
+  ],
+  "ja": "バスと地下鉄（ちかてつ）を利用（りよう）して目的地（もくてきち）まで楽（らく）に行（い）くことができます。"
+ },
+ {
+  "id": "46ef3d0364",
+  "ko": "그리고 버스 정류장이나 지하철역에서 승하차와 관련된 정보를 쉽게 얻을 수 있어요.",
+  "en": "And at bus stops or subway stations you can easily get information related to boarding and getting off.",
+  "tags": [
+   "Book1A::Culture4"
+  ],
+  "ja": "そしてバス停（てい）や地下鉄（ちかてつ）の駅（えき）で乗降（じょうこう）に関（かん）する情報（じょうほう）を簡単（かんたん）に得（え）ることができます。"
+ },
+ {
+  "id": "60ca97e4f4",
+  "ko": "대부분의 지역에서 교통카드를 사용할 수 있고, 환승할 때 할인을 받을 수 있어요.",
+  "en": "You can use a transit card in most regions, and you can get a discount when you transfer.",
+  "tags": [
+   "Book1A::Culture4"
+  ],
+  "ja": "ほとんどの地域（ちいき）で交通（こうつう）カードを使（つか）うことができ、乗（の）り換（か）えるときに割引（わりびき）を受（う）けることができます。"
+ },
+ {
+  "id": "20067aef3f",
+  "ko": "일본",
+  "en": "Japan",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "日本（にほん）"
+ },
+ {
+  "id": "754f9871e4",
+  "ko": "태국",
+  "en": "Thailand",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "タイ"
+ },
+ {
+  "id": "b3b491823c",
+  "ko": "미국",
+  "en": "The USA",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "アメリカ"
+ },
+ {
+  "id": "a1c536cefe",
+  "ko": "브라질",
+  "en": "Brazil",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "ブラジル"
+ },
+ {
+  "id": "2b21a098e6",
+  "ko": "도쿄",
+  "en": "Tokyo",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "東京（とうきょう）"
+ },
+ {
+  "id": "83d5acf037",
+  "ko": "일본 음식",
+  "en": "Japanese food",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "日本（にほん）の食（た）べ物（もの）"
+ },
+ {
+  "id": "bed90d6257",
+  "ko": "계획 말하기",
+  "en": "Talking about plans",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "計画（けいかく）について話（はな）す"
+ },
+ {
+  "id": "51ef1cd481",
+  "ko": "박물관에 갈 거예요.",
+  "en": "I'm going to go to the museum.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "博物館（はくぶつかん）に行（い）くつもりです。"
+ },
+ {
+  "id": "47658a901a",
+  "ko": "미나 씨는 방학 때 유럽에 갈 거예요.",
+  "en": "Mina is going to go to Europe during the school vacation.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "ミナさんは休（やす）みのときにヨーロッパに行（い）くつもりです。"
+ },
+ {
+  "id": "22eb3c9438",
+  "ko": "프랑스하고 이탈리아에 갈 거예요.",
+  "en": "She's going to go to France and Italy.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "フランスとイタリアに行（い）くつもりです。"
+ },
+ {
+  "id": "f045ca59e8",
+  "ko": "파리에서 박물관에 갈 거예요.",
+  "en": "In Paris she's going to go to a museum.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "パリで博物館（はくぶつかん）に行（い）くつもりです。"
+ },
+ {
+  "id": "549272799e",
+  "ko": "그리고 쇼핑도 할 거예요.",
+  "en": "And she's also going to go shopping.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "そしてショッピングもするつもりです。"
+ },
+ {
+  "id": "3d4eb5254c",
+  "ko": "이탈리아에서는 로마나 베네치아에 갈 거예요.",
+  "en": "In Italy she's going to go to Rome or Venice.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "イタリアではローマかベネチアに行（い）くつもりです。"
+ },
+ {
+  "id": "0dfb245526",
+  "ko": "거기에서 사진을 많이 찍을 거예요.",
+  "en": "She's going to take a lot of photographs there.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "そこで写真（しゃしん）をたくさん撮（と）るつもりです。"
+ },
+ {
+  "id": "cdcf70d9d6",
+  "ko": "어느 나라에 여행 가고 싶어요?",
+  "en": "What country do you want to travel to?",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "どの国（くに）に旅行（りょこう）に行（い）きたいですか？"
+ },
+ {
+  "id": "851efd8768",
+  "ko": "거기에서 뭐 할 거예요?",
+  "en": "What are you going to do there?",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "そこで何（なに）をするつもりですか？"
+ },
+ {
+  "id": "5ddf8e710f",
+  "ko": "일본에 가고 싶어요.",
+  "en": "I want to go to Japan.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "日本（にほん）に行（い）きたいです。"
+ },
+ {
+  "id": "32efbfa9ae",
+  "ko": "도쿄에 갈 거예요. 그리고 일본 음식도 먹을 거예요.",
+  "en": "I'm going to go to Tokyo. And I'm also going to eat Japanese food.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "東京（とうきょう）に行（い）くつもりです。そして日本（にほん）の食（た）べ物（もの）も食（た）べるつもりです。"
+ },
+ {
+  "id": "619dee1849",
+  "ko": "어디에, 뭐 하러 가는지 말할 수 있어요.",
+  "en": "I can say where I am going and what I am going to do there.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "どこに、何（なに）をしに行（い）くのか言（い）うことができます。"
+ },
+ {
+  "id": "3f3495813b",
+  "ko": "앞으로 할 일을 말할 수 있어요.",
+  "en": "I can say what I will do in the future.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "これからすることを言（い）うことができます。"
+ },
+ {
+  "id": "a71ad7cedf",
+  "ko": "명이에요/예요",
+  "en": "The copula 'to be (am/is/are)', attached directly to a noun with no space. Use -이에요 after a noun ending in a consonant and -예요 after a noun ending in a vowel.",
+  "tags": [
+   "Book1A::PrepUnit1::Grammar"
+  ],
+  "ja": "「～です」にあたる指定詞（していし）で、名詞（めいし）に間（あいだ）を空（あ）けずに直接（ちょくせつ）付（つ）きます。子音（しいん）で終（お）わる名詞（めいし）には-이에요、母音（ぼいん）で終（お）わる名詞（めいし）には-예요を使（つか）います。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "이름이 뭐예요?",
+    "en": "What is your name?",
+    "ja": "お名前（なまえ）は何（なん）ですか。",
+    "audio": "16d73b965b"
+   },
+   {
+    "ko": "수잔이에요.",
+    "en": "I'm Susan.",
+    "ja": "スーザンです。",
+    "audio": "fe6149d8ee"
+   },
+   {
+    "ko": "저는 앤디예요.",
+    "en": "I'm Andy.",
+    "ja": "私（わたし）はアンディです。",
+    "audio": "f554de65df"
+   },
+   {
+    "ko": "미국 사람이에요.",
+    "en": "I'm from the United States.",
+    "ja": "アメリカ人（じん）です。",
+    "audio": "1f00c6c265"
+   }
+  ]
+ },
+ {
+  "id": "9adb2e374e",
+  "ko": "누구",
+  "en": "누구 is the interrogative pronoun 'who', used to ask about a person. With the copula it becomes 누구예요?",
+  "tags": [
+   "Book1A::PrepUnit1::Grammar"
+  ],
+  "ja": "누구は「誰（だれ）」を意味（いみ）する疑問詞（ぎもんし）で、人（ひと）について尋（たず）ねるときに使（つか）います。指定詞（していし）と結（むす）びついて누구예요?という形（かたち）になります。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "이분이 누구예요?",
+    "en": "Who is this?",
+    "ja": "この方（かた）はどなたですか。",
+    "audio": "b98bcfdfdd"
+   },
+   {
+    "ko": "앤디 씨예요.",
+    "en": "It's Andy.",
+    "ja": "アンディさんです。",
+    "audio": "e04d92ea92"
+   },
+   {
+    "ko": "가브리엘 씨예요.",
+    "en": "It's Gabriel.",
+    "ja": "ガブリエルさんです。",
+    "audio": "a5f0aa9071"
+   }
+  ]
+ },
+ {
+  "id": "32be0c3678",
+  "ko": "이게/저게",
+  "en": "이게 ('this thing') points to an object close to the speaker, while 저게 ('that thing over there') points to an object far from both speaker and listener. Both are used only as the subject of a sentence.",
+  "tags": [
+   "Book1A::PrepUnit2::Grammar"
+  ],
+  "ja": "이게は話（はな）し手（て）に近（ちか）い物（もの）を、저게は話（はな）し手（て）と聞（き）き手（て）の両方（りょうほう）から遠（とお）い物（もの）を指（さ）します。どちらも文（ぶん）の主語（しゅご）としてのみ使（つか）われます。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "이게 의자예요.",
+    "en": "This is a chair.",
+    "ja": "これは椅子（いす）です。",
+    "audio": "247ec3b768"
+   },
+   {
+    "ko": "저게 가방이에요.",
+    "en": "That is a bag.",
+    "ja": "あれはかばんです。",
+    "audio": "b4ecadceef"
+   }
+  ]
+ },
+ {
+  "id": "b663857309",
+  "ko": "뭐예요?",
+  "en": "The interrogative pronoun 뭐 means 'what', and the ending -예요 attaches directly to it. When answering 이게/저게 뭐예요?, the subject 이게/저게 is usually omitted.",
+  "tags": [
+   "Book1A::PrepUnit2::Grammar"
+  ],
+  "ja": "뭐は「何（なに）」を意味（いみ）する疑問詞（ぎもんし）で、語尾（ごび）-예요が直接（ちょくせつ）付（つ）きます。이게/저게 뭐예요?に答（こた）えるときは、主語（しゅご）の이게/저게は普通（ふつう）省略（しょうりゃく）されます。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "이게 뭐예요?",
+    "en": "What's this?",
+    "ja": "これは何（なん）ですか。",
+    "audio": "ca3c7d681d"
+   },
+   {
+    "ko": "연필이에요.",
+    "en": "It's a pencil.",
+    "ja": "鉛筆（えんぴつ）です。",
+    "audio": "ccda594da7"
+   },
+   {
+    "ko": "그럼 저게 뭐예요?",
+    "en": "Then what's that?",
+    "ja": "それでは、あれは何（なん）ですか。",
+    "audio": "f82232f76f"
+   },
+   {
+    "ko": "시계예요.",
+    "en": "It's a clock.",
+    "ja": "時計（とけい）です。",
+    "audio": "713c4ec79f"
+   }
+  ]
+ },
+ {
+  "id": "9b0c9b502e",
+  "ko": "누구 거예요?",
+  "en": "Used to ask who an object belongs to: 누구 ('who') + 거 ('thing', from 것) + -예요. The answer is 제 거예요 ('it's mine') or a name plus 씨 거예요.",
+  "tags": [
+   "Book1A::PrepUnit2::Grammar"
+  ],
+  "ja": "物（もの）の持（も）ち主（ぬし）を尋（たず）ねる言（い）い方（かた）で、누구（誰（だれ））＋거（もの、것の縮（ちぢ）まった形（かたち））＋-예요から成（な）ります。答（こた）えは제 거예요（私（わたし）のです）や、名前（なまえ）＋씨 거예요を使（つか）います。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "우산 누구 거예요?",
+    "en": "Whose umbrella is this?",
+    "ja": "傘（かさ）は誰（だれ）のですか。",
+    "audio": "3de2f9a774"
+   },
+   {
+    "ko": "제 거예요.",
+    "en": "It's mine.",
+    "ja": "私（わたし）のです。",
+    "audio": "950bfcd006"
+   },
+   {
+    "ko": "사라 씨 거예요.",
+    "en": "It's Sarah's.",
+    "ja": "サラさんのです。",
+    "audio": "3dcdd5c854"
+   }
+  ]
+ },
+ {
+  "id": "31393453a0",
+  "ko": "명 있어요/없어요",
+  "en": "있어요 means 'to have / there is' and 없어요 means 'to not have / there isn't'; both attach directly after a noun with no particle at this level. Statements and questions share the same form and are distinguished by intonation.",
+  "tags": [
+   "Book1A::PrepUnit3::Grammar"
+  ],
+  "ja": "있어요は「ある・持（も）っている」、없어요は「ない・持（も）っていない」という意味（いみ）で、この段階（だんかい）では助詞（じょし）なしで名詞（めいし）の後（あと）に直接（ちょくせつ）付（つ）きます。平叙文（へいじょぶん）と疑問文（ぎもんぶん）は同（おな）じ形（かたち）で、イントネーションで区別（くべつ）します。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "우산 있어요?",
+    "en": "Do you have an umbrella?",
+    "ja": "傘（かさ）はありますか。",
+    "audio": "f6a9118d3b"
+   },
+   {
+    "ko": "네, 있어요.",
+    "en": "Yes, I have one.",
+    "ja": "はい、あります。",
+    "audio": "3920f25e99"
+   },
+   {
+    "ko": "책 있어요.",
+    "en": "I have a book.",
+    "ja": "本（ほん）があります。",
+    "audio": "de2c4caa54"
+   },
+   {
+    "ko": "안경 없어요.",
+    "en": "I don't have glasses.",
+    "ja": "眼鏡（めがね）はありません。",
+    "audio": "b8afe163cc"
+   }
+  ]
+ },
+ {
+  "id": "53fe4898cc",
+  "ko": "숫자① (Sino-Korean numbers)",
+  "en": "Korean has two number systems; this unit teaches the Sino-Korean set (일, 이, 삼 … 십, 이십 … 백), used for prices, phone numbers, bus numbers and dates. Zero is normally 영, but 공 is used in telephone numbers.",
+  "tags": [
+   "Book1A::PrepUnit3::Grammar"
+  ],
+  "ja": "韓国語（かんこくご）には二（ふた）つの数（かず）の体系（たいけい）があり、この課（か）では漢数詞（かんすうし）（일, 이, 삼…십, 이십…백）を学（まな）びます。値段（ねだん）・電話番号（でんわばんごう）・バスの番号（ばんごう）・日付（ひづけ）に使（つか）い、ゼロは普通（ふつう）영ですが、電話番号（でんわばんごう）では공を使（つか）います。",
+  "type": "grammar",
+  "examples": []
+ },
+ {
+  "id": "7e1dcd4bee",
+  "ko": "몇 번",
+  "en": "몇 usually means 'how many', but with 번 it asks 'what number' — a phone number, bus number or room number. Answers to 몇 번이에요? always use Sino-Korean numbers, and a dash in a phone number is read 에.",
+  "tags": [
+   "Book1A::PrepUnit3::Grammar"
+  ],
+  "ja": "몇は普通（ふつう）「いくつ」の意味（いみ）ですが、번と組（く）み合（あ）わさると電話番号（でんわばんごう）・バスの番号（ばんごう）・部屋（へや）の番号（ばんごう）など「何番（なんばん）」を尋（たず）ねる表現（ひょうげん）になります。몇 번이에요?への答（こた）えは必（かなら）ず漢数詞（かんすうし）を使（つか）い、電話番号（でんわばんごう）のハイフンは에と読（よ）みます。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "전화번호가 몇 번이에요?",
+    "en": "What's your phone number?",
+    "ja": "電話番号（でんわばんごう）は何番（なんばん）ですか。",
+    "audio": "b7ef173477"
+   },
+   {
+    "ko": "010-4948-1287이에요.",
+    "en": "It's 010-4948-1287.",
+    "ja": "010-4948-1287です。",
+    "audio": "d0c694d4b9"
+   },
+   {
+    "ko": "몇 번 버스예요?",
+    "en": "Which number bus is it?",
+    "ja": "何番（なんばん）のバスですか。",
+    "audio": "bc6e1e691b"
+   },
+   {
+    "ko": "701번 버스예요.",
+    "en": "It's bus number 701.",
+    "ja": "701番（ばん）のバスです。",
+    "audio": "b60a7fb8c8"
+   }
+  ]
+ },
+ {
+  "id": "eaad592498",
+  "ko": "몇 월 며칠",
+  "en": "몇 combines with 월 (month) and 일 (day) to ask a date; note the spelling 며칠, not 몇 일. Months use Sino-Korean numbers plus 월, with two irregular forms: 6월 is 유월 and 10월 is 시월.",
+  "tags": [
+   "Book1A::PrepUnit3::Grammar"
+  ],
+  "ja": "몇が월（月（つき））や일（日（ひ））と結（むす）びついて日付（ひづけ）を尋（たず）ねます。表記（ひょうき）は몇 일ではなく며칠です。月（つき）は漢数詞（かんすうし）＋월ですが、6월は유월、10월は시월と不規則（ふきそく）になります。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "오늘이 몇 월 며칠이에요?",
+    "en": "What's the date today?",
+    "ja": "今日（きょう）は何月何日（なんがつなんにち）ですか。",
+    "audio": "dc375470cc"
+   },
+   {
+    "ko": "7월 5일이에요.",
+    "en": "It's July 5th.",
+    "ja": "7月（がつ）5日（いつか）です。",
+    "audio": "11c5cf5b65"
+   }
+  ]
+ },
+ {
+  "id": "d748bcd321",
+  "ko": "명 주세요",
+  "en": "Attach 주세요 directly after a noun, with no particle, to order or request something: 'Please give me N.' To order a quantity, put the counted phrase before 주세요; adding 좀 softens the request.",
+  "tags": [
+   "Book1A::PrepUnit4::Grammar"
+  ],
+  "ja": "名詞（めいし）の後（あと）に助詞（じょし）なしで주세요を直接（ちょくせつ）付（つ）けて、「～をください」と注文（ちゅうもん）や依頼（いらい）をします。数量（すうりょう）を言（い）うときは数（かず）＋助数詞（じょすうし）を주세요の前（まえ）に置（お）き、좀を加（くわ）えると表現（ひょうげん）が柔（やわ）らかくなります。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "커피 주세요.",
+    "en": "Coffee, please.",
+    "ja": "コーヒーをください。",
+    "audio": "580a1497e1"
+   },
+   {
+    "ko": "김밥 주세요.",
+    "en": "Gimbap, please.",
+    "ja": "キンパをください。",
+    "audio": "9d9b3a761d"
+   },
+   {
+    "ko": "물 좀 주세요.",
+    "en": "Could I have some water?",
+    "ja": "お水（みず）をいただけますか。",
+    "audio": "d576871d34"
+   },
+   {
+    "ko": "여기 있어요.",
+    "en": "Here you are.",
+    "ja": "はい、どうぞ。",
+    "audio": "7e725980ce"
+   }
+  ]
+ },
+ {
+  "id": "221047322a",
+  "ko": "숫자② — pure Korean numbers 하나~열",
+  "en": "The pure Korean numbers 하나, 둘, 셋, 넷, 다섯, 여섯, 일곱, 여덟, 아홉, 열 are used mostly for counting things. Sino-Korean numbers are used instead for money, dates and phone numbers.",
+  "tags": [
+   "Book1A::PrepUnit4::Grammar"
+  ],
+  "ja": "固有数詞（こゆうすうし）の하나, 둘, 셋, 넷, 다섯, 여섯, 일곱, 여덟, 아홉, 열は、主（おも）に物（もの）を数（かぞ）えるときに使（つか）います。お金（かね）・日付（ひづけ）・電話番号（でんわばんごう）には漢数詞（かんすうし）を使（つか）います。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "사과 하나",
+    "en": "one apple",
+    "ja": "りんご一（ひと）つ",
+    "audio": "4e6bd2f569"
+   },
+   {
+    "ko": "열",
+    "en": "ten",
+    "ja": "十（とお）",
+    "audio": "4e8afc7079"
+   }
+  ]
+ },
+ {
+  "id": "d6439a0c1f",
+  "ko": "수 + 개 (counter) / 몇 개",
+  "en": "When a pure Korean number is used with a counter such as 개, the first four change shape: 하나→한 개, 둘→두 개, 셋→세 개, 넷→네 개, while 다섯 onward is unchanged. 몇 is the question word 'how many' and is used with a counter.",
+  "tags": [
+   "Book1A::PrepUnit4::Grammar"
+  ],
+  "ja": "固有数詞（こゆうすうし）が개などの助数詞（じょすうし）と一緒（いっしょ）に使（つか）われると、最初（さいしょ）の四（よっ）つが形（かたち）を変（か）えます（하나→한 개、둘→두 개、셋→세 개、넷→네 개）。다섯以降（いこう）は変（か）わりません。몇は「いくつ」を尋（たず）ねる疑問詞（ぎもんし）で、助数詞（じょすうし）と一緒（いっしょ）に使（つか）います。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "몇 개 있어요?",
+    "en": "How many do you have?",
+    "ja": "いくつありますか。",
+    "audio": "f374188fed"
+   },
+   {
+    "ko": "한 개 있어요.",
+    "en": "I have one.",
+    "ja": "一（ひと）つあります。",
+    "audio": "900d3af14e"
+   },
+   {
+    "ko": "비빔밥 두 개 주세요.",
+    "en": "Two bibimbaps, please.",
+    "ja": "ビビンバを二（ふた）つください。",
+    "audio": "e31409469c"
+   }
+  ]
+ },
+ {
+  "id": "40aec48468",
+  "ko": "얼마예요?",
+  "en": "얼마예요? asks the price of something. Prices are answered with Sino-Korean numbers plus 원, using 십/백/천/만, and large numbers are grouped by 만 (10,000) rather than by thousands.",
+  "tags": [
+   "Book1A::PrepUnit4::Grammar"
+  ],
+  "ja": "얼마예요?は値段（ねだん）を尋（たず）ねる表現（ひょうげん）です。答（こた）えは漢数詞（かんすうし）＋원で、십・백・천・만を使（つか）い、大（おお）きな数（かず）は千（せん）ではなく만（一万（いちまん)）を単位（たんい）に区切（くぎ）ります。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "얼마예요?",
+    "en": "How much is it?",
+    "ja": "いくらですか。",
+    "audio": "84531441a9"
+   },
+   {
+    "ko": "이만 삼천팔백오십 원이에요.",
+    "en": "It's 23,850 won.",
+    "ja": "23,850ウォンです。",
+    "audio": "528daa2291"
+   },
+   {
+    "ko": "3,000원이에요.",
+    "en": "It's 3,000 won.",
+    "ja": "3,000ウォンです。",
+    "audio": "a33e0603e8"
+   },
+   {
+    "ko": "모두 얼마예요?",
+    "en": "How much is it altogether?",
+    "ja": "全部（ぜんぶ）でいくらですか。",
+    "audio": "192323fb6b"
+   }
+  ]
+ },
+ {
+  "id": "99ff757fe9",
+  "ko": "명이/가",
+  "en": "The subject marker 이/가 attaches to a noun to mark it as the subject of a verb or adjective. Use 이 after a noun ending in a consonant and 가 after a noun ending in a vowel.",
+  "tags": [
+   "Book1A::Unit1::Grammar"
+  ],
+  "ja": "主格助詞（しゅかくじょし）の이/가は名詞（めいし）に付（つ）いて、その名詞（めいし）が動詞（どうし）や形容詞（けいようし）の主語（しゅご）であることを示（しめ）します。子音（しいん）で終（お）わる名詞（めいし）には이、母音（ぼいん）で終（お）わる名詞（めいし）には가を使（つか）います。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "이름이 뭐예요?",
+    "en": "What's your name?",
+    "ja": "お名前（なまえ）は何（なん）ですか。",
+    "audio": "16d73b965b"
+   },
+   {
+    "ko": "선생님이 도서관에 있어요.",
+    "en": "My teacher is in the library.",
+    "ja": "先生（せんせい）は図書館（としょかん）にいます。",
+    "audio": "679260cfc3"
+   },
+   {
+    "ko": "미나 씨가 여기 있어요.",
+    "en": "Mina is here.",
+    "ja": "ミナさんはここにいます。",
+    "audio": "e57a968ed5"
+   },
+   {
+    "ko": "집이 있어요.",
+    "en": "I have a house.",
+    "ja": "家（いえ）があります。",
+    "audio": "8cad963191"
+   }
+  ]
+ },
+ {
+  "id": "6b7764fed7",
+  "ko": "명에 있어요",
+  "en": "에 is the location marker: attach it to a place noun to say where someone or something is, always with the verb 있어요/없어요. The matching question word is 어디 ('where').",
+  "tags": [
+   "Book1A::Unit1::Grammar"
+  ],
+  "ja": "에は場所（ばしょ）を表（あらわ）す助詞（じょし）で、場所（ばしょ）の名詞（めいし）に付（つ）けて人（ひと）や物（もの）がどこにあるかを言（い）い、必（かなら）ず있어요/없어요と一緒（いっしょ）に使（つか）います。対応（たいおう）する疑問詞（ぎもんし）は어디（どこ）です。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "앤디 씨가 학교에 있어요.",
+    "en": "Andy is at school.",
+    "ja": "アンディさんは学校（がっこう）にいます。",
+    "audio": "30e794b98a"
+   },
+   {
+    "ko": "앤디 씨가 집에 없어요.",
+    "en": "Andy is not at home.",
+    "ja": "アンディさんは家（いえ）にいません。",
+    "audio": "8aaf9fe8b8"
+   },
+   {
+    "ko": "은행이 1층에 있어요.",
+    "en": "The bank is on the first floor.",
+    "ja": "銀行（ぎんこう）は1階（かい）にあります。",
+    "audio": "7c8e1766d0"
+   },
+   {
+    "ko": "스터디 카페가 어디에 있어요?",
+    "en": "Where is the study cafe?",
+    "ja": "スタディカフェはどこにありますか。",
+    "audio": "efe041db63"
+   }
+  ]
+ },
+ {
+  "id": "a5832a895c",
+  "ko": "명 명에 있어요",
+  "en": "Position nouns such as 위, 아래, 앞, 뒤, 옆, 왼쪽, 오른쪽, 안, 밖 and 사이 take the location marker 에 to say where something is relative to another thing. The pattern is [thing]이/가 [reference noun] [position word]에 있어요, with no particle between the reference noun and the position word.",
+  "tags": [
+   "Book1A::Unit1::Grammar"
+  ],
+  "ja": "위・아래・앞・뒤・옆・왼쪽・오른쪽・안・밖・사이などの位置（いち）を表（あらわ）す名詞（めいし）に에を付（つ）けて、ある物（もの）が別（べつ）の物（もの）に対（たい）してどこにあるかを表（あらわ）します。語順（ごじゅん）は［物（もの）］이/가［基準（きじゅん）の名詞（めいし）］［位置（いち）の語（ご）］에 있어요で、基準（きじゅん）の名詞（めいし）と位置（いち）の語（ご）の間（あいだ）に助詞（じょし）は入（はい）りません。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "가방이 책상 위에 있어요.",
+    "en": "There is a bag on the desk.",
+    "ja": "かばんが机（つくえ）の上（うえ）にあります。",
+    "audio": "1917d33950"
+   },
+   {
+    "ko": "가방이 책상 아래에 있어요.",
+    "en": "There is a bag under the desk.",
+    "ja": "かばんが机（つくえ）の下（した）にあります。",
+    "audio": "0f9875096e"
+   },
+   {
+    "ko": "강아지가 침대 위에 있어요.",
+    "en": "The puppy is on the bed.",
+    "ja": "子犬（こいぬ）がベッドの上（うえ）にいます。",
+    "audio": "c387a090f7"
+   },
+   {
+    "ko": "가방이 앤디 씨 가방하고 미나 씨 가방 사이에 있어요.",
+    "en": "There is a bag between Andy's bag and Mina's bag.",
+    "ja": "かばんがアンディさんのかばんとミナさんのかばんの間（あいだ）にあります。",
+    "audio": "dda96ffaf2"
+   }
+  ]
+ },
+ {
+  "id": "c8e41b5207",
+  "ko": "명에 ((시간)에)",
+  "en": "The particle 에 attaches to a time noun to mark when something happens. Hours use pure Korean numbers with 시 and minutes use Sino-Korean numbers with 분, while 반 means 'half past'.",
+  "tags": [
+   "Book1A::Unit2::Grammar"
+  ],
+  "ja": "助詞（じょし）の에は時間（じかん）を表（あらわ）す名詞（めいし）に付（つ）いて、何（なに）かが起（お）こる時点（じてん）を示（しめ）します。「～時（じ）」は固有数詞（こゆうすうし）＋시、「～分（ふん）」は漢数詞（かんすうし）＋분で、반は「半（はん）」の意味（いみ）です。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "몇 시에 일어나요?",
+    "en": "What time do you get up?",
+    "ja": "何時（なんじ）に起（お）きますか。",
+    "audio": "56737e9e77"
+   },
+   {
+    "ko": "일곱 시에 일어나요.",
+    "en": "I get up at seven.",
+    "ja": "7時（じ）に起（お）きます。",
+    "audio": "b06c19cff1"
+   },
+   {
+    "ko": "한 시 삼십 분이에요.",
+    "en": "It's one thirty.",
+    "ja": "1時（じ）30分（ぷん）です。",
+    "audio": "c8b2d02946"
+   },
+   {
+    "ko": "한 시 반이에요.",
+    "en": "It's half past one.",
+    "ja": "1時半（じはん）です。",
+    "audio": "15f7aba27d"
+   }
+  ]
+ },
+ {
+  "id": "38d119707c",
+  "ko": "몇 시",
+  "en": "The interrogative 몇 attaches to 시 to ask the time. With a verb it becomes 몇 시에 …? ('at what time …?').",
+  "tags": [
+   "Book1A::Unit2::Grammar"
+  ],
+  "ja": "疑問詞（ぎもんし）の몇が시に付（つ）いて時刻（じこく）を尋（たず）ねます。動詞（どうし）と一緒（いっしょ）に使（つか）うときは몇 시에…?（何時（なんじ）に～）の形（かたち）になります。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "지금 몇 시예요?",
+    "en": "What time is it now?",
+    "ja": "今（いま）何時（なんじ）ですか。",
+    "audio": "678750ec1f"
+   },
+   {
+    "ko": "한 시예요.",
+    "en": "It's one o'clock.",
+    "ja": "1時（じ）です。",
+    "audio": "9e085b5180"
+   },
+   {
+    "ko": "오전 다섯 시 이십 분이에요.",
+    "en": "It's 5:20 a.m.",
+    "ja": "午前（ごぜん）5時（じ）20分（ぷん）です。",
+    "audio": "1a7b9c805c"
+   },
+   {
+    "ko": "몇 시에 공항에 가요?",
+    "en": "What time are you going to the airport?",
+    "ja": "何時（なんじ）に空港（くうこう）へ行（い）きますか。",
+    "audio": "dfdee262ab"
+   }
+  ]
+ },
+ {
+  "id": "885a700b4c",
+  "ko": "명에 가요 ((장소)에 가요)",
+  "en": "에 also marks a destination when used with 가다 and 오다, expressing where someone goes or comes. Time and place phrases can be combined in one sentence.",
+  "tags": [
+   "Book1A::Unit2::Grammar"
+  ],
+  "ja": "에は가다・오다と一緒（いっしょ）に使（つか）われると、行（い）き先（さき）や来（く）る場所（ばしょ）を表（あらわ）します。時間（じかん）と場所（ばしょ）を一（ひと）つの文（ぶん）に並（なら）べて使（つか）うこともできます。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "어디에 가요?",
+    "en": "Where are you going?",
+    "ja": "どこへ行（い）きますか。",
+    "audio": "e68c25e790"
+   },
+   {
+    "ko": "회사에 가요.",
+    "en": "I'm going to the office.",
+    "ja": "会社（かいしゃ）へ行（い）きます。",
+    "audio": "629a49140a"
+   },
+   {
+    "ko": "9시에 학교에 와요.",
+    "en": "I come to school at nine.",
+    "ja": "9時（じ）に学校（がっこう）へ来（き）ます。",
+    "audio": "305039eee4"
+   },
+   {
+    "ko": "한 시에 학생 식당에 가요.",
+    "en": "I go to the student cafeteria at one.",
+    "ja": "1時（じ）に学生食堂（がくせいしょくどう）へ行（い）きます。",
+    "audio": "83fc20ed74"
+   }
+  ]
+ },
+ {
+  "id": "c52868fb8c",
+  "ko": "동-아/어요①",
+  "en": "The informal polite (해요체) present-tense ending, ending in 요, is the style adult speakers use in everyday conversation. This unit covers 가다 → 가요 and 하다 verbs → 해요, and the present tense covers current states, ongoing actions and near-future plans.",
+  "tags": [
+   "Book1A::Unit2::Grammar"
+  ],
+  "ja": "해요体（たい）（打（う）ち解（と）けた丁寧（ていねい）な話（はな）し方（かた））の現在形（げんざいけい）の語尾（ごび）で、요で終（お）わり、大人（おとな）が日常会話（にちじょうかいわ）で使（つか）う文体（ぶんたい）です。この課（か）では가다→가요と하다動詞（どうし）→해요を学（まな）び、現在形（げんざいけい）は現在（げんざい）の状態（じょうたい）・進行中（しんこうちゅう）の動作（どうさ）・近（ちか）い未来（みらい）の予定（よてい）を表（あらわ）します。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "저는 여섯 시에 일어나요.",
+    "en": "I get up at six.",
+    "ja": "私（わたし）は6時（じ）に起（お）きます。",
+    "audio": "144f58a513"
+   },
+   {
+    "ko": "어디에 가요?",
+    "en": "Where are you going?",
+    "ja": "どこへ行（い）きますか。",
+    "audio": "e68c25e790"
+   },
+   {
+    "ko": "학교에 가요.",
+    "en": "I'm going to school.",
+    "ja": "学校（がっこう）へ行（い）きます。",
+    "audio": "47d1b495fe"
+   },
+   {
+    "ko": "오늘은 뭐 해요?",
+    "en": "What are you doing today?",
+    "ja": "今日（きょう）は何（なに）をしますか。",
+    "audio": "c9283555dd"
+   }
+  ]
+ },
+ {
+  "id": "b95b507d94",
+  "ko": "뭐 해요?",
+  "en": "뭐 ('what') combines with -해요 to ask about an action: 'What are you doing?'. It sounds close to 뭐예요? ('What is it?') because ㅎ weakens between vowels, so context distinguishes them.",
+  "tags": [
+   "Book1A::Unit2::Grammar"
+  ],
+  "ja": "뭐（何（なに））が-해요と結（むす）びついて、動作（どうさ）について「何（なに）をしていますか」と尋（たず）ねます。母音（ぼいん）に挟（はさ）まれたㅎが弱（よわ）まるため뭐예요?（何（なん）ですか）と音（おと）が似（に）ていますが、文脈（ぶんみゃく）で区別（くべつ）します。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "뭐 해요?",
+    "en": "What are you doing?",
+    "ja": "何（なに）をしていますか。",
+    "audio": "9f13433641"
+   },
+   {
+    "ko": "그럼 뭐 해요?",
+    "en": "So what are you doing?",
+    "ja": "では、何（なに）をしますか。",
+    "audio": "529225ad04"
+   },
+   {
+    "ko": "오후에 뭐 해요?",
+    "en": "What are you doing in the afternoon?",
+    "ja": "午後（ごご）は何（なに）をしますか。",
+    "audio": "a21fd4bcf1"
+   },
+   {
+    "ko": "영화관에 가요.",
+    "en": "I'm going to a movie theater.",
+    "ja": "映画館（えいがかん）へ行（い）きます。",
+    "audio": "807b027890"
+   }
+  ]
+ },
+ {
+  "id": "1b83141e0c",
+  "ko": "은/는",
+  "en": "은/는 is the topic particle, introducing or emphasising the topic that the rest of the sentence is about; 은 follows a consonant and 는 follows a vowel. It contrasts with 이/가, which highlights the attached noun as new or focal information.",
+  "tags": [
+   "Book1A::Unit2::Grammar"
+  ],
+  "ja": "은/는は主題（しゅだい）を表（あらわ）す助詞（じょし）で、文（ぶん）が何（なに）について述（の）べているかを示（しめ）します。子音（しいん）の後（あと）には은、母音（ぼいん）の後（あと）には는が付（つ）き、新（あたら）しい情報（じょうほう）に焦点（しょうてん）を当（あ）てる이/가とは働（はたら）きが異（こと）なります。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "수잔 씨는 어디에 가요?",
+    "en": "Susan, where are you going?",
+    "ja": "スーザンさんはどこへ行（い）きますか。",
+    "audio": "063aa93fd1"
+   },
+   {
+    "ko": "저도 체육관에 가요.",
+    "en": "I'm going to the gym, too.",
+    "ja": "私（わたし）も体育館（たいいくかん）へ行（い）きます。",
+    "audio": "36e22e986a"
+   },
+   {
+    "ko": "오늘은 날씨가 좋아요.",
+    "en": "The weather is nice today.",
+    "ja": "今日（きょう）は天気（てんき）がいいです。",
+    "audio": "34e62fb50b"
+   },
+   {
+    "ko": "서울은 공원이 많아요.",
+    "en": "Seoul has many parks.",
+    "ja": "ソウルは公園（こうえん）が多（おお）いです。",
+    "audio": "9fcbb433c8"
+   }
+  ]
+ },
+ {
+  "id": "c3aeb86809",
+  "ko": "명을/를",
+  "en": "The object marker attaches to a noun to mark it as the direct object of a transitive verb. Use -을 after a noun ending in a consonant and -를 after a noun ending in a vowel.",
+  "tags": [
+   "Book1A::Unit3::Grammar"
+  ],
+  "ja": "目的格助詞（もくてきかくじょし）は名詞（めいし）に付（つ）いて、その名詞（めいし）が他動詞（たどうし）の目的語（もくてきご）であることを示（しめ）します。子音（しいん）で終（お）わる名詞（めいし）には-을、母音（ぼいん）で終（お）わる名詞（めいし）には-를を使（つか）います。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "아메리카노를 좋아해요?",
+    "en": "Do you like Americanos?",
+    "ja": "アメリカーノが好（す）きですか。",
+    "audio": "fe672ecaef"
+   },
+   {
+    "ko": "네, 아메리카노를 좋아해요.",
+    "en": "Yes, I like Americanos.",
+    "ja": "はい、アメリカーノが好（す）きです。",
+    "audio": "1fb50b02e3"
+   },
+   {
+    "ko": "아니요, 운동을 싫어해요.",
+    "en": "No, I dislike exercise.",
+    "ja": "いいえ、運動（うんどう）は嫌（きら）いです。",
+    "audio": "85b18d34f0"
+   }
+  ]
+ },
+ {
+  "id": "924d7b3835",
+  "ko": "동-아/어요②",
+  "en": "The full rule for the informal polite (해요체) ending: drop 다 from the dictionary form, then add -아요 if the stem's final vowel is ㅏ or ㅗ, -어요 for any other vowel, and -해요 for verbs in -하다. The same ending serves declarative, interrogative, imperative and propositive sentences.",
+  "tags": [
+   "Book1A::Unit3::Grammar"
+  ],
+  "ja": "해요体（たい）の語尾（ごび）の作（つく）り方（かた）です。辞書形（じしょけい）から다を取（と）り、語幹（ごかん）の最後（さいご）の母音（ぼいん）がㅏかㅗなら-아요、それ以外（いがい）なら-어요、-하다で終（お）わる動詞（どうし）は-해요になります。同（おな）じ語尾（ごび）が平叙（へいじょ）・疑問（ぎもん）・命令（めいれい）・勧誘（かんゆう）のすべてに使（つか）われます。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "지금 뭐 해요?",
+    "en": "What are you doing now?",
+    "ja": "今（いま）何（なに）をしていますか。",
+    "audio": "a50d7c21a1"
+   },
+   {
+    "ko": "드라마를 봐요.",
+    "en": "I'm watching a drama.",
+    "ja": "ドラマを見（み）ています。",
+    "audio": "75e0d46bb7"
+   },
+   {
+    "ko": "커피를 마셔요.",
+    "en": "I drink coffee.",
+    "ja": "コーヒーを飲（の）みます。",
+    "audio": "f06b5c3399"
+   }
+  ]
+ },
+ {
+  "id": "15b55f536c",
+  "ko": "명에서",
+  "en": "에서 attaches to a place noun to show where an action takes place ('at, in'). It contrasts with 에, which marks the location where someone or something simply exists, used with 있다.",
+  "tags": [
+   "Book1A::Unit3::Grammar"
+  ],
+  "ja": "에서は場所（ばしょ）の名詞（めいし）に付（つ）いて、動作（どうさ）が行（おこな）われる場所（ばしょ）を表（あらわ）します。있다と一緒（いっしょ）に使（つか）って存在（そんざい）する場所（ばしょ）を表（あらわ）す에とは区別（くべつ）します。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "어디에서 책을 빌려요?",
+    "en": "Where do you borrow books?",
+    "ja": "どこで本（ほん）を借（か）りますか。",
+    "audio": "a0c8ff4a2b"
+   },
+   {
+    "ko": "도서관에서 빌려요.",
+    "en": "I borrow them at the library.",
+    "ja": "図書館（としょかん）で借（か）ります。",
+    "audio": "f74654acfa"
+   },
+   {
+    "ko": "학교에서 한국어를 공부해요.",
+    "en": "I study Korean at school.",
+    "ja": "学校（がっこう）で韓国語（かんこくご）を勉強（べんきょう）します。",
+    "audio": "fea67d9d10"
+   },
+   {
+    "ko": "집에서 공부해요.",
+    "en": "I study at home.",
+    "ja": "家（いえ）で勉強（べんきょう）します。",
+    "audio": "eb08f7e49c"
+   }
+  ]
+ },
+ {
+  "id": "2b3b809a39",
+  "ko": "동-았/었어요",
+  "en": "The past-tense ending for verbs and adjectives, marking a completed action or a past state. The attachment rules match the present tense: -았어요 after a stem whose final vowel is ㅏ or ㅗ, -었어요 otherwise, and 했어요 for -하다 words.",
+  "tags": [
+   "Book1A::Unit4::Grammar"
+  ],
+  "ja": "動詞（どうし）と形容詞（けいようし）の過去形（かこけい）の語尾（ごび）で、完了（かんりょう）した動作（どうさ）や過去（かこ）の状態（じょうたい）を表（あらわ）します。付（つ）き方（かた）は現在形（げんざいけい）と同（おな）じで、語幹（ごかん）の最後（さいご）の母音（ぼいん）がㅏ・ㅗなら-았어요、それ以外（いがい）は-었어요、-하다の語（ご）は했어요になります。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "어제 뭐 했어요?",
+    "en": "What did you do yesterday?",
+    "ja": "昨日（きのう）何（なに）をしましたか。",
+    "audio": "a7abb22a17"
+   },
+   {
+    "ko": "운동했어요.",
+    "en": "I exercised.",
+    "ja": "運動（うんどう）しました。",
+    "audio": "adecadbc0d"
+   },
+   {
+    "ko": "친구를 만났어요.",
+    "en": "I met a friend.",
+    "ja": "友達（ともだち）に会（あ）いました。",
+    "audio": "1feba18288"
+   },
+   {
+    "ko": "3일 전에 샀어요.",
+    "en": "I bought it three days ago.",
+    "ja": "3日（にち）前（まえ）に買（か）いました。",
+    "audio": "1d9987dcb0"
+   }
+  ]
+ },
+ {
+  "id": "e2909c2288",
+  "ko": "안 동/형",
+  "en": "안 is the negation adverb, placed directly before the verb or adjective. With 하다 compounds made of noun + 하다, 안 goes between the noun and 하다.",
+  "tags": [
+   "Book1A::Unit4::Grammar"
+  ],
+  "ja": "안は否定（ひてい）を表（あらわ）す副詞（ふくし）で、動詞（どうし）や形容詞（けいようし）の直前（ちょくぜん）に置（お）きます。名詞（めいし）＋하다の形（かたち）の動詞（どうし）では、안は名詞（めいし）と하다の間（あいだ）に入（はい）ります。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "밥을 안 먹어요.",
+    "en": "I don't eat rice.",
+    "ja": "ご飯（はん）を食（た）べません。",
+    "audio": "00ecd928dd"
+   },
+   {
+    "ko": "아니요, 안 갔어요.",
+    "en": "No, I didn't go.",
+    "ja": "いいえ、行（い）きませんでした。",
+    "audio": "92822859df"
+   },
+   {
+    "ko": "앤디 씨가 오늘 학교에 안 가요.",
+    "en": "Andy isn't going to school today.",
+    "ja": "アンディさんは今日（きょう）学校（がっこう）へ行（い）きません。",
+    "audio": "0875478403"
+   },
+   {
+    "ko": "매일 요리 안 해요.",
+    "en": "I don't cook every day.",
+    "ja": "毎日（まいにち）料理（りょうり）はしません。",
+    "audio": "7aa0420828"
+   }
+  ]
+ },
+ {
+  "id": "84c7017d39",
+  "ko": "명도",
+  "en": "The particle 도 means 'also, too' and attaches to a noun. It replaces the subject markers 이/가 and the object markers 을/를 rather than stacking with them.",
+  "tags": [
+   "Book1A::Unit4::Grammar"
+  ],
+  "ja": "助詞（じょし）の도は「～も」の意味（いみ）で、名詞（めいし）に付（つ）きます。主格助詞（しゅかくじょし）の이/가や目的格助詞（もくてきかくじょし）の을/를とは重（かさ）ねず、それらに取（と）って代（か）わります。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "사과를 사요. 그리고 우유도 사요.",
+    "en": "I buy apples. And I also buy milk.",
+    "ja": "りんごを買（か）います。そして牛乳（ぎゅうにゅう）も買（か）います。",
+    "audio": "ab2c65adc4"
+   },
+   {
+    "ko": "요리했어요. 그리고 청소도 했어요.",
+    "en": "I cooked. And I also cleaned.",
+    "ja": "料理（りょうり）しました。そして掃除（そうじ）もしました。",
+    "audio": "9cd62a0840"
+   },
+   {
+    "ko": "앤디 씨가 김치를 좋아해요. 미나 씨도 김치를 좋아해요.",
+    "en": "Andy likes kimchi. Mina likes kimchi, too.",
+    "ja": "アンディさんはキムチが好（す）きです。ミナさんもキムチが好（す）きです。",
+    "audio": "53766e691d"
+   }
+  ]
+ },
+ {
+  "id": "2beaccee63",
+  "ko": "'으' 불규칙 ('으' irregular)",
+  "en": "Stems ending in the vowel ㅡ drop that vowel when a vowel ending is attached. If the vowel before ㅡ is ㅏ or ㅗ, -아요/-았어요 is used; otherwise, and for single-syllable stems, -어요/-었어요 is used.",
+  "tags": [
+   "Book1A::Unit4::Grammar"
+  ],
+  "ja": "語幹（ごかん）が母音（ぼいん）ㅡで終（お）わる語（ご）は、母音（ぼいん）で始（はじ）まる語尾（ごび）が付（つ）くとそのㅡが脱落（だつらく）します。ㅡの前（まえ）の母音（ぼいん）がㅏ・ㅗなら-아요/-았어요、それ以外（いがい）や一音節（いちおんせつ）の語幹（ごかん）では-어요/-었어요を使（つか）います。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "미나 씨가 바빠요.",
+    "en": "Mina is busy.",
+    "ja": "ミナさんは忙（いそが）しいです。",
+    "audio": "481b8bd1ab"
+   },
+   {
+    "ko": "어제 바빴어요.",
+    "en": "I was busy yesterday.",
+    "ja": "昨日（きのう）は忙（いそが）しかったです。",
+    "audio": "0b3561b14c"
+   },
+   {
+    "ko": "미나 씨가 예뻐요.",
+    "en": "Mina is pretty.",
+    "ja": "ミナさんはきれいです。",
+    "audio": "354f4096e5"
+   }
+  ]
+ },
+ {
+  "id": "521ab6d4cb",
+  "ko": "동-고 싶어요",
+  "en": "Attached to a verb stem to express the subject's desire to do something: 'want to / would like to'. The form never changes, whether the stem ends in a consonant or a vowel.",
+  "tags": [
+   "Book1A::Unit5::Grammar"
+  ],
+  "ja": "動詞（どうし）の語幹（ごかん）に付（つ）いて、「～したい」という願望（がんぼう）を表（あらわ）します。語幹（ごかん）が子音（しいん）で終（お）わっても母音（ぼいん）で終（お）わっても形（かたち）は変（か）わりません。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "안나 씨를 만나고 싶어요.",
+    "en": "I would like to meet Anna.",
+    "ja": "アンナさんに会（あ）いたいです。",
+    "audio": "ef445b7ff6"
+   },
+   {
+    "ko": "빵을 먹고 싶어요.",
+    "en": "I would like to eat some bread.",
+    "ja": "パンが食（た）べたいです。",
+    "audio": "9e6c7946b4"
+   },
+   {
+    "ko": "부산에 가고 싶어요.",
+    "en": "I want to go to Busan.",
+    "ja": "釜山（プサン）へ行（い）きたいです。",
+    "audio": "ccbd651e58"
+   }
+  ]
+ },
+ {
+  "id": "c058bcb72b",
+  "ko": "명(으)로①",
+  "en": "A marker attached to a noun to indicate the method or means by which something is done, used here with means of transportation. Use -으로 after nouns ending in a consonant except ㄹ, and -로 after nouns ending in a vowel or ㄹ.",
+  "tags": [
+   "Book1A::Unit5::Grammar"
+  ],
+  "ja": "名詞（めいし）に付（つ）いて、方法（ほうほう）や手段（しゅだん）を表（あらわ）す助詞（じょし）で、この課（か）では交通手段（こうつうしゅだん）に使（つか）います。ㄹ以外（いがい）の子音（しいん）で終（お）わる名詞（めいし）には-으로、母音（ぼいん）またはㄹで終（お）わる名詞（めいし）には-로を使（つか）います。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "스티브 씨는 어떻게 학교에 와요?",
+    "en": "Steve, how do you come to school?",
+    "ja": "スティーブさんはどうやって学校（がっこう）へ来（き）ますか。",
+    "audio": "f200a98264"
+   },
+   {
+    "ko": "지하철로 와요.",
+    "en": "I come by subway.",
+    "ja": "地下鉄（ちかてつ）で来（き）ます。",
+    "audio": "e5b16aba4e"
+   },
+   {
+    "ko": "걸어서 가요",
+    "en": "I go on foot.",
+    "ja": "歩（ある）いて行（い）きます。",
+    "audio": "a1712d5b25"
+   }
+  ]
+ },
+ {
+  "id": "b55af9b320",
+  "ko": "동-(으)세요①",
+  "en": "Attached to a verb stem to make a polite request or command: 'Please do (something)'. Use -으세요 after stems ending in a consonant and -세요 after stems ending in a vowel.",
+  "tags": [
+   "Book1A::Unit5::Grammar"
+  ],
+  "ja": "動詞（どうし）の語幹（ごかん）に付（つ）いて、「～してください」という丁寧（ていねい）な依頼（いらい）や命令（めいれい）を表（あらわ）します。子音（しいん）で終（お）わる語幹（ごかん）には-으세요、母音（ぼいん）で終（お）わる語幹（ごかん）には-세요を使（つか）います。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "가세요",
+    "en": "Please go.",
+    "ja": "行（い）ってください。",
+    "audio": "f0e7563d15"
+   },
+   {
+    "ko": "읽으세요",
+    "en": "Please read.",
+    "ja": "読（よ）んでください。",
+    "audio": "ed118f55d5"
+   },
+   {
+    "ko": "지하철 2호선을 타세요.",
+    "en": "Take subway line 2.",
+    "ja": "地下鉄（ちかてつ）2号線（ごうせん）に乗（の）ってください。",
+    "audio": "1429c61aba"
+   },
+   {
+    "ko": "그리고 을지로3가 역에서 3호선으로 갈아타세요.",
+    "en": "Then transfer to line 3 at Euljiro 3-ga Station.",
+    "ja": "そして乙支路（ウルチロ）3街（ガ）駅（えき）で3号線（ごうせん）に乗（の）り換（か）えてください。",
+    "audio": "e17f4b04f1"
+   }
+  ]
+ },
+ {
+  "id": "6e63ddb75c",
+  "ko": "동-지 마세요",
+  "en": "Attached to a verb stem to prohibit an action: 'Please do not (do something)'. It is used mainly in imperative or request sentences.",
+  "tags": [
+   "Book1A::Unit5::Grammar"
+  ],
+  "ja": "動詞（どうし）の語幹（ごかん）に付（つ）いて、「～しないでください」という禁止（きんし）を表（あらわ）します。主（おも）に命令文（めいれいぶん）や依頼文（いらいぶん）で使（つか）われます。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "집에 가지 마세요.",
+    "en": "Please don't go home.",
+    "ja": "家（いえ）に帰（かえ）らないでください。",
+    "audio": "c789d3f338"
+   },
+   {
+    "ko": "교실에서 음식을 먹지 마세요.",
+    "en": "Please don't eat food in the classroom.",
+    "ja": "教室（きょうしつ）で食（た）べ物（もの）を食（た）べないでください。",
+    "audio": "fd6e9e0dcf"
+   }
+  ]
+ },
+ {
+  "id": "4e0f8f8f7e",
+  "ko": "에서 까지",
+  "en": "에서 marks the starting point and 까지 the destination; used together they mean 'from A to B'. Both attach directly to place nouns, while 부터 … 까지 is used with time words.",
+  "tags": [
+   "Book1A::Unit5::Grammar"
+  ],
+  "ja": "에서は出発点（しゅっぱつてん）を、까지は到着点（とうちゃくてん）を表（あらわ）し、一緒（いっしょ）に使（つか）うと「AからBまで」の意味（いみ）になります。どちらも場所（ばしょ）の名詞（めいし）に直接（ちょくせつ）付（つ）き、時間（じかん）を表（あらわ）す語（ご）には부터…까지を使（つか）います。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "학교에서 집까지 걸어서 왔어요.",
+    "en": "I walked from school to my house.",
+    "ja": "学校（がっこう）から家（いえ）まで歩（ある）いて来（き）ました。",
+    "audio": "c81f288735"
+   },
+   {
+    "ko": "인천 공항에서 나리타 공항까지 비행기로 가요.",
+    "en": "I go from Incheon Airport to Narita Airport by plane.",
+    "ja": "仁川（インチョン）空港（くうこう）から成田（なりた）空港（くうこう）まで飛行機（ひこうき）で行（い）きます。",
+    "audio": "ed19c82b5a"
+   },
+   {
+    "ko": "마이클 씨가 아침부터 저녁까지 일을 해요.",
+    "en": "Michael works from morning until evening.",
+    "ja": "マイケルさんは朝（あさ）から夕方（ゆうがた）まで仕事（しごと）をします。",
+    "audio": "80cc5e5ef8"
+   }
+  ]
+ },
+ {
+  "id": "b9a3bf687d",
+  "ko": "어떻게",
+  "en": "어떻게 is the interrogative equivalent of English 'how', used to ask the way or method of doing something.",
+  "tags": [
+   "Book1A::Unit5::Grammar"
+  ],
+  "ja": "어떻게は英語（えいご）のhowにあたる疑問詞（ぎもんし）で、物事（ものごと）のやり方（かた）や方法（ほうほう）を尋（たず）ねるときに使（つか）います。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "어떻게 가요?",
+    "en": "How do I get there?",
+    "ja": "どうやって行（い）きますか。",
+    "audio": "c6649676fd"
+   },
+   {
+    "ko": "김치는 어떻게 만들어요?",
+    "en": "How do I make kimchi?",
+    "ja": "キムチはどうやって作（つく）りますか。",
+    "audio": "0c276a6007"
+   },
+   {
+    "ko": "명동에 어떻게 가요?",
+    "en": "How do I get to Myeongdong?",
+    "ja": "明洞（ミョンドン）へはどうやって行（い）きますか。",
+    "audio": "bf77fc805a"
+   }
+  ]
+ },
+ {
+  "id": "76d93bacb4",
+  "ko": "동-(으)러 가요",
+  "en": "Attached to a verb stem to express the purpose of going somewhere: 'go in order to (do something)'. Use -으러 after stems ending in a consonant except ㄹ and -러 after stems ending in a vowel or ㄹ, with a movement verb such as 가다, 오다 or 다니다 as the main verb.",
+  "tags": [
+   "Book1A::Unit6::Grammar"
+  ],
+  "ja": "動詞（どうし）の語幹（ごかん）に付（つ）いて、「～しに行（い）く」という移動（いどう）の目的（もくてき）を表（あらわ）します。ㄹ以外（いがい）の子音（しいん）で終（お）わる語幹（ごかん）には-으러、母音（ぼいん）またはㄹで終（お）わる語幹（ごかん）には-러を使（つか）い、主（しゅ）となる動詞（どうし）は가다・오다・다니다などの移動動詞（いどうどうし）です。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "책을 사러 서점에 가요.",
+    "en": "I go to the bookstore to buy a book.",
+    "ja": "本（ほん）を買（か）いに書店（しょてん）へ行（い）きます。",
+    "audio": "386c37177b"
+   },
+   {
+    "ko": "점심을 먹으러 식당에 가요.",
+    "en": "I go to a restaurant to eat lunch.",
+    "ja": "昼（ひる）ご飯（はん）を食（た）べに食堂（しょくどう）へ行（い）きます。",
+    "audio": "da40c2e5d5"
+   },
+   {
+    "ko": "공원에 놀러 왔어요.",
+    "en": "I came to the park to play.",
+    "ja": "公園（こうえん）に遊（あそ）びに来（き）ました。",
+    "audio": "cfdc2ba55c"
+   }
+  ]
+ },
+ {
+  "id": "f40ad59744",
+  "ko": "명(이)나",
+  "en": "Joins two nouns to mean 'or': attach -이나 after a noun ending in a consonant and -나 after a noun ending in a vowel. It connects nouns only; the related -거나 does the same job for verbs and adjectives.",
+  "tags": [
+   "Book1A::Unit6::Grammar"
+  ],
+  "ja": "二（ふた）つの名詞（めいし）をつないで「～か～」という意味（いみ）を表（あらわ）します。子音（しいん）で終（お）わる名詞（めいし）には-이나、母音（ぼいん）で終（お）わる名詞（めいし）には-나を付（つ）けます。名詞（めいし）専用（せんよう）で、動詞（どうし）・形容詞（けいようし）には-거나を使（つか）います。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "커피나 차",
+    "en": "coffee or tea",
+    "ja": "コーヒーかお茶（ちゃ）",
+    "audio": "e1983cf616"
+   },
+   {
+    "ko": "책이나 신문",
+    "en": "a book or a newspaper",
+    "ja": "本（ほん）か新聞（しんぶん）",
+    "audio": "8b0493d533"
+   },
+   {
+    "ko": "비빔밥이나 김치찌개를 먹어요.",
+    "en": "I eat bibimbap or kimchi stew.",
+    "ja": "ビビンバかキムチチゲを食（た）べます。",
+    "audio": "e5315798a7"
+   }
+  ]
+ },
+ {
+  "id": "3bc579debe",
+  "ko": "동-(으)ㄹ 거예요",
+  "en": "The future tense, expressing an action the speaker is going to do. Attach -을 거예요 after a verb stem ending in a consonant and -ㄹ 거예요 after a stem ending in a vowel; it is used with verbs, not adjectives.",
+  "tags": [
+   "Book1A::Unit6::Grammar"
+  ],
+  "ja": "これからする動作（どうさ）を表（あらわ）す未来形（みらいけい）です。子音（しいん）で終（お）わる動詞（どうし）の語幹（ごかん）には-을 거예요、母音（ぼいん）で終（お）わる語幹（ごかん）には-ㄹ 거예요を付（つ）けます。形容詞（けいようし）ではなく動詞（どうし）に使（つか）います。",
+  "type": "grammar",
+  "examples": [
+   {
+    "ko": "안나 씨, 언제 부산에 갈 거예요?",
+    "en": "Anna, when are you going to go to Busan?",
+    "ja": "アンナさん、いつ釜山（プサン）へ行（い）くつもりですか。",
+    "audio": "03562de29b"
+   },
+   {
+    "ko": "다음 주에 갈 거예요.",
+    "en": "I'm going to go there next week.",
+    "ja": "来週（らいしゅう）行（い）くつもりです。",
+    "audio": "959a64e95a"
+   },
+   {
+    "ko": "오늘 친구하고 점심을 먹을 거예요.",
+    "en": "I'm going to eat lunch with my friend today.",
+    "ja": "今日（きょう）友達（ともだち）と昼（ひる）ご飯（はん）を食（た）べるつもりです。",
+    "audio": "8335f5b1b9"
+   }
+  ]
  }
 ]

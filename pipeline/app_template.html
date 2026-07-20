@@ -132,6 +132,30 @@
   #card .ko{font-size:34px;font-weight:700;line-height:1.3;margin-bottom:6px;word-break:keep-all;}
   #card .en{font-size:19px;color:var(--accent);margin-top:14px;display:none;line-height:1.4;}
   #card.flipped .en{display:block;}
+
+  /* Grammar cards. A pattern needs room for a rule and worked examples, so the
+     card grows and left-aligns rather than centring one big word. */
+  #card.grammar{align-items:stretch;text-align:left;padding:30px 22px 26px;}
+  #card.grammar .ko{font-size:27px;text-align:center;}
+  #card.grammar .en{font-size:15px;color:var(--muted);text-align:left;}
+  #grammarBody{display:none;margin-top:14px;}
+  #card.flipped #grammarBody{display:block;}
+  #grammarBody .eg{
+    display:flex;align-items:flex-start;gap:10px;
+    border-top:1px solid var(--card-border);padding:10px 0 0;margin-top:10px;
+  }
+  #grammarBody .eg .t{flex:1;min-width:0;}
+  #grammarBody .eg .egko{font-size:16px;font-weight:600;line-height:1.4;word-break:keep-all;}
+  #grammarBody .eg .egen{font-size:12px;color:var(--muted);margin-top:2px;line-height:1.4;}
+  #grammarBody .eg .egplay{
+    flex:none;width:30px;height:30px;border-radius:50%;background:#00000030;border:none;
+    color:var(--text);font-size:13px;cursor:pointer;display:flex;align-items:center;justify-content:center;
+  }
+  #grammarBody .eg .egplay.playing{background:var(--accent);}
+  .grammar-pill{
+    display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:.5px;
+    color:var(--accent2);border:1px solid var(--accent2);border-radius:20px;padding:2px 8px;margin-left:6px;
+  }
   #card .tagpill{
     position:absolute;top:14px;left:14px;
     font-size:10px;text-transform:uppercase;letter-spacing:.5px;
@@ -286,6 +310,7 @@
         <button id="soundBtn">🔊</button>
         <div class="ko" id="cardKo"></div>
         <div class="en" id="cardEn"></div>
+        <div id="grammarBody"></div>
         <div class="hint" id="cardHint">Tap card to reveal</div>
       </div>
     </div>
@@ -376,6 +401,20 @@ const TAG_LABELS = {
     "Book1A::Unit5::Sentences": "Book 1A · Unit 5 — sentences",
     "Book1A::Unit6::Vocab": "Book 1A · Unit 6 — vocabulary",
     "Book1A::Unit6::Sentences": "Book 1A · Unit 6 — sentences",
+    "Book1A::PrepUnit1::Grammar": "Book 1A · Preparatory Unit 1 — grammar",
+    "Book1A::PrepUnit2::Grammar": "Book 1A · Preparatory Unit 2 — grammar",
+    "Book1A::PrepUnit3::Grammar": "Book 1A · Preparatory Unit 3 — grammar",
+    "Book1A::PrepUnit4::Grammar": "Book 1A · Preparatory Unit 4 — grammar",
+    "Book1A::Unit1::Grammar": "Book 1A · Unit 1 — grammar",
+    "Book1A::Unit2::Grammar": "Book 1A · Unit 2 — grammar",
+    "Book1A::Unit3::Grammar": "Book 1A · Unit 3 — grammar",
+    "Book1A::Unit4::Grammar": "Book 1A · Unit 4 — grammar",
+    "Book1A::Unit5::Grammar": "Book 1A · Unit 5 — grammar",
+    "Book1A::Unit6::Grammar": "Book 1A · Unit 6 — grammar",
+    "Book1A::Culture1": "Book 1A · Culture Corner 1 — useful information",
+    "Book1A::Culture2": "Book 1A · Culture Corner 2 — Seoul",
+    "Book1A::Culture3": "Book 1A · Culture Corner 3 — travel destinations",
+    "Book1A::Culture4": "Book 1A · Culture Corner 4 — public transport",
   },
   ja: {
     "Hangul1": "ハングル1 — 基礎",
@@ -406,11 +445,25 @@ const TAG_LABELS = {
     "Book1A::Unit5::Sentences": "教科書1A · 5課 — 文",
     "Book1A::Unit6::Vocab": "教科書1A · 6課 — 単語",
     "Book1A::Unit6::Sentences": "教科書1A · 6課 — 文",
+    "Book1A::PrepUnit1::Grammar": "教科書1A · 準備1課 — 文法",
+    "Book1A::PrepUnit2::Grammar": "教科書1A · 準備2課 — 文法",
+    "Book1A::PrepUnit3::Grammar": "教科書1A · 準備3課 — 文法",
+    "Book1A::PrepUnit4::Grammar": "教科書1A · 準備4課 — 文法",
+    "Book1A::Unit1::Grammar": "教科書1A · 1課 — 文法",
+    "Book1A::Unit2::Grammar": "教科書1A · 2課 — 文法",
+    "Book1A::Unit3::Grammar": "教科書1A · 3課 — 文法",
+    "Book1A::Unit4::Grammar": "教科書1A · 4課 — 文法",
+    "Book1A::Unit5::Grammar": "教科書1A · 5課 — 文法",
+    "Book1A::Unit6::Grammar": "教科書1A · 6課 — 文法",
+    "Book1A::Culture1": "教科書1A · 文化1 — 役立つ情報",
+    "Book1A::Culture2": "教科書1A · 文化2 — ソウル",
+    "Book1A::Culture3": "教科書1A · 文化3 — 観光地",
+    "Book1A::Culture4": "教科書1A · 文化4 — 公共交通",
   },
 };
 // Append-only. Reordering or removing an entry would rearrange sections that
 // students already navigate by muscle memory.
-const TAG_ORDER = ["Hangul1","Hangul3","Hangul4","Expressions::To_Be","Expressions::Adjectives","Expressions::Verbs","Expressions::Requests","Numbers","Book1A::PrepUnit1::Vocab","Book1A::PrepUnit1::Sentences","Book1A::PrepUnit2::Vocab","Book1A::PrepUnit2::Sentences","Book1A::PrepUnit3::Vocab","Book1A::PrepUnit3::Sentences","Book1A::PrepUnit4::Vocab","Book1A::PrepUnit4::Sentences","Book1A::Unit1::Vocab","Book1A::Unit1::Sentences","Book1A::Unit2::Vocab","Book1A::Unit2::Sentences","Book1A::Unit3::Vocab","Book1A::Unit3::Sentences","Book1A::Unit4::Vocab","Book1A::Unit4::Sentences","Book1A::Unit5::Vocab","Book1A::Unit5::Sentences","Book1A::Unit6::Vocab","Book1A::Unit6::Sentences"];
+const TAG_ORDER = ["Hangul1", "Hangul3", "Hangul4", "Expressions::To_Be", "Expressions::Adjectives", "Expressions::Verbs", "Expressions::Requests", "Numbers", "Book1A::PrepUnit1::Vocab", "Book1A::PrepUnit1::Sentences", "Book1A::PrepUnit2::Vocab", "Book1A::PrepUnit2::Sentences", "Book1A::PrepUnit3::Vocab", "Book1A::PrepUnit3::Sentences", "Book1A::PrepUnit4::Vocab", "Book1A::PrepUnit4::Sentences", "Book1A::Unit1::Vocab", "Book1A::Unit1::Sentences", "Book1A::Unit2::Vocab", "Book1A::Unit2::Sentences", "Book1A::Unit3::Vocab", "Book1A::Unit3::Sentences", "Book1A::Unit4::Vocab", "Book1A::Unit4::Sentences", "Book1A::Unit5::Vocab", "Book1A::Unit5::Sentences", "Book1A::Unit6::Vocab", "Book1A::Unit6::Sentences", "Book1A::PrepUnit1::Grammar", "Book1A::PrepUnit2::Grammar", "Book1A::PrepUnit3::Grammar", "Book1A::PrepUnit4::Grammar", "Book1A::Unit1::Grammar", "Book1A::Unit2::Grammar", "Book1A::Unit3::Grammar", "Book1A::Unit4::Grammar", "Book1A::Unit5::Grammar", "Book1A::Unit6::Grammar", "Book1A::Culture1", "Book1A::Culture2", "Book1A::Culture3", "Book1A::Culture4"];
 
 const STRINGS = {
   en: {
@@ -794,6 +847,7 @@ function nextCard(){
   document.getElementById("cardTag").textContent = (currentCard.tags[0]||"").split("::").pop();
   document.getElementById("cardHint").textContent = t().tapReveal;
   document.getElementById("gradeRow").classList.add("hidden");
+  renderGrammarBody(currentCard);
   updateSessionProgress();
 
   const labels = previewIntervals(getState(currentCard.id));
@@ -803,8 +857,62 @@ function nextCard(){
   document.getElementById("ivEasy").textContent = labels[3];
 
   if(audioEl){ audioEl.pause(); }
-  audioEl = new Audio(audioUrl(currentCard));
+  // Grammar cards have no clip of their own; requesting one would 404 on every card.
+  audioEl = isGrammar(currentCard) ? null : new Audio(audioUrl(currentCard));
   document.getElementById("soundBtn").classList.remove("playing");
+}
+
+// ---- grammar cards ----
+// A grammar card carries `examples` and no clip of its own — a pattern like
+// 명이에요/예요 isn't a speakable phrase. Everything here is defensive about the
+// fields being absent, because a normal vocabulary card has none of them and a
+// student may be running a cached build from before grammar existed.
+function isGrammar(card){ return !!(card && card.type === "grammar"); }
+
+function renderGrammarBody(card){
+  const body = document.getElementById("grammarBody");
+  const cardEl = document.getElementById("card");
+  body.innerHTML = "";
+  cardEl.classList.toggle("grammar", isGrammar(card));
+  // No own clip, so the speaker button would do nothing — hide it rather than
+  // leave a dead control on the card.
+  document.getElementById("soundBtn").style.display = isGrammar(card) ? "none" : "";
+  if(!isGrammar(card)) return;
+
+  (card.examples || []).forEach(eg=>{
+    const row = document.createElement("div");
+    row.className = "eg";
+    const t = document.createElement("div");
+    t.className = "t";
+    const ko = document.createElement("div");
+    ko.className = "egko";
+    ko.textContent = eg.ko;
+    const en = document.createElement("div");
+    en.className = "egen";
+    en.textContent = eg[lang] || eg.en || "";
+    t.append(ko, en);
+    row.appendChild(t);
+
+    // Examples reuse an existing card's clip where the same sentence is already
+    // a card, so most cost nothing extra.
+    if(eg.audio){
+      const play = document.createElement("button");
+      play.className = "egplay";
+      play.textContent = "🔊";
+      play.setAttribute("aria-label", eg.ko);
+      play.addEventListener("click", (e)=>{
+        e.stopPropagation();
+        stopBrowseAudio();
+        browseAudio = new Audio("audio/" + eg.audio + ".m4a");
+        browsePlayingBtn = play;
+        play.classList.add("playing");
+        browseAudio.onended = ()=> play.classList.remove("playing");
+        browseAudio.play().catch(()=> play.classList.remove("playing"));
+      });
+      row.appendChild(play);
+    }
+    body.appendChild(row);
+  });
 }
 
 function playAudio(){
@@ -897,13 +1005,16 @@ function openBrowse(tag){
     en.textContent = card[lang] || card.en;
     txt.append(ko, en);
 
-    const play = document.createElement("button");
-    play.className = "playbtn";
-    play.textContent = "🔊";
-    play.setAttribute("aria-label", card.ko);
-    play.addEventListener("click", ()=> playBrowse(card, play));
-
-    row.append(txt, play);
+    row.appendChild(txt);
+    // Grammar entries have no clip of their own, so they get no play button.
+    if(!isGrammar(card)){
+      const play = document.createElement("button");
+      play.className = "playbtn";
+      play.textContent = "🔊";
+      play.setAttribute("aria-label", card.ko);
+      play.addEventListener("click", ()=> playBrowse(card, play));
+      row.appendChild(play);
+    }
     browseList.appendChild(row);
   });
 
@@ -1037,6 +1148,7 @@ document.getElementById("langBtn").addEventListener("click", ()=>{
   } else if(studyArea.style.display === "flex"){
     // refresh the in-progress card + grade-button interval previews in the new language
     document.getElementById("cardEn").textContent = currentCard[lang] || currentCard.en;
+    renderGrammarBody(currentCard); // examples carry their own per-language gloss
     document.getElementById("cardHint").textContent = revealed ? "" : t().tapReveal;
     document.getElementById("deckLabel").textContent = currentTag === "__ALL__" ? t().allCards(visibleCards().length) : (TAG_LABELS[lang][currentTag]||currentTag);
     const labels = previewIntervals(getState(currentCard.id));
