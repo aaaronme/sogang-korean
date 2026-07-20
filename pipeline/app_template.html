@@ -372,6 +372,7 @@ if("serviceWorker" in navigator){
 const TAG_LABELS = {
   en: {
     "Hangul1": "Hangul 1 — basics",
+    "Hangul2": "Hangul 2 — consonants & final consonants",
     "Hangul3": "Hangul 3 — diphthongs",
     "Hangul4": "Hangul 4 — tense consonants",
     "Expressions::To_Be": "Expressions — to be",
@@ -418,6 +419,7 @@ const TAG_LABELS = {
   },
   ja: {
     "Hangul1": "ハングル1 — 基礎",
+    "Hangul2": "ハングル2 — 子音・パッチム",
     "Hangul3": "ハングル3 — 二重母音・激音",
     "Hangul4": "ハングル4 — 濃音",
     "Expressions::To_Be": "表現 — 〜です",
@@ -461,9 +463,13 @@ const TAG_LABELS = {
     "Book1A::Culture4": "教科書1A · 文化4 — 公共交通",
   },
 };
-// Append-only. Reordering or removing an entry would rearrange sections that
-// students already navigate by muscle memory.
-const TAG_ORDER = ["Hangul1", "Hangul3", "Hangul4", "Expressions::To_Be", "Expressions::Adjectives", "Expressions::Verbs", "Expressions::Requests", "Numbers", "Book1A::PrepUnit1::Vocab", "Book1A::PrepUnit1::Sentences", "Book1A::PrepUnit2::Vocab", "Book1A::PrepUnit2::Sentences", "Book1A::PrepUnit3::Vocab", "Book1A::PrepUnit3::Sentences", "Book1A::PrepUnit4::Vocab", "Book1A::PrepUnit4::Sentences", "Book1A::Unit1::Vocab", "Book1A::Unit1::Sentences", "Book1A::Unit2::Vocab", "Book1A::Unit2::Sentences", "Book1A::Unit3::Vocab", "Book1A::Unit3::Sentences", "Book1A::Unit4::Vocab", "Book1A::Unit4::Sentences", "Book1A::Unit5::Vocab", "Book1A::Unit5::Sentences", "Book1A::Unit6::Vocab", "Book1A::Unit6::Sentences", "Book1A::PrepUnit1::Grammar", "Book1A::PrepUnit2::Grammar", "Book1A::PrepUnit3::Grammar", "Book1A::PrepUnit4::Grammar", "Book1A::Unit1::Grammar", "Book1A::Unit2::Grammar", "Book1A::Unit3::Grammar", "Book1A::Unit4::Grammar", "Book1A::Unit5::Grammar", "Book1A::Unit6::Grammar", "Book1A::Culture1", "Book1A::Culture2", "Book1A::Culture3", "Book1A::Culture4"];
+// Display order only — a card's id comes from its tag string, never from its
+// position here, so moving an entry cannot orphan anyone's progress. Treat it
+// as append-only anyway: reordering rearranges sections students already
+// navigate by muscle memory. Hangul2 is the one deliberate insertion, slotted
+// between 1 and 3 because leaving the alphabet lessons numbered 1, 3, 4 reads
+// as a bug.
+const TAG_ORDER = ["Hangul1", "Hangul2", "Hangul3", "Hangul4", "Expressions::To_Be", "Expressions::Adjectives", "Expressions::Verbs", "Expressions::Requests", "Numbers", "Book1A::PrepUnit1::Vocab", "Book1A::PrepUnit1::Sentences", "Book1A::PrepUnit2::Vocab", "Book1A::PrepUnit2::Sentences", "Book1A::PrepUnit3::Vocab", "Book1A::PrepUnit3::Sentences", "Book1A::PrepUnit4::Vocab", "Book1A::PrepUnit4::Sentences", "Book1A::Unit1::Vocab", "Book1A::Unit1::Sentences", "Book1A::Unit2::Vocab", "Book1A::Unit2::Sentences", "Book1A::Unit3::Vocab", "Book1A::Unit3::Sentences", "Book1A::Unit4::Vocab", "Book1A::Unit4::Sentences", "Book1A::Unit5::Vocab", "Book1A::Unit5::Sentences", "Book1A::Unit6::Vocab", "Book1A::Unit6::Sentences", "Book1A::PrepUnit1::Grammar", "Book1A::PrepUnit2::Grammar", "Book1A::PrepUnit3::Grammar", "Book1A::PrepUnit4::Grammar", "Book1A::Unit1::Grammar", "Book1A::Unit2::Grammar", "Book1A::Unit3::Grammar", "Book1A::Unit4::Grammar", "Book1A::Unit5::Grammar", "Book1A::Unit6::Grammar", "Book1A::Culture1", "Book1A::Culture2", "Book1A::Culture3", "Book1A::Culture4"];
 
 const STRINGS = {
   en: {
@@ -544,7 +550,14 @@ const SECTIONS_KEY = "sogangKoreanSections_v1";
 // NOT listed here defaults to hidden, which is what keeps a newly added unit
 // from appearing in someone's deck the day it ships. Leave this list alone when
 // adding new content — the student turns the new section on themselves.
-const DEFAULT_VISIBLE_TAGS = ["Hangul1","Hangul3","Hangul4","Expressions::To_Be","Expressions::Adjectives","Expressions::Verbs","Expressions::Requests","Numbers"];
+//
+// Hangul2 is the one exception, added 2026-07-21. It is not new content so much
+// as a missing piece of content that is already on: a student with Hangul 1, 3
+// and 4 showing is part-way through the alphabet with the consonants and 받침
+// silently absent. Words were also added to Hangul1 and Hangul3, which are on
+// by default and have no opt-out, so leaving Hangul2 off would have been the
+// inconsistent choice rather than the conservative one.
+const DEFAULT_VISIBLE_TAGS = ["Hangul1","Hangul2","Hangul3","Hangul4","Expressions::To_Be","Expressions::Adjectives","Expressions::Verbs","Expressions::Requests","Numbers"];
 
 function loadSectionPrefs(){
   try{

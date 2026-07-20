@@ -14333,5 +14333,788 @@
     "audio": "8335f5b1b9"
    }
   ]
+ },
+ {
+  "id": "cc522d6c53",
+  "ko": "아우",
+  "en": "Younger sibling",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "弟・妹"
+ },
+ {
+  "id": "879864e9e6",
+  "ko": "아무",
+  "en": "Any, anyone",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "誰でも・何でも"
+ },
+ {
+  "id": "5093deb3c9",
+  "ko": "미리",
+  "en": "In advance",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "前もって"
+ },
+ {
+  "id": "78000000e4",
+  "ko": "머리",
+  "en": "Head; hair",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "頭・髪"
+ },
+ {
+  "id": "aef2e9b58a",
+  "ko": "우리",
+  "en": "We, us",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "私たち"
+ },
+ {
+  "id": "54dd5a6a19",
+  "ko": "나리",
+  "en": "Lily",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "ユリ"
+ },
+ {
+  "id": "0ebe2c3934",
+  "ko": "너무",
+  "en": "Too, excessively",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "あまりにも"
+ },
+ {
+  "id": "2840410349",
+  "ko": "미니",
+  "en": "Mini",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "ミニ"
+ },
+ {
+  "id": "138f1b811d",
+  "ko": "아무리",
+  "en": "No matter how",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "いくら〜でも"
+ },
+ {
+  "id": "c9ccd8b978",
+  "ko": "어느 나라",
+  "en": "Which country",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "どの国"
+ },
+ {
+  "id": "05a4157a13",
+  "ko": "우유",
+  "en": "Milk",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "牛乳"
+ },
+ {
+  "id": "78303f88a2",
+  "ko": "여우",
+  "en": "Fox",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "キツネ"
+ },
+ {
+  "id": "a343a61657",
+  "ko": "아야",
+  "en": "Ouch",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "いたっ"
+ },
+ {
+  "id": "fde6dd4c10",
+  "ko": "이",
+  "en": "Tooth; two",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "歯・二"
+ },
+ {
+  "id": "7021e165f8",
+  "ko": "오",
+  "en": "Five",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "五"
+ },
+ {
+  "id": "07890497a0",
+  "ko": "요리",
+  "en": "Cooking; a dish",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "料理"
+ },
+ {
+  "id": "c4dc21ad67",
+  "ko": "여자",
+  "en": "Woman",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "女性"
+ },
+ {
+  "id": "5b1d7cbd52",
+  "ko": "이유",
+  "en": "Reason",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "理由"
+ },
+ {
+  "id": "ed0631d7ea",
+  "ko": "의자",
+  "en": "Chair",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "椅子"
+ },
+ {
+  "id": "bfac74e676",
+  "ko": "벼",
+  "en": "Rice plant",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "稲"
+ },
+ {
+  "id": "c95ee3dde6",
+  "ko": "비",
+  "en": "Rain",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "雨"
+ },
+ {
+  "id": "139297ed20",
+  "ko": "자",
+  "en": "Ruler",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "定規"
+ },
+ {
+  "id": "48dc7e4146",
+  "ko": "부모",
+  "en": "Parents",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "両親"
+ },
+ {
+  "id": "0b70f86aa4",
+  "ko": "모자",
+  "en": "Hat",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "帽子"
+ },
+ {
+  "id": "7e7ae6d466",
+  "ko": "다리",
+  "en": "Leg; bridge",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "脚・橋"
+ },
+ {
+  "id": "e922dd2d5b",
+  "ko": "거리",
+  "en": "Street; distance",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "通り・距離"
+ },
+ {
+  "id": "f64ae60b2d",
+  "ko": "바지",
+  "en": "Trousers",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "ズボン"
+ },
+ {
+  "id": "17d55ae466",
+  "ko": "교수",
+  "en": "Professor",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "教授"
+ },
+ {
+  "id": "431763accb",
+  "ko": "구두",
+  "en": "Dress shoes",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "革靴"
+ },
+ {
+  "id": "94f160743c",
+  "ko": "바다",
+  "en": "Sea",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "海"
+ },
+ {
+  "id": "1eb4e47638",
+  "ko": "눈",
+  "en": "Eye; snow",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "目・雪"
+ },
+ {
+  "id": "1ef1d5d9f7",
+  "ko": "산",
+  "en": "Mountain",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "山"
+ },
+ {
+  "id": "7fed118269",
+  "ko": "몸",
+  "en": "Body",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "体"
+ },
+ {
+  "id": "8f0bd973fd",
+  "ko": "봄",
+  "en": "Spring",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "春"
+ },
+ {
+  "id": "6a94c2d282",
+  "ko": "서울",
+  "en": "Seoul",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "ソウル"
+ },
+ {
+  "id": "7de46fe8e4",
+  "ko": "사람",
+  "en": "Person",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "人"
+ },
+ {
+  "id": "50ca52f4a4",
+  "ko": "사랑",
+  "en": "Love",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "愛"
+ },
+ {
+  "id": "b7f7daf2f1",
+  "ko": "여름",
+  "en": "Summer",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "夏"
+ },
+ {
+  "id": "d9c2836a73",
+  "ko": "겨울",
+  "en": "Winter",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "冬"
+ },
+ {
+  "id": "15042dc8a6",
+  "ko": "손님",
+  "en": "Guest; customer",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "お客様"
+ },
+ {
+  "id": "65f071aff1",
+  "ko": "일본",
+  "en": "Japan",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "日本"
+ },
+ {
+  "id": "bd76e23841",
+  "ko": "아버지",
+  "en": "Father",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "父"
+ },
+ {
+  "id": "2841623f2e",
+  "ko": "주머니",
+  "en": "Pocket",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "ポケット"
+ },
+ {
+  "id": "9c9e7281fc",
+  "ko": "강아지",
+  "en": "Puppy",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "子犬"
+ },
+ {
+  "id": "210a94a663",
+  "ko": "이야기",
+  "en": "Story",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "話"
+ },
+ {
+  "id": "cece266f76",
+  "ko": "기구",
+  "en": "Balloon; tool, apparatus",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "気球・器具"
+ },
+ {
+  "id": "aada5b05c7",
+  "ko": "거기",
+  "en": "There",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "そこ"
+ },
+ {
+  "id": "2951819e39",
+  "ko": "구이",
+  "en": "Grilled dish",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "焼き料理"
+ },
+ {
+  "id": "ca027bf183",
+  "ko": "아가",
+  "en": "Baby",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "赤ちゃん"
+ },
+ {
+  "id": "3d83004872",
+  "ko": "두유",
+  "en": "Soy milk",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "豆乳"
+ },
+ {
+  "id": "6b24ff4d11",
+  "ko": "기도",
+  "en": "Prayer",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "祈り"
+ },
+ {
+  "id": "1a8e431ed0",
+  "ko": "오다",
+  "en": "To come",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "来る"
+ },
+ {
+  "id": "274de33984",
+  "ko": "바나나",
+  "en": "Banana",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "バナナ"
+ },
+ {
+  "id": "52f8520607",
+  "ko": "비누",
+  "en": "Soap",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "石けん"
+ },
+ {
+  "id": "38064bcc20",
+  "ko": "나비",
+  "en": "Butterfly",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "蝶"
+ },
+ {
+  "id": "a2f7497d80",
+  "ko": "소",
+  "en": "Cow",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "牛"
+ },
+ {
+  "id": "eb83e76875",
+  "ko": "소리",
+  "en": "Sound",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "音"
+ },
+ {
+  "id": "7d192ead70",
+  "ko": "가수",
+  "en": "Singer",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "歌手"
+ },
+ {
+  "id": "1835b229b2",
+  "ko": "버스",
+  "en": "Bus",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "バス"
+ },
+ {
+  "id": "a96ca9414f",
+  "ko": "지구",
+  "en": "Earth",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "地球"
+ },
+ {
+  "id": "36e6e56d60",
+  "ko": "자리",
+  "en": "Seat",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "席"
+ },
+ {
+  "id": "5e9318be6a",
+  "ko": "주소",
+  "en": "Address",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "住所"
+ },
+ {
+  "id": "407520a16a",
+  "ko": "논",
+  "en": "Rice paddy",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "田んぼ"
+ },
+ {
+  "id": "3b58799c90",
+  "ko": "돈",
+  "en": "Money",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "お金"
+ },
+ {
+  "id": "2cf431901f",
+  "ko": "달",
+  "en": "Moon",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "月"
+ },
+ {
+  "id": "c0591b91a4",
+  "ko": "별",
+  "en": "Star",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "星"
+ },
+ {
+  "id": "b9417f4ee8",
+  "ko": "발",
+  "en": "Foot",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "足"
+ },
+ {
+  "id": "c5b5858b4c",
+  "ko": "얼굴",
+  "en": "Face",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "顔"
+ },
+ {
+  "id": "073577cbd4",
+  "ko": "삼",
+  "en": "Three",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "三"
+ },
+ {
+  "id": "3712f6f2fc",
+  "ko": "밤",
+  "en": "Night; chestnut",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "夜・栗"
+ },
+ {
+  "id": "41172997c5",
+  "ko": "담배",
+  "en": "Cigarette",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "たばこ"
+ },
+ {
+  "id": "b8f3bf5b54",
+  "ko": "공",
+  "en": "Ball",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "ボール"
+ },
+ {
+  "id": "266a1f025f",
+  "ko": "병",
+  "en": "Bottle; illness",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "瓶・病気"
+ },
+ {
+  "id": "50013af54d",
+  "ko": "종",
+  "en": "Bell",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "鐘"
+ },
+ {
+  "id": "8307603a0f",
+  "ko": "컵",
+  "en": "Cup",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "カップ"
+ },
+ {
+  "id": "5acb62b892",
+  "ko": "앞",
+  "en": "Front",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "前"
+ },
+ {
+  "id": "f75ab59986",
+  "ko": "김밥",
+  "en": "Gimbap",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "キンパ"
+ },
+ {
+  "id": "773cefd0de",
+  "ko": "무릎",
+  "en": "Knee",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "膝"
+ },
+ {
+  "id": "45dd40f970",
+  "ko": "집",
+  "en": "House",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "家"
+ },
+ {
+  "id": "dddc599f0c",
+  "ko": "숲",
+  "en": "Forest",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "森"
+ },
+ {
+  "id": "4624a6408b",
+  "ko": "잎",
+  "en": "Leaf",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "葉"
+ },
+ {
+  "id": "ee2e4017e2",
+  "ko": "학교",
+  "en": "School",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "学校"
+ },
+ {
+  "id": "76e4c52e91",
+  "ko": "부엌",
+  "en": "Kitchen",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "台所"
+ },
+ {
+  "id": "7ad445c63b",
+  "ko": "낚시",
+  "en": "Fishing",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "釣り"
+ },
+ {
+  "id": "d1d619f0d1",
+  "ko": "옷",
+  "en": "Clothes",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "服"
+ },
+ {
+  "id": "3bcc116fcb",
+  "ko": "있다",
+  "en": "To be, to exist",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "ある・いる"
+ },
+ {
+  "id": "e69615475f",
+  "ko": "자다",
+  "en": "To sleep",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "寝る"
  }
 ]

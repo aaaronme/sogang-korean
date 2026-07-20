@@ -203,13 +203,22 @@ In particular, and in addition to the list below:
 
 ## Current content (as of this file)
 
-**1496 cards.**
+**1583 cards.**
 
-The original 94, from the "서강한국어 1A 한글" (Sogang Korean 1A Hangul) intro
-unit slide decks — Hangul 1 (10 basics), Hangul 3 (41, diphthongs/aspirated),
-Hangul 4 (16, tense consonants), Expressions (23, across To-Be/Adjectives/
-Verbs/Requests), Numbers (6). These eight are the only sections that default
-to **on**; every Book 1A section below defaults to off.
+The alphabet and phrase sections, from the "서강한국어 1A 한글" (Sogang Korean 1A
+Hangul) intro unit slide decks — Hangul 1 (25 basics), Hangul 2 (63, plain
+consonants and 받침), Hangul 3 (50, diphthongs/aspirated/받침), Hangul 4 (16,
+tense consonants), Expressions (23, across To-Be/Adjectives/Verbs/Requests),
+Numbers (6). These nine are the only sections that default to **on**; every
+Book 1A section below defaults to off.
+
+Hangul 2 did not exist until 2026-07-21 — the deck ran 1, 3, 4, so the plain
+consonants ㄱㄷㅂㅅㅈ and the 받침 sounds were absent. Hangul 1 held only the ten
+words from its dictation slide, and Hangul 3 only the [t]-final 받침 words.
+`add_hangul_words.py` closed all three gaps from the class PowerPoints; its
+docstring records what was deliberately left uncarded and why. Its word list
+lives in the repo as `hangul_words.json` rather than in a scratch directory,
+so unlike the other generators it can be re-run from a clean checkout.
 
 Preparatory Units 1–4 and Units 1–6, book pp.16–169:
 
@@ -251,10 +260,17 @@ pp.36–47 wherever the word appears there; the rest, and all Japanese, are ours
 
 Grammar points per unit are recorded in `GRAMMAR_NOTES.md`.
 
-**Known gap:** pp.16–17, the 준비 1과 opener, is the only spread never
-photographed. The PDF sample shows it is the unit contents map — no vocabulary,
-no example sentences — so nothing appears lost, but that is not visually
-verified. Everything else from pp.16–171 is covered.
+**No known gaps in Book 1A.** pp.16–17, the 준비 1과 opener, was never
+photographed; the book's owner confirmed on 2026-07-21 that it is a full-page
+opening photograph with no vocabulary and no example sentences. Nothing is
+lost. Everything from pp.16–171 is covered.
+
+**A word can legitimately have more than one card.** 129 words did before the
+Hangul backfill and ~23 more do after it — 칫솔 is in two Preparatory Units,
+김밥 in three sections, 앞 in both Unit 1 and Hangul 2. A card belongs to the
+lesson that teaches it, and the book re-teaches words. Do not "fix" this by
+deleting the later card: the freeze forbids removing a card, and a student who
+has review history on it would lose it.
 
 **Do not trust arithmetic on the photo sequence.** It is irregular in three
 places and every one of them caused a wrong page assignment at some point:
