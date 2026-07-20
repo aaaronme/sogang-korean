@@ -1,0 +1,850 @@
+[
+ {
+  "id": "2eee030e27",
+  "ko": "오이",
+  "en": "Cucumber",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "きゅうり"
+ },
+ {
+  "id": "cc73c2b7a9",
+  "ko": "오리",
+  "en": "Duck",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "アヒル"
+ },
+ {
+  "id": "a3071b779e",
+  "ko": "이마",
+  "en": "Forehead",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "額（ひたい）"
+ },
+ {
+  "id": "a1bf92ebb4",
+  "ko": "나무",
+  "en": "Tree",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "木（き）"
+ },
+ {
+  "id": "e5b7109f3d",
+  "ko": "어머니",
+  "en": "Mother",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "母（はは）"
+ },
+ {
+  "id": "50c3391986",
+  "ko": "누리",
+  "en": "World (poetic)",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "世界（詩的な言い方）"
+ },
+ {
+  "id": "3b9f2d23f9",
+  "ko": "우리나라",
+  "en": "Our country",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "私たちの国"
+ },
+ {
+  "id": "ee969c1f23",
+  "ko": "누나",
+  "en": "Older sister (of a male)",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "姉（弟から見て）"
+ },
+ {
+  "id": "50c79801fe",
+  "ko": "나이",
+  "en": "Age",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "年齢（ねんれい）"
+ },
+ {
+  "id": "8500936151",
+  "ko": "아이",
+  "en": "Child",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "子供（こども）"
+ },
+ {
+  "id": "fa8530fe14",
+  "ko": "그네",
+  "en": "Swing",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "ブランコ"
+ },
+ {
+  "id": "c9d1e73b2f",
+  "ko": "개미",
+  "en": "Ant",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "アリ"
+ },
+ {
+  "id": "74311982d3",
+  "ko": "돼지",
+  "en": "Pig",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "豚（ぶた）"
+ },
+ {
+  "id": "26e97b27e1",
+  "ko": "교회",
+  "en": "Church",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "教会（きょうかい）"
+ },
+ {
+  "id": "22f75390a2",
+  "ko": "세수",
+  "en": "Washing one's face",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "洗顔（せんがん）"
+ },
+ {
+  "id": "1d50a83601",
+  "ko": "세다",
+  "en": "To count",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "数える（かぞえる）"
+ },
+ {
+  "id": "a6ced25d6e",
+  "ko": "무지개",
+  "en": "Rainbow",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "虹（にじ）"
+ },
+ {
+  "id": "c5786cb98c",
+  "ko": "해바라기",
+  "en": "Sunflower",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "ひまわり"
+ },
+ {
+  "id": "87d89bd37a",
+  "ko": "회사",
+  "en": "Company",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "会社（かいしゃ）"
+ },
+ {
+  "id": "c2194459ac",
+  "ko": "열쇠",
+  "en": "Key",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "鍵（かぎ）"
+ },
+ {
+  "id": "cb1e84d650",
+  "ko": "의사",
+  "en": "Doctor",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "医者（いしゃ）"
+ },
+ {
+  "id": "5360aed727",
+  "ko": "스웨터",
+  "en": "Sweater",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "セーター"
+ },
+ {
+  "id": "3fd032109b",
+  "ko": "차다",
+  "en": "To kick / to be cold",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "蹴る（ける）／寒い（さむい）"
+ },
+ {
+  "id": "9bbadf2435",
+  "ko": "치마",
+  "en": "Skirt",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "スカート"
+ },
+ {
+  "id": "110ea3deb9",
+  "ko": "기차",
+  "en": "Train",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "汽車（きしゃ）"
+ },
+ {
+  "id": "abe3348185",
+  "ko": "기자",
+  "en": "Reporter / journalist",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "記者（きしゃ）"
+ },
+ {
+  "id": "b9cc606e1a",
+  "ko": "차",
+  "en": "Tea / car",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "お茶／車（ちゃ／くるま）"
+ },
+ {
+  "id": "e49ee70749",
+  "ko": "키",
+  "en": "Height",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "背（せ）"
+ },
+ {
+  "id": "dd0f1a89dc",
+  "ko": "크다",
+  "en": "To be big / tall",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "大きい（おおきい）"
+ },
+ {
+  "id": "07d736f954",
+  "ko": "코트",
+  "en": "Coat",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "コート"
+ },
+ {
+  "id": "06b2d89317",
+  "ko": "커피",
+  "en": "Coffee",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "コーヒー"
+ },
+ {
+  "id": "deca95d5b3",
+  "ko": "타다",
+  "en": "To ride",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "乗る（のる）"
+ },
+ {
+  "id": "dd2541e2f1",
+  "ko": "투수",
+  "en": "Pitcher (baseball)",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "投手（とうしゅ）"
+ },
+ {
+  "id": "a15c90214b",
+  "ko": "티셔츠",
+  "en": "T-shirt",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "Tシャツ"
+ },
+ {
+  "id": "d1691e0fcb",
+  "ko": "아프다",
+  "en": "To be sick / hurt",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "痛い／具合が悪い"
+ },
+ {
+  "id": "3a77b696ad",
+  "ko": "포도",
+  "en": "Grape(s)",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "ぶどう"
+ },
+ {
+  "id": "558136bd17",
+  "ko": "하나",
+  "en": "One",
+  "tags": [
+   "Hangul3",
+   "Numbers"
+  ],
+  "ja": "一つ（ひとつ）"
+ },
+ {
+  "id": "2800d15994",
+  "ko": "지하",
+  "en": "Underground",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "地下（ちか）"
+ },
+ {
+  "id": "b2a5547280",
+  "ko": "걷다",
+  "en": "To walk",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "歩く（あるく）"
+ },
+ {
+  "id": "31bfb61435",
+  "ko": "듣다",
+  "en": "To listen / hear",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "聞く（きく）"
+ },
+ {
+  "id": "014ad5d030",
+  "ko": "숟가락",
+  "en": "Spoon",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "スプーン"
+ },
+ {
+  "id": "cc4b6965c0",
+  "ko": "돋보기",
+  "en": "Magnifying glass",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "虫眼鏡（むしめがね）"
+ },
+ {
+  "id": "4fe0d88661",
+  "ko": "밭",
+  "en": "Field",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "畑（はたけ）"
+ },
+ {
+  "id": "3d9bc8a062",
+  "ko": "다섯",
+  "en": "Five",
+  "tags": [
+   "Hangul3",
+   "Numbers"
+  ],
+  "ja": "五つ（いつつ）"
+ },
+ {
+  "id": "5db3959475",
+  "ko": "칫솔",
+  "en": "Toothbrush",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "歯ブラシ（はブラシ）"
+ },
+ {
+  "id": "f901bc32bb",
+  "ko": "버섯",
+  "en": "Mushroom",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "きのこ"
+ },
+ {
+  "id": "dbd1d5148a",
+  "ko": "젓가락",
+  "en": "Chopsticks",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "箸（はし）"
+ },
+ {
+  "id": "ce360031a2",
+  "ko": "낮",
+  "en": "Daytime",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "昼（ひる）"
+ },
+ {
+  "id": "442dbc217a",
+  "ko": "낮잠",
+  "en": "Nap",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "昼寝（ひるね）"
+ },
+ {
+  "id": "916de1c113",
+  "ko": "햇빛",
+  "en": "Sunlight",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "日差し（ひざし）"
+ },
+ {
+  "id": "e6344f6567",
+  "ko": "꽃",
+  "en": "Flower",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "花（はな）"
+ },
+ {
+  "id": "960ebc65e1",
+  "ko": "시계",
+  "en": "Clock / watch",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "時計（とけい）"
+ },
+ {
+  "id": "7a56f5adb6",
+  "ko": "사과",
+  "en": "Apple",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "りんご"
+ },
+ {
+  "id": "c0a25774b7",
+  "ko": "화가",
+  "en": "Painter / artist",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "画家（がか）"
+ },
+ {
+  "id": "b8039ba05c",
+  "ko": "샤워",
+  "en": "Shower",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "シャワー"
+ },
+ {
+  "id": "c87d1961ef",
+  "ko": "뛰다",
+  "en": "To run",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "走る（はしる）"
+ },
+ {
+  "id": "4d2341fc90",
+  "ko": "쥐",
+  "en": "Mouse / rat",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "ねずみ"
+ },
+ {
+  "id": "e6a9913447",
+  "ko": "가위",
+  "en": "Scissors",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "はさみ"
+ },
+ {
+  "id": "2cda3f7dc6",
+  "ko": "비싸다",
+  "en": "Expensive",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "高い（たかい）"
+ },
+ {
+  "id": "b6aa6119fa",
+  "ko": "쓰다",
+  "en": "To write / to be bitter / to use",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "書く／苦い／使う"
+ },
+ {
+  "id": "57fb892ae9",
+  "ko": "짜다",
+  "en": "Salty",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "しょっぱい"
+ },
+ {
+  "id": "8133043384",
+  "ko": "코끼리",
+  "en": "Elephant",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "象（ぞう）"
+ },
+ {
+  "id": "f5498f890a",
+  "ko": "머리띠",
+  "en": "Headband",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "ヘアバンド"
+ },
+ {
+  "id": "309044ad4e",
+  "ko": "뿌리",
+  "en": "Root",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "根（ね）"
+ },
+ {
+  "id": "e3f820b59e",
+  "ko": "바쁘다",
+  "en": "Busy",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "忙しい（いそがしい）"
+ },
+ {
+  "id": "0c62455ea0",
+  "ko": "싸우다",
+  "en": "To fight",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "喧嘩する（けんかする）"
+ },
+ {
+  "id": "58fe5a84ca",
+  "ko": "가짜",
+  "en": "Fake / imitation",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "偽物（にせもの）"
+ },
+ {
+  "id": "e0e0f248aa",
+  "ko": "저는 의사예요.",
+  "en": "I am a doctor.",
+  "tags": [
+   "Expressions::To_Be"
+  ],
+  "ja": "私は医者です。"
+ },
+ {
+  "id": "ef2233e8a0",
+  "ko": "저는 화가예요.",
+  "en": "I am a painter.",
+  "tags": [
+   "Expressions::To_Be"
+  ],
+  "ja": "私は画家です。"
+ },
+ {
+  "id": "9bfbc5a818",
+  "ko": "이것은 시계예요.",
+  "en": "This is a watch.",
+  "tags": [
+   "Expressions::To_Be"
+  ],
+  "ja": "これは時計です。"
+ },
+ {
+  "id": "f955ffdb23",
+  "ko": "이것은 가위예요.",
+  "en": "This is a pair of scissors.",
+  "tags": [
+   "Expressions::To_Be"
+  ],
+  "ja": "これははさみです。"
+ },
+ {
+  "id": "44c84bce1b",
+  "ko": "커피가 비싸요.",
+  "en": "The coffee is expensive.",
+  "tags": [
+   "Expressions::Adjectives"
+  ],
+  "ja": "コーヒーが高いです。"
+ },
+ {
+  "id": "ebc0e38564",
+  "ko": "스웨터가 비싸요.",
+  "en": "The sweater is expensive.",
+  "tags": [
+   "Expressions::Adjectives"
+  ],
+  "ja": "セーターが高いです。"
+ },
+ {
+  "id": "60c4dbeb48",
+  "ko": "꽃이 예뻐요.",
+  "en": "The flower is pretty. (예쁘다 = pretty, new)",
+  "tags": [
+   "Expressions::Adjectives"
+  ],
+  "ja": "花がきれいです。（きれい = pretty, new）"
+ },
+ {
+  "id": "b536a4320a",
+  "ko": "포도가 맛있어요.",
+  "en": "The grapes are delicious. (맛있다 = delicious, new)",
+  "tags": [
+   "Expressions::Adjectives"
+  ],
+  "ja": "ぶどうがおいしいです。（おいしい = delicious, new）"
+ },
+ {
+  "id": "debf562004",
+  "ko": "이 음식이 짜요.",
+  "en": "This food is salty. (음식 = food, new)",
+  "tags": [
+   "Expressions::Adjectives"
+  ],
+  "ja": "この食べ物はしょっぱいです。（食べ物 = food, new）"
+ },
+ {
+  "id": "4f397dfea8",
+  "ko": "저는 바빠요.",
+  "en": "I am busy.",
+  "tags": [
+   "Expressions::Adjectives"
+  ],
+  "ja": "私は忙しいです。"
+ },
+ {
+  "id": "3e38c99009",
+  "ko": "저는 아파요.",
+  "en": "I am sick / it hurts.",
+  "tags": [
+   "Expressions::Adjectives"
+  ],
+  "ja": "私は具合が悪いです。"
+ },
+ {
+  "id": "f60cbb4156",
+  "ko": "키가 커요.",
+  "en": "He/she is tall. (lit. \"height is big\")",
+  "tags": [
+   "Expressions::Adjectives"
+  ],
+  "ja": "背が高いです。（直訳：「背が大きい」）"
+ },
+ {
+  "id": "969714ad2f",
+  "ko": "기차를 타요.",
+  "en": "I ride the train.",
+  "tags": [
+   "Expressions::Verbs"
+  ],
+  "ja": "汽車に乗ります。"
+ },
+ {
+  "id": "cf3176e10c",
+  "ko": "그네를 타요.",
+  "en": "I ride the swing.",
+  "tags": [
+   "Expressions::Verbs"
+  ],
+  "ja": "ブランコに乗ります。"
+ },
+ {
+  "id": "629a49140a",
+  "ko": "회사에 가요.",
+  "en": "I go to work/the office.",
+  "tags": [
+   "Expressions::Verbs"
+  ],
+  "ja": "会社に行きます。"
+ },
+ {
+  "id": "7243806c3e",
+  "ko": "교회에 가요.",
+  "en": "I go to church.",
+  "tags": [
+   "Expressions::Verbs"
+  ],
+  "ja": "教会に行きます。"
+ },
+ {
+  "id": "7efc281b7d",
+  "ko": "걸어서 가요.",
+  "en": "I go on foot / I walk there.",
+  "tags": [
+   "Expressions::Verbs"
+  ],
+  "ja": "歩いて行きます。"
+ },
+ {
+  "id": "1d3b80b7a8",
+  "ko": "잘 들어요.",
+  "en": "I listen carefully.",
+  "tags": [
+   "Expressions::Verbs"
+  ],
+  "ja": "よく聞きます。"
+ },
+ {
+  "id": "368ed4c75a",
+  "ko": "저는 안 싸워요.",
+  "en": "I don't fight.",
+  "tags": [
+   "Expressions::Verbs"
+  ],
+  "ja": "私は喧嘩しません。"
+ },
+ {
+  "id": "64d0a0079a",
+  "ko": "세수를 해요.",
+  "en": "I wash my face.",
+  "tags": [
+   "Expressions::Verbs"
+  ],
+  "ja": "洗顔をします。"
+ },
+ {
+  "id": "580a1497e1",
+  "ko": "커피 주세요.",
+  "en": "Coffee, please.",
+  "tags": [
+   "Expressions::Requests"
+  ],
+  "ja": "コーヒーをください。"
+ },
+ {
+  "id": "c77a12e186",
+  "ko": "가위 주세요.",
+  "en": "Scissors, please.",
+  "tags": [
+   "Expressions::Requests"
+  ],
+  "ja": "はさみをください。"
+ },
+ {
+  "id": "7e515f6153",
+  "ko": "숟가락하고 젓가락 주세요.",
+  "en": "Spoon and chopsticks, please.",
+  "tags": [
+   "Expressions::Requests"
+  ],
+  "ja": "スプーンと箸をください。"
+ },
+ {
+  "id": "eca74f1000",
+  "ko": "둘",
+  "en": "Two (new)",
+  "tags": [
+   "Numbers"
+  ],
+  "ja": "二つ（ふたつ、new）"
+ },
+ {
+  "id": "e4e5c4c3bf",
+  "ko": "셋",
+  "en": "Three (new)",
+  "tags": [
+   "Numbers"
+  ],
+  "ja": "三つ（みっつ、new）"
+ },
+ {
+  "id": "c94b9f1fab",
+  "ko": "넷",
+  "en": "Four (new)",
+  "tags": [
+   "Numbers"
+  ],
+  "ja": "四つ（よっつ、new）"
+ },
+ {
+  "id": "ce804e32cc",
+  "ko": "다섯 살이에요.",
+  "en": "I am five years old. (살 = age counter, new)",
+  "tags": [
+   "Numbers"
+  ],
+  "ja": "五歳です。（歳 = age counter, new）"
+ }
+]

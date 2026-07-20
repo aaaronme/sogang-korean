@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-capable" content="yes">
+<title>Sogang Korean · Flashcards</title>
+<style>
+  :root{
+    --bg:#0f1115;
+    --card:#181b22;
+    --card-border:#262b36;
+    --text:#eef0f3;
+    --muted:#8b92a3;
+    --accent:#4f8cff;
+    --accent2:#7c5cff;
+    --good:#2fbf71;
+    --hard:#e8a33d;
+    --again:#e5484d;
+    --easy:#4f8cff;
+    --radius:18px;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  html,body{height:100%;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    min-height:100dvh;
+    padding-top:env(safe-area-inset-top);
+    padding-bottom:env(safe-area-inset-bottom);
+  }
+  header{
+    padding:14px 18px 10px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+  }
+  header h1{font-size:16px;font-weight:600;margin:0;color:var(--muted);letter-spacing:.2px;}
+  header .stats{font-size:13px;color:var(--muted);display:flex;gap:10px;}
+  header .stats b{color:var(--text);font-weight:600;}
+  .iconbtn{
+    background:none;border:none;color:var(--muted);font-size:18px;padding:6px;cursor:pointer;line-height:1;
+  }
+  .progress-track{height:4px;background:var(--card-border);margin:0 18px 4px;border-radius:2px;overflow:hidden;}
+  .progress-fill{height:100%;background:var(--accent);width:0%;transition:width .3s ease;}
+
+  main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:10px 18px 18px;
+  }
+
+  #deckPicker{
+    width:100%;
+    max-width:420px;
+    text-align:center;
+  }
+  #deckPicker h2{font-size:22px;margin:0 0 6px;}
+  #deckPicker p{color:var(--muted);font-size:14px;margin:0 0 22px;}
+  .tag-grid{display:flex;flex-direction:column;gap:10px;}
+  .tag-btn{
+    background:var(--card);
+    border:1px solid var(--card-border);
+    color:var(--text);
+    border-radius:var(--radius);
+    padding:16px 18px;
+    font-size:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    text-align:left;
+  }
+  .tag-btn:active{background:#20242e;}
+  .tag-btn .count{color:var(--muted);font-size:13px;}
+  .tag-btn .due-dot{width:8px;height:8px;border-radius:50%;background:var(--good);margin-right:8px;flex:none;}
+
+  #studyArea{width:100%;max-width:420px;display:none;flex-direction:column;align-items:center;}
+  #cardWrap{width:100%;perspective:1200px;margin-bottom:22px;}
+  #card{
+    position:relative;
+    width:100%;
+    min-height:230px;
+    border-radius:24px;
+    background:linear-gradient(160deg,var(--card),#151822);
+    border:1px solid var(--card-border);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:36px 26px;
+    text-align:center;
+    cursor:pointer;
+  }
+  #card .ko{font-size:34px;font-weight:700;line-height:1.3;margin-bottom:6px;word-break:keep-all;}
+  #card .en{font-size:19px;color:var(--accent);margin-top:14px;display:none;line-height:1.4;}
+  #card.flipped .en{display:block;}
+  #card .tagpill{
+    position:absolute;top:14px;left:14px;
+    font-size:10px;text-transform:uppercase;letter-spacing:.5px;
+    color:var(--muted);background:#00000030;padding:4px 9px;border-radius:20px;
+  }
+  #card .hint{
+    position:absolute;bottom:14px;left:0;right:0;
+    font-size:12px;color:var(--muted);
+  }
+  #soundBtn{
+    position:absolute;top:12px;right:12px;
+    width:38px;height:38px;border-radius:50%;
+    background:#00000030;border:none;color:var(--text);
+    font-size:17px;display:flex;align-items:center;justify-content:center;
+    cursor:pointer;
+  }
+  #soundBtn.playing{background:var(--accent);}
+
+  .grade-row{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:8px;
+    width:100%;
+  }
+  .grade-btn{
+    border:none;border-radius:14px;padding:14px 4px 10px;
+    color:#fff;font-size:13px;font-weight:600;cursor:pointer;
+    display:flex;flex-direction:column;gap:4px;align-items:center;
+  }
+  .grade-btn small{font-weight:400;opacity:.85;font-size:11px;}
+  .grade-btn.again{background:var(--again);}
+  .grade-btn.hard{background:var(--hard);}
+  .grade-btn.good{background:var(--good);}
+  .grade-btn.easy{background:var(--easy);}
+  .grade-row.hidden, .flip-hint.hidden{visibility:hidden;}
+
+  .flip-hint{
+    color:var(--muted);font-size:13px;margin-top:2px;
+  }
+
+  #doneScreen{display:none;flex-direction:column;align-items:center;text-align:center;max-width:380px;}
+  #doneScreen .emoji{font-size:44px;margin-bottom:10px;}
+  #doneScreen h2{margin:0 0 6px;font-size:20px;}
+  #doneScreen p{color:var(--muted);font-size:14px;margin:0 0 22px;}
+
+  .pillbtn{
+    background:var(--accent);color:#fff;border:none;border-radius:14px;
+    padding:13px 22px;font-size:15px;font-weight:600;cursor:pointer;
+  }
+  .ghostbtn{
+    background:none;color:var(--muted);border:1px solid var(--card-border);border-radius:14px;
+    padding:13px 22px;font-size:14px;cursor:pointer;margin-top:10px;
+  }
+
+  #backBar{
+    width:100%;max-width:420px;display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;
+  }
+  #backBar button{background:none;border:none;color:var(--muted);font-size:14px;cursor:pointer;padding:6px 0;}
+
+  #menuSheet{
+    position:fixed;inset:0;background:#000000aa;display:none;align-items:flex-end;z-index:20;
+  }
+  #menuSheet .sheet{
+    background:var(--card);width:100%;border-radius:20px 20px 0 0;padding:20px 18px calc(20px + env(safe-area-inset-bottom));
+  }
+  #menuSheet h3{margin:0 0 14px;font-size:16px;}
+  #menuSheet .row{
+    display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--card-border);font-size:14px;
+  }
+  #menuSheet .row:last-child{border-bottom:none;}
+  #menuSheet button.action{background:var(--card-border);border:none;color:var(--text);border-radius:10px;padding:8px 14px;font-size:13px;cursor:pointer;}
+  #menuSheet .closeSheet{width:100%;margin-top:12px;}
+  input[type=file]{display:none;}
+  .toast{
+    position:fixed;bottom:24px;left:50%;transform:translateX(-50%);
+    background:var(--card);border:1px solid var(--card-border);color:var(--text);
+    padding:10px 18px;border-radius:12px;font-size:13px;opacity:0;pointer-events:none;transition:opacity .25s;z-index:30;
+  }
+  .toast.show{opacity:1;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1 id="appTitle">Sogang Korean Flashcards</h1>
+  <div class="stats" id="headerStats"></div>
+  <button class="iconbtn" id="langBtn" style="font-size:13px;font-weight:600;">EN</button>
+  <button class="iconbtn" id="menuOpenBtn">⋯</button>
+</header>
+<div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+
+<main>
+  <div id="deckPicker">
+    <h2 id="studyPromptText">What do you want to study?</h2>
+    <p id="studyHintText">Tap a set below. Cards you've already seen come back on their own schedule.</p>
+    <div class="tag-grid" id="tagGrid"></div>
+  </div>
+
+  <div id="studyArea">
+    <div id="backBar"><button id="backBtn">← All sets</button><span id="deckLabel" style="color:var(--muted);font-size:13px;"></span></div>
+    <div id="cardWrap">
+      <div id="card">
+        <div class="tagpill" id="cardTag"></div>
+        <button id="soundBtn">🔊</button>
+        <div class="ko" id="cardKo"></div>
+        <div class="en" id="cardEn"></div>
+        <div class="hint" id="cardHint">Tap card to reveal</div>
+      </div>
+    </div>
+    <div class="grade-row hidden" id="gradeRow">
+      <button class="grade-btn again" data-grade="0"><span id="gAgain">Again</span><small id="ivAgain"></small></button>
+      <button class="grade-btn hard" data-grade="1"><span id="gHard">Hard</span><small id="ivHard"></small></button>
+      <button class="grade-btn good" data-grade="2"><span id="gGood">Good</span><small id="ivGood"></small></button>
+      <button class="grade-btn easy" data-grade="3"><span id="gEasy">Easy</span><small id="ivEasy"></small></button>
+    </div>
+  </div>
+
+  <div id="doneScreen">
+    <div class="emoji">🎉</div>
+    <h2 id="doneTitle">All caught up</h2>
+    <p id="doneDesc">No more cards due in this set right now. Come back later, or study another set.</p>
+    <button class="pillbtn" id="doneBackBtn">Back to sets</button>
+  </div>
+</main>
+
+<div id="menuSheet">
+  <div class="sheet">
+    <h3 id="menuTitleText">Progress &amp; sync</h3>
+    <div class="row"><span id="exportLabelText">Export progress</span><button class="action" id="exportBtn">Download file</button></div>
+    <div class="row"><span id="importLabelText">Import progress</span><button class="action" id="importBtn">Choose file</button></div>
+    <div class="row"><span id="resetLabelText">Reset all progress</span><button class="action" id="resetBtn">Reset</button></div>
+    <input type="file" id="importFile" accept="application/json">
+    <button class="ghostbtn closeSheet" id="closeSheetBtn">Close</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const CARDS = __CARDS_JSON__;
+
+// Tag labels and every UI string are keyed by language. Adding a language
+// later just means adding a new top-level key here (e.g. "zh") — nothing
+// else in the app needs to change to support it.
+const TAG_LABELS = {
+  en: {
+    "Hangul1": "Hangul 1 — basics",
+    "Hangul3": "Hangul 3 — diphthongs",
+    "Hangul4": "Hangul 4 — tense consonants",
+    "Expressions::To_Be": "Expressions — to be",
+    "Expressions::Adjectives": "Expressions — adjectives",
+    "Expressions::Verbs": "Expressions — verbs",
+    "Expressions::Requests": "Expressions — requests",
+    "Numbers": "Numbers 1–5",
+  },
+  ja: {
+    "Hangul1": "ハングル1 — 基礎",
+    "Hangul3": "ハングル3 — 二重母音・激音",
+    "Hangul4": "ハングル4 — 濃音",
+    "Expressions::To_Be": "表現 — 〜です",
+    "Expressions::Adjectives": "表現 — 形容詞",
+    "Expressions::Verbs": "表現 — 動詞",
+    "Expressions::Requests": "表現 — お願い",
+    "Numbers": "数字 1〜5",
+  },
+};
+const TAG_ORDER = ["Hangul1","Hangul3","Hangul4","Expressions::To_Be","Expressions::Adjectives","Expressions::Verbs","Expressions::Requests","Numbers"];
+
+const STRINGS = {
+  en: {
+    title: "Sogang Korean Flashcards",
+    studyPrompt: "What do you want to study?",
+    studyHint: "Tap a set below. Cards you've already seen come back on their own schedule.",
+    allCards: n => `All ${n} cards`,
+    dueTotal: (due,total) => `${due} due · ${total} total`,
+    dueHeader: n => `${n} due`,
+    allSets: "← All sets",
+    tapReveal: "Tap card to reveal",
+    again: "Again", hard: "Hard", good: "Good", easy: "Easy",
+    allCaughtUp: "All caught up",
+    allCaughtUpDesc: "No more cards due in this set right now. Come back later, or study another set.",
+    backToSets: "Back to sets",
+    menuTitle: "Progress & sync",
+    exportLabel: "Export progress", exportBtn: "Download file",
+    importLabel: "Import progress", importBtn: "Choose file",
+    resetLabel: "Reset all progress", resetBtn: "Reset",
+    close: "Close",
+    toastDownloaded: "Progress downloaded",
+    toastImported: "Progress imported",
+    toastImportFail: "Couldn't read that file",
+    toastReset: "Progress reset",
+    confirmReset: "Reset all progress? This can't be undone.",
+    ivAgain: "<1m", ivLessDay: "<1d", ivDay: "1d", ivDays: n => `${n}d`, ivMonths: n => `${n}mo`,
+  },
+  ja: {
+    title: "ソガン韓国語 単語帳",
+    studyPrompt: "何を勉強しますか？",
+    studyHint: "下のセットをタップしてください。すでに見たカードは、スケジュールに従ってまた出てきます。",
+    allCards: n => `全${n}枚`,
+    dueTotal: (due,total) => `期限 ${due} ・ 全 ${total}`,
+    dueHeader: n => `期限 ${n}`,
+    allSets: "← セット一覧",
+    tapReveal: "タップして答えを見る",
+    again: "もう一度", hard: "難しい", good: "良い", easy: "簡単",
+    allCaughtUp: "全部終わりました",
+    allCaughtUpDesc: "このセットには今、期限のカードはありません。後でまた来るか、別のセットを勉強してください。",
+    backToSets: "セット一覧に戻る",
+    menuTitle: "進捗と同期",
+    exportLabel: "進捗をエクスポート", exportBtn: "ファイルをダウンロード",
+    importLabel: "進捗をインポート", importBtn: "ファイルを選ぶ",
+    resetLabel: "進捗をすべてリセット", resetBtn: "リセット",
+    close: "閉じる",
+    toastDownloaded: "進捗をダウンロードしました",
+    toastImported: "進捗をインポートしました",
+    toastImportFail: "ファイルを読み込めませんでした",
+    toastReset: "進捗をリセットしました",
+    confirmReset: "すべての進捗をリセットしますか？元に戻せません。",
+    ivAgain: "<1分", ivLessDay: "<1日", ivDay: "1日", ivDays: n => `${n}日`, ivMonths: n => `${n}ヶ月`,
+  },
+};
+
+const LANG_KEY = "sogangKoreanLang"; // separate from STORAGE_KEY — never touches SRS progress
+let lang = localStorage.getItem(LANG_KEY) || "en";
+function t(){ return STRINGS[lang]; }
+
+// STORAGE_KEY must never change across future updates — it's how returning
+// students' saved progress is found again. If the saved-state shape ever
+// needs new fields, add them to DEFAULT_STATE (getState merges on top of
+// it) rather than changing this key or wiping existing data.
+const STORAGE_KEY = "sogangKoreanProgress_v1";
+const DEFAULT_STATE = {ef:2.5, interval:0, reps:0, due:0};
+const DAY = 24*60*60*1000;
+
+function loadProgress(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    return raw ? JSON.parse(raw) : {};
+  }catch(e){ return {}; }
+}
+function saveProgress(p){
+  try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(p)); }catch(e){}
+}
+let progress = loadProgress();
+
+function getState(id){
+  // Merge over DEFAULT_STATE so any fields added in a future update still
+  // get a sane default for cards a student already has saved progress on.
+  return {...DEFAULT_STATE, ...(progress[id] || {})};
+}
+function setState(id, state){
+  progress[id] = state;
+  saveProgress(progress);
+}
+
+function now(){ return Date.now(); }
+
+function schedule(state, grade){
+  // grade: 0 again, 1 hard, 2 good, 3 easy
+  let {ef, interval, reps} = state;
+  if(grade === 0){
+    reps = 0;
+    ef = Math.max(1.3, ef - 0.2);
+    interval = 0; // due again immediately (same session)
+  } else {
+    if(grade === 1){ ef = Math.max(1.3, ef - 0.15); }
+    else if(grade === 3){ ef = ef + 0.15; }
+    if(reps === 0){
+      interval = grade === 3 ? 4 : (grade === 1 ? 1 : 1);
+    } else if(reps === 1){
+      interval = grade === 3 ? 7 : (grade === 1 ? 2 : 3);
+    } else {
+      const mult = grade === 1 ? 1.2 : (grade === 3 ? ef*1.3 : ef);
+      interval = Math.max(1, Math.round(interval * mult));
+    }
+    reps += 1;
+  }
+  const due = grade === 0 ? now() : now() + interval*DAY;
+  return {ef, interval, reps, due};
+}
+
+function previewIntervals(state){
+  const labels = {};
+  [0,1,2,3].forEach(g=>{
+    const s = schedule(state, g);
+    if(g===0){ labels[g] = t().ivAgain; }
+    else if(s.interval < 1){ labels[g] = t().ivLessDay; }
+    else if(s.interval === 1){ labels[g] = t().ivDay; }
+    else if(s.interval < 30){ labels[g] = t().ivDays(s.interval); }
+    else { labels[g] = t().ivMonths(Math.round(s.interval/30)); }
+  });
+  return labels;
+}
+
+// ---- deck picker ----
+const tagGrid = document.getElementById("tagGrid");
+const deckPicker = document.getElementById("deckPicker");
+const studyArea = document.getElementById("studyArea");
+const doneScreen = document.getElementById("doneScreen");
+const headerStats = document.getElementById("headerStats");
+const progressFill = document.getElementById("progressFill");
+
+function cardsForTag(tag){
+  if(tag === "__ALL__") return CARDS;
+  return CARDS.filter(c => c.tags.includes(tag));
+}
+function dueCount(cardList){
+  const nowTs = now();
+  return cardList.filter(c => getState(c.id).due <= nowTs).length;
+}
+
+function renderDeckPicker(){
+  tagGrid.innerHTML = "";
+  const allBtn = makeTagBtn("__ALL__", t().allCards(CARDS.length), CARDS);
+  tagGrid.appendChild(allBtn);
+  TAG_ORDER.forEach(tag=>{
+    const list = cardsForTag(tag);
+    if(list.length === 0) return;
+    tagGrid.appendChild(makeTagBtn(tag, TAG_LABELS[lang][tag] || tag, list));
+  });
+  updateHeaderStats();
+  applyStaticStrings();
+}
+
+function makeTagBtn(tag, label, list){
+  const btn = document.createElement("div");
+  btn.className = "tag-btn";
+  const due = dueCount(list);
+  btn.innerHTML = `<span>${due>0?'<span class="due-dot"></span>':''}${label}</span><span class="count">${t().dueTotal(due, list.length)}</span>`;
+  btn.onclick = () => startSession(tag);
+  return btn;
+}
+
+function updateHeaderStats(){
+  const dueAll = dueCount(CARDS);
+  headerStats.innerHTML = `<span>${t().dueHeader(dueAll)}</span>`;
+}
+
+// ---- study session ----
+let queue = [];
+let currentTag = null;
+let currentCard = null;
+let revealed = false;
+let audioEl = null;
+
+function startSession(tag){
+  currentTag = tag;
+  const list = cardsForTag(tag);
+  const nowTs = now();
+  queue = list.filter(c => getState(c.id).due <= nowTs)
+              .sort((a,b)=> getState(a.id).due - getState(b.id).due);
+  deckPicker.style.display = "none";
+  doneScreen.style.display = "none";
+  studyArea.style.display = "flex";
+  document.getElementById("deckLabel").textContent = tag === "__ALL__" ? t().allCards(CARDS.length) : (TAG_LABELS[lang][tag]||tag);
+  nextCard();
+}
+
+function backToDecks(){
+  studyArea.style.display = "none";
+  doneScreen.style.display = "none";
+  deckPicker.style.display = "block";
+  renderDeckPicker();
+}
+
+function nextCard(){
+  revealed = false;
+  if(queue.length === 0){
+    studyArea.style.display = "none";
+    doneScreen.style.display = "flex";
+    updateHeaderStats();
+    return;
+  }
+  currentCard = queue[0];
+  document.getElementById("card").classList.remove("flipped");
+  document.getElementById("cardKo").textContent = currentCard.ko;
+  document.getElementById("cardEn").textContent = currentCard[lang] || currentCard.en;
+  document.getElementById("cardTag").textContent = (currentCard.tags[0]||"").split("::").pop();
+  document.getElementById("cardHint").textContent = t().tapReveal;
+  document.getElementById("gradeRow").classList.add("hidden");
+  const total = cardsForTag(currentTag).length;
+  progressFill.style.width = Math.round(100*(total-queue.length)/Math.max(1,total)) + "%";
+
+  const labels = previewIntervals(getState(currentCard.id));
+  document.getElementById("ivAgain").textContent = labels[0];
+  document.getElementById("ivHard").textContent = labels[1];
+  document.getElementById("ivGood").textContent = labels[2];
+  document.getElementById("ivEasy").textContent = labels[3];
+
+  if(audioEl){ audioEl.pause(); }
+  audioEl = new Audio("data:audio/mp4;base64," + currentCard.audio);
+  document.getElementById("soundBtn").classList.remove("playing");
+}
+
+function playAudio(){
+  if(!audioEl) return;
+  audioEl.currentTime = 0;
+  document.getElementById("soundBtn").classList.add("playing");
+  audioEl.play().catch(()=>{});
+  audioEl.onended = () => document.getElementById("soundBtn").classList.remove("playing");
+}
+
+function revealCard(){
+  if(revealed) return;
+  revealed = true;
+  document.getElementById("card").classList.add("flipped");
+  document.getElementById("cardHint").textContent = "";
+  document.getElementById("gradeRow").classList.remove("hidden");
+  playAudio();
+}
+
+function grade(g){
+  if(!revealed) return;
+  const state = getState(currentCard.id);
+  const newState = schedule(state, g);
+  setState(currentCard.id, newState);
+  queue.shift();
+  if(g === 0){ queue.push(currentCard); } // requeue "again" cards
+  nextCard();
+}
+
+document.getElementById("card").addEventListener("click", (e)=>{
+  if(e.target.id === "soundBtn") return;
+  revealCard();
+});
+document.getElementById("soundBtn").addEventListener("click", (e)=>{
+  e.stopPropagation();
+  if(!revealed){ revealCard(); } else { playAudio(); }
+});
+document.querySelectorAll(".grade-btn").forEach(btn=>{
+  btn.addEventListener("click", ()=> grade(parseInt(btn.dataset.grade,10)));
+});
+document.getElementById("backBtn").addEventListener("click", backToDecks);
+document.getElementById("doneBackBtn").addEventListener("click", backToDecks);
+
+document.addEventListener("keydown", (e)=>{
+  if(studyArea.style.display !== "flex") return;
+  if(e.code === "Space"){ e.preventDefault(); revealCard(); }
+  if(revealed && ["1","2","3","4"].includes(e.key)){ grade(parseInt(e.key,10)-1); }
+});
+
+// ---- menu / export / import / reset ----
+const menuSheet = document.getElementById("menuSheet");
+document.getElementById("menuOpenBtn").onclick = ()=> menuSheet.style.display = "flex";
+document.getElementById("closeSheetBtn").onclick = ()=> menuSheet.style.display = "none";
+menuSheet.addEventListener("click", (e)=>{ if(e.target === menuSheet) menuSheet.style.display="none"; });
+
+function toast(msg){
+  const toastEl = document.getElementById("toast");
+  toastEl.textContent = msg;
+  toastEl.classList.add("show");
+  setTimeout(()=> toastEl.classList.remove("show"), 1800);
+}
+
+document.getElementById("exportBtn").onclick = ()=>{
+  const blob = new Blob([JSON.stringify(progress)], {type:"application/json"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "sogang-korean-progress.json";
+  a.click();
+  URL.revokeObjectURL(url);
+  toast(t().toastDownloaded);
+};
+document.getElementById("importBtn").onclick = ()=> document.getElementById("importFile").click();
+document.getElementById("importFile").onchange = (e)=>{
+  const file = e.target.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = ()=>{
+    try{
+      const incoming = JSON.parse(reader.result);
+      // merge: keep whichever state has the later due date computed most recently reviewed
+      Object.keys(incoming).forEach(id=>{
+        const a = progress[id];
+        const b = incoming[id];
+        if(!a || (b.reps||0) >= (a.reps||0)){ progress[id] = b; }
+      });
+      saveProgress(progress);
+      toast(t().toastImported);
+      renderDeckPicker();
+      menuSheet.style.display = "none";
+    }catch(err){ toast(t().toastImportFail); }
+  };
+  reader.readAsText(file);
+};
+document.getElementById("resetBtn").onclick = ()=>{
+  if(confirm(t().confirmReset)){
+    progress = {};
+    saveProgress(progress);
+    toast(t().toastReset);
+    renderDeckPicker();
+    menuSheet.style.display = "none";
+  }
+};
+
+// ---- language switcher ----
+// Adding a new language later: add a STRINGS[code] + TAG_LABELS[code] entry
+// above, add its code to LANG_CYCLE, and give each card a matching field
+// (e.g. card.zh) in master_cards.json. Nothing else here needs to change.
+const LANG_CYCLE = ["en","ja"];
+const LANG_BTN_LABEL = {en:"EN", ja:"日本語"};
+function applyStaticStrings(){
+  const s = t();
+  document.getElementById("langBtn").textContent = LANG_BTN_LABEL[lang];
+  document.getElementById("appTitle").textContent = s.title;
+  document.title = s.title;
+  document.getElementById("studyPromptText").textContent = s.studyPrompt;
+  document.getElementById("studyHintText").textContent = s.studyHint;
+  document.getElementById("backBtn").textContent = s.allSets;
+  document.getElementById("gAgain").textContent = s.again;
+  document.getElementById("gHard").textContent = s.hard;
+  document.getElementById("gGood").textContent = s.good;
+  document.getElementById("gEasy").textContent = s.easy;
+  document.getElementById("doneTitle").textContent = s.allCaughtUp;
+  document.getElementById("doneDesc").textContent = s.allCaughtUpDesc;
+  document.getElementById("doneBackBtn").textContent = s.backToSets;
+  document.getElementById("menuTitleText").textContent = s.menuTitle;
+  document.getElementById("exportLabelText").textContent = s.exportLabel;
+  document.getElementById("exportBtn").textContent = s.exportBtn;
+  document.getElementById("importLabelText").textContent = s.importLabel;
+  document.getElementById("importBtn").textContent = s.importBtn;
+  document.getElementById("resetLabelText").textContent = s.resetLabel;
+  document.getElementById("resetBtn").textContent = s.resetBtn;
+  document.getElementById("closeSheetBtn").textContent = s.close;
+}
+
+document.getElementById("langBtn").addEventListener("click", ()=>{
+  const idx = LANG_CYCLE.indexOf(lang);
+  lang = LANG_CYCLE[(idx+1) % LANG_CYCLE.length];
+  localStorage.setItem(LANG_KEY, lang);
+  applyStaticStrings();
+  updateHeaderStats(); // header due-count badge is visible in both screens, not just the deck picker
+  if(studyArea.style.display === "flex"){
+    // refresh the in-progress card + grade-button interval previews in the new language
+    document.getElementById("cardEn").textContent = currentCard[lang] || currentCard.en;
+    document.getElementById("cardHint").textContent = revealed ? "" : t().tapReveal;
+    document.getElementById("deckLabel").textContent = currentTag === "__ALL__" ? t().allCards(CARDS.length) : (TAG_LABELS[lang][currentTag]||currentTag);
+    const labels = previewIntervals(getState(currentCard.id));
+    document.getElementById("ivAgain").textContent = labels[0];
+    document.getElementById("ivHard").textContent = labels[1];
+    document.getElementById("ivGood").textContent = labels[2];
+    document.getElementById("ivEasy").textContent = labels[3];
+  } else {
+    renderDeckPicker();
+  }
+});
+
+applyStaticStrings();
+renderDeckPicker();
+</script>
+</body>
+</html>
