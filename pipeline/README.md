@@ -43,6 +43,7 @@ deploy where half the cards are silent.
    ```bash
    say -v Yuna -o /tmp/raw.m4a "새로운 단어"
    afconvert -f m4af -d aac@22050 -b 32000 -c 1 /tmp/raw.m4a ../audio/<new-id>.m4a
+   python3 strip_m4a_padding.py
    ```
    (Run `say -v '?' | grep -i ko_KR` to see what Korean voices are
    installed; prefer an Enhanced/Premium one if available — noticeably
@@ -189,10 +190,11 @@ pp.16–167 is covered.
 
 ### Note on file size
 
-`index.html` is **0.20 MB** for 1259 cards — card text only. The 11.5 MB of
-audio sits in `audio/` and is fetched one clip at a time.
+`index.html` is **0.20 MB** for 1259 cards — card text only. The 7.8 MB of
+audio sits in `audio/` and is fetched one clip at a time, so a student studying
+two sections pays for roughly 100 clips (~600 KB), not the library.
 
-Two separate fixes got it there, in this order, and the order matters:
+Three separate fixes got it there, in this order, and the order matters:
 
 1. **Codec.** `say -o out.m4a` writes uncompressed PCM. Re-encoding to AAC mono
    32 kbps shrank the library ~8x. Every clip in `audio/` should be AAC — check
@@ -201,9 +203,24 @@ Two separate fixes got it there, in this order, and the order matters:
    clips made `index.html` 15.6 MB, every byte of it downloaded before a student
    saw a single card. Now the shell is 0.20 MB and `sw.js` caches each clip
    permanently the first time it plays.
+3. **Stripping container padding** (`strip_m4a_padding.py`). afconvert aligns
+   the media data to a 4096-byte boundary with a `free` atom; on a 1-second clip
+   that padding is a quarter of the file. Removing it is lossless — the `mdat`
+   bitstream is copied byte for byte and only `stco`'s chunk offsets are fixed
+   up — and took `audio/` from 11.5 MB to 7.8 MB. Run it after generating clips;
+   it is idempotent.
+
+   Do **not** extend it to strip `udta`. That looks like free bytes but holds
+   the `iTunSMPB` priming-delay tag; without it decoders replay the encoder's
+   priming samples, shifting every sample and lengthening the clip ~23 ms.
 
 Doing (2) without (1) would have meant serving PCM forever, one wasteful request
-at a time — the split hides a bad codec rather than fixing it.
+at a time — splitting hides a bad codec rather than fixing it.
+
+Further compression was measured and rejected: dropping to 24 kbps saves another
+~11% for audible quality loss on a voice that is already synthetic, and an ADTS
+container saves about what padding-stripping already did but changes the file
+format, which risks iOS playback for no additional gain.
 
 The trade-off: the app is no longer a single self-contained file, and "works
 offline" now means "works offline for what you've already played" rather than
