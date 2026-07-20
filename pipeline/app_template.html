@@ -338,12 +338,14 @@ const TAG_LABELS = {
     "Expressions::Verbs": "Expressions — verbs",
     "Expressions::Requests": "Expressions — requests",
     "Numbers": "Numbers 1–5",
-    "Book1A::Prep1::Vocab": "Book 1A · Prep 1 — vocabulary",
-    "Book1A::Prep1::Sentences": "Book 1A · Prep 1 — sentences",
-    "Book1A::Prep2::Vocab": "Book 1A · Prep 2 — vocabulary",
-    "Book1A::Prep2::Sentences": "Book 1A · Prep 2 — sentences",
-    "Book1A::Prep3::Vocab": "Book 1A · Prep 3 — vocabulary",
-    "Book1A::Prep3::Sentences": "Book 1A · Prep 3 — sentences",
+    // "Preparatory Unit n" / "Unit n" are the book's own English names for
+    // 준비n과 / n과 — see the Table of Contents. Don't invent alternatives.
+    "Book1A::PrepUnit1::Vocab": "Book 1A · Preparatory Unit 1 — vocabulary",
+    "Book1A::PrepUnit1::Sentences": "Book 1A · Preparatory Unit 1 — sentences",
+    "Book1A::PrepUnit2::Vocab": "Book 1A · Preparatory Unit 2 — vocabulary",
+    "Book1A::PrepUnit2::Sentences": "Book 1A · Preparatory Unit 2 — sentences",
+    "Book1A::PrepUnit3::Vocab": "Book 1A · Preparatory Unit 3 — vocabulary",
+    "Book1A::PrepUnit3::Sentences": "Book 1A · Preparatory Unit 3 — sentences",
   },
   ja: {
     "Hangul1": "ハングル1 — 基礎",
@@ -354,17 +356,21 @@ const TAG_LABELS = {
     "Expressions::Verbs": "表現 — 動詞",
     "Expressions::Requests": "表現 — お願い",
     "Numbers": "数字 1〜5",
-    "Book1A::Prep1::Vocab": "教科書1A · 準備1 — 単語",
-    "Book1A::Prep1::Sentences": "教科書1A · 準備1 — 文",
-    "Book1A::Prep2::Vocab": "教科書1A · 準備2 — 単語",
-    "Book1A::Prep2::Sentences": "教科書1A · 準備2 — 文",
-    "Book1A::Prep3::Vocab": "教科書1A · 準備3 — 単語",
-    "Book1A::Prep3::Sentences": "教科書1A · 準備3 — 文",
+    "Book1A::PrepUnit1::Vocab": "教科書1A · 準備1課 — 単語",
+    "Book1A::PrepUnit1::Sentences": "教科書1A · 準備1課 — 文",
+    "Book1A::PrepUnit2::Vocab": "教科書1A · 準備2課 — 単語",
+    "Book1A::PrepUnit2::Sentences": "教科書1A · 準備2課 — 文",
+    "Book1A::PrepUnit3::Vocab": "教科書1A · 準備3課 — 単語",
+    "Book1A::PrepUnit3::Sentences": "教科書1A · 準備3課 — 文",
   },
 };
 // Append-only. Reordering or removing an entry would rearrange sections that
 // students already navigate by muscle memory.
-const TAG_ORDER = ["Hangul1","Hangul3","Hangul4","Expressions::To_Be","Expressions::Adjectives","Expressions::Verbs","Expressions::Requests","Numbers","Book1A::Prep1::Vocab","Book1A::Prep1::Sentences","Book1A::Prep2::Vocab","Book1A::Prep2::Sentences","Book1A::Prep3::Vocab","Book1A::Prep3::Sentences"];
+// The six Book1A::Prep{n}::* entries are retired, not deleted: they shipped once
+// and were renamed to the publisher's "Preparatory Unit n". No card carries them
+// any more, so tagHasCards() filters them out of every list — but removing the
+// strings outright would break the append-only rule for no gain.
+const TAG_ORDER = ["Hangul1","Hangul3","Hangul4","Expressions::To_Be","Expressions::Adjectives","Expressions::Verbs","Expressions::Requests","Numbers","Book1A::Prep1::Vocab","Book1A::Prep1::Sentences","Book1A::Prep2::Vocab","Book1A::Prep2::Sentences","Book1A::Prep3::Vocab","Book1A::Prep3::Sentences","Book1A::PrepUnit1::Vocab","Book1A::PrepUnit1::Sentences","Book1A::PrepUnit2::Vocab","Book1A::PrepUnit2::Sentences","Book1A::PrepUnit3::Vocab","Book1A::PrepUnit3::Sentences"];
 
 const STRINGS = {
   en: {
@@ -447,12 +453,37 @@ const SECTIONS_KEY = "sogangKoreanSections_v1";
 // adding new content — the student turns the new section on themselves.
 const DEFAULT_VISIBLE_TAGS = ["Hangul1","Hangul3","Hangul4","Expressions::To_Be","Expressions::Adjectives","Expressions::Verbs","Expressions::Requests","Numbers"];
 
+// Sections renamed after they shipped. A student who had already switched one on
+// under its old name keeps it on under the new one — without this they'd silently
+// lose the section and assume the app had forgotten. Progress isn't affected
+// either way (that's keyed by card id, which the rename didn't touch).
+const RENAMED_TAGS = {
+  "Book1A::Prep1::Vocab": "Book1A::PrepUnit1::Vocab",
+  "Book1A::Prep1::Sentences": "Book1A::PrepUnit1::Sentences",
+  "Book1A::Prep2::Vocab": "Book1A::PrepUnit2::Vocab",
+  "Book1A::Prep2::Sentences": "Book1A::PrepUnit2::Sentences",
+  "Book1A::Prep3::Vocab": "Book1A::PrepUnit3::Vocab",
+  "Book1A::Prep3::Sentences": "Book1A::PrepUnit3::Sentences",
+};
+
 function loadSectionPrefs(){
+  let parsed;
   try{
-    const parsed = JSON.parse(localStorage.getItem(SECTIONS_KEY));
-    // Guard against a null/array/string value left by a bad write or a hand-edit.
-    return (parsed && typeof parsed === "object" && !Array.isArray(parsed)) ? parsed : {};
+    parsed = JSON.parse(localStorage.getItem(SECTIONS_KEY));
   }catch(e){ return {}; }
+  // Guard against a null/array/string value left by a bad write or a hand-edit.
+  if(!parsed || typeof parsed !== "object" || Array.isArray(parsed)) return {};
+  Object.keys(RENAMED_TAGS).forEach(oldTag=>{
+    const newTag = RENAMED_TAGS[oldTag];
+    // Carry the old choice over unless the student has since made one under the
+    // new name, which always wins.
+    if(Object.prototype.hasOwnProperty.call(parsed, oldTag) &&
+       !Object.prototype.hasOwnProperty.call(parsed, newTag)){
+      parsed[newTag] = !!parsed[oldTag];
+    }
+    delete parsed[oldTag];
+  });
+  return parsed;
 }
 let sectionPrefs = loadSectionPrefs();
 function saveSectionPrefs(){

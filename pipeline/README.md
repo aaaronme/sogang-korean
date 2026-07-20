@@ -57,6 +57,26 @@ introduce a new section, alongside giving the relevant cards that tag in
 remove existing entries, since that would rearrange sections students
 already have bookmarked mentally.
 
+**Name units the way the book's English Table of Contents does**, so a tag can
+be checked against the physical book without a decoder ring: 준비n과 is
+"Preparatory Unit n" (`Book1A::PrepUnitN::*`) and n과 is "Unit n"
+(`Book1A::UnitN::*`). They are different units — 준비 1 and 1과 both exist —
+so `Unit1` must stay reserved for 1과.
+
+Renaming a tag after it ships is possible but has two catches, both handled for
+the `Prep{n}` → `PrepUnit{n}` rename in commit `bb6d00d`'s successor:
+
+1. Card ids are `sha1(tag|ko)`. Re-deriving them from the new tag would give
+   every card a new id and orphan every student's progress, so
+   `add_book1a_prep.py` keeps an `ID_TAG` map and mints ids from the *original*
+   tag string forever.
+2. Section-visibility prefs are keyed by tag, so `RENAMED_TAGS` in
+   `app_template.html` migrates a student's old on/off choice to the new key on
+   load. An explicit choice under the new name always wins.
+
+The old strings stay in `TAG_ORDER` as retired entries. `tagHasCards()` filters
+them out of every list once no card carries them.
+
 ## Section visibility
 
 The deck picker only shows sections the student has switched on. The switches
@@ -120,16 +140,17 @@ Hangul 4 (16, tense consonants), Expressions (23, across To-Be/Adjectives/
 Verbs/Requests), Numbers (6).
 
 Plus 144 from the Student's Book itself (서강한국어 STUDENT'S BOOK 1A, 3rd ed.),
-preparatory units 1–3, pp.16–45 — all default to **off** in Manage sections:
+preparatory units 1–3 (the book's "Preparatory Unit 1–3"), pp.16–45 —
+all default to **off**:
 
 | Tag | Cards | Book pages |
 |---|---|---|
-| `Book1A::Prep1::Vocab` | 28 | 18–19, 23 (국적, 직업) |
-| `Book1A::Prep1::Sentences` | 15 | 18, 20–21, 23 |
-| `Book1A::Prep2::Vocab` | 31 | 28–29, 33 (사물) |
-| `Book1A::Prep2::Sentences` | 14 | 28–31, 33 |
-| `Book1A::Prep3::Vocab` | 40 | 38–39 (숫자①, 날짜) |
-| `Book1A::Prep3::Sentences` | 16 | 38, 40–41 |
+| `Book1A::PrepUnit1::Vocab` | 28 | 18–19, 23 (국적, 직업) |
+| `Book1A::PrepUnit1::Sentences` | 15 | 18, 20–21, 23 |
+| `Book1A::PrepUnit2::Vocab` | 31 | 28–29, 33 (사물) |
+| `Book1A::PrepUnit2::Sentences` | 14 | 28–31, 33 |
+| `Book1A::PrepUnit3::Vocab` | 40 | 38–39 (숫자①, 날짜) |
+| `Book1A::PrepUnit3::Sentences` | 16 | 38, 40–41 |
 
 `add_book1a_prep.py` is the generator that produced them — idempotent, ids
 derived from `sha1(tag|ko)`, safe to re-run. English glosses come from the
@@ -137,8 +158,9 @@ companion 문법·단어 참고서 (Grammar and Vocabulary Handbook 1A, English
 edition) pp.36–38; Japanese glosses were written by hand, since the handbook
 we have is the English edition.
 
-Grammar points per unit are recorded in `GRAMMAR_NOTES.md`. Units 준비 4 and
-1과–6과 are not carded yet.
+Grammar points per unit are recorded in `GRAMMAR_NOTES.md`. 준비 4 (Preparatory
+Unit 4) and 1과–6과 (Units 1–6) are not carded yet; their page ranges in that
+file were confirmed against the physical book on 2026-07-20.
 
 ### Note on file size
 

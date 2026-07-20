@@ -9,8 +9,13 @@ page numbers come from the 목차 (Contents, p.8) and 내용 구성표 (pp.4–7
 
 ## Unit map
 
-Start pages are printed in the Contents. **End pages are inferred** as
-next-start-minus-1 and have not been verified against the book.
+Start pages are printed in the Contents; end pages were inferred as
+next-start-minus-1 and then **confirmed against the physical book on
+2026-07-20**.
+
+The English names are the publisher's own, from the Table of Contents — 준비n과
+is "Preparatory Unit n" and n과 is "Unit n". They are distinct units, which is
+why the tags are `PrepUnit1..4` and `Unit1..6` rather than one run of numbers.
 
 | Unit | Title | Pages | Grammar introduced | Cards? |
 |---|---|---|---|---|

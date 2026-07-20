@@ -852,7 +852,7 @@
   "ko": "미국",
   "en": "United States",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "アメリカ"
  },
@@ -861,7 +861,7 @@
   "ko": "한국",
   "en": "Korea",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "韓国（かんこく）"
  },
@@ -870,7 +870,7 @@
   "ko": "중국",
   "en": "China",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "中国（ちゅうごく）"
  },
@@ -879,7 +879,7 @@
   "ko": "태국",
   "en": "Thailand",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "タイ"
  },
@@ -888,7 +888,7 @@
   "ko": "일본",
   "en": "Japan",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "日本（にほん）"
  },
@@ -897,7 +897,7 @@
   "ko": "독일",
   "en": "Germany",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "ドイツ"
  },
@@ -906,7 +906,7 @@
   "ko": "베트남",
   "en": "Vietnam",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "ベトナム"
  },
@@ -915,7 +915,7 @@
   "ko": "프랑스",
   "en": "France",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "フランス"
  },
@@ -924,7 +924,7 @@
   "ko": "몽골",
   "en": "Mongolia",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "モンゴル"
  },
@@ -933,7 +933,7 @@
   "ko": "브라질",
   "en": "Brazil",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "ブラジル"
  },
@@ -942,7 +942,7 @@
   "ko": "학생",
   "en": "Student",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "学生（がくせい）"
  },
@@ -951,7 +951,7 @@
   "ko": "선생님",
   "en": "Teacher",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "先生（せんせい）"
  },
@@ -960,7 +960,7 @@
   "ko": "회사원",
   "en": "Office worker",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "会社員（かいしゃいん）"
  },
@@ -969,7 +969,7 @@
   "ko": "의사",
   "en": "Doctor",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "医者（いしゃ）"
  },
@@ -978,7 +978,7 @@
   "ko": "간호사",
   "en": "Nurse",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "看護師（かんごし）"
  },
@@ -987,7 +987,7 @@
   "ko": "요리사",
   "en": "Cook",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "料理人（りょうりにん）"
  },
@@ -996,7 +996,7 @@
   "ko": "가수",
   "en": "Singer",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "歌手（かしゅ）"
  },
@@ -1005,7 +1005,7 @@
   "ko": "배우",
   "en": "Actor",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "俳優（はいゆう）"
  },
@@ -1014,7 +1014,7 @@
   "ko": "작가",
   "en": "Writer, artist",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "作家（さっか）"
  },
@@ -1023,7 +1023,7 @@
   "ko": "패션 디자이너",
   "en": "Fashion designer",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "ファッションデザイナー"
  },
@@ -1032,7 +1032,7 @@
   "ko": "군인",
   "en": "Soldier",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "軍人（ぐんじん）"
  },
@@ -1041,7 +1041,7 @@
   "ko": "경찰",
   "en": "Police officer",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "警察官（けいさつかん）"
  },
@@ -1050,7 +1050,7 @@
   "ko": "일본어 선생님",
   "en": "Japanese language teacher",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "日本語（にほんご）の先生"
  },
@@ -1059,7 +1059,7 @@
   "ko": "가이드",
   "en": "Tour guide",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "ガイド"
  },
@@ -1068,7 +1068,7 @@
   "ko": "프로그래머",
   "en": "Programmer",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "プログラマー"
  },
@@ -1077,7 +1077,7 @@
   "ko": "운동",
   "en": "Exercise",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "運動（うんどう）"
  },
@@ -1086,7 +1086,7 @@
   "ko": "드라마",
   "en": "TV drama",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "ドラマ"
  },
@@ -1095,7 +1095,7 @@
   "ko": "공부",
   "en": "Studying",
   "tags": [
-   "Book1A::Prep1::Vocab"
+   "Book1A::PrepUnit1::Vocab"
   ],
   "ja": "勉強（べんきょう）"
  },
@@ -1104,7 +1104,7 @@
   "ko": "안녕하세요? 미나예요.",
   "en": "Hello, I'm Mina.",
   "tags": [
-   "Book1A::Prep1::Sentences"
+   "Book1A::PrepUnit1::Sentences"
   ],
   "ja": "こんにちは。ミナです。"
  },
@@ -1113,7 +1113,7 @@
   "ko": "이름이 뭐예요?",
   "en": "What's your name?",
   "tags": [
-   "Book1A::Prep1::Sentences"
+   "Book1A::PrepUnit1::Sentences"
   ],
   "ja": "名前（なまえ）は何（なん）ですか？"
  },
@@ -1122,7 +1122,7 @@
   "ko": "앤디예요.",
   "en": "I'm Andy.",
   "tags": [
-   "Book1A::Prep1::Sentences"
+   "Book1A::PrepUnit1::Sentences"
   ],
   "ja": "アンディです。"
  },
@@ -1131,7 +1131,7 @@
   "ko": "앤디 씨, 어느 나라 사람이에요?",
   "en": "Andy, what country are you from?",
   "tags": [
-   "Book1A::Prep1::Sentences"
+   "Book1A::PrepUnit1::Sentences"
   ],
   "ja": "アンディさん、どこの国（くに）の人（ひと）ですか？"
  },
@@ -1140,7 +1140,7 @@
   "ko": "저는 미국 사람이에요.",
   "en": "I'm American.",
   "tags": [
-   "Book1A::Prep1::Sentences"
+   "Book1A::PrepUnit1::Sentences"
   ],
   "ja": "私（わたし）はアメリカ人（じん）です。"
  },
@@ -1149,7 +1149,7 @@
   "ko": "아, 그래요? 반갑습니다.",
   "en": "Oh, really? Nice to meet you.",
   "tags": [
-   "Book1A::Prep1::Sentences"
+   "Book1A::PrepUnit1::Sentences"
   ],
   "ja": "あ、そうですか？お会（あ）いできてうれしいです。"
  },
@@ -1158,7 +1158,7 @@
   "ko": "안녕하세요? 수잔이에요.",
   "en": "Hello, I'm Susan.",
   "tags": [
-   "Book1A::Prep1::Sentences"
+   "Book1A::PrepUnit1::Sentences"
   ],
   "ja": "こんにちは。スーザンです。"
  },
@@ -1167,7 +1167,7 @@
   "ko": "수잔 씨, 안녕하세요?",
   "en": "Hello, Susan.",
   "tags": [
-   "Book1A::Prep1::Sentences"
+   "Book1A::PrepUnit1::Sentences"
   ],
   "ja": "スーザンさん、こんにちは。"
  },
@@ -1176,7 +1176,7 @@
   "ko": "저는 앤디예요.",
   "en": "I'm Andy.",
   "tags": [
-   "Book1A::Prep1::Sentences"
+   "Book1A::PrepUnit1::Sentences"
   ],
   "ja": "私（わたし）はアンディです。"
  },
@@ -1185,7 +1185,7 @@
   "ko": "앤디 씨는 무슨 일을 하세요?",
   "en": "Andy, what work do you do?",
   "tags": [
-   "Book1A::Prep1::Sentences"
+   "Book1A::PrepUnit1::Sentences"
   ],
   "ja": "アンディさんは何（なん）のお仕事（しごと）をされていますか？"
  },
@@ -1194,7 +1194,7 @@
   "ko": "학생이에요.",
   "en": "I'm a student.",
   "tags": [
-   "Book1A::Prep1::Sentences"
+   "Book1A::PrepUnit1::Sentences"
   ],
   "ja": "学生（がくせい）です。"
  },
@@ -1203,7 +1203,7 @@
   "ko": "이분이 누구예요?",
   "en": "Who is this?",
   "tags": [
-   "Book1A::Prep1::Sentences"
+   "Book1A::PrepUnit1::Sentences"
   ],
   "ja": "この方（かた）はどなたですか？"
  },
@@ -1212,7 +1212,7 @@
   "ko": "가브리엘 씨예요.",
   "en": "This is Gabriel.",
   "tags": [
-   "Book1A::Prep1::Sentences"
+   "Book1A::PrepUnit1::Sentences"
   ],
   "ja": "ガブリエルさんです。"
  },
@@ -1221,7 +1221,7 @@
   "ko": "만나서 반갑습니다.",
   "en": "It's nice to meet you.",
   "tags": [
-   "Book1A::Prep1::Sentences"
+   "Book1A::PrepUnit1::Sentences"
   ],
   "ja": "お会（あ）いできてうれしいです。"
  },
@@ -1230,7 +1230,7 @@
   "ko": "좋아해요.",
   "en": "I like it.",
   "tags": [
-   "Book1A::Prep1::Sentences"
+   "Book1A::PrepUnit1::Sentences"
   ],
   "ja": "好（す）きです。"
  },
@@ -1239,7 +1239,7 @@
   "ko": "책",
   "en": "Book",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "本（ほん）"
  },
@@ -1248,7 +1248,7 @@
   "ko": "공책",
   "en": "Notebook",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "ノート"
  },
@@ -1257,7 +1257,7 @@
   "ko": "필통",
   "en": "Pencil case",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "筆箱（ふでばこ）"
  },
@@ -1266,7 +1266,7 @@
   "ko": "연필",
   "en": "Pencil",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "鉛筆（えんぴつ）"
  },
@@ -1275,7 +1275,7 @@
   "ko": "샤프",
   "en": "Mechanical pencil",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "シャープペンシル"
  },
@@ -1284,7 +1284,7 @@
   "ko": "볼펜",
   "en": "Ballpoint pen",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "ボールペン"
  },
@@ -1293,7 +1293,7 @@
   "ko": "지우개",
   "en": "Eraser",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "消（け）しゴム"
  },
@@ -1302,7 +1302,7 @@
   "ko": "수정 테이프",
   "en": "Correction tape",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "修正（しゅうせい）テープ"
  },
@@ -1311,7 +1311,7 @@
   "ko": "가위",
   "en": "Scissors",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "はさみ"
  },
@@ -1320,7 +1320,7 @@
   "ko": "가방",
   "en": "Bag",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "かばん"
  },
@@ -1329,7 +1329,7 @@
   "ko": "우산",
   "en": "Umbrella",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "傘（かさ）"
  },
@@ -1338,7 +1338,7 @@
   "ko": "달력",
   "en": "Calendar",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "カレンダー"
  },
@@ -1347,7 +1347,7 @@
   "ko": "책상",
   "en": "Desk",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "机（つくえ）"
  },
@@ -1356,7 +1356,7 @@
   "ko": "의자",
   "en": "Chair",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "椅子（いす）"
  },
@@ -1365,7 +1365,7 @@
   "ko": "시계",
   "en": "Clock",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "時計（とけい）"
  },
@@ -1374,7 +1374,7 @@
   "ko": "노트북",
   "en": "Laptop computer",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "ノートパソコン"
  },
@@ -1383,7 +1383,7 @@
   "ko": "텔레비전",
   "en": "Television",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "テレビ"
  },
@@ -1392,7 +1392,7 @@
   "ko": "에어컨",
   "en": "Air conditioner",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "エアコン"
  },
@@ -1401,7 +1401,7 @@
   "ko": "거울",
   "en": "Mirror",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "鏡（かがみ）"
  },
@@ -1410,7 +1410,7 @@
   "ko": "비누",
   "en": "Soap",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "石（せっ）けん"
  },
@@ -1419,7 +1419,7 @@
   "ko": "수건",
   "en": "Towel",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "タオル"
  },
@@ -1428,7 +1428,7 @@
   "ko": "휴지",
   "en": "Toilet paper",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "トイレットペーパー"
  },
@@ -1437,7 +1437,7 @@
   "ko": "칫솔",
   "en": "Toothbrush",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "歯（は）ブラシ"
  },
@@ -1446,7 +1446,7 @@
   "ko": "치약",
   "en": "Toothpaste",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "歯磨（はみが）き粉（こ）"
  },
@@ -1455,7 +1455,7 @@
   "ko": "접시",
   "en": "Dish, plate",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "皿（さら）"
  },
@@ -1464,7 +1464,7 @@
   "ko": "컵",
   "en": "Cup",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "コップ"
  },
@@ -1473,7 +1473,7 @@
   "ko": "숟가락",
   "en": "Spoon",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "スプーン"
  },
@@ -1482,7 +1482,7 @@
   "ko": "젓가락",
   "en": "Chopsticks",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "箸（はし）"
  },
@@ -1491,7 +1491,7 @@
   "ko": "충전기",
   "en": "Charger",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "充電器（じゅうでんき）"
  },
@@ -1500,7 +1500,7 @@
   "ko": "핸드폰",
   "en": "Mobile phone",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "携帯電話（けいたいでんわ）"
  },
@@ -1509,7 +1509,7 @@
   "ko": "그럼",
   "en": "Then, in that case",
   "tags": [
-   "Book1A::Prep2::Vocab"
+   "Book1A::PrepUnit2::Vocab"
   ],
   "ja": "それでは"
  },
@@ -1518,7 +1518,7 @@
   "ko": "이게 뭐예요?",
   "en": "What's this?",
   "tags": [
-   "Book1A::Prep2::Sentences"
+   "Book1A::PrepUnit2::Sentences"
   ],
   "ja": "これは何（なん）ですか？"
  },
@@ -1527,7 +1527,7 @@
   "ko": "연필이에요.",
   "en": "It's a pencil.",
   "tags": [
-   "Book1A::Prep2::Sentences"
+   "Book1A::PrepUnit2::Sentences"
   ],
   "ja": "鉛筆（えんぴつ）です。"
  },
@@ -1536,7 +1536,7 @@
   "ko": "그럼 저게 뭐예요?",
   "en": "Then what's that?",
   "tags": [
-   "Book1A::Prep2::Sentences"
+   "Book1A::PrepUnit2::Sentences"
   ],
   "ja": "では、あれは何（なん）ですか？"
  },
@@ -1545,7 +1545,7 @@
   "ko": "시계예요.",
   "en": "It's a clock.",
   "tags": [
-   "Book1A::Prep2::Sentences"
+   "Book1A::PrepUnit2::Sentences"
   ],
   "ja": "時計（とけい）です。"
  },
@@ -1554,7 +1554,7 @@
   "ko": "저게 뭐예요?",
   "en": "What's that?",
   "tags": [
-   "Book1A::Prep2::Sentences"
+   "Book1A::PrepUnit2::Sentences"
   ],
   "ja": "あれは何（なん）ですか？"
  },
@@ -1563,7 +1563,7 @@
   "ko": "책이에요.",
   "en": "It's a book.",
   "tags": [
-   "Book1A::Prep2::Sentences"
+   "Book1A::PrepUnit2::Sentences"
   ],
   "ja": "本（ほん）です。"
  },
@@ -1572,7 +1572,7 @@
   "ko": "가방이에요.",
   "en": "It's a bag.",
   "tags": [
-   "Book1A::Prep2::Sentences"
+   "Book1A::PrepUnit2::Sentences"
   ],
   "ja": "かばんです。"
  },
@@ -1581,7 +1581,7 @@
   "ko": "우산 누구 거예요?",
   "en": "Whose umbrella is this?",
   "tags": [
-   "Book1A::Prep2::Sentences"
+   "Book1A::PrepUnit2::Sentences"
   ],
   "ja": "この傘（かさ）は誰（だれ）のですか？"
  },
@@ -1590,7 +1590,7 @@
   "ko": "제 거예요.",
   "en": "It's mine.",
   "tags": [
-   "Book1A::Prep2::Sentences"
+   "Book1A::PrepUnit2::Sentences"
   ],
   "ja": "私（わたし）のです。"
  },
@@ -1599,7 +1599,7 @@
   "ko": "여기 있어요.",
   "en": "Here you go.",
   "tags": [
-   "Book1A::Prep2::Sentences"
+   "Book1A::PrepUnit2::Sentences"
   ],
   "ja": "どうぞ。"
  },
@@ -1608,7 +1608,7 @@
   "ko": "고마워요.",
   "en": "Thanks.",
   "tags": [
-   "Book1A::Prep2::Sentences"
+   "Book1A::PrepUnit2::Sentences"
   ],
   "ja": "ありがとうございます。"
  },
@@ -1617,7 +1617,7 @@
   "ko": "아니에요.",
   "en": "Don't mention it.",
   "tags": [
-   "Book1A::Prep2::Sentences"
+   "Book1A::PrepUnit2::Sentences"
   ],
   "ja": "いいえ、どういたしまして。"
  },
@@ -1626,7 +1626,7 @@
   "ko": "이게 한국어로 뭐예요?",
   "en": "What's this in Korean?",
   "tags": [
-   "Book1A::Prep2::Sentences"
+   "Book1A::PrepUnit2::Sentences"
   ],
   "ja": "これは韓国語（かんこくご）で何（なん）ですか？"
  },
@@ -1635,7 +1635,7 @@
   "ko": "사라 씨 거예요.",
   "en": "It's Sarah's.",
   "tags": [
-   "Book1A::Prep2::Sentences"
+   "Book1A::PrepUnit2::Sentences"
   ],
   "ja": "サラさんのです。"
  },
@@ -1644,7 +1644,7 @@
   "ko": "공",
   "en": "Zero (0)",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "ゼロ（0）"
  },
@@ -1653,7 +1653,7 @@
   "ko": "일",
   "en": "One (1)",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "1（いち）"
  },
@@ -1662,7 +1662,7 @@
   "ko": "이",
   "en": "Two (2)",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "2（に）"
  },
@@ -1671,7 +1671,7 @@
   "ko": "삼",
   "en": "Three (3)",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "3（さん）"
  },
@@ -1680,7 +1680,7 @@
   "ko": "사",
   "en": "Four (4)",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "4（よん）"
  },
@@ -1689,7 +1689,7 @@
   "ko": "오",
   "en": "Five (5)",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "5（ご）"
  },
@@ -1698,7 +1698,7 @@
   "ko": "육",
   "en": "Six (6)",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "6（ろく）"
  },
@@ -1707,7 +1707,7 @@
   "ko": "칠",
   "en": "Seven (7)",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "7（なな）"
  },
@@ -1716,7 +1716,7 @@
   "ko": "팔",
   "en": "Eight (8)",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "8（はち）"
  },
@@ -1725,7 +1725,7 @@
   "ko": "구",
   "en": "Nine (9)",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "9（きゅう）"
  },
@@ -1734,7 +1734,7 @@
   "ko": "십",
   "en": "Ten (10)",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "10（じゅう）"
  },
@@ -1743,7 +1743,7 @@
   "ko": "이십",
   "en": "Twenty (20)",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "20（にじゅう）"
  },
@@ -1752,7 +1752,7 @@
   "ko": "삼십",
   "en": "Thirty (30)",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "30（さんじゅう）"
  },
@@ -1761,7 +1761,7 @@
   "ko": "사십",
   "en": "Forty (40)",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "40（よんじゅう）"
  },
@@ -1770,7 +1770,7 @@
   "ko": "오십",
   "en": "Fifty (50)",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "50（ごじゅう）"
  },
@@ -1779,7 +1779,7 @@
   "ko": "육십",
   "en": "Sixty (60)",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "60（ろくじゅう）"
  },
@@ -1788,7 +1788,7 @@
   "ko": "칠십",
   "en": "Seventy (70)",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "70（ななじゅう）"
  },
@@ -1797,7 +1797,7 @@
   "ko": "팔십",
   "en": "Eighty (80)",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "80（はちじゅう）"
  },
@@ -1806,7 +1806,7 @@
   "ko": "구십",
   "en": "Ninety (90)",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "90（きゅうじゅう）"
  },
@@ -1815,7 +1815,7 @@
   "ko": "백",
   "en": "One hundred (100)",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "100（ひゃく）"
  },
@@ -1824,7 +1824,7 @@
   "ko": "일월",
   "en": "January",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "1月（いちがつ）"
  },
@@ -1833,7 +1833,7 @@
   "ko": "이월",
   "en": "February",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "2月（にがつ）"
  },
@@ -1842,7 +1842,7 @@
   "ko": "삼월",
   "en": "March",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "3月（さんがつ）"
  },
@@ -1851,7 +1851,7 @@
   "ko": "사월",
   "en": "April",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "4月（しがつ）"
  },
@@ -1860,7 +1860,7 @@
   "ko": "오월",
   "en": "May",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "5月（ごがつ）"
  },
@@ -1869,7 +1869,7 @@
   "ko": "유월",
   "en": "June",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "6月（ろくがつ）"
  },
@@ -1878,7 +1878,7 @@
   "ko": "칠월",
   "en": "July",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "7月（しちがつ）"
  },
@@ -1887,7 +1887,7 @@
   "ko": "팔월",
   "en": "August",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "8月（はちがつ）"
  },
@@ -1896,7 +1896,7 @@
   "ko": "구월",
   "en": "September",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "9月（くがつ）"
  },
@@ -1905,7 +1905,7 @@
   "ko": "시월",
   "en": "October",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "10月（じゅうがつ）"
  },
@@ -1914,7 +1914,7 @@
   "ko": "십일월",
   "en": "November",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "11月（じゅういちがつ）"
  },
@@ -1923,7 +1923,7 @@
   "ko": "십이월",
   "en": "December",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "12月（じゅうにがつ）"
  },
@@ -1932,7 +1932,7 @@
   "ko": "지금",
   "en": "Now",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "今（いま）"
  },
@@ -1941,7 +1941,7 @@
   "ko": "안경",
   "en": "Glasses",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "めがね"
  },
@@ -1950,7 +1950,7 @@
   "ko": "컴퓨터",
   "en": "Computer",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "コンピューター"
  },
@@ -1959,7 +1959,7 @@
   "ko": "선글라스",
   "en": "Sunglasses",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "サングラス"
  },
@@ -1968,7 +1968,7 @@
   "ko": "교통카드",
   "en": "Transportation card",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "交通（こうつう）カード"
  },
@@ -1977,7 +1977,7 @@
   "ko": "여권",
   "en": "Passport",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "パスポート"
  },
@@ -1986,7 +1986,7 @@
   "ko": "전화번호",
   "en": "Phone number",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "電話番号（でんわばんごう）"
  },
@@ -1995,7 +1995,7 @@
   "ko": "생일",
   "en": "Birthday",
   "tags": [
-   "Book1A::Prep3::Vocab"
+   "Book1A::PrepUnit3::Vocab"
   ],
   "ja": "誕生日（たんじょうび）"
  },
@@ -2004,7 +2004,7 @@
   "ko": "우산 있어요?",
   "en": "Do you have an umbrella?",
   "tags": [
-   "Book1A::Prep3::Sentences"
+   "Book1A::PrepUnit3::Sentences"
   ],
   "ja": "傘（かさ）はありますか？"
  },
@@ -2013,7 +2013,7 @@
   "ko": "네, 있어요.",
   "en": "Yes, I do.",
   "tags": [
-   "Book1A::Prep3::Sentences"
+   "Book1A::PrepUnit3::Sentences"
   ],
   "ja": "はい、あります。"
  },
@@ -2022,7 +2022,7 @@
   "ko": "아니요, 없어요.",
   "en": "No, I don't.",
   "tags": [
-   "Book1A::Prep3::Sentences"
+   "Book1A::PrepUnit3::Sentences"
   ],
   "ja": "いいえ、ありません。"
  },
@@ -2031,7 +2031,7 @@
   "ko": "책 있어요.",
   "en": "I have a book.",
   "tags": [
-   "Book1A::Prep3::Sentences"
+   "Book1A::PrepUnit3::Sentences"
   ],
   "ja": "本（ほん）があります。"
  },
@@ -2040,7 +2040,7 @@
   "ko": "안경 없어요.",
   "en": "I don't have glasses.",
   "tags": [
-   "Book1A::Prep3::Sentences"
+   "Book1A::PrepUnit3::Sentences"
   ],
   "ja": "めがねはありません。"
  },
@@ -2049,7 +2049,7 @@
   "ko": "지금 핸드폰 있어요?",
   "en": "Do you have your phone now?",
   "tags": [
-   "Book1A::Prep3::Sentences"
+   "Book1A::PrepUnit3::Sentences"
   ],
   "ja": "今（いま）、携帯電話（けいたいでんわ）はありますか？"
  },
@@ -2058,7 +2058,7 @@
   "ko": "네, 핸드폰 있어요.",
   "en": "Yes, I have my phone.",
   "tags": [
-   "Book1A::Prep3::Sentences"
+   "Book1A::PrepUnit3::Sentences"
   ],
   "ja": "はい、携帯電話（けいたいでんわ）があります。"
  },
@@ -2067,7 +2067,7 @@
   "ko": "아니요, 핸드폰 없어요.",
   "en": "No, I don't have my phone.",
   "tags": [
-   "Book1A::Prep3::Sentences"
+   "Book1A::PrepUnit3::Sentences"
   ],
   "ja": "いいえ、携帯電話（けいたいでんわ）はありません。"
  },
@@ -2076,7 +2076,7 @@
   "ko": "수잔 씨, 한국 전화번호 있어요?",
   "en": "Susan, do you have a Korean phone number?",
   "tags": [
-   "Book1A::Prep3::Sentences"
+   "Book1A::PrepUnit3::Sentences"
   ],
   "ja": "スーザンさん、韓国（かんこく）の電話番号（でんわばんごう）はありますか？"
  },
@@ -2085,7 +2085,7 @@
   "ko": "전화번호가 몇 번이에요?",
   "en": "What's your phone number?",
   "tags": [
-   "Book1A::Prep3::Sentences"
+   "Book1A::PrepUnit3::Sentences"
   ],
   "ja": "電話番号（でんわばんごう）は何番（なんばん）ですか？"
  },
@@ -2094,7 +2094,7 @@
   "ko": "010-4948-1287이에요.",
   "en": "It's 010-4948-1287.",
   "tags": [
-   "Book1A::Prep3::Sentences"
+   "Book1A::PrepUnit3::Sentences"
   ],
   "ja": "010-4948-1287です。"
  },
@@ -2103,7 +2103,7 @@
   "ko": "네, 맞아요.",
   "en": "Yes, that's right.",
   "tags": [
-   "Book1A::Prep3::Sentences"
+   "Book1A::PrepUnit3::Sentences"
   ],
   "ja": "はい、そうです。"
  },
@@ -2112,7 +2112,7 @@
   "ko": "완 씨, 렌핑 씨 생일 알아요?",
   "en": "Wan, do you know Lenping's birthday?",
   "tags": [
-   "Book1A::Prep3::Sentences"
+   "Book1A::PrepUnit3::Sentences"
   ],
   "ja": "ワンさん、レンピンさんの誕生日（たんじょうび）を知（し）っていますか？"
  },
@@ -2121,7 +2121,7 @@
   "ko": "네, 알아요.",
   "en": "Yes, I do.",
   "tags": [
-   "Book1A::Prep3::Sentences"
+   "Book1A::PrepUnit3::Sentences"
   ],
   "ja": "はい、知（し）っています。"
  },
@@ -2130,7 +2130,7 @@
   "ko": "렌핑 씨 생일이 며칠이에요?",
   "en": "What date is Lenping's birthday?",
   "tags": [
-   "Book1A::Prep3::Sentences"
+   "Book1A::PrepUnit3::Sentences"
   ],
   "ja": "レンピンさんの誕生日（たんじょうび）は何日（なんにち）ですか？"
  },
@@ -2139,7 +2139,7 @@
   "ko": "7월 15일이에요.",
   "en": "It's July 15th.",
   "tags": [
-   "Book1A::Prep3::Sentences"
+   "Book1A::PrepUnit3::Sentences"
   ],
   "ja": "7月（しちがつ）15日（じゅうごにち）です。"
  }
