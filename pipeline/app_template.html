@@ -49,8 +49,12 @@
   .iconbtn{
     background:none;border:none;color:var(--muted);font-size:18px;padding:6px;cursor:pointer;line-height:1;
   }
-  .progress-track{height:4px;background:var(--card-border);margin:0 18px 4px;border-radius:2px;overflow:hidden;}
-  .progress-fill{height:100%;background:var(--accent);width:0%;transition:width .3s ease;}
+  /* Session progress. Hidden outside a study session — a bar sitting at a stale
+     percentage on the deck picker reads as broken. */
+  #progressRow{display:none;align-items:center;gap:10px;padding:2px 18px 8px;}
+  .progress-track{flex:1;height:7px;background:var(--card-border);border-radius:4px;overflow:hidden;}
+  .progress-fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));width:0%;border-radius:4px;transition:width .3s ease;}
+  #progressLabel{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;flex:none;}
 
   main{
     flex:1;
@@ -66,8 +70,13 @@
     max-width:420px;
     text-align:center;
   }
-  #deckPicker h2{font-size:22px;margin:0 0 6px;}
-  #deckPicker p{color:var(--muted);font-size:14px;margin:0 0 22px;}
+  #deckHead{display:flex;align-items:baseline;justify-content:space-between;gap:10px;}
+  #deckPicker h2{font-size:22px;margin:0 0 6px;text-align:left;}
+  #deckPicker p{color:var(--muted);font-size:14px;margin:0 0 18px;text-align:left;}
+  .linkbtn{
+    background:none;border:none;color:var(--accent);font-size:14px;font-weight:600;
+    cursor:pointer;padding:4px 0;flex:none;white-space:nowrap;
+  }
   .tag-grid{display:flex;flex-direction:column;gap:10px;}
   .tag-btn{
     background:var(--card);
@@ -79,12 +88,29 @@
     display:flex;
     justify-content:space-between;
     align-items:center;
+    gap:10px;
     cursor:pointer;
     text-align:left;
   }
   .tag-btn:active{background:#20242e;}
-  .tag-btn .count{color:var(--muted);font-size:13px;}
+  .tag-btn .label{flex:1;min-width:0;display:flex;align-items:center;}
+  .tag-btn .count{color:var(--muted);font-size:13px;flex:none;}
   .tag-btn .due-dot{width:8px;height:8px;border-radius:50%;background:var(--good);margin-right:8px;flex:none;}
+  /* Browse shortcut lives inside the deck row, so a section is one tap from
+     either studying it or just skimming it. */
+  .tag-btn .listbtn{
+    background:#00000030;border:none;color:var(--muted);border-radius:10px;
+    width:34px;height:34px;font-size:15px;flex:none;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .tag-btn .listbtn:active{background:var(--card-border);color:var(--text);}
+
+  /* Section rows in edit mode: same footprint as a deck button so the list
+     doesn't jump around when you switch modes. */
+  .tag-btn.editing{cursor:default;}
+  .tag-btn.editing.off{opacity:.5;}
+  .tag-btn.editing .label{flex-direction:column;align-items:flex-start;gap:2px;}
+  .tag-btn.editing .label small{color:var(--muted);font-size:12px;}
 
   #studyArea{width:100%;max-width:420px;display:none;flex-direction:column;align-items:center;}
   #cardWrap{width:100%;perspective:1200px;margin-bottom:22px;}
@@ -146,6 +172,26 @@
     color:var(--muted);font-size:13px;margin-top:2px;
   }
 
+  /* Browse: the whole section at a glance, no grading, just read and listen.
+     Deliberately not tied to the SRS queue — skimming isn't reviewing. */
+  #browseArea{width:100%;max-width:420px;display:none;flex-direction:column;}
+  /* A long browse list must start at the top of the viewport, not be centred
+     into it — centring clips the first rows above the scroll origin. */
+  body.browsing main{justify-content:flex-start;}
+  #browseList{display:flex;flex-direction:column;gap:8px;width:100%;}
+  .browse-row{
+    background:var(--card);border:1px solid var(--card-border);border-radius:14px;
+    padding:12px 14px;display:flex;align-items:center;gap:12px;
+  }
+  .browse-row .txt{flex:1;min-width:0;}
+  .browse-row .bko{font-size:19px;font-weight:600;line-height:1.35;word-break:keep-all;}
+  .browse-row .ben{font-size:13px;color:var(--muted);margin-top:3px;line-height:1.4;}
+  .browse-row .playbtn{
+    flex:none;width:38px;height:38px;border-radius:50%;background:#00000030;border:none;
+    color:var(--text);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;
+  }
+  .browse-row .playbtn.playing{background:var(--accent);}
+
   #doneScreen{display:none;flex-direction:column;align-items:center;text-align:center;max-width:380px;}
   #doneScreen .emoji{font-size:44px;margin-bottom:10px;}
   #doneScreen h2{margin:0 0 6px;font-size:20px;}
@@ -160,32 +206,27 @@
     padding:13px 22px;font-size:14px;cursor:pointer;margin-top:10px;
   }
 
-  #backBar{
-    width:100%;max-width:420px;display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;
+  #backBar, #browseBar{
+    width:100%;max-width:420px;display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;gap:10px;
   }
-  #backBar button{background:none;border:none;color:var(--muted);font-size:14px;cursor:pointer;padding:6px 0;}
+  #backBar button, #browseBar button{background:none;border:none;color:var(--muted);font-size:14px;cursor:pointer;padding:6px 0;flex:none;}
+  #browseLabel{color:var(--muted);font-size:13px;text-align:right;min-width:0;}
 
-  #menuSheet, #sectionsSheet{
+  #menuSheet{
     position:fixed;inset:0;background:#000000aa;display:none;align-items:flex-end;z-index:20;
   }
-  #sectionsSheet{z-index:21;}
-  #menuSheet .sheet, #sectionsSheet .sheet{
+  #menuSheet .sheet{
     background:var(--card);width:100%;border-radius:20px 20px 0 0;padding:20px 18px calc(20px + env(safe-area-inset-bottom));
   }
-  #menuSheet h3, #sectionsSheet h3{margin:0 0 14px;font-size:16px;}
-  #menuSheet .row, #sectionsSheet .row{
-    display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--card-border);font-size:14px;
+  #menuSheet h3{margin:0 0 14px;font-size:16px;}
+  #menuSheet .row{
+    display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--card-border);font-size:14px;
   }
-  #menuSheet .row:last-child, #sectionsSheet .row:last-child{border-bottom:none;}
+  #menuSheet .row:last-child{border-bottom:none;}
   #menuSheet button.action{background:var(--card-border);border:none;color:var(--text);border-radius:10px;padding:8px 14px;font-size:13px;cursor:pointer;}
-  #menuSheet .closeSheet, #sectionsSheet .closeSheet{width:100%;margin-top:12px;}
-
-  /* Manage sections: the list can be long, so it scrolls inside the sheet. */
-  #sectionsSheet .sheet-sub{color:var(--muted);font-size:13px;margin:0 0 10px;line-height:1.5;}
-  #sectionsList{max-height:52vh;overflow-y:auto;-webkit-overflow-scrolling:touch;}
-  #sectionsList .row{gap:12px;}
-  #sectionsList .row .name{flex:1;min-width:0;}
-  #sectionsList .row .name small{display:block;color:var(--muted);font-size:12px;margin-top:2px;}
+  #menuSheet .closeSheet{width:100%;margin-top:12px;}
+  .row .name{flex:1;min-width:0;}
+  .row .name small{display:block;color:var(--muted);font-size:12px;margin-top:2px;}
   .switch{position:relative;flex:none;width:46px;height:27px;cursor:pointer;}
   .switch input{position:absolute;opacity:0;width:100%;height:100%;margin:0;cursor:pointer;display:block;}
   .switch .track{
@@ -216,14 +257,25 @@
   <button class="iconbtn" id="langBtn" style="font-size:13px;font-weight:600;">EN</button>
   <button class="iconbtn" id="menuOpenBtn">⋯</button>
 </header>
-<div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+<div id="progressRow">
+  <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+  <span id="progressLabel"></span>
+</div>
 
 <main>
   <div id="deckPicker">
-    <h2 id="studyPromptText">What do you want to study?</h2>
+    <div id="deckHead">
+      <h2 id="studyPromptText">What do you want to study?</h2>
+      <button class="linkbtn" id="editSectionsBtn">Edit</button>
+    </div>
     <p id="studyHintText">Tap a set below. Cards you've already seen come back on their own schedule.</p>
     <div class="tag-grid" id="tagGrid"></div>
     <div id="emptySections"></div>
+  </div>
+
+  <div id="browseArea">
+    <div id="browseBar"><button id="browseBackBtn">← All sets</button><span id="browseLabel"></span></div>
+    <div id="browseList"></div>
   </div>
 
   <div id="studyArea">
@@ -256,21 +308,15 @@
 <div id="menuSheet">
   <div class="sheet">
     <h3 id="menuTitleText">Progress &amp; sync</h3>
-    <div class="row"><span id="manageLabelText">Manage sections</span><button class="action" id="manageBtn">Choose</button></div>
+    <div class="row">
+      <div class="name"><span id="shuffleLabelText">Shuffle card order</span><small id="shuffleHintText"></small></div>
+      <label class="switch"><input type="checkbox" id="shuffleToggle"><span class="track"></span><span class="thumb"></span></label>
+    </div>
     <div class="row"><span id="exportLabelText">Export progress</span><button class="action" id="exportBtn">Download file</button></div>
     <div class="row"><span id="importLabelText">Import progress</span><button class="action" id="importBtn">Choose file</button></div>
     <div class="row"><span id="resetLabelText">Reset all progress</span><button class="action" id="resetBtn">Reset</button></div>
     <input type="file" id="importFile" accept="application/json">
     <button class="ghostbtn closeSheet" id="closeSheetBtn">Close</button>
-  </div>
-</div>
-
-<div id="sectionsSheet">
-  <div class="sheet">
-    <h3 id="sectionsTitleText">Manage sections</h3>
-    <p class="sheet-sub" id="sectionsHintText"></p>
-    <div id="sectionsList"></div>
-    <button class="ghostbtn closeSheet" id="closeSectionsBtn">Close</button>
   </div>
 </div>
 
@@ -338,11 +384,12 @@ const STRINGS = {
     exportLabel: "Export progress", exportBtn: "Download file",
     importLabel: "Import progress", importBtn: "Choose file",
     resetLabel: "Reset all progress", resetBtn: "Reset",
-    manageLabel: "Manage sections", manageBtn: "Choose",
-    sectionsTitle: "Manage sections",
-    sectionsHint: "Choose which sets show up on the study screen. New sections start hidden until you switch them on — turn them on as your class reaches them.",
+    editSections: "Edit", doneEditing: "Done",
+    editHint: (on,total) => `Switch sections on or off. ${on} of ${total} are on.`,
     sectionCards: n => `${n} cards`,
-    emptySections: "No sections are switched on. Tap ⋯ → Manage sections to pick some.",
+    emptySections: "No sections are switched on. Tap Edit above to pick some.",
+    shuffleLabel: "Shuffle card order",
+    shuffleHint: "Mix up the order within each session",
     close: "Close",
     toastDownloaded: "Progress downloaded",
     toastImported: "Progress imported",
@@ -368,11 +415,12 @@ const STRINGS = {
     exportLabel: "進捗をエクスポート", exportBtn: "ファイルをダウンロード",
     importLabel: "進捗をインポート", importBtn: "ファイルを選ぶ",
     resetLabel: "進捗をすべてリセット", resetBtn: "リセット",
-    manageLabel: "セクションの管理", manageBtn: "選ぶ",
-    sectionsTitle: "セクションの管理",
-    sectionsHint: "学習画面に表示するセットを選んでください。新しいセクションは、オンにするまで表示されません。授業が進んだらオンにしてください。",
+    editSections: "編集", doneEditing: "完了",
+    editHint: (on,total) => `セクションのオン・オフを切り替えます。${total}個中${on}個がオンです。`,
     sectionCards: n => `${n}枚`,
-    emptySections: "オンになっているセクションがありません。⋯ →「セクションの管理」から選んでください。",
+    emptySections: "オンになっているセクションがありません。上の「編集」から選んでください。",
+    shuffleLabel: "カードの順番をシャッフル",
+    shuffleHint: "セッションごとに順番を入れ替えます",
     close: "閉じる",
     toastDownloaded: "進捗をダウンロードしました",
     toastImported: "進捗をインポートしました",
@@ -415,6 +463,22 @@ function isTagVisible(tag){
   if(Object.prototype.hasOwnProperty.call(sectionPrefs, tag)) return !!sectionPrefs[tag];
   return DEFAULT_VISIBLE_TAGS.includes(tag);
 }
+// ---- card order ----
+// Another display-only preference, so it gets its own key too. Defaults to on:
+// the deck ships in book order, and drilling it in that same order forever lets
+// you learn the sequence instead of the words.
+const SHUFFLE_KEY = "sogangKoreanShuffle_v1";
+let shuffleOn = localStorage.getItem(SHUFFLE_KEY) !== "0";
+function saveShuffle(){ try{ localStorage.setItem(SHUFFLE_KEY, shuffleOn ? "1" : "0"); }catch(e){} }
+function shuffled(list){
+  const a = list.slice();
+  for(let i = a.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 function tagHasCards(tag){ return CARDS.some(c => c.tags.includes(tag)); }
 function visibleTags(){ return TAG_ORDER.filter(tag => tagHasCards(tag) && isTagVisible(tag)); }
 function visibleCards(){
@@ -495,8 +559,11 @@ const tagGrid = document.getElementById("tagGrid");
 const deckPicker = document.getElementById("deckPicker");
 const studyArea = document.getElementById("studyArea");
 const doneScreen = document.getElementById("doneScreen");
+const browseArea = document.getElementById("browseArea");
 const headerStats = document.getElementById("headerStats");
+const progressRow = document.getElementById("progressRow");
 const progressFill = document.getElementById("progressFill");
+const progressLabel = document.getElementById("progressLabel");
 
 function cardsForTag(tag){
   // "All cards" means all *visible* cards — a section a student has switched
@@ -509,21 +576,34 @@ function dueCount(cardList){
   return cardList.filter(c => getState(c.id).due <= nowTs).length;
 }
 
+// Section on/off lives on the deck picker itself rather than behind the ⋯ menu:
+// which sections you're carrying is the main thing you adjust week to week, so
+// it shouldn't take three taps to see or change.
+let editingSections = false;
+
 function renderDeckPicker(){
   tagGrid.innerHTML = "";
-  const shown = visibleTags();
   const emptyEl = document.getElementById("emptySections");
-  if(shown.length === 0){
-    // Every section switched off — say so rather than showing a blank screen.
-    emptyEl.textContent = t().emptySections;
-    emptyEl.style.display = "block";
-  } else {
-    emptyEl.style.display = "none";
-    const all = visibleCards();
-    tagGrid.appendChild(makeTagBtn("__ALL__", t().allCards(all.length), all));
-    shown.forEach(tag=>{
-      tagGrid.appendChild(makeTagBtn(tag, TAG_LABELS[lang][tag] || tag, cardsForTag(tag)));
+  emptyEl.style.display = "none";
+
+  if(editingSections){
+    // Every section with cards, on or off, each with its switch.
+    TAG_ORDER.filter(tagHasCards).forEach(tag=>{
+      tagGrid.appendChild(makeSectionRow(tag));
     });
+  } else {
+    const shown = visibleTags();
+    if(shown.length === 0){
+      // Every section switched off — say so rather than showing a blank screen.
+      emptyEl.textContent = t().emptySections;
+      emptyEl.style.display = "block";
+    } else {
+      const all = visibleCards();
+      tagGrid.appendChild(makeTagBtn("__ALL__", t().allCards(all.length), all));
+      shown.forEach(tag=>{
+        tagGrid.appendChild(makeTagBtn(tag, TAG_LABELS[lang][tag] || tag, cardsForTag(tag)));
+      });
+    }
   }
   updateHeaderStats();
   applyStaticStrings();
@@ -533,9 +613,69 @@ function makeTagBtn(tag, label, list){
   const btn = document.createElement("div");
   btn.className = "tag-btn";
   const due = dueCount(list);
-  btn.innerHTML = `<span>${due>0?'<span class="due-dot"></span>':''}${label}</span><span class="count">${t().dueTotal(due, list.length)}</span>`;
+
+  const labelEl = document.createElement("span");
+  labelEl.className = "label";
+  if(due > 0){
+    const dot = document.createElement("span");
+    dot.className = "due-dot";
+    labelEl.appendChild(dot);
+  }
+  labelEl.appendChild(document.createTextNode(label));
+
+  const count = document.createElement("span");
+  count.className = "count";
+  count.textContent = t().dueTotal(due, list.length);
+
+  const listBtn = document.createElement("button");
+  listBtn.className = "listbtn";
+  listBtn.textContent = "☰";
+  listBtn.dataset.tag = tag;
+  listBtn.setAttribute("aria-label", `${label} — list`);
+  listBtn.addEventListener("click", (e)=>{ e.stopPropagation(); openBrowse(tag); });
+
+  btn.append(labelEl, count, listBtn);
   btn.onclick = () => startSession(tag);
   return btn;
+}
+
+function makeSectionRow(tag){
+  const row = document.createElement("div");
+  const on = isTagVisible(tag);
+  row.className = "tag-btn editing" + (on ? "" : " off");
+
+  const labelEl = document.createElement("span");
+  labelEl.className = "label";
+  labelEl.appendChild(document.createTextNode(TAG_LABELS[lang][tag] || tag));
+  const sub = document.createElement("small");
+  sub.textContent = t().sectionCards(cardsForTag(tag).length);
+  labelEl.appendChild(sub);
+
+  const sw = document.createElement("label");
+  sw.className = "switch";
+  const input = document.createElement("input");
+  input.type = "checkbox";
+  input.checked = on;
+  input.dataset.tag = tag;
+  input.setAttribute("aria-label", TAG_LABELS[lang][tag] || tag);
+  input.addEventListener("change", ()=>{
+    sectionPrefs[tag] = input.checked;
+    saveSectionPrefs();
+    row.classList.toggle("off", !input.checked);
+    updateHeaderStats();
+    applyStaticStrings(); // the "n of m are on" hint
+  });
+  const track = document.createElement("span"); track.className = "track";
+  const thumb = document.createElement("span"); thumb.className = "thumb";
+  sw.append(input, track, thumb);
+
+  row.append(labelEl, sw);
+  return row;
+}
+
+function toggleEditSections(){
+  editingSections = !editingSections;
+  renderDeckPicker();
 }
 
 function updateHeaderStats(){
@@ -545,6 +685,15 @@ function updateHeaderStats(){
   headerStats.innerHTML = `<span>${t().dueHeader(dueAll)}</span>`;
 }
 
+function updateSessionProgress(){
+  // Counts against the session queue, not the whole deck — the bar answers
+  // "how much of what I sat down to do is left", which is what you want mid-session.
+  const done = Math.max(0, sessionTotal - queue.length);
+  progressRow.style.display = "flex";
+  progressFill.style.width = Math.round(100 * done / Math.max(1, sessionTotal)) + "%";
+  progressLabel.textContent = `${done} / ${sessionTotal}`;
+}
+
 // ---- study session ----
 let queue = [];
 let currentTag = null;
@@ -552,23 +701,34 @@ let currentCard = null;
 let revealed = false;
 let audioEl = null;
 
+let sessionTotal = 0;
+
 function startSession(tag){
   currentTag = tag;
   const list = cardsForTag(tag);
   const nowTs = now();
-  queue = list.filter(c => getState(c.id).due <= nowTs)
-              .sort((a,b)=> getState(a.id).due - getState(b.id).due);
+  const due = list.filter(c => getState(c.id).due <= nowTs);
+  // Shuffling replaces the due-date sort rather than reordering after it —
+  // a shuffle applied on top of a sort is just the sort with extra steps.
+  queue = shuffleOn ? shuffled(due) : due.sort((a,b)=> getState(a.id).due - getState(b.id).due);
+  sessionTotal = queue.length;
   deckPicker.style.display = "none";
+  browseArea.style.display = "none";
   doneScreen.style.display = "none";
   studyArea.style.display = "flex";
+  document.body.classList.remove("browsing");
   document.getElementById("deckLabel").textContent = tag === "__ALL__" ? t().allCards(visibleCards().length) : (TAG_LABELS[lang][tag]||tag);
   nextCard();
 }
 
 function backToDecks(){
   studyArea.style.display = "none";
+  browseArea.style.display = "none";
   doneScreen.style.display = "none";
   deckPicker.style.display = "block";
+  document.body.classList.remove("browsing");
+  progressRow.style.display = "none";
+  stopBrowseAudio();
   renderDeckPicker();
 }
 
@@ -576,6 +736,7 @@ function nextCard(){
   revealed = false;
   if(queue.length === 0){
     studyArea.style.display = "none";
+    progressRow.style.display = "none";
     doneScreen.style.display = "flex";
     updateHeaderStats();
     return;
@@ -587,8 +748,7 @@ function nextCard(){
   document.getElementById("cardTag").textContent = (currentCard.tags[0]||"").split("::").pop();
   document.getElementById("cardHint").textContent = t().tapReveal;
   document.getElementById("gradeRow").classList.add("hidden");
-  const total = cardsForTag(currentTag).length;
-  progressFill.style.width = Math.round(100*(total-queue.length)/Math.max(1,total)) + "%";
+  updateSessionProgress();
 
   const labels = previewIntervals(getState(currentCard.id));
   document.getElementById("ivAgain").textContent = labels[0];
@@ -624,7 +784,10 @@ function grade(g){
   const newState = schedule(state, g);
   setState(currentCard.id, newState);
   queue.shift();
-  if(g === 0){ queue.push(currentCard); } // requeue "again" cards
+  if(g === 0){
+    queue.push(currentCard);
+    sessionTotal += 1; // a requeued card is one more card to get through, so the bar stays honest
+  }
   nextCard();
 }
 
@@ -648,62 +811,86 @@ document.addEventListener("keydown", (e)=>{
   if(revealed && ["1","2","3","4"].includes(e.key)){ grade(parseInt(e.key,10)-1); }
 });
 
+// ---- browse mode ----
+// A read-only pass over a whole section: every card at once, tap to hear it.
+// It never touches progress — skimming a list isn't a review, and counting it
+// as one would push real cards out to a longer interval than they've earned.
+const browseList = document.getElementById("browseList");
+let browseAudio = null;
+let browsePlayingBtn = null;
+
+function stopBrowseAudio(){
+  if(browseAudio){ browseAudio.pause(); browseAudio = null; }
+  if(browsePlayingBtn){ browsePlayingBtn.classList.remove("playing"); browsePlayingBtn = null; }
+}
+
+function playBrowse(card, btn){
+  stopBrowseAudio();
+  browseAudio = new Audio("data:audio/mp4;base64," + card.audio);
+  browsePlayingBtn = btn;
+  btn.classList.add("playing");
+  browseAudio.onended = ()=> btn.classList.remove("playing");
+  browseAudio.play().catch(()=>{ btn.classList.remove("playing"); });
+}
+
+function openBrowse(tag){
+  currentTag = tag;
+  const list = cardsForTag(tag);
+  browseList.innerHTML = "";
+  list.forEach(card=>{
+    const row = document.createElement("div");
+    row.className = "browse-row";
+
+    const txt = document.createElement("div");
+    txt.className = "txt";
+    const ko = document.createElement("div");
+    ko.className = "bko";
+    ko.textContent = card.ko;
+    const en = document.createElement("div");
+    en.className = "ben";
+    en.textContent = card[lang] || card.en;
+    txt.append(ko, en);
+
+    const play = document.createElement("button");
+    play.className = "playbtn";
+    play.textContent = "🔊";
+    play.setAttribute("aria-label", card.ko);
+    play.addEventListener("click", ()=> playBrowse(card, play));
+
+    row.append(txt, play);
+    browseList.appendChild(row);
+  });
+
+  document.getElementById("browseLabel").textContent =
+    tag === "__ALL__" ? t().allCards(list.length)
+                      : (TAG_LABELS[lang][tag] || tag) + " · " + t().sectionCards(list.length);
+  deckPicker.style.display = "none";
+  studyArea.style.display = "none";
+  doneScreen.style.display = "none";
+  progressRow.style.display = "none";
+  browseArea.style.display = "flex";
+  document.body.classList.add("browsing");
+  window.scrollTo(0, 0);
+}
+
+document.getElementById("browseBackBtn").addEventListener("click", backToDecks);
+document.getElementById("editSectionsBtn").addEventListener("click", toggleEditSections);
+
 // ---- menu / export / import / reset ----
 const menuSheet = document.getElementById("menuSheet");
 document.getElementById("menuOpenBtn").onclick = ()=> menuSheet.style.display = "flex";
 document.getElementById("closeSheetBtn").onclick = ()=> menuSheet.style.display = "none";
 menuSheet.addEventListener("click", (e)=>{ if(e.target === menuSheet) menuSheet.style.display="none"; });
 
-// ---- manage sections sheet ----
-const sectionsSheet = document.getElementById("sectionsSheet");
-const sectionsList = document.getElementById("sectionsList");
-
-function renderSectionsSheet(){
-  sectionsList.innerHTML = "";
-  TAG_ORDER.forEach(tag=>{
-    if(!tagHasCards(tag)) return; // a tag with no cards yet has nothing to show
-    const count = cardsForTag(tag).length;
-    const row = document.createElement("div");
-    row.className = "row";
-
-    const name = document.createElement("div");
-    name.className = "name";
-    name.appendChild(document.createTextNode(TAG_LABELS[lang][tag] || tag));
-    const sub = document.createElement("small");
-    sub.textContent = t().sectionCards(count);
-    name.appendChild(sub);
-
-    const sw = document.createElement("label");
-    sw.className = "switch";
-    const input = document.createElement("input");
-    input.type = "checkbox";
-    input.checked = isTagVisible(tag);
-    input.setAttribute("aria-label", TAG_LABELS[lang][tag] || tag);
-    input.dataset.tag = tag;
-    input.addEventListener("change", ()=>{
-      sectionPrefs[tag] = input.checked;
-      saveSectionPrefs();
-      renderDeckPicker(); // reflect immediately behind the sheet
-    });
-    const track = document.createElement("span"); track.className = "track";
-    const thumb = document.createElement("span"); thumb.className = "thumb";
-    sw.append(input, track, thumb);
-
-    row.append(name, sw);
-    sectionsList.appendChild(row);
-  });
-}
-
-function openSectionsSheet(){
-  renderSectionsSheet();
-  sectionsSheet.style.display = "flex";
-}
-document.getElementById("manageBtn").onclick = ()=>{
-  menuSheet.style.display = "none";
-  openSectionsSheet();
-};
-document.getElementById("closeSectionsBtn").onclick = ()=> sectionsSheet.style.display = "none";
-sectionsSheet.addEventListener("click", (e)=>{ if(e.target === sectionsSheet) sectionsSheet.style.display = "none"; });
+// ---- shuffle toggle ----
+const shuffleToggle = document.getElementById("shuffleToggle");
+shuffleToggle.checked = shuffleOn;
+shuffleToggle.addEventListener("change", ()=>{
+  shuffleOn = shuffleToggle.checked;
+  saveShuffle();
+  // Takes effect on the next session rather than reshuffling the queue under
+  // you mid-card, which would lose your place for no benefit.
+});
 
 function toast(msg){
   const toastEl = document.getElementById("toast");
@@ -766,8 +953,16 @@ function applyStaticStrings(){
   document.getElementById("appTitle").textContent = s.title;
   document.title = s.title;
   document.getElementById("studyPromptText").textContent = s.studyPrompt;
-  document.getElementById("studyHintText").textContent = s.studyHint;
+  // In edit mode the picker is a settings list, so the blurb explains that
+  // instead of telling you to tap a set (which does nothing while editing).
+  const editable = TAG_ORDER.filter(tagHasCards);
+  document.getElementById("studyHintText").textContent =
+    editingSections ? s.editHint(editable.filter(isTagVisible).length, editable.length) : s.studyHint;
+  document.getElementById("editSectionsBtn").textContent = editingSections ? s.doneEditing : s.editSections;
   document.getElementById("backBtn").textContent = s.allSets;
+  document.getElementById("browseBackBtn").textContent = s.allSets;
+  document.getElementById("shuffleLabelText").textContent = s.shuffleLabel;
+  document.getElementById("shuffleHintText").textContent = s.shuffleHint;
   document.getElementById("gAgain").textContent = s.again;
   document.getElementById("gHard").textContent = s.hard;
   document.getElementById("gGood").textContent = s.good;
@@ -783,11 +978,6 @@ function applyStaticStrings(){
   document.getElementById("resetLabelText").textContent = s.resetLabel;
   document.getElementById("resetBtn").textContent = s.resetBtn;
   document.getElementById("closeSheetBtn").textContent = s.close;
-  document.getElementById("manageLabelText").textContent = s.manageLabel;
-  document.getElementById("manageBtn").textContent = s.manageBtn;
-  document.getElementById("sectionsTitleText").textContent = s.sectionsTitle;
-  document.getElementById("sectionsHintText").textContent = s.sectionsHint;
-  document.getElementById("closeSectionsBtn").textContent = s.close;
 }
 
 document.getElementById("langBtn").addEventListener("click", ()=>{
@@ -796,8 +986,9 @@ document.getElementById("langBtn").addEventListener("click", ()=>{
   localStorage.setItem(LANG_KEY, lang);
   applyStaticStrings();
   updateHeaderStats(); // header due-count badge is visible in both screens, not just the deck picker
-  if(sectionsSheet.style.display === "flex"){ renderSectionsSheet(); } // relabel toggles in place
-  if(studyArea.style.display === "flex"){
+  if(browseArea.style.display === "flex"){
+    openBrowse(currentTag); // rebuild the list with the other language's glosses
+  } else if(studyArea.style.display === "flex"){
     // refresh the in-progress card + grade-button interval previews in the new language
     document.getElementById("cardEn").textContent = currentCard[lang] || currentCard.en;
     document.getElementById("cardHint").textContent = revealed ? "" : t().tapReveal;

@@ -10,7 +10,10 @@ below and rebuild.
   entry: `{id, ko, en, ja, tags}`. `id` is permanent once shipped — it's
   the key each student's browser uses to remember review progress for that
   card, so **never change or reuse an existing id**, even if you fix a typo
-  in `ko`/`en`/`ja`. Just add new entries with new ids.
+  in `ko`/`en`/`ja`. Just add new entries with new ids. (Editing the text of a
+  shipped card in place is fine and keeps its progress — that's how the
+  "Hello? I'm Mina." → "Hello, I'm Mina." gloss fix was made. Only the `id` is
+  frozen. Note that changing `ko` also means regenerating that id's audio file.)
 - `audio_store/<id>.m4a` — one Korean-language audio clip per card, named
   by that card's id.
 - `app_template.html` — the actual app (HTML/CSS/JS). Contains
@@ -54,10 +57,14 @@ introduce a new section, alongside giving the relevant cards that tag in
 remove existing entries, since that would rearrange sections students
 already have bookmarked mentally.
 
-## Section visibility ("Manage sections")
+## Section visibility
 
-The deck picker only shows sections the student has switched on, via
-⋯ → *Manage sections*. That preference lives in its own localStorage key,
+The deck picker only shows sections the student has switched on. The switches
+live on the deck picker itself — tap **Edit** next to the heading and every
+section with cards turns into a labelled toggle row, on ones bright, off ones
+dimmed; tap **Done** to go back to studying. Which sections you're carrying is
+the thing that changes week to week, so it deliberately isn't buried in the ⋯
+menu. That preference lives in its own localStorage key,
 `SECTIONS_KEY` (`"sogangKoreanSections_v1"`), as a plain `{tag: bool}` map —
 it is a **display preference, never progress data**, so it must stay separate
 from `STORAGE_KEY`. Hiding a section leaves its review history untouched.
@@ -76,6 +83,22 @@ The rule that makes this safe to ship content into:
 
 A corrupt or missing `SECTIONS_KEY` value falls back to the defaults rather
 than throwing.
+
+## Browse mode
+
+The ☰ button on each deck row opens that section as a plain scrollable list —
+every card at once, Korean plus translation, with a 🔊 button per row. It is
+read-only on purpose: **browsing never writes progress**, because counting a
+skim as a review would push cards out to intervals they haven't earned.
+
+## Card order
+
+`SHUFFLE_KEY` (`"sogangKoreanShuffle_v1"`) holds a single `"1"`/`"0"`, toggled
+under ⋯ → *Shuffle card order*, **defaulting to on**. When on, a session's due
+cards are shuffled; when off they come back in due-date order, which is the
+original behaviour. Also a display preference, also separate from `STORAGE_KEY`.
+It applies at `startSession()` only — flipping it mid-session doesn't reorder
+the queue under the student's current card.
 
 ## Things that must never change (backward compatibility)
 
