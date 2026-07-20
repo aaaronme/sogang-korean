@@ -139,3 +139,19 @@ there is no grammar-card UI.
 - **`동-(으)ㄹ 거예요`** (p.157) — The future tense: expresses an action the speaker is going to do. Attach -을 거예요 after a verb stem ending in a consonant and -ㄹ 거예요 after a stem ending in a vowel (or a ㄹ stem, which drops nothing extra). Used with verbs, not adjectives. Examples: 안나 씨, 언제 부산에 갈 거예요? (Anna, when are you going to go to Busan?) 다음 주에 갈 거예요. (I'm going to go there next week.) 오늘 친구하고 점심을 먹을 거예요. (I'm going to eat lunch with my friend today.)
 
 **Gap:** pp.168–169 (end of 6과) were never photographed — see README.
+
+
+## Additional grammar found in the full re-read of 준비 1–3
+
+The first pass at these units worked from a 12-page publisher sample. Reading
+the real pages surfaced these, which the sample did not contain:
+
+- **준비 1과** `명이에요/예요` (p.18) — The copula 'to be (am/is/are)'. It attaches directly to a noun with no space. Use -이에요 after a noun ending in a consonant (미국 사람이에요, 회사원이에요) and -예요 after a noun ending in a vowel (앤디 씨예요, 의사예요). Examples: A: 이름이 뭐예요? B: 수잔이에요. / 저는 앤디예요. / 미국 사람이에요. Basic Korean sentence structure is subject + predicate, as in 이분이(subject) 앤디 씨예요(predicate). Pronunciation TIP on p.18: questions end on a rising tone while answers end on a falling tone — A: 이름이 뭐예요?↗ B: 앤디예요.↘
+- **준비 1과** `누구` (p.22) — '누구' is the interrogative pronoun 'who', used to ask about a person. With the copula it becomes 누구예요? Example: A: 이분이 누구예요? B: 앤디 씨예요. / B: 가브리엘 씨예요. Presented in the textbook through the 과제 (p.22) and 읽고 말하기 (p.23) sections.
+- **준비 2과** `이게/저게` (p.28) — '이게' (this thing) points to an object close to the speaker; '저게' (that thing over there) points to an object far from both speaker and listener. Both are used only as the subject of a sentence. e.g. 이게 의자예요. (This is a chair.) / 저게 가방이에요. (That is a bag.)
+- **준비 2과** `뭐예요?` (p.30) — The interrogative pronoun '뭐' means 'what'; the ending '-예요' attaches directly to it. When answering '이게/저게 뭐예요?', the subject '이게/저게' is usually omitted. e.g. A: 이게 뭐예요? B: 연필이에요. / A: 그럼 저게 뭐예요? B: 시계예요.
+- **준비 2과** `누구 거예요?` (p.31) — Used to ask who an object belongs to: '누구' (who) + '거' (thing, from 것) + '-예요'. The answer uses 제 거예요 (it's mine) or a name plus 씨 거예요. e.g. A: 우산 누구 거예요? B: 제 거예요. / 사라 씨 거예요.
+- **준비 3과** `명 있어요/없어요` (p.38) — 있어요 = 'to have / there is'; 없어요 = 'to not have / there isn't'. Attach directly after a noun with no particle at this level: [noun] 있어요/없어요. Question and statement share the same form, distinguished by intonation. Examples: 우산 있어요? – 네, 있어요. / 지우개 있어요? – 아니요, 없어요. / 책 있어요. / 안경 없어요.
+- **준비 3과** `숫자① (Sino-Korean numbers)` (p.39) — Korean has two number systems; this unit teaches the Sino-Korean set (일, 이, 삼 … 십, 이십 … 백). Sino-Korean numbers are used for prices, phone numbers, bus numbers and dates: 10원, 02-925-3857, 34번, 2월 14일. Zero is normally 영, but in telephone numbers 공 is used instead. Pure Korean numbers (taught later) are used mostly for counting.
+- **준비 3과** `몇 번` (p.40) — 몇 usually means 'how many', but with 번 (number) it means 'what/which number' and asks for a numerical value such as a phone number, bus number or room number. A: 전화번호가 몇 번이에요? B: 010-4948-1287이에요. / A: 몇 번 버스예요? B: 701번 버스예요. When reading a phone number aloud, the dash is read 에. Answers to 몇 번이에요? always use Sino-Korean numbers (unlike 몇 개 있어요?, which takes pure Korean numbers).
+- **준비 3과** `몇 월 며칠` (p.41) — 몇 combines with 월 (month) and 일 (day) to ask a date. A: 오늘이 몇 월 며칠이에요? B: 7월 5일이에요. Write 며칠, not 몇 일, even though the two sound alike. Month names use Sino-Korean numbers plus 월, with two irregular forms: 6월 is 유월 (not 육월) and 10월 is 시월 (not 십월).

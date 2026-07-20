@@ -153,44 +153,51 @@ Hangul 4 (16, tense consonants), Expressions (23, across To-Be/Adjectives/
 Verbs/Requests), Numbers (6). These eight are the only sections that default
 to **on**; every Book 1A section below defaults to off.
 
-Preparatory Units 1–3, pp.16–45 — 144 cards, from `add_book1a_prep.py`:
-
-| Tag | Cards | Book pages |
-|---|---|---|
-| `Book1A::PrepUnit1::Vocab` | 28 | 18–19, 23 (국적, 직업) |
-| `Book1A::PrepUnit1::Sentences` | 15 | 18, 20–21, 23 |
-| `Book1A::PrepUnit2::Vocab` | 31 | 28–29, 33 (사물) |
-| `Book1A::PrepUnit2::Sentences` | 14 | 28–31, 33 |
-| `Book1A::PrepUnit3::Vocab` | 40 | 38–39 (숫자①, 날짜) |
-| `Book1A::PrepUnit3::Sentences` | 16 | 38, 40–41 |
-
-Preparatory Unit 4 and Units 1–6, pp.46–167 — 1021 cards, from
-`add_book1a_units.py`:
+Preparatory Units 1–4 and Units 1–6, book pp.16–167 — 1205 cards:
 
 | Tag | Vocab / Sentences | Book pages |
 |---|---|---|
-| `Book1A::PrepUnit4::Vocab` / `::Sentences` | 56 / 22 | 46–55 (커피 주세요) |
-| `Book1A::Unit1::Vocab` / `::Sentences` | 70 / 74 | 58–75 (앤디 씨가 식당에 있어요) |
-| `Book1A::Unit2::Vocab` / `::Sentences` | 72 / 95 | 76–93 (여섯 시에 일어나요) |
-| `Book1A::Unit3::Vocab` / `::Sentences` | 51 / 86 | 96–113 (카페에서 친구를 만나요) |
-| `Book1A::Unit4::Vocab` / `::Sentences` | 70 / 117 | 114–131 (어제 핸드폰을 샀어요) |
-| `Book1A::Unit5::Vocab` / `::Sentences` | 58 / 102 | 134–151 (지하철 2호선을 타세요) |
-| `Book1A::Unit6::Vocab` / `::Sentences` | 97 / 51 | 152–167 (내일 등산하러 갈 거예요) |
+| `Book1A::PrepUnit1::Vocab` / `::Sentences` | 28 / 39 | 16–25 |
+| `Book1A::PrepUnit2::Vocab` / `::Sentences` | 31 / 17 | 26–35 |
+| `Book1A::PrepUnit3::Vocab` / `::Sentences` | 48 / 22 | 36–45 |
+| `Book1A::PrepUnit4::Vocab` / `::Sentences` | 56 / 22 | 46–55 |
+| `Book1A::Unit1::Vocab` / `::Sentences` | 70 / 74 | 58–75 |
+| `Book1A::Unit2::Vocab` / `::Sentences` | 72 / 95 | 76–93 |
+| `Book1A::Unit3::Vocab` / `::Sentences` | 51 / 85 | 96–113 |
+| `Book1A::Unit4::Vocab` / `::Sentences` | 70 / 117 | 114–131 |
+| `Book1A::Unit5::Vocab` / `::Sentences` | 58 / 102 | 134–151 |
+| `Book1A::Unit6::Vocab` / `::Sentences` | 97 / 51 | 152–167 |
 
-Both generators are idempotent: ids are `sha1(tag|ko)`, so re-running never
-mints a new id for a card that already shipped. English glosses come from the
+`add_book1a_units.py` generates all of it from the per-unit transcription JSON.
+(`add_book1a_prep.py` produced the first pass at Preparatory Units 1–3 and is
+kept for provenance; its cards are a subset of what the unit generator now
+emits.) Both are idempotent: ids are `sha1(tag|ko)`, so re-running never mints a
+new id for a card that already shipped — and the unit generator additionally
+reports *near*-duplicate strings within a section, since a re-transcription
+differing by one space would otherwise become a silent second card for the same
+phrase rather than matching the first. English glosses come from the
 companion 문법·단어 참고서 (Grammar and Vocabulary Handbook 1A, English edition)
 pp.36–47 wherever the word appears there; the rest, and all Japanese, are ours.
 
 Grammar points per unit are recorded in `GRAMMAR_NOTES.md`.
 
-**Known gap:** book pp.168–169 (the tail of 6과 — its 과제 and 단원 마무리 pages)
-were never photographed, so nothing from them is carded. Everything else from
-pp.16–167 is covered.
+**Known gaps**, both missing photographs rather than missing work:
+
+- pp.16–17, the 준비 1과 opener. The PDF sample shows this spread is the unit
+  contents map only — no vocabulary, no example sentences — so nothing appears
+  lost, but it is not visually verified.
+- pp.168–169, the tail of 6과 (its 과제 and 단원 마무리 pages).
+
+Everything else from pp.16–167 is covered.
+
+Note on the photo set: shots 040–043 are **single pages** (18, 19, 20, 21);
+from 044 on they are two-page spreads, where the left page is `2 × seq − 66`.
+Shots 110 and 111 are the same spread (p.154–155) taken twice, which is why the
+sequence runs two pages short at the end.
 
 ### Note on file size
 
-`index.html` is **0.20 MB** for 1259 cards — card text only. The 7.8 MB of
+`index.html` is **0.21 MB** for 1299 cards — card text only. The 8.1 MB of
 audio sits in `audio/` and is fetched one clip at a time, so a student studying
 two sections pays for roughly 100 clips (~600 KB), not the library.
 

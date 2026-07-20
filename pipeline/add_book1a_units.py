@@ -1,8 +1,10 @@
-"""Append Student's Book 1A cards for 준비4과 and 1과-6과 to master_cards.json.
+"""Append Student's Book 1A cards to master_cards.json.
 
-Source: 서강한국어 STUDENT'S BOOK 1A (3rd ed., Hawoo) pp.46-169, transcribed from
+Covers 준비1과-준비4과 and 1과-6과.
+
+Source: 서강한국어 STUDENT'S BOOK 1A (3rd ed., Hawoo) pp.16-167, transcribed from
 photographs of the physical book, with English glosses taken from the companion
-문법·단어 참고서 (Grammar and Vocabulary Handbook 1A, English edition) pp.39-47.
+문법·단어 참고서 (Grammar and Vocabulary Handbook 1A, English edition) pp.36-47.
 
 Reads the per-unit JSON produced by the transcription pass (see UNITS below) and
 appends any card not already present. Idempotent: ids are sha1(tag|ko), so
@@ -12,17 +14,24 @@ Naming follows the book's own English Table of Contents — 준비n과 is
 "Preparatory Unit n" and n과 is "Unit n". They are different units, which is why
 PrepUnit4 and Unit1 can both exist. See pipeline/README.md.
 """
+import collections
 import hashlib
 import json
 import os
+import re
 import subprocess
 import sys
+
+import strip_m4a_padding
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = "/private/tmp/claude-501/-Users-aaron-sogang-korean/e97bafd5-f601-49d8-92cd-504b315807ec/scratchpad/out"
 
 # json basename -> tag stem, in book order
 UNITS = [
+    ("prepunit1.json", "Book1A::PrepUnit1"),
+    ("prepunit2.json", "Book1A::PrepUnit2"),
+    ("prepunit3.json", "Book1A::PrepUnit3"),
     ("prepunit4.json", "Book1A::PrepUnit4"),
     ("unit1.json", "Book1A::Unit1"),
     ("unit2.json", "Book1A::Unit2"),
@@ -81,8 +90,12 @@ def collect():
 
 
 def make_audio(cid, ko):
-    """say -> AAC. The afconvert step is mandatory: say writes uncompressed PCM,
-    which would bloat index.html by ~8x once build.py base64s it inline."""
+    """say -> AAC -> strip padding.
+
+    All three steps matter. `say` writes uncompressed PCM (~8x too big), and
+    afconvert then pads the header to a 4 KB boundary (~a third of a short clip).
+    Skipping either leaves bytes that every student downloads.
+    """
     dest = os.path.join(HERE, "..", "audio", f"{cid}.m4a")
     if os.path.exists(dest):
         return False
@@ -93,6 +106,7 @@ def make_audio(cid, ko):
         check=True,
     )
     os.remove(tmp)
+    strip_m4a_padding.strip(dest)
     return True
 
 
@@ -121,6 +135,25 @@ def main():
     ids = [c["id"] for c in master]
     if len(ids) != len(set(ids)):
         raise SystemExit("ABORT: duplicate card id detected, refusing to write")
+
+    # Ids come from the exact Korean string, so a re-transcription that differs by
+    # one space or one comma silently becomes a *second* card for the same phrase
+    # rather than matching the one already shipped. Exact-match dedup can't see
+    # that; this can. Report rather than abort — the book does legitimately print
+    # e.g. 학생 and 학생. separately — but these are worth eyeballing.
+    def squash(s):
+        return re.sub(r"[\s.,?!·]", "", s)
+
+    by_tag = collections.defaultdict(dict)
+    for c in master:
+        by_tag[c["tags"][0]].setdefault(squash(c["ko"]), []).append(c["ko"])
+    near = [(tag, variants) for tag, groups in by_tag.items()
+            for variants in groups.values() if len(set(variants)) > 1]
+    if near:
+        print(f"\nNOTE: {len(near)} near-duplicate string(s) within a section — "
+              f"these are separate cards, check they should be:")
+        for tag, variants in near[:15]:
+            print(f"  {tag.split('::')[-2]}: {sorted(set(variants))}")
 
     with open(path, "w", encoding="utf-8") as f:
         json.dump(master, f, ensure_ascii=False, indent=1)

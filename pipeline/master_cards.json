@@ -6194,15 +6194,6 @@
   "ja": "服（ふく）を買（か）います"
  },
  {
-  "id": "b774ae533e",
-  "ko": "영화를 봐요",
-  "en": "I watch a movie",
-  "tags": [
-   "Book1A::Unit3::Sentences"
-  ],
-  "ja": "映画（えいが）を見（み）ます"
- },
- {
   "id": "6fe11dca97",
   "ko": "밥을 먹어요",
   "en": "I eat a meal",
@@ -11331,5 +11322,374 @@
    "Book1A::Unit6::Sentences"
   ],
   "ja": "ヨーロッパへ旅行（りょこう）に行（い）くつもりです。"
+ },
+ {
+  "id": "fe6149d8ee",
+  "ko": "수잔이에요.",
+  "en": "I'm Susan.",
+  "tags": [
+   "Book1A::PrepUnit1::Sentences"
+  ],
+  "ja": "スーザンです。"
+ },
+ {
+  "id": "7d3eae489d",
+  "ko": "앤디예요. 미국 사람이에요.",
+  "en": "I'm Andy. I'm from the United States.",
+  "tags": [
+   "Book1A::PrepUnit1::Sentences"
+  ],
+  "ja": "アンディです。アメリカ人（じん）です。"
+ },
+ {
+  "id": "50ecbcee5c",
+  "ko": "어느 나라 사람이에요?",
+  "en": "What country are you from?",
+  "tags": [
+   "Book1A::PrepUnit1::Sentences"
+  ],
+  "ja": "どこの国（くに）の人（ひと）ですか？"
+ },
+ {
+  "id": "1f00c6c265",
+  "ko": "미국 사람이에요.",
+  "en": "I'm from the United States.",
+  "tags": [
+   "Book1A::PrepUnit1::Sentences"
+  ],
+  "ja": "アメリカ人（じん）です。"
+ },
+ {
+  "id": "e140338474",
+  "ko": "무슨 일을 하세요?",
+  "en": "What work do you do?",
+  "tags": [
+   "Book1A::PrepUnit1::Sentences"
+  ],
+  "ja": "どんな仕事（しごと）をしていますか？"
+ },
+ {
+  "id": "84c47a6787",
+  "ko": "안녕하세요?",
+  "en": "Hello/How are you?",
+  "tags": [
+   "Book1A::PrepUnit1::Sentences"
+  ],
+  "ja": "こんにちは？"
+ },
+ {
+  "id": "675b4d1de3",
+  "ko": "반갑습니다.",
+  "en": "It's nice to meet you.",
+  "tags": [
+   "Book1A::PrepUnit1::Sentences"
+  ],
+  "ja": "お会（あ）いできてうれしいです。"
+ },
+ {
+  "id": "89c3e2c7e7",
+  "ko": "저는 가브리엘이에요.",
+  "en": "I'm Gabriel.",
+  "tags": [
+   "Book1A::PrepUnit1::Sentences"
+  ],
+  "ja": "私（わたし）はガブリエルです。"
+ },
+ {
+  "id": "8e53bac9d4",
+  "ko": "브라질 사람이에요.",
+  "en": "I'm from Brazil.",
+  "tags": [
+   "Book1A::PrepUnit1::Sentences"
+  ],
+  "ja": "ブラジル人（じん）です。"
+ },
+ {
+  "id": "98adf6a7c4",
+  "ko": "프로그래머예요.",
+  "en": "I'm a programmer.",
+  "tags": [
+   "Book1A::PrepUnit1::Sentences"
+  ],
+  "ja": "プログラマーです。"
+ },
+ {
+  "id": "522bb04357",
+  "ko": "저는 운동 좋아해요.",
+  "en": "I like exercise.",
+  "tags": [
+   "Book1A::PrepUnit1::Sentences"
+  ],
+  "ja": "私（わたし）は運動（うんどう）が好（す）きです。"
+ },
+ {
+  "id": "7ad619f472",
+  "ko": "저는 하루카예요.",
+  "en": "I'm Haruka.",
+  "tags": [
+   "Book1A::PrepUnit1::Sentences"
+  ],
+  "ja": "私（わたし）はハルカです。"
+ },
+ {
+  "id": "8329103c64",
+  "ko": "일본 사람이에요.",
+  "en": "I'm from Japan.",
+  "tags": [
+   "Book1A::PrepUnit1::Sentences"
+  ],
+  "ja": "日本人（にほんじん）です。"
+ },
+ {
+  "id": "d24f80e42b",
+  "ko": "일본어 선생님이에요.",
+  "en": "I'm a Japanese language teacher.",
+  "tags": [
+   "Book1A::PrepUnit1::Sentences"
+  ],
+  "ja": "日本語（にほんご）の先生（せんせい）です。"
+ },
+ {
+  "id": "e15ed71607",
+  "ko": "저는 드라마 좋아해요.",
+  "en": "I like TV dramas.",
+  "tags": [
+   "Book1A::PrepUnit1::Sentences"
+  ],
+  "ja": "私（わたし）はドラマが好（す）きです。"
+ },
+ {
+  "id": "3a9de62c13",
+  "ko": "앤디 씨는 어느 나라 사람이에요? 하루카 씨는 무슨 일을 하세요?",
+  "en": "What country is Andy from? What work does Haruka do?",
+  "tags": [
+   "Book1A::PrepUnit1::Sentences"
+  ],
+  "ja": "アンディさんはどこの国（くに）の人（ひと）ですか。ハルカさんはどんな仕事（しごと）をしていますか？"
+ },
+ {
+  "id": "8bc4e1a78b",
+  "ko": "앤디 씨는 미국 사람이에요.",
+  "en": "Andy is from the United States.",
+  "tags": [
+   "Book1A::PrepUnit1::Sentences"
+  ],
+  "ja": "アンディさんはアメリカ人（じん）です。"
+ },
+ {
+  "id": "9b6f0f4699",
+  "ko": "앤디 씨는 공부 좋아해요.",
+  "en": "Andy likes studying.",
+  "tags": [
+   "Book1A::PrepUnit1::Sentences"
+  ],
+  "ja": "アンディさんは勉強（べんきょう）が好（す）きです。"
+ },
+ {
+  "id": "2d5ed48c77",
+  "ko": "하루카 씨는 가이드예요.",
+  "en": "Haruka is a guide.",
+  "tags": [
+   "Book1A::PrepUnit1::Sentences"
+  ],
+  "ja": "ハルカさんはガイドです。"
+ },
+ {
+  "id": "ab13dddda3",
+  "ko": "하루카 씨는 드라마 좋아해요.",
+  "en": "Haruka likes TV dramas.",
+  "tags": [
+   "Book1A::PrepUnit1::Sentences"
+  ],
+  "ja": "ハルカさんはドラマが好（す）きです。"
+ },
+ {
+  "id": "118dcad51c",
+  "ko": "앤디 씨는 어느 나라 사람이에요?",
+  "en": "What country is Andy from?",
+  "tags": [
+   "Book1A::PrepUnit1::Sentences"
+  ],
+  "ja": "アンディさんはどこの国（くに）の人（ひと）ですか？"
+ },
+ {
+  "id": "b4777f7572",
+  "ko": "앤디 씨는 뭐 좋아해요?",
+  "en": "What does Andy like?",
+  "tags": [
+   "Book1A::PrepUnit1::Sentences"
+  ],
+  "ja": "アンディさんは何（なに）が好（す）きですか？"
+ },
+ {
+  "id": "a78e879047",
+  "ko": "하루카 씨는 무슨 일을 하세요?",
+  "en": "What work does Haruka do?",
+  "tags": [
+   "Book1A::PrepUnit1::Sentences"
+  ],
+  "ja": "ハルカさんはどんな仕事（しごと）をしていますか？"
+ },
+ {
+  "id": "1ccfd72efb",
+  "ko": "하루카 씨는 뭐 좋아해요?",
+  "en": "What does Haruka like?",
+  "tags": [
+   "Book1A::PrepUnit1::Sentences"
+  ],
+  "ja": "ハルカさんは何（なに）が好（す）きですか？"
+ },
+ {
+  "id": "0cf2a86e67",
+  "ko": "누구 거예요?",
+  "en": "Whose is this?",
+  "tags": [
+   "Book1A::PrepUnit2::Sentences"
+  ],
+  "ja": "誰（だれ）のですか？"
+ },
+ {
+  "id": "9b83ce094f",
+  "ko": "필통이에요.",
+  "en": "It's a pencil case.",
+  "tags": [
+   "Book1A::PrepUnit2::Sentences"
+  ],
+  "ja": "筆箱（ふでばこ）です。"
+ },
+ {
+  "id": "4089f844f8",
+  "ko": "우산이 누구 거예요?",
+  "en": "Whose umbrella is it?",
+  "tags": [
+   "Book1A::PrepUnit2::Sentences"
+  ],
+  "ja": "傘（かさ）は誰（だれ）のですか？"
+ },
+ {
+  "id": "a5fe2ecce8",
+  "ko": "비밀번호",
+  "en": "PIN code",
+  "tags": [
+   "Book1A::PrepUnit3::Vocab"
+  ],
+  "ja": "暗証番号（あんしょうばんごう）"
+ },
+ {
+  "id": "bdcf516926",
+  "ko": "카드 번호",
+  "en": "Credit card number",
+  "tags": [
+   "Book1A::PrepUnit3::Vocab"
+  ],
+  "ja": "カード番号（ばんごう）"
+ },
+ {
+  "id": "bc5858d3ca",
+  "ko": "은행 계좌번호",
+  "en": "Bank account number",
+  "tags": [
+   "Book1A::PrepUnit3::Vocab"
+  ],
+  "ja": "銀行口座番号（ぎんこうこうざばんごう）"
+ },
+ {
+  "id": "651a7dbec4",
+  "ko": "버스 번호",
+  "en": "Bus number",
+  "tags": [
+   "Book1A::PrepUnit3::Vocab"
+  ],
+  "ja": "バスの番号（ばんごう）"
+ },
+ {
+  "id": "f9be68478a",
+  "ko": "층 번호",
+  "en": "Floor number",
+  "tags": [
+   "Book1A::PrepUnit3::Vocab"
+  ],
+  "ja": "階（かい）の番号（ばんごう）"
+ },
+ {
+  "id": "7d677f08a5",
+  "ko": "지하철 노선 번호",
+  "en": "Subway line number",
+  "tags": [
+   "Book1A::PrepUnit3::Vocab"
+  ],
+  "ja": "地下鉄（ちかてつ）の路線番号（ろせんばんごう）"
+ },
+ {
+  "id": "c557855a92",
+  "ko": "지하철 역 출입구 번호",
+  "en": "Subway station exit number",
+  "tags": [
+   "Book1A::PrepUnit3::Vocab"
+  ],
+  "ja": "地下鉄駅（ちかてつえき）の出入口番号（でいりぐちばんごう）"
+ },
+ {
+  "id": "672d64c5a9",
+  "ko": "방 번호",
+  "en": "Room number",
+  "tags": [
+   "Book1A::PrepUnit3::Vocab"
+  ],
+  "ja": "部屋番号（へやばんごう）"
+ },
+ {
+  "id": "c3b8fe17ca",
+  "ko": "010-4948-1287, 맞아요?",
+  "en": "010-4948-1287, is that right?",
+  "tags": [
+   "Book1A::PrepUnit3::Sentences"
+  ],
+  "ja": "010-4948-1287、合（あ）っていますか？"
+ },
+ {
+  "id": "5cad771a22",
+  "ko": "맞아요?",
+  "en": "Is that right?",
+  "tags": [
+   "Book1A::PrepUnit3::Sentences"
+  ],
+  "ja": "合（あ）っていますか？"
+ },
+ {
+  "id": "7fe80131dc",
+  "ko": "알아요?",
+  "en": "Do you know (something)?",
+  "tags": [
+   "Book1A::PrepUnit3::Sentences"
+  ],
+  "ja": "知（し）っていますか？"
+ },
+ {
+  "id": "58e81d0591",
+  "ko": "생일이 며칠이에요?",
+  "en": "What date is (someone's) birthday?",
+  "tags": [
+   "Book1A::PrepUnit3::Sentences"
+  ],
+  "ja": "誕生日（たんじょうび）は何日（なんにち）ですか？"
+ },
+ {
+  "id": "dc8f1d136c",
+  "ko": "010-1234-5678, 맞아요?",
+  "en": "010-1234-5678, is that right?",
+  "tags": [
+   "Book1A::PrepUnit3::Sentences"
+  ],
+  "ja": "010-1234-5678、合（あ）っていますか？"
+ },
+ {
+  "id": "75fc4923cc",
+  "ko": "생일 축하합니다.",
+  "en": "Happy birthday.",
+  "tags": [
+   "Book1A::PrepUnit3::Sentences"
+  ],
+  "ja": "お誕生日（たんじょうび）おめでとうございます。"
  }
 ]
