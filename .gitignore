@@ -4,5 +4,6 @@
 # what's version-controlled.
 raw/
 
-# build.py writes here; the deployed copy is the one at the repo root.
+# build.py used to write a copy here; it now writes index.html, sw.js and
+# audio/ straight to the repo root, which is what GitHub Pages serves.
 pipeline/index.html

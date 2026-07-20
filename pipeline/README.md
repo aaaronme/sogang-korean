@@ -14,22 +14,27 @@ below and rebuild.
   shipped card in place is fine and keeps its progress — that's how the
   "Hello? I'm Mina." → "Hello, I'm Mina." gloss fix was made. Only the `id` is
   frozen. Note that changing `ko` also means regenerating that id's audio file.)
-- `audio_store/<id>.m4a` — one Korean-language audio clip per card, named
-  by that card's id.
+- `../audio/<id>.m4a` — one Korean-language audio clip per card, named by that
+  card's id. This directory lives at the **repo root**, not under `pipeline/`,
+  because GitHub Pages serves it directly: the app fetches `audio/<id>.m4a` at
+  play time.
 - `app_template.html` — the actual app (HTML/CSS/JS). Contains
   `__CARDS_JSON__` as a placeholder that `build.py` fills in.
-- `build.py` — reads `master_cards.json` + `audio_store/`, embeds the audio
-  as base64 into each card, and writes the final `index.html` (one
-  self-contained file, no external requests, works offline once loaded).
+- `sw_template.js` — service worker source. `__VERSION__` is substituted by
+  `build.py` with a hash of the built `index.html`.
+- `build.py` — reads `master_cards.json` + `audio/`, writes `index.html` (card
+  text only, no audio bytes) and `sw.js`, and prunes clips in `audio/` that no
+  longer belong to any card.
 
 ## Rebuilding after any change
 
 ```bash
 python3 build.py
-cp index.html ../index.html   # or wherever the repo root actually is
 ```
 
-Then commit/push `index.html` as usual.
+It writes straight to the repo root — `index.html`, `sw.js`, and any pruning of
+`audio/`. Commit those together: a new `index.html` without its new clips is a
+deploy where half the cards are silent.
 
 ## Adding new cards
 
@@ -37,7 +42,7 @@ Then commit/push `index.html` as usual.
    `say` command works well and is completely free/offline:
    ```bash
    say -v Yuna -o /tmp/raw.m4a "새로운 단어"
-   afconvert -f m4af -d aac@22050 -b 32000 -c 1 /tmp/raw.m4a audio_store/<new-id>.m4a
+   afconvert -f m4af -d aac@22050 -b 32000 -c 1 /tmp/raw.m4a ../audio/<new-id>.m4a
    ```
    (Run `say -v '?' | grep -i ko_KR` to see what Korean voices are
    installed; prefer an Enhanced/Premium one if available — noticeably
@@ -45,10 +50,9 @@ Then commit/push `index.html` as usual.
 
    **The `afconvert` step is not optional.** `say -o foo.m4a` writes
    *uncompressed* 16-bit PCM into the m4a container — 352 kbps, roughly 8x
-   larger than it needs to be. Since every clip is base64'd into `index.html`,
-   skipping this makes the whole app 8x heavier. AAC mono 32 kbps is
-   transparent for a TTS voice; the whole 238-clip library is 2.1 MB encoded
-   versus 8.4 MB as PCM.
+   larger than it needs to be, and every one of those bytes is downloaded by a
+   student on mobile data. AAC mono 32 kbps is transparent for a TTS voice; the
+   1259-clip library is 11.5 MB encoded and would be near 90 MB as PCM.
 2. Append new entries to `master_cards.json` with a **new, never-before-used
    id** (a short random/hash string is fine — just needs to be stable and
    unique), the Korean text, English + Japanese translations, and a
@@ -140,16 +144,15 @@ the queue under the student's current card.
 
 ## Current content (as of this file)
 
-**238 cards.**
+**1259 cards.**
 
 The original 94, from the "서강한국어 1A 한글" (Sogang Korean 1A Hangul) intro
 unit slide decks — Hangul 1 (10 basics), Hangul 3 (41, diphthongs/aspirated),
 Hangul 4 (16, tense consonants), Expressions (23, across To-Be/Adjectives/
-Verbs/Requests), Numbers (6).
+Verbs/Requests), Numbers (6). These eight are the only sections that default
+to **on**; every Book 1A section below defaults to off.
 
-Plus 144 from the Student's Book itself (서강한국어 STUDENT'S BOOK 1A, 3rd ed.),
-preparatory units 1–3 (the book's "Preparatory Unit 1–3"), pp.16–45 —
-all default to **off**:
+Preparatory Units 1–3, pp.16–45 — 144 cards, from `add_book1a_prep.py`:
 
 | Tag | Cards | Book pages |
 |---|---|---|
@@ -160,29 +163,49 @@ all default to **off**:
 | `Book1A::PrepUnit3::Vocab` | 40 | 38–39 (숫자①, 날짜) |
 | `Book1A::PrepUnit3::Sentences` | 16 | 38, 40–41 |
 
-`add_book1a_prep.py` is the generator that produced them — idempotent, ids
-derived from `sha1(tag|ko)`, safe to re-run. English glosses come from the
-companion 문법·단어 참고서 (Grammar and Vocabulary Handbook 1A, English
-edition) pp.36–38; Japanese glosses were written by hand, since the handbook
-we have is the English edition.
+Preparatory Unit 4 and Units 1–6, pp.46–167 — 1021 cards, from
+`add_book1a_units.py`:
 
-Grammar points per unit are recorded in `GRAMMAR_NOTES.md`. 준비 4 (Preparatory
-Unit 4) and 1과–6과 (Units 1–6) are not carded yet; their page ranges in that
-file were confirmed against the physical book on 2026-07-20.
+| Tag | Vocab / Sentences | Book pages |
+|---|---|---|
+| `Book1A::PrepUnit4::Vocab` / `::Sentences` | 56 / 22 | 46–55 (커피 주세요) |
+| `Book1A::Unit1::Vocab` / `::Sentences` | 70 / 74 | 58–75 (앤디 씨가 식당에 있어요) |
+| `Book1A::Unit2::Vocab` / `::Sentences` | 72 / 95 | 76–93 (여섯 시에 일어나요) |
+| `Book1A::Unit3::Vocab` / `::Sentences` | 51 / 86 | 96–113 (카페에서 친구를 만나요) |
+| `Book1A::Unit4::Vocab` / `::Sentences` | 70 / 117 | 114–131 (어제 핸드폰을 샀어요) |
+| `Book1A::Unit5::Vocab` / `::Sentences` | 58 / 102 | 134–151 (지하철 2호선을 타세요) |
+| `Book1A::Unit6::Vocab` / `::Sentences` | 97 / 51 | 152–167 (내일 등산하러 갈 거예요) |
+
+Both generators are idempotent: ids are `sha1(tag|ko)`, so re-running never
+mints a new id for a card that already shipped. English glosses come from the
+companion 문법·단어 참고서 (Grammar and Vocabulary Handbook 1A, English edition)
+pp.36–47 wherever the word appears there; the rest, and all Japanese, are ours.
+
+Grammar points per unit are recorded in `GRAMMAR_NOTES.md`.
+
+**Known gap:** book pp.168–169 (the tail of 6과 — its 과제 and 단원 마무리 pages)
+were never photographed, so nothing from them is carded. Everything else from
+pp.16–167 is covered.
 
 ### Note on file size
 
-`index.html` is **2.3 MB** for 238 cards, all audio base64'd inline so the app
-stays a single offline-capable file with no external requests.
+`index.html` is **0.20 MB** for 1259 cards — card text only. The 11.5 MB of
+audio sits in `audio/` and is fetched one clip at a time.
 
-It was 10.6 MB until the clips were re-encoded — see the `afconvert` note
-above. Every clip in `audio_store/` should be AAC; if the directory ever
-balloons again, check for PCM with
-`afinfo audio_store/*.m4a | grep -c lpcm` (should be 0).
+Two separate fixes got it there, in this order, and the order matters:
 
-Projecting the remaining units at ~10 KB/clip, a complete Book 1A lands around
-5–6 MB. If that becomes uncomfortable on mobile data, the next step is moving
-audio out of the HTML into `audio/<id>.m4a` files fetched on demand, with a
-service worker caching them — which keeps offline support but only for
-sections a student has actually opened. Don't reach for that before the codec
-is right; it is a much bigger change for a smaller win.
+1. **Codec.** `say -o out.m4a` writes uncompressed PCM. Re-encoding to AAC mono
+   32 kbps shrank the library ~8x. Every clip in `audio/` should be AAC — check
+   with `afinfo ../audio/*.m4a | grep -c lpcm`, which should print 0.
+2. **Splitting audio out of the HTML.** Even after the codec fix, inlining 1259
+   clips made `index.html` 15.6 MB, every byte of it downloaded before a student
+   saw a single card. Now the shell is 0.20 MB and `sw.js` caches each clip
+   permanently the first time it plays.
+
+Doing (2) without (1) would have meant serving PCM forever, one wasteful request
+at a time — the split hides a bad codec rather than fixing it.
+
+The trade-off: the app is no longer a single self-contained file, and "works
+offline" now means "works offline for what you've already played" rather than
+everything at once. That fits how the app is used — students carry two or three
+sections at a time, and nobody needs 6과's audio in week two.

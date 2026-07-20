@@ -325,6 +325,22 @@
 <script>
 const CARDS = __CARDS_JSON__;
 
+// Clips live beside index.html as audio/<id>.m4a rather than base64'd into this
+// file. Inlining them was fine at 238 cards and untenable at 1259 — it made the
+// page 15.6 MB, all of which a student paid for before seeing a single card.
+// The service worker below caches each clip permanently the first time it's
+// played, which is what keeps the app working offline.
+function audioUrl(card){ return "audio/" + card.id + ".m4a"; }
+
+// Registration is best-effort on purpose: service workers need a secure origin,
+// so opening index.html straight off the filesystem throws here. The app must
+// still work in that case — it just re-fetches clips instead of caching them.
+if("serviceWorker" in navigator){
+  window.addEventListener("load", ()=>{
+    navigator.serviceWorker.register("sw.js").catch(()=>{});
+  });
+}
+
 // Tag labels and every UI string are keyed by language. Adding a language
 // later just means adding a new top-level key here (e.g. "zh") — nothing
 // else in the app needs to change to support it.
@@ -346,6 +362,20 @@ const TAG_LABELS = {
     "Book1A::PrepUnit2::Sentences": "Book 1A · Preparatory Unit 2 — sentences",
     "Book1A::PrepUnit3::Vocab": "Book 1A · Preparatory Unit 3 — vocabulary",
     "Book1A::PrepUnit3::Sentences": "Book 1A · Preparatory Unit 3 — sentences",
+    "Book1A::PrepUnit4::Vocab": "Book 1A · Preparatory Unit 4 — vocabulary",
+    "Book1A::PrepUnit4::Sentences": "Book 1A · Preparatory Unit 4 — sentences",
+    "Book1A::Unit1::Vocab": "Book 1A · Unit 1 — vocabulary",
+    "Book1A::Unit1::Sentences": "Book 1A · Unit 1 — sentences",
+    "Book1A::Unit2::Vocab": "Book 1A · Unit 2 — vocabulary",
+    "Book1A::Unit2::Sentences": "Book 1A · Unit 2 — sentences",
+    "Book1A::Unit3::Vocab": "Book 1A · Unit 3 — vocabulary",
+    "Book1A::Unit3::Sentences": "Book 1A · Unit 3 — sentences",
+    "Book1A::Unit4::Vocab": "Book 1A · Unit 4 — vocabulary",
+    "Book1A::Unit4::Sentences": "Book 1A · Unit 4 — sentences",
+    "Book1A::Unit5::Vocab": "Book 1A · Unit 5 — vocabulary",
+    "Book1A::Unit5::Sentences": "Book 1A · Unit 5 — sentences",
+    "Book1A::Unit6::Vocab": "Book 1A · Unit 6 — vocabulary",
+    "Book1A::Unit6::Sentences": "Book 1A · Unit 6 — sentences",
   },
   ja: {
     "Hangul1": "ハングル1 — 基礎",
@@ -362,15 +392,25 @@ const TAG_LABELS = {
     "Book1A::PrepUnit2::Sentences": "教科書1A · 準備2課 — 文",
     "Book1A::PrepUnit3::Vocab": "教科書1A · 準備3課 — 単語",
     "Book1A::PrepUnit3::Sentences": "教科書1A · 準備3課 — 文",
+    "Book1A::PrepUnit4::Vocab": "教科書1A · 準備4課 — 単語",
+    "Book1A::PrepUnit4::Sentences": "教科書1A · 準備4課 — 文",
+    "Book1A::Unit1::Vocab": "教科書1A · 1課 — 単語",
+    "Book1A::Unit1::Sentences": "教科書1A · 1課 — 文",
+    "Book1A::Unit2::Vocab": "教科書1A · 2課 — 単語",
+    "Book1A::Unit2::Sentences": "教科書1A · 2課 — 文",
+    "Book1A::Unit3::Vocab": "教科書1A · 3課 — 単語",
+    "Book1A::Unit3::Sentences": "教科書1A · 3課 — 文",
+    "Book1A::Unit4::Vocab": "教科書1A · 4課 — 単語",
+    "Book1A::Unit4::Sentences": "教科書1A · 4課 — 文",
+    "Book1A::Unit5::Vocab": "教科書1A · 5課 — 単語",
+    "Book1A::Unit5::Sentences": "教科書1A · 5課 — 文",
+    "Book1A::Unit6::Vocab": "教科書1A · 6課 — 単語",
+    "Book1A::Unit6::Sentences": "教科書1A · 6課 — 文",
   },
 };
 // Append-only. Reordering or removing an entry would rearrange sections that
 // students already navigate by muscle memory.
-// The six Book1A::Prep{n}::* entries are retired, not deleted: they shipped once
-// and were renamed to the publisher's "Preparatory Unit n". No card carries them
-// any more, so tagHasCards() filters them out of every list — but removing the
-// strings outright would break the append-only rule for no gain.
-const TAG_ORDER = ["Hangul1","Hangul3","Hangul4","Expressions::To_Be","Expressions::Adjectives","Expressions::Verbs","Expressions::Requests","Numbers","Book1A::Prep1::Vocab","Book1A::Prep1::Sentences","Book1A::Prep2::Vocab","Book1A::Prep2::Sentences","Book1A::Prep3::Vocab","Book1A::Prep3::Sentences","Book1A::PrepUnit1::Vocab","Book1A::PrepUnit1::Sentences","Book1A::PrepUnit2::Vocab","Book1A::PrepUnit2::Sentences","Book1A::PrepUnit3::Vocab","Book1A::PrepUnit3::Sentences"];
+const TAG_ORDER = ["Hangul1","Hangul3","Hangul4","Expressions::To_Be","Expressions::Adjectives","Expressions::Verbs","Expressions::Requests","Numbers","Book1A::PrepUnit1::Vocab","Book1A::PrepUnit1::Sentences","Book1A::PrepUnit2::Vocab","Book1A::PrepUnit2::Sentences","Book1A::PrepUnit3::Vocab","Book1A::PrepUnit3::Sentences","Book1A::PrepUnit4::Vocab","Book1A::PrepUnit4::Sentences","Book1A::Unit1::Vocab","Book1A::Unit1::Sentences","Book1A::Unit2::Vocab","Book1A::Unit2::Sentences","Book1A::Unit3::Vocab","Book1A::Unit3::Sentences","Book1A::Unit4::Vocab","Book1A::Unit4::Sentences","Book1A::Unit5::Vocab","Book1A::Unit5::Sentences","Book1A::Unit6::Vocab","Book1A::Unit6::Sentences"];
 
 const STRINGS = {
   en: {
@@ -453,37 +493,12 @@ const SECTIONS_KEY = "sogangKoreanSections_v1";
 // adding new content — the student turns the new section on themselves.
 const DEFAULT_VISIBLE_TAGS = ["Hangul1","Hangul3","Hangul4","Expressions::To_Be","Expressions::Adjectives","Expressions::Verbs","Expressions::Requests","Numbers"];
 
-// Sections renamed after they shipped. A student who had already switched one on
-// under its old name keeps it on under the new one — without this they'd silently
-// lose the section and assume the app had forgotten. Progress isn't affected
-// either way (that's keyed by card id, which the rename didn't touch).
-const RENAMED_TAGS = {
-  "Book1A::Prep1::Vocab": "Book1A::PrepUnit1::Vocab",
-  "Book1A::Prep1::Sentences": "Book1A::PrepUnit1::Sentences",
-  "Book1A::Prep2::Vocab": "Book1A::PrepUnit2::Vocab",
-  "Book1A::Prep2::Sentences": "Book1A::PrepUnit2::Sentences",
-  "Book1A::Prep3::Vocab": "Book1A::PrepUnit3::Vocab",
-  "Book1A::Prep3::Sentences": "Book1A::PrepUnit3::Sentences",
-};
-
 function loadSectionPrefs(){
-  let parsed;
   try{
-    parsed = JSON.parse(localStorage.getItem(SECTIONS_KEY));
+    const parsed = JSON.parse(localStorage.getItem(SECTIONS_KEY));
+    // Guard against a null/array/string value left by a bad write or a hand-edit.
+    return (parsed && typeof parsed === "object" && !Array.isArray(parsed)) ? parsed : {};
   }catch(e){ return {}; }
-  // Guard against a null/array/string value left by a bad write or a hand-edit.
-  if(!parsed || typeof parsed !== "object" || Array.isArray(parsed)) return {};
-  Object.keys(RENAMED_TAGS).forEach(oldTag=>{
-    const newTag = RENAMED_TAGS[oldTag];
-    // Carry the old choice over unless the student has since made one under the
-    // new name, which always wins.
-    if(Object.prototype.hasOwnProperty.call(parsed, oldTag) &&
-       !Object.prototype.hasOwnProperty.call(parsed, newTag)){
-      parsed[newTag] = !!parsed[oldTag];
-    }
-    delete parsed[oldTag];
-  });
-  return parsed;
 }
 let sectionPrefs = loadSectionPrefs();
 function saveSectionPrefs(){
@@ -788,7 +803,7 @@ function nextCard(){
   document.getElementById("ivEasy").textContent = labels[3];
 
   if(audioEl){ audioEl.pause(); }
-  audioEl = new Audio("data:audio/mp4;base64," + currentCard.audio);
+  audioEl = new Audio(audioUrl(currentCard));
   document.getElementById("soundBtn").classList.remove("playing");
 }
 
@@ -857,7 +872,7 @@ function stopBrowseAudio(){
 
 function playBrowse(card, btn){
   stopBrowseAudio();
-  browseAudio = new Audio("data:audio/mp4;base64," + card.audio);
+  browseAudio = new Audio(audioUrl(card));
   browsePlayingBtn = btn;
   btn.classList.add("playing");
   browseAudio.onended = ()=> btn.classList.remove("playing");

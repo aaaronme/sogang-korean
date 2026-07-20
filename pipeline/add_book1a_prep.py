@@ -22,13 +22,6 @@ P2S = "Book1A::PrepUnit2::Sentences"
 P3V = "Book1A::PrepUnit3::Vocab"
 P3S = "Book1A::PrepUnit3::Sentences"
 
-# These six tags shipped once as Book1A::Prep{n}::* before being renamed to match
-# the publisher's own English ("준비1과 = Preparatory Unit 1", "1과 = Unit 1"), which
-# freed Unit1-6 for the 과. Card ids are sha1(tag|ko), so the derivation has to keep
-# using the ORIGINAL tag string or every card would get a new id and every student
-# would lose the progress attached to it. The tag a card carries changed; the string
-# its id was minted from cannot.
-ID_TAG = {t: t.replace("::PrepUnit", "::Prep") for t in (P1V, P1S, P2V, P2S, P3V, P3S)}
 
 # (tag, ko, en, ja)
 CARDS = [
@@ -204,7 +197,7 @@ CARDS = [
 
 def card_id(tag, ko):
     """Stable id from (tag, ko). Never recomputed for a card that already shipped."""
-    return hashlib.sha1(f"{ID_TAG.get(tag, tag)}|{ko}".encode("utf-8")).hexdigest()[:10]
+    return hashlib.sha1(f"{tag}|{ko}".encode("utf-8")).hexdigest()[:10]
 
 
 def main():

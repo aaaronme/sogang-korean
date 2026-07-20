@@ -848,7 +848,7 @@
   "ja": "五歳です。（歳 = age counter, new）"
  },
  {
-  "id": "9381a20ea8",
+  "id": "98bc03f1a9",
   "ko": "미국",
   "en": "United States",
   "tags": [
@@ -857,7 +857,7 @@
   "ja": "アメリカ"
  },
  {
-  "id": "a4a203870d",
+  "id": "6ff95318c0",
   "ko": "한국",
   "en": "Korea",
   "tags": [
@@ -866,7 +866,7 @@
   "ja": "韓国（かんこく）"
  },
  {
-  "id": "b9f229f9a8",
+  "id": "1332dbfd53",
   "ko": "중국",
   "en": "China",
   "tags": [
@@ -875,7 +875,7 @@
   "ja": "中国（ちゅうごく）"
  },
  {
-  "id": "06e22c2a5d",
+  "id": "218d0842eb",
   "ko": "태국",
   "en": "Thailand",
   "tags": [
@@ -884,7 +884,7 @@
   "ja": "タイ"
  },
  {
-  "id": "f548475c8d",
+  "id": "89283dfa49",
   "ko": "일본",
   "en": "Japan",
   "tags": [
@@ -893,7 +893,7 @@
   "ja": "日本（にほん）"
  },
  {
-  "id": "3d65097518",
+  "id": "1114b3beef",
   "ko": "독일",
   "en": "Germany",
   "tags": [
@@ -902,7 +902,7 @@
   "ja": "ドイツ"
  },
  {
-  "id": "8b59844251",
+  "id": "f5364bc2de",
   "ko": "베트남",
   "en": "Vietnam",
   "tags": [
@@ -911,7 +911,7 @@
   "ja": "ベトナム"
  },
  {
-  "id": "620f3ce781",
+  "id": "cfd465d791",
   "ko": "프랑스",
   "en": "France",
   "tags": [
@@ -920,7 +920,7 @@
   "ja": "フランス"
  },
  {
-  "id": "c602b255ca",
+  "id": "f550fcdfe5",
   "ko": "몽골",
   "en": "Mongolia",
   "tags": [
@@ -929,7 +929,7 @@
   "ja": "モンゴル"
  },
  {
-  "id": "c88b89d348",
+  "id": "d7a86c7052",
   "ko": "브라질",
   "en": "Brazil",
   "tags": [
@@ -938,7 +938,7 @@
   "ja": "ブラジル"
  },
  {
-  "id": "f3dab54f9d",
+  "id": "df5f7a17dd",
   "ko": "학생",
   "en": "Student",
   "tags": [
@@ -947,7 +947,7 @@
   "ja": "学生（がくせい）"
  },
  {
-  "id": "b560cedaf6",
+  "id": "c0b881faff",
   "ko": "선생님",
   "en": "Teacher",
   "tags": [
@@ -956,7 +956,7 @@
   "ja": "先生（せんせい）"
  },
  {
-  "id": "32f6dbe81b",
+  "id": "4cb2db8671",
   "ko": "회사원",
   "en": "Office worker",
   "tags": [
@@ -965,7 +965,7 @@
   "ja": "会社員（かいしゃいん）"
  },
  {
-  "id": "1a95053c4c",
+  "id": "ce7aa10d13",
   "ko": "의사",
   "en": "Doctor",
   "tags": [
@@ -974,7 +974,7 @@
   "ja": "医者（いしゃ）"
  },
  {
-  "id": "8e87ebf6d9",
+  "id": "cc41ee94d4",
   "ko": "간호사",
   "en": "Nurse",
   "tags": [
@@ -983,7 +983,7 @@
   "ja": "看護師（かんごし）"
  },
  {
-  "id": "f38ef30f3a",
+  "id": "bfea587baf",
   "ko": "요리사",
   "en": "Cook",
   "tags": [
@@ -992,7 +992,7 @@
   "ja": "料理人（りょうりにん）"
  },
  {
-  "id": "f1e8d3a50c",
+  "id": "52c659549b",
   "ko": "가수",
   "en": "Singer",
   "tags": [
@@ -1001,7 +1001,7 @@
   "ja": "歌手（かしゅ）"
  },
  {
-  "id": "cc74c9fbfa",
+  "id": "018ba08f90",
   "ko": "배우",
   "en": "Actor",
   "tags": [
@@ -1010,7 +1010,7 @@
   "ja": "俳優（はいゆう）"
  },
  {
-  "id": "bd8718fc1e",
+  "id": "1d5036d86b",
   "ko": "작가",
   "en": "Writer, artist",
   "tags": [
@@ -1019,7 +1019,7 @@
   "ja": "作家（さっか）"
  },
  {
-  "id": "350916a1ec",
+  "id": "13cd19e589",
   "ko": "패션 디자이너",
   "en": "Fashion designer",
   "tags": [
@@ -1028,7 +1028,7 @@
   "ja": "ファッションデザイナー"
  },
  {
-  "id": "10f9cd9500",
+  "id": "cf352dea5f",
   "ko": "군인",
   "en": "Soldier",
   "tags": [
@@ -1037,7 +1037,7 @@
   "ja": "軍人（ぐんじん）"
  },
  {
-  "id": "8d61ca3792",
+  "id": "0a8d830876",
   "ko": "경찰",
   "en": "Police officer",
   "tags": [
@@ -1046,7 +1046,7 @@
   "ja": "警察官（けいさつかん）"
  },
  {
-  "id": "f6739004c0",
+  "id": "943edbbbcf",
   "ko": "일본어 선생님",
   "en": "Japanese language teacher",
   "tags": [
@@ -1055,7 +1055,7 @@
   "ja": "日本語（にほんご）の先生"
  },
  {
-  "id": "8c2a546ee2",
+  "id": "c5ab5aaf88",
   "ko": "가이드",
   "en": "Tour guide",
   "tags": [
@@ -1064,7 +1064,7 @@
   "ja": "ガイド"
  },
  {
-  "id": "6ec6270bbb",
+  "id": "c17a36aa01",
   "ko": "프로그래머",
   "en": "Programmer",
   "tags": [
@@ -1073,7 +1073,7 @@
   "ja": "プログラマー"
  },
  {
-  "id": "9bc106748d",
+  "id": "1b36dbb9d7",
   "ko": "운동",
   "en": "Exercise",
   "tags": [
@@ -1082,7 +1082,7 @@
   "ja": "運動（うんどう）"
  },
  {
-  "id": "becd19b833",
+  "id": "bd6014373d",
   "ko": "드라마",
   "en": "TV drama",
   "tags": [
@@ -1091,7 +1091,7 @@
   "ja": "ドラマ"
  },
  {
-  "id": "cdbd62bda2",
+  "id": "2413043945",
   "ko": "공부",
   "en": "Studying",
   "tags": [
@@ -1100,7 +1100,7 @@
   "ja": "勉強（べんきょう）"
  },
  {
-  "id": "95805f8c23",
+  "id": "434d3dcc0c",
   "ko": "안녕하세요? 미나예요.",
   "en": "Hello, I'm Mina.",
   "tags": [
@@ -1109,7 +1109,7 @@
   "ja": "こんにちは。ミナです。"
  },
  {
-  "id": "0c2ce9a375",
+  "id": "16d73b965b",
   "ko": "이름이 뭐예요?",
   "en": "What's your name?",
   "tags": [
@@ -1118,7 +1118,7 @@
   "ja": "名前（なまえ）は何（なん）ですか？"
  },
  {
-  "id": "295908be55",
+  "id": "ea507a9ace",
   "ko": "앤디예요.",
   "en": "I'm Andy.",
   "tags": [
@@ -1127,7 +1127,7 @@
   "ja": "アンディです。"
  },
  {
-  "id": "2e8f922e6c",
+  "id": "749a68e56b",
   "ko": "앤디 씨, 어느 나라 사람이에요?",
   "en": "Andy, what country are you from?",
   "tags": [
@@ -1136,7 +1136,7 @@
   "ja": "アンディさん、どこの国（くに）の人（ひと）ですか？"
  },
  {
-  "id": "c5362c19af",
+  "id": "fa273f7579",
   "ko": "저는 미국 사람이에요.",
   "en": "I'm American.",
   "tags": [
@@ -1145,7 +1145,7 @@
   "ja": "私（わたし）はアメリカ人（じん）です。"
  },
  {
-  "id": "c4c2d7b823",
+  "id": "2672ca8fd5",
   "ko": "아, 그래요? 반갑습니다.",
   "en": "Oh, really? Nice to meet you.",
   "tags": [
@@ -1154,7 +1154,7 @@
   "ja": "あ、そうですか？お会（あ）いできてうれしいです。"
  },
  {
-  "id": "5498c4624c",
+  "id": "d2278b8999",
   "ko": "안녕하세요? 수잔이에요.",
   "en": "Hello, I'm Susan.",
   "tags": [
@@ -1163,7 +1163,7 @@
   "ja": "こんにちは。スーザンです。"
  },
  {
-  "id": "300400de3b",
+  "id": "15284793e7",
   "ko": "수잔 씨, 안녕하세요?",
   "en": "Hello, Susan.",
   "tags": [
@@ -1172,7 +1172,7 @@
   "ja": "スーザンさん、こんにちは。"
  },
  {
-  "id": "dcaba2454e",
+  "id": "f554de65df",
   "ko": "저는 앤디예요.",
   "en": "I'm Andy.",
   "tags": [
@@ -1181,7 +1181,7 @@
   "ja": "私（わたし）はアンディです。"
  },
  {
-  "id": "7f66540c36",
+  "id": "1a080fc9d8",
   "ko": "앤디 씨는 무슨 일을 하세요?",
   "en": "Andy, what work do you do?",
   "tags": [
@@ -1190,7 +1190,7 @@
   "ja": "アンディさんは何（なん）のお仕事（しごと）をされていますか？"
  },
  {
-  "id": "b8b7ffd944",
+  "id": "ffa8ee324b",
   "ko": "학생이에요.",
   "en": "I'm a student.",
   "tags": [
@@ -1199,7 +1199,7 @@
   "ja": "学生（がくせい）です。"
  },
  {
-  "id": "a1631069c6",
+  "id": "b98bcfdfdd",
   "ko": "이분이 누구예요?",
   "en": "Who is this?",
   "tags": [
@@ -1208,7 +1208,7 @@
   "ja": "この方（かた）はどなたですか？"
  },
  {
-  "id": "80c8210a2c",
+  "id": "a5f0aa9071",
   "ko": "가브리엘 씨예요.",
   "en": "This is Gabriel.",
   "tags": [
@@ -1217,7 +1217,7 @@
   "ja": "ガブリエルさんです。"
  },
  {
-  "id": "731d2efa95",
+  "id": "96a31a0620",
   "ko": "만나서 반갑습니다.",
   "en": "It's nice to meet you.",
   "tags": [
@@ -1226,7 +1226,7 @@
   "ja": "お会（あ）いできてうれしいです。"
  },
  {
-  "id": "aab47927bd",
+  "id": "dfcd5f706f",
   "ko": "좋아해요.",
   "en": "I like it.",
   "tags": [
@@ -1235,7 +1235,7 @@
   "ja": "好（す）きです。"
  },
  {
-  "id": "9579de4807",
+  "id": "f67a8c167a",
   "ko": "책",
   "en": "Book",
   "tags": [
@@ -1244,7 +1244,7 @@
   "ja": "本（ほん）"
  },
  {
-  "id": "372ecba70b",
+  "id": "c72117110a",
   "ko": "공책",
   "en": "Notebook",
   "tags": [
@@ -1253,7 +1253,7 @@
   "ja": "ノート"
  },
  {
-  "id": "6839173f74",
+  "id": "d2d391b23e",
   "ko": "필통",
   "en": "Pencil case",
   "tags": [
@@ -1262,7 +1262,7 @@
   "ja": "筆箱（ふでばこ）"
  },
  {
-  "id": "48edfd01c1",
+  "id": "c038ad669c",
   "ko": "연필",
   "en": "Pencil",
   "tags": [
@@ -1271,7 +1271,7 @@
   "ja": "鉛筆（えんぴつ）"
  },
  {
-  "id": "3d2fbca6a6",
+  "id": "e86d16963b",
   "ko": "샤프",
   "en": "Mechanical pencil",
   "tags": [
@@ -1280,7 +1280,7 @@
   "ja": "シャープペンシル"
  },
  {
-  "id": "1389b05737",
+  "id": "ac6afa02fe",
   "ko": "볼펜",
   "en": "Ballpoint pen",
   "tags": [
@@ -1289,7 +1289,7 @@
   "ja": "ボールペン"
  },
  {
-  "id": "a0843e058c",
+  "id": "8aecab1253",
   "ko": "지우개",
   "en": "Eraser",
   "tags": [
@@ -1298,7 +1298,7 @@
   "ja": "消（け）しゴム"
  },
  {
-  "id": "e511f2f8a2",
+  "id": "59d68a6e9c",
   "ko": "수정 테이프",
   "en": "Correction tape",
   "tags": [
@@ -1307,7 +1307,7 @@
   "ja": "修正（しゅうせい）テープ"
  },
  {
-  "id": "902c06d66c",
+  "id": "6787d0dc4b",
   "ko": "가위",
   "en": "Scissors",
   "tags": [
@@ -1316,7 +1316,7 @@
   "ja": "はさみ"
  },
  {
-  "id": "a0065486b7",
+  "id": "e1180022f4",
   "ko": "가방",
   "en": "Bag",
   "tags": [
@@ -1325,7 +1325,7 @@
   "ja": "かばん"
  },
  {
-  "id": "fdd6831008",
+  "id": "8b0b915481",
   "ko": "우산",
   "en": "Umbrella",
   "tags": [
@@ -1334,7 +1334,7 @@
   "ja": "傘（かさ）"
  },
  {
-  "id": "a98ffe307e",
+  "id": "a1187f7788",
   "ko": "달력",
   "en": "Calendar",
   "tags": [
@@ -1343,7 +1343,7 @@
   "ja": "カレンダー"
  },
  {
-  "id": "685c17bb6e",
+  "id": "654084f9ec",
   "ko": "책상",
   "en": "Desk",
   "tags": [
@@ -1352,7 +1352,7 @@
   "ja": "机（つくえ）"
  },
  {
-  "id": "429f57daf2",
+  "id": "82e3387e34",
   "ko": "의자",
   "en": "Chair",
   "tags": [
@@ -1361,7 +1361,7 @@
   "ja": "椅子（いす）"
  },
  {
-  "id": "1b16952888",
+  "id": "dfa57e2987",
   "ko": "시계",
   "en": "Clock",
   "tags": [
@@ -1370,7 +1370,7 @@
   "ja": "時計（とけい）"
  },
  {
-  "id": "b07a918f50",
+  "id": "ef5c0631b0",
   "ko": "노트북",
   "en": "Laptop computer",
   "tags": [
@@ -1379,7 +1379,7 @@
   "ja": "ノートパソコン"
  },
  {
-  "id": "cd0e08379c",
+  "id": "8b554927f5",
   "ko": "텔레비전",
   "en": "Television",
   "tags": [
@@ -1388,7 +1388,7 @@
   "ja": "テレビ"
  },
  {
-  "id": "b34e21b69e",
+  "id": "e8ca2572ab",
   "ko": "에어컨",
   "en": "Air conditioner",
   "tags": [
@@ -1397,7 +1397,7 @@
   "ja": "エアコン"
  },
  {
-  "id": "4a86ef9147",
+  "id": "eb2cf07915",
   "ko": "거울",
   "en": "Mirror",
   "tags": [
@@ -1406,7 +1406,7 @@
   "ja": "鏡（かがみ）"
  },
  {
-  "id": "baab61d286",
+  "id": "4e29cdb08b",
   "ko": "비누",
   "en": "Soap",
   "tags": [
@@ -1415,7 +1415,7 @@
   "ja": "石（せっ）けん"
  },
  {
-  "id": "85809b64d7",
+  "id": "1b2532a603",
   "ko": "수건",
   "en": "Towel",
   "tags": [
@@ -1424,7 +1424,7 @@
   "ja": "タオル"
  },
  {
-  "id": "1d17322339",
+  "id": "285eef9d3c",
   "ko": "휴지",
   "en": "Toilet paper",
   "tags": [
@@ -1433,7 +1433,7 @@
   "ja": "トイレットペーパー"
  },
  {
-  "id": "019e29a99d",
+  "id": "ee760e4db3",
   "ko": "칫솔",
   "en": "Toothbrush",
   "tags": [
@@ -1442,7 +1442,7 @@
   "ja": "歯（は）ブラシ"
  },
  {
-  "id": "b3c7275540",
+  "id": "d6ba57760b",
   "ko": "치약",
   "en": "Toothpaste",
   "tags": [
@@ -1451,7 +1451,7 @@
   "ja": "歯磨（はみが）き粉（こ）"
  },
  {
-  "id": "57ed5cbed7",
+  "id": "015f96e7b3",
   "ko": "접시",
   "en": "Dish, plate",
   "tags": [
@@ -1460,7 +1460,7 @@
   "ja": "皿（さら）"
  },
  {
-  "id": "0d05caf2ef",
+  "id": "53d8feea9c",
   "ko": "컵",
   "en": "Cup",
   "tags": [
@@ -1469,7 +1469,7 @@
   "ja": "コップ"
  },
  {
-  "id": "6b05527d49",
+  "id": "e506bbba22",
   "ko": "숟가락",
   "en": "Spoon",
   "tags": [
@@ -1478,7 +1478,7 @@
   "ja": "スプーン"
  },
  {
-  "id": "828ed76ed5",
+  "id": "e45f930c7c",
   "ko": "젓가락",
   "en": "Chopsticks",
   "tags": [
@@ -1487,7 +1487,7 @@
   "ja": "箸（はし）"
  },
  {
-  "id": "45cbfa4e92",
+  "id": "4d4ced6684",
   "ko": "충전기",
   "en": "Charger",
   "tags": [
@@ -1496,7 +1496,7 @@
   "ja": "充電器（じゅうでんき）"
  },
  {
-  "id": "132f122b12",
+  "id": "2ba83d3dd8",
   "ko": "핸드폰",
   "en": "Mobile phone",
   "tags": [
@@ -1505,7 +1505,7 @@
   "ja": "携帯電話（けいたいでんわ）"
  },
  {
-  "id": "4513c9177f",
+  "id": "9aab50fa37",
   "ko": "그럼",
   "en": "Then, in that case",
   "tags": [
@@ -1514,7 +1514,7 @@
   "ja": "それでは"
  },
  {
-  "id": "f5ec4cc44d",
+  "id": "ca3c7d681d",
   "ko": "이게 뭐예요?",
   "en": "What's this?",
   "tags": [
@@ -1523,7 +1523,7 @@
   "ja": "これは何（なん）ですか？"
  },
  {
-  "id": "9692bec15e",
+  "id": "ccda594da7",
   "ko": "연필이에요.",
   "en": "It's a pencil.",
   "tags": [
@@ -1532,7 +1532,7 @@
   "ja": "鉛筆（えんぴつ）です。"
  },
  {
-  "id": "107612910f",
+  "id": "f82232f76f",
   "ko": "그럼 저게 뭐예요?",
   "en": "Then what's that?",
   "tags": [
@@ -1541,7 +1541,7 @@
   "ja": "では、あれは何（なん）ですか？"
  },
  {
-  "id": "a7c624bc3c",
+  "id": "713c4ec79f",
   "ko": "시계예요.",
   "en": "It's a clock.",
   "tags": [
@@ -1550,7 +1550,7 @@
   "ja": "時計（とけい）です。"
  },
  {
-  "id": "584c658608",
+  "id": "66c99de8a8",
   "ko": "저게 뭐예요?",
   "en": "What's that?",
   "tags": [
@@ -1559,7 +1559,7 @@
   "ja": "あれは何（なん）ですか？"
  },
  {
-  "id": "10d8a33a6e",
+  "id": "5831b789a2",
   "ko": "책이에요.",
   "en": "It's a book.",
   "tags": [
@@ -1568,7 +1568,7 @@
   "ja": "本（ほん）です。"
  },
  {
-  "id": "595baf6b58",
+  "id": "2513e7f464",
   "ko": "가방이에요.",
   "en": "It's a bag.",
   "tags": [
@@ -1577,7 +1577,7 @@
   "ja": "かばんです。"
  },
  {
-  "id": "82955bbeeb",
+  "id": "3de2f9a774",
   "ko": "우산 누구 거예요?",
   "en": "Whose umbrella is this?",
   "tags": [
@@ -1586,7 +1586,7 @@
   "ja": "この傘（かさ）は誰（だれ）のですか？"
  },
  {
-  "id": "f6f01a0886",
+  "id": "950bfcd006",
   "ko": "제 거예요.",
   "en": "It's mine.",
   "tags": [
@@ -1595,7 +1595,7 @@
   "ja": "私（わたし）のです。"
  },
  {
-  "id": "d913b7597d",
+  "id": "7e725980ce",
   "ko": "여기 있어요.",
   "en": "Here you go.",
   "tags": [
@@ -1604,7 +1604,7 @@
   "ja": "どうぞ。"
  },
  {
-  "id": "9d15da0068",
+  "id": "ff09de2653",
   "ko": "고마워요.",
   "en": "Thanks.",
   "tags": [
@@ -1613,7 +1613,7 @@
   "ja": "ありがとうございます。"
  },
  {
-  "id": "04fadd9279",
+  "id": "7faa37874f",
   "ko": "아니에요.",
   "en": "Don't mention it.",
   "tags": [
@@ -1622,7 +1622,7 @@
   "ja": "いいえ、どういたしまして。"
  },
  {
-  "id": "bd7e82d3a2",
+  "id": "885f84b2ce",
   "ko": "이게 한국어로 뭐예요?",
   "en": "What's this in Korean?",
   "tags": [
@@ -1631,7 +1631,7 @@
   "ja": "これは韓国語（かんこくご）で何（なん）ですか？"
  },
  {
-  "id": "5fdcad9b7b",
+  "id": "3dcdd5c854",
   "ko": "사라 씨 거예요.",
   "en": "It's Sarah's.",
   "tags": [
@@ -1640,7 +1640,7 @@
   "ja": "サラさんのです。"
  },
  {
-  "id": "e91f1fc00c",
+  "id": "612464babd",
   "ko": "공",
   "en": "Zero (0)",
   "tags": [
@@ -1649,7 +1649,7 @@
   "ja": "ゼロ（0）"
  },
  {
-  "id": "04e037dc86",
+  "id": "09397499fd",
   "ko": "일",
   "en": "One (1)",
   "tags": [
@@ -1658,7 +1658,7 @@
   "ja": "1（いち）"
  },
  {
-  "id": "16d29d9f6b",
+  "id": "1cf77066a8",
   "ko": "이",
   "en": "Two (2)",
   "tags": [
@@ -1667,7 +1667,7 @@
   "ja": "2（に）"
  },
  {
-  "id": "b4c4c881ba",
+  "id": "257cff72ca",
   "ko": "삼",
   "en": "Three (3)",
   "tags": [
@@ -1676,7 +1676,7 @@
   "ja": "3（さん）"
  },
  {
-  "id": "4ed01d37ec",
+  "id": "f7923e8e59",
   "ko": "사",
   "en": "Four (4)",
   "tags": [
@@ -1685,7 +1685,7 @@
   "ja": "4（よん）"
  },
  {
-  "id": "8295c6675c",
+  "id": "4f588867d0",
   "ko": "오",
   "en": "Five (5)",
   "tags": [
@@ -1694,7 +1694,7 @@
   "ja": "5（ご）"
  },
  {
-  "id": "460d067003",
+  "id": "5c40674eda",
   "ko": "육",
   "en": "Six (6)",
   "tags": [
@@ -1703,7 +1703,7 @@
   "ja": "6（ろく）"
  },
  {
-  "id": "ee371d3284",
+  "id": "62d0c3756d",
   "ko": "칠",
   "en": "Seven (7)",
   "tags": [
@@ -1712,7 +1712,7 @@
   "ja": "7（なな）"
  },
  {
-  "id": "0c7e01f883",
+  "id": "a79513822b",
   "ko": "팔",
   "en": "Eight (8)",
   "tags": [
@@ -1721,7 +1721,7 @@
   "ja": "8（はち）"
  },
  {
-  "id": "fff000bb7a",
+  "id": "60461fa032",
   "ko": "구",
   "en": "Nine (9)",
   "tags": [
@@ -1730,7 +1730,7 @@
   "ja": "9（きゅう）"
  },
  {
-  "id": "5dfc486362",
+  "id": "06ff41383d",
   "ko": "십",
   "en": "Ten (10)",
   "tags": [
@@ -1739,7 +1739,7 @@
   "ja": "10（じゅう）"
  },
  {
-  "id": "14fbc9e83f",
+  "id": "591e16f66c",
   "ko": "이십",
   "en": "Twenty (20)",
   "tags": [
@@ -1748,7 +1748,7 @@
   "ja": "20（にじゅう）"
  },
  {
-  "id": "a8f8957c93",
+  "id": "655d1e98bf",
   "ko": "삼십",
   "en": "Thirty (30)",
   "tags": [
@@ -1757,7 +1757,7 @@
   "ja": "30（さんじゅう）"
  },
  {
-  "id": "bad4e0c879",
+  "id": "780635e4dc",
   "ko": "사십",
   "en": "Forty (40)",
   "tags": [
@@ -1766,7 +1766,7 @@
   "ja": "40（よんじゅう）"
  },
  {
-  "id": "c1be821a1d",
+  "id": "6cef1b762f",
   "ko": "오십",
   "en": "Fifty (50)",
   "tags": [
@@ -1775,7 +1775,7 @@
   "ja": "50（ごじゅう）"
  },
  {
-  "id": "9ca370e6fc",
+  "id": "23d398ae69",
   "ko": "육십",
   "en": "Sixty (60)",
   "tags": [
@@ -1784,7 +1784,7 @@
   "ja": "60（ろくじゅう）"
  },
  {
-  "id": "827e9a723a",
+  "id": "48ae527117",
   "ko": "칠십",
   "en": "Seventy (70)",
   "tags": [
@@ -1793,7 +1793,7 @@
   "ja": "70（ななじゅう）"
  },
  {
-  "id": "44e75f25cb",
+  "id": "d7a7f03d8c",
   "ko": "팔십",
   "en": "Eighty (80)",
   "tags": [
@@ -1802,7 +1802,7 @@
   "ja": "80（はちじゅう）"
  },
  {
-  "id": "e4a38b7890",
+  "id": "44965668de",
   "ko": "구십",
   "en": "Ninety (90)",
   "tags": [
@@ -1811,7 +1811,7 @@
   "ja": "90（きゅうじゅう）"
  },
  {
-  "id": "f055f7edaf",
+  "id": "0357e01779",
   "ko": "백",
   "en": "One hundred (100)",
   "tags": [
@@ -1820,7 +1820,7 @@
   "ja": "100（ひゃく）"
  },
  {
-  "id": "63ab59572b",
+  "id": "319a70d8de",
   "ko": "일월",
   "en": "January",
   "tags": [
@@ -1829,7 +1829,7 @@
   "ja": "1月（いちがつ）"
  },
  {
-  "id": "5e423972a3",
+  "id": "27664c7af7",
   "ko": "이월",
   "en": "February",
   "tags": [
@@ -1838,7 +1838,7 @@
   "ja": "2月（にがつ）"
  },
  {
-  "id": "880f5b7eee",
+  "id": "e17e392bd3",
   "ko": "삼월",
   "en": "March",
   "tags": [
@@ -1847,7 +1847,7 @@
   "ja": "3月（さんがつ）"
  },
  {
-  "id": "a6d37cd4b3",
+  "id": "0165984491",
   "ko": "사월",
   "en": "April",
   "tags": [
@@ -1856,7 +1856,7 @@
   "ja": "4月（しがつ）"
  },
  {
-  "id": "fcbff7b5b0",
+  "id": "91f9d95ae2",
   "ko": "오월",
   "en": "May",
   "tags": [
@@ -1865,7 +1865,7 @@
   "ja": "5月（ごがつ）"
  },
  {
-  "id": "886ca75cb3",
+  "id": "c36bdd9575",
   "ko": "유월",
   "en": "June",
   "tags": [
@@ -1874,7 +1874,7 @@
   "ja": "6月（ろくがつ）"
  },
  {
-  "id": "8929b9e5c6",
+  "id": "eebb0f0c57",
   "ko": "칠월",
   "en": "July",
   "tags": [
@@ -1883,7 +1883,7 @@
   "ja": "7月（しちがつ）"
  },
  {
-  "id": "a139f95255",
+  "id": "53f275d855",
   "ko": "팔월",
   "en": "August",
   "tags": [
@@ -1892,7 +1892,7 @@
   "ja": "8月（はちがつ）"
  },
  {
-  "id": "dd6fc740f6",
+  "id": "7653abc4b2",
   "ko": "구월",
   "en": "September",
   "tags": [
@@ -1901,7 +1901,7 @@
   "ja": "9月（くがつ）"
  },
  {
-  "id": "a5fa4c9d42",
+  "id": "59bee99c69",
   "ko": "시월",
   "en": "October",
   "tags": [
@@ -1910,7 +1910,7 @@
   "ja": "10月（じゅうがつ）"
  },
  {
-  "id": "8ddb3e9334",
+  "id": "e0ec32eee8",
   "ko": "십일월",
   "en": "November",
   "tags": [
@@ -1919,7 +1919,7 @@
   "ja": "11月（じゅういちがつ）"
  },
  {
-  "id": "b945c62df0",
+  "id": "038a7aaaa5",
   "ko": "십이월",
   "en": "December",
   "tags": [
@@ -1928,7 +1928,7 @@
   "ja": "12月（じゅうにがつ）"
  },
  {
-  "id": "477422d7c6",
+  "id": "f8d56da0f0",
   "ko": "지금",
   "en": "Now",
   "tags": [
@@ -1937,7 +1937,7 @@
   "ja": "今（いま）"
  },
  {
-  "id": "91764e1f3b",
+  "id": "4f43d995ae",
   "ko": "안경",
   "en": "Glasses",
   "tags": [
@@ -1946,7 +1946,7 @@
   "ja": "めがね"
  },
  {
-  "id": "b1f0c0c660",
+  "id": "b1072c2212",
   "ko": "컴퓨터",
   "en": "Computer",
   "tags": [
@@ -1955,7 +1955,7 @@
   "ja": "コンピューター"
  },
  {
-  "id": "d29d2f3a65",
+  "id": "5eaefd9890",
   "ko": "선글라스",
   "en": "Sunglasses",
   "tags": [
@@ -1964,7 +1964,7 @@
   "ja": "サングラス"
  },
  {
-  "id": "1a19ae5b0a",
+  "id": "937abd1cc4",
   "ko": "교통카드",
   "en": "Transportation card",
   "tags": [
@@ -1973,7 +1973,7 @@
   "ja": "交通（こうつう）カード"
  },
  {
-  "id": "6ceab5316d",
+  "id": "624bc5929d",
   "ko": "여권",
   "en": "Passport",
   "tags": [
@@ -1982,7 +1982,7 @@
   "ja": "パスポート"
  },
  {
-  "id": "3d6484eed1",
+  "id": "bc07bb788e",
   "ko": "전화번호",
   "en": "Phone number",
   "tags": [
@@ -1991,7 +1991,7 @@
   "ja": "電話番号（でんわばんごう）"
  },
  {
-  "id": "fa05036d0a",
+  "id": "c28357daa3",
   "ko": "생일",
   "en": "Birthday",
   "tags": [
@@ -2000,7 +2000,7 @@
   "ja": "誕生日（たんじょうび）"
  },
  {
-  "id": "6cb6ce0dc4",
+  "id": "f6a9118d3b",
   "ko": "우산 있어요?",
   "en": "Do you have an umbrella?",
   "tags": [
@@ -2009,7 +2009,7 @@
   "ja": "傘（かさ）はありますか？"
  },
  {
-  "id": "fbafcf654f",
+  "id": "3920f25e99",
   "ko": "네, 있어요.",
   "en": "Yes, I do.",
   "tags": [
@@ -2018,7 +2018,7 @@
   "ja": "はい、あります。"
  },
  {
-  "id": "7f2c0980cd",
+  "id": "cb559b0921",
   "ko": "아니요, 없어요.",
   "en": "No, I don't.",
   "tags": [
@@ -2027,7 +2027,7 @@
   "ja": "いいえ、ありません。"
  },
  {
-  "id": "8d3397219e",
+  "id": "de2c4caa54",
   "ko": "책 있어요.",
   "en": "I have a book.",
   "tags": [
@@ -2036,7 +2036,7 @@
   "ja": "本（ほん）があります。"
  },
  {
-  "id": "f887735b31",
+  "id": "b8afe163cc",
   "ko": "안경 없어요.",
   "en": "I don't have glasses.",
   "tags": [
@@ -2045,7 +2045,7 @@
   "ja": "めがねはありません。"
  },
  {
-  "id": "de2f2116bf",
+  "id": "7afa364aa0",
   "ko": "지금 핸드폰 있어요?",
   "en": "Do you have your phone now?",
   "tags": [
@@ -2054,7 +2054,7 @@
   "ja": "今（いま）、携帯電話（けいたいでんわ）はありますか？"
  },
  {
-  "id": "ec06faebca",
+  "id": "679086f5b1",
   "ko": "네, 핸드폰 있어요.",
   "en": "Yes, I have my phone.",
   "tags": [
@@ -2063,7 +2063,7 @@
   "ja": "はい、携帯電話（けいたいでんわ）があります。"
  },
  {
-  "id": "2baccdb4ac",
+  "id": "040864c4f3",
   "ko": "아니요, 핸드폰 없어요.",
   "en": "No, I don't have my phone.",
   "tags": [
@@ -2072,7 +2072,7 @@
   "ja": "いいえ、携帯電話（けいたいでんわ）はありません。"
  },
  {
-  "id": "02e9df6345",
+  "id": "3da7f5f871",
   "ko": "수잔 씨, 한국 전화번호 있어요?",
   "en": "Susan, do you have a Korean phone number?",
   "tags": [
@@ -2081,7 +2081,7 @@
   "ja": "スーザンさん、韓国（かんこく）の電話番号（でんわばんごう）はありますか？"
  },
  {
-  "id": "cddcc9bf42",
+  "id": "b7ef173477",
   "ko": "전화번호가 몇 번이에요?",
   "en": "What's your phone number?",
   "tags": [
@@ -2090,7 +2090,7 @@
   "ja": "電話番号（でんわばんごう）は何番（なんばん）ですか？"
  },
  {
-  "id": "719c6677b6",
+  "id": "d0c694d4b9",
   "ko": "010-4948-1287이에요.",
   "en": "It's 010-4948-1287.",
   "tags": [
@@ -2099,7 +2099,7 @@
   "ja": "010-4948-1287です。"
  },
  {
-  "id": "374e654453",
+  "id": "39fbe3459a",
   "ko": "네, 맞아요.",
   "en": "Yes, that's right.",
   "tags": [
@@ -2108,7 +2108,7 @@
   "ja": "はい、そうです。"
  },
  {
-  "id": "45cf017f2f",
+  "id": "1fca45e58b",
   "ko": "완 씨, 렌핑 씨 생일 알아요?",
   "en": "Wan, do you know Lenping's birthday?",
   "tags": [
@@ -2117,7 +2117,7 @@
   "ja": "ワンさん、レンピンさんの誕生日（たんじょうび）を知（し）っていますか？"
  },
  {
-  "id": "6c95108d24",
+  "id": "5a58d90324",
   "ko": "네, 알아요.",
   "en": "Yes, I do.",
   "tags": [
@@ -2126,7 +2126,7 @@
   "ja": "はい、知（し）っています。"
  },
  {
-  "id": "8e3a879fb2",
+  "id": "8e12b4024a",
   "ko": "렌핑 씨 생일이 며칠이에요?",
   "en": "What date is Lenping's birthday?",
   "tags": [
@@ -2135,12 +2135,9201 @@
   "ja": "レンピンさんの誕生日（たんじょうび）は何日（なんにち）ですか？"
  },
  {
-  "id": "a22ddc7fe5",
+  "id": "fb88acd095",
   "ko": "7월 15일이에요.",
   "en": "It's July 15th.",
   "tags": [
    "Book1A::PrepUnit3::Sentences"
   ],
   "ja": "7月（しちがつ）15日（じゅうごにち）です。"
+ },
+ {
+  "id": "a7ae3f9803",
+  "ko": "커피",
+  "en": "Coffee",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "コーヒー"
+ },
+ {
+  "id": "591cf9a82f",
+  "ko": "물",
+  "en": "Water",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "水（みず）"
+ },
+ {
+  "id": "ee35d88b66",
+  "ko": "콜라",
+  "en": "Cola",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "コーラ"
+ },
+ {
+  "id": "c2aa57abba",
+  "ko": "오렌지 주스",
+  "en": "Orange juice",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "オレンジジュース"
+ },
+ {
+  "id": "ad22750f6d",
+  "ko": "레몬차",
+  "en": "Lemon tea",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "レモンティー"
+ },
+ {
+  "id": "e3c93bb927",
+  "ko": "녹차",
+  "en": "Green tea",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "緑茶（りょくちゃ）"
+ },
+ {
+  "id": "2763e077b9",
+  "ko": "김밥",
+  "en": "Gimbap",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "キンパ"
+ },
+ {
+  "id": "05819c09e1",
+  "ko": "떡볶이",
+  "en": "Tteokbokki",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "トッポッキ"
+ },
+ {
+  "id": "5ef59074c0",
+  "ko": "어묵",
+  "en": "Fish cake",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "おでん"
+ },
+ {
+  "id": "0985da936c",
+  "ko": "순대",
+  "en": "Sundae (Korean blood sausage)",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "スンデ"
+ },
+ {
+  "id": "215e1ce243",
+  "ko": "핫도그",
+  "en": "Corn dog",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "アメリカンドッグ"
+ },
+ {
+  "id": "471ed0667e",
+  "ko": "샌드위치",
+  "en": "Sandwich",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "サンドイッチ"
+ },
+ {
+  "id": "550c90976c",
+  "ko": "하나",
+  "en": "One",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "一（ひと）つ"
+ },
+ {
+  "id": "0ffc3be9a7",
+  "ko": "둘",
+  "en": "Two",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "二（ふた）つ"
+ },
+ {
+  "id": "8c0aa88319",
+  "ko": "셋",
+  "en": "Three",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "三（みっ）つ"
+ },
+ {
+  "id": "1469a1588f",
+  "ko": "넷",
+  "en": "Four",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "四（よっ）つ"
+ },
+ {
+  "id": "1422a8d832",
+  "ko": "다섯",
+  "en": "Five",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "五（いつ）つ"
+ },
+ {
+  "id": "9a5a0aff2a",
+  "ko": "여섯",
+  "en": "Six",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "六（むっ）つ"
+ },
+ {
+  "id": "2587b5f5dd",
+  "ko": "일곱",
+  "en": "Seven",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "七（なな）つ"
+ },
+ {
+  "id": "a005258c3d",
+  "ko": "여덟",
+  "en": "Eight",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "八（やっ）つ"
+ },
+ {
+  "id": "b3fe99fcaf",
+  "ko": "아홉",
+  "en": "Nine",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "九（ここの）つ"
+ },
+ {
+  "id": "4e8afc7079",
+  "ko": "열",
+  "en": "Ten",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "十（とお）"
+ },
+ {
+  "id": "73fb8a2ea3",
+  "ko": "한 개",
+  "en": "One (of something)",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "一個（いっこ）"
+ },
+ {
+  "id": "32a8b5f09f",
+  "ko": "두 개",
+  "en": "Two (of something)",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "二個（にこ）"
+ },
+ {
+  "id": "a30e396e22",
+  "ko": "세 개",
+  "en": "Three (of something)",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "三個（さんこ）"
+ },
+ {
+  "id": "969b969d80",
+  "ko": "네 개",
+  "en": "Four (of something)",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "四個（よんこ）"
+ },
+ {
+  "id": "759fc2a456",
+  "ko": "십 원",
+  "en": "10 won",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "十（じゅう）ウォン"
+ },
+ {
+  "id": "7e46e651c7",
+  "ko": "오십 원",
+  "en": "50 won",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "五十（ごじゅう）ウォン"
+ },
+ {
+  "id": "abe0319d86",
+  "ko": "백 원",
+  "en": "100 won",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "百（ひゃく）ウォン"
+ },
+ {
+  "id": "e3ac2ce049",
+  "ko": "오백 원",
+  "en": "500 won",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "五百（ごひゃく）ウォン"
+ },
+ {
+  "id": "953a33d4e7",
+  "ko": "천 원",
+  "en": "1,000 won",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "千（せん）ウォン"
+ },
+ {
+  "id": "45eb26e5da",
+  "ko": "오천 원",
+  "en": "5,000 won",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "五千（ごせん）ウォン"
+ },
+ {
+  "id": "0b5b4ac667",
+  "ko": "만 원",
+  "en": "10,000 won",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "一万（いちまん）ウォン"
+ },
+ {
+  "id": "50c10bcc62",
+  "ko": "오만 원",
+  "en": "50,000 won",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "五万（ごまん）ウォン"
+ },
+ {
+  "id": "5789195141",
+  "ko": "여기요.",
+  "en": "Excuse me (said to the server)",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "すみません。"
+ },
+ {
+  "id": "619002f59d",
+  "ko": "된장찌개",
+  "en": "Doenjang jjigae",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "テンジャンチゲ"
+ },
+ {
+  "id": "42d1639b3e",
+  "ko": "비빔밥",
+  "en": "Bibimbap",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "ビビンバ"
+ },
+ {
+  "id": "6f2493c4bd",
+  "ko": "김치찌개",
+  "en": "Kimchi jjigae",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "キムチチゲ"
+ },
+ {
+  "id": "1f3e98267c",
+  "ko": "냉면",
+  "en": "Naengmyeon",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "冷麺（れいめん）"
+ },
+ {
+  "id": "e899ccafcb",
+  "ko": "삼계탕",
+  "en": "Samgyetang",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "サムゲタン"
+ },
+ {
+  "id": "f74a80f4cc",
+  "ko": "빨대",
+  "en": "Straw (for drinking)",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "ストロー"
+ },
+ {
+  "id": "b7cce6ba19",
+  "ko": "아메리카노",
+  "en": "Americano coffee",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "アメリカーノ"
+ },
+ {
+  "id": "22fd96cc72",
+  "ko": "카페라테",
+  "en": "Café latte",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "カフェラテ"
+ },
+ {
+  "id": "685ec9509f",
+  "ko": "레모네이드",
+  "en": "Lemonade",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "レモネード"
+ },
+ {
+  "id": "bd3e2c52c7",
+  "ko": "아이스티",
+  "en": "Iced tea",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "アイスティー"
+ },
+ {
+  "id": "be8fd2263c",
+  "ko": "라면",
+  "en": "Ramen noodles",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "ラーメン"
+ },
+ {
+  "id": "5c0ed62d59",
+  "ko": "우유",
+  "en": "Milk",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "牛乳（ぎゅうにゅう）"
+ },
+ {
+  "id": "30cc9a7dad",
+  "ko": "맥주",
+  "en": "Beer",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "ビール"
+ },
+ {
+  "id": "5e1f9c3382",
+  "ko": "사과",
+  "en": "Apple",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "りんご"
+ },
+ {
+  "id": "604053383f",
+  "ko": "바나나",
+  "en": "Banana",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "バナナ"
+ },
+ {
+  "id": "7c9b4ee57e",
+  "ko": "포도",
+  "en": "Grapes",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "ぶどう"
+ },
+ {
+  "id": "b8c770de8e",
+  "ko": "칫솔",
+  "en": "Toothbrush",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "歯（は）ブラシ"
+ },
+ {
+  "id": "4dd985fb39",
+  "ko": "치약",
+  "en": "Toothpaste",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "歯磨（はみが）き粉（こ）"
+ },
+ {
+  "id": "24167c1e90",
+  "ko": "휴지",
+  "en": "Tissue, toilet paper",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "ティッシュ"
+ },
+ {
+  "id": "30ae0c0d91",
+  "ko": "어서 오세요.",
+  "en": "Welcome.",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "いらっしゃいませ。"
+ },
+ {
+  "id": "e56e16e201",
+  "ko": "영수증",
+  "en": "Receipt",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "領収書（りょうしゅうしょ）"
+ },
+ {
+  "id": "c13c0a1d54",
+  "ko": "커피 주세요.",
+  "en": "Coffee, please.",
+  "tags": [
+   "Book1A::PrepUnit4::Sentences"
+  ],
+  "ja": "コーヒーをください。"
+ },
+ {
+  "id": "9d9b3a761d",
+  "ko": "김밥 주세요.",
+  "en": "Gimbap, please.",
+  "tags": [
+   "Book1A::PrepUnit4::Sentences"
+  ],
+  "ja": "キンパをください。"
+ },
+ {
+  "id": "cf38c35362",
+  "ko": "여기 있어요.",
+  "en": "Here you are.",
+  "tags": [
+   "Book1A::PrepUnit4::Sentences"
+  ],
+  "ja": "はい、どうぞ。"
+ },
+ {
+  "id": "f374188fed",
+  "ko": "몇 개 있어요?",
+  "en": "How many do you have?",
+  "tags": [
+   "Book1A::PrepUnit4::Sentences"
+  ],
+  "ja": "何個（なんこ）ありますか？"
+ },
+ {
+  "id": "900d3af14e",
+  "ko": "한 개 있어요.",
+  "en": "I have one.",
+  "tags": [
+   "Book1A::PrepUnit4::Sentences"
+  ],
+  "ja": "一個（いっこ）あります。"
+ },
+ {
+  "id": "84531441a9",
+  "ko": "얼마예요?",
+  "en": "How much is it?",
+  "tags": [
+   "Book1A::PrepUnit4::Sentences"
+  ],
+  "ja": "いくらですか？"
+ },
+ {
+  "id": "528daa2291",
+  "ko": "이만 삼천팔백오십 원이에요.",
+  "en": "It's 23,850 won.",
+  "tags": [
+   "Book1A::PrepUnit4::Sentences"
+  ],
+  "ja": "二万三千八百五十（にまんさんぜんはっぴゃくごじゅう）ウォンです。"
+ },
+ {
+  "id": "e31409469c",
+  "ko": "비빔밥 두 개 주세요.",
+  "en": "Two servings of bibimbap, please.",
+  "tags": [
+   "Book1A::PrepUnit4::Sentences"
+  ],
+  "ja": "ビビンバを二（ふた）つください。"
+ },
+ {
+  "id": "e916be07c5",
+  "ko": "여기요, 물 좀 주세요.",
+  "en": "Excuse me, could I have some water?",
+  "tags": [
+   "Book1A::PrepUnit4::Sentences"
+  ],
+  "ja": "すみません、お水（みず）をください。"
+ },
+ {
+  "id": "1ebd6242da",
+  "ko": "네.",
+  "en": "Yes.",
+  "tags": [
+   "Book1A::PrepUnit4::Sentences"
+  ],
+  "ja": "はい。"
+ },
+ {
+  "id": "b4690b065c",
+  "ko": "된장찌개 한 개, 비빔밥 두 개 주세요.",
+  "en": "I'd like one serving of doenjang jjigae and two servings of bibimbap.",
+  "tags": [
+   "Book1A::PrepUnit4::Sentences"
+  ],
+  "ja": "テンジャンチゲを一（ひと）つ、ビビンバを二（ふた）つください。"
+ },
+ {
+  "id": "d576871d34",
+  "ko": "물 좀 주세요.",
+  "en": "Could I have some water?",
+  "tags": [
+   "Book1A::PrepUnit4::Sentences"
+  ],
+  "ja": "お水（みず）をください。"
+ },
+ {
+  "id": "765243b1cf",
+  "ko": "아메리카노 주세요. 얼마예요?",
+  "en": "An Americano, please. How much is it?",
+  "tags": [
+   "Book1A::PrepUnit4::Sentences"
+  ],
+  "ja": "アメリカーノをください。いくらですか？"
+ },
+ {
+  "id": "a33e0603e8",
+  "ko": "3,000원이에요.",
+  "en": "It's 3,000 won.",
+  "tags": [
+   "Book1A::PrepUnit4::Sentences"
+  ],
+  "ja": "三千（さんぜん）ウォンです。"
+ },
+ {
+  "id": "468ab94439",
+  "ko": "빨대 있어요?",
+  "en": "Do you have a straw?",
+  "tags": [
+   "Book1A::PrepUnit4::Sentences"
+  ],
+  "ja": "ストローありますか？"
+ },
+ {
+  "id": "b5291ddcaf",
+  "ko": "네, 저기 있어요.",
+  "en": "Yes, it's over there.",
+  "tags": [
+   "Book1A::PrepUnit4::Sentences"
+  ],
+  "ja": "はい、あそこにあります。"
+ },
+ {
+  "id": "fbf9247c26",
+  "ko": "저기 있어요.",
+  "en": "It's over there.",
+  "tags": [
+   "Book1A::PrepUnit4::Sentences"
+  ],
+  "ja": "あそこにあります。"
+ },
+ {
+  "id": "2d8aac291a",
+  "ko": "커피 두 개 주세요. 얼마예요?",
+  "en": "Two coffees, please. How much is it?",
+  "tags": [
+   "Book1A::PrepUnit4::Sentences"
+  ],
+  "ja": "コーヒーを二（ふた）つください。いくらですか？"
+ },
+ {
+  "id": "192323fb6b",
+  "ko": "모두 얼마예요?",
+  "en": "How much is it?",
+  "tags": [
+   "Book1A::PrepUnit4::Sentences"
+  ],
+  "ja": "全部（ぜんぶ）でいくらですか？"
+ },
+ {
+  "id": "28c1d9860a",
+  "ko": "사과가 얼마예요?",
+  "en": "How much are the apples?",
+  "tags": [
+   "Book1A::PrepUnit4::Sentences"
+  ],
+  "ja": "りんごはいくらですか？"
+ },
+ {
+  "id": "3e53238654",
+  "ko": "김치찌개 두 개 주세요. 얼마예요?",
+  "en": "Two servings of kimchi jjigae, please. How much is it?",
+  "tags": [
+   "Book1A::PrepUnit4::Sentences"
+  ],
+  "ja": "キムチチゲを二（ふた）つください。いくらですか？"
+ },
+ {
+  "id": "e27c885fe9",
+  "ko": "만 육천 원이에요.",
+  "en": "It's 16,000 won.",
+  "tags": [
+   "Book1A::PrepUnit4::Sentences"
+  ],
+  "ja": "一万六千（いちまんろくせん）ウォンです。"
+ },
+ {
+  "id": "b67ecdee8d",
+  "ko": "학교",
+  "en": "School",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "学校（がっこう）"
+ },
+ {
+  "id": "f9ebf6029b",
+  "ko": "교실",
+  "en": "Classroom",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "教室（きょうしつ）"
+ },
+ {
+  "id": "8a825b1bc6",
+  "ko": "도서관",
+  "en": "Library",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "図書館（としょかん）"
+ },
+ {
+  "id": "33e7d4c64a",
+  "ko": "카페",
+  "en": "Café",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "カフェ"
+ },
+ {
+  "id": "d538eab967",
+  "ko": "편의점",
+  "en": "Convenience store",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "コンビニ"
+ },
+ {
+  "id": "69dbde9baf",
+  "ko": "식당",
+  "en": "Restaurant",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "食堂（しょくどう）"
+ },
+ {
+  "id": "1f39c61014",
+  "ko": "회사",
+  "en": "Company",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "会社（かいしゃ）"
+ },
+ {
+  "id": "b20c2c80e5",
+  "ko": "영화관",
+  "en": "Movie theater",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "映画館（えいがかん）"
+ },
+ {
+  "id": "0a593a48e7",
+  "ko": "서점",
+  "en": "Bookstore",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "書店（しょてん）"
+ },
+ {
+  "id": "d73e1c875e",
+  "ko": "은행",
+  "en": "Bank",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "銀行（ぎんこう）"
+ },
+ {
+  "id": "0a6505b90b",
+  "ko": "대사관",
+  "en": "Embassy",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "大使館（たいしかん）"
+ },
+ {
+  "id": "61a5da4f28",
+  "ko": "우체국",
+  "en": "Post office",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "郵便局（ゆうびんきょく）"
+ },
+ {
+  "id": "db3972fb8a",
+  "ko": "위",
+  "en": "Up",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "上（うえ）"
+ },
+ {
+  "id": "1ed8394d60",
+  "ko": "아래",
+  "en": "Down",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "下（した）"
+ },
+ {
+  "id": "ced6c3fb4c",
+  "ko": "앞",
+  "en": "In front of",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "前（まえ）"
+ },
+ {
+  "id": "b5b05563ab",
+  "ko": "뒤",
+  "en": "Behind",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "後（うし）ろ"
+ },
+ {
+  "id": "af8ff56c4a",
+  "ko": "옆",
+  "en": "Next to",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "隣（となり）"
+ },
+ {
+  "id": "5abdebabca",
+  "ko": "왼쪽",
+  "en": "The left side",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "左（ひだり）"
+ },
+ {
+  "id": "b1fa09bac4",
+  "ko": "오른쪽",
+  "en": "The right side",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "右（みぎ）"
+ },
+ {
+  "id": "94e5155d8a",
+  "ko": "안",
+  "en": "In, inside",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "中（なか）"
+ },
+ {
+  "id": "60ff7f8a78",
+  "ko": "밖",
+  "en": "Out, outside",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "外（そと）"
+ },
+ {
+  "id": "efc9e36994",
+  "ko": "직업",
+  "en": "Job",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "職業（しょくぎょう）"
+ },
+ {
+  "id": "495943ddb5",
+  "ko": "오늘",
+  "en": "Today",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "今日（きょう）"
+ },
+ {
+  "id": "9f3d9a8c09",
+  "ko": "몇 명",
+  "en": "How many people",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "何人（なんにん）"
+ },
+ {
+  "id": "5eaacc7752",
+  "ko": "1층",
+  "en": "First floor",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "1階（かい）"
+ },
+ {
+  "id": "5e9bf00a69",
+  "ko": "화장실",
+  "en": "Bathroom",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "トイレ"
+ },
+ {
+  "id": "6cc16cc6cc",
+  "ko": "지하",
+  "en": "Basement, underground",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "地下（ちか）"
+ },
+ {
+  "id": "b9aa4c76d9",
+  "ko": "고양이",
+  "en": "Cat",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "猫（ねこ）"
+ },
+ {
+  "id": "cc0b57c787",
+  "ko": "쓰레기통",
+  "en": "Trash can",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "ゴミ箱（ばこ）"
+ },
+ {
+  "id": "ff1b3001ec",
+  "ko": "강아지",
+  "en": "Puppy",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "子犬（こいぬ）"
+ },
+ {
+  "id": "6c23809b88",
+  "ko": "침대",
+  "en": "Bed",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "ベッド"
+ },
+ {
+  "id": "65c9f98ab7",
+  "ko": "모자",
+  "en": "Hat",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "帽子（ぼうし）"
+ },
+ {
+  "id": "b5aa066afd",
+  "ko": "실례합니다.",
+  "en": "Excuse me.",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "失礼（しつれい）します。"
+ },
+ {
+  "id": "15d589caf0",
+  "ko": "여보세요.",
+  "en": "Hello? (on the phone)",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "もしもし。"
+ },
+ {
+  "id": "94a60cff4d",
+  "ko": "혹시",
+  "en": "By any chance",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "もしかして"
+ },
+ {
+  "id": "661d4d7b7d",
+  "ko": "제 책",
+  "en": "My book",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "私（わたし）の本（ほん）"
+ },
+ {
+  "id": "ebde21abee",
+  "ko": "문",
+  "en": "Door",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "ドア"
+ },
+ {
+  "id": "1763b8ebdf",
+  "ko": "이 근처",
+  "en": "Around here",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "この近（ちか）く"
+ },
+ {
+  "id": "07fabe3ecd",
+  "ko": "빌딩",
+  "en": "Building",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "ビル"
+ },
+ {
+  "id": "5493a5ea8b",
+  "ko": "감사합니다.",
+  "en": "Thank you.",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "ありがとうございます。"
+ },
+ {
+  "id": "2acbc6f35e",
+  "ko": "아니에요.",
+  "en": "Don't mention it.",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "どういたしまして。"
+ },
+ {
+  "id": "72b6bafbc2",
+  "ko": "고향",
+  "en": "Hometown",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "故郷（こきょう）"
+ },
+ {
+  "id": "593d2884bb",
+  "ko": "집",
+  "en": "House, home",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "家（いえ）"
+ },
+ {
+  "id": "d6a955fafa",
+  "ko": "파리",
+  "en": "Paris",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "パリ"
+ },
+ {
+  "id": "f6e1c5302b",
+  "ko": "상파울루",
+  "en": "São Paulo",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "サンパウロ"
+ },
+ {
+  "id": "098d141d74",
+  "ko": "한국 영화를 좋아해요.",
+  "en": "I like Korean movies.",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "韓国映画（かんこくえいが）が好（す）きです。"
+ },
+ {
+  "id": "6af68677f9",
+  "ko": "백화점",
+  "en": "Department store",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "デパート"
+ },
+ {
+  "id": "320cf840fa",
+  "ko": "공원",
+  "en": "Park",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "公園（こうえん）"
+ },
+ {
+  "id": "f3c64022b1",
+  "ko": "스터디 카페",
+  "en": "Study café",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "スタディカフェ"
+ },
+ {
+  "id": "a7227f0c1f",
+  "ko": "참!",
+  "en": "I just remembered something!",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "そうだ！"
+ },
+ {
+  "id": "888acbca56",
+  "ko": "시간이 있어요?",
+  "en": "Are you free?",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "時間（じかん）がありますか？"
+ },
+ {
+  "id": "16ea723c97",
+  "ko": "왜요?",
+  "en": "Why do you ask?",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "どうしてですか？"
+ },
+ {
+  "id": "40bd12335c",
+  "ko": "제 생일이에요.",
+  "en": "It's my birthday.",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "私（わたし）の誕生日（たんじょうび）です。"
+ },
+ {
+  "id": "58bf1e43e7",
+  "ko": "친구들하고",
+  "en": "With my friends",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "友達（ともだち）と"
+ },
+ {
+  "id": "031c65aa1d",
+  "ko": "같이 식사해요.",
+  "en": "Let's have a meal together.",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "一緒（いっしょ）に食事（しょくじ）しましょう。"
+ },
+ {
+  "id": "120a62be44",
+  "ko": "좋아요.",
+  "en": "That sounds good.",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "いいですね。"
+ },
+ {
+  "id": "81f0533df9",
+  "ko": "주차장",
+  "en": "Parking lot",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "駐車場（ちゅうしゃじょう）"
+ },
+ {
+  "id": "db1e57c953",
+  "ko": "체육관",
+  "en": "Gymnasium",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "体育館（たいいくかん）"
+ },
+ {
+  "id": "2be2d5e0b0",
+  "ko": "운동장",
+  "en": "Sports field, playground",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "運動場（うんどうじょう）"
+ },
+ {
+  "id": "48f029af7f",
+  "ko": "테니스장",
+  "en": "Tennis court",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "テニスコート"
+ },
+ {
+  "id": "0a0606307d",
+  "ko": "기념품 가게",
+  "en": "Souvenir shop",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "お土産屋（みやげや）"
+ },
+ {
+  "id": "f24ea8e865",
+  "ko": "학생 식당",
+  "en": "Student cafeteria",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "学生食堂（がくせいしょくどう）"
+ },
+ {
+  "id": "f2f0b8239e",
+  "ko": "광화문",
+  "en": "Gwanghwamun",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "光化門（クァンファムン）"
+ },
+ {
+  "id": "2dd8dc0cae",
+  "ko": "신촌",
+  "en": "Sinchon",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "新村（シンチョン）"
+ },
+ {
+  "id": "ed6fe15872",
+  "ko": "잠실",
+  "en": "Jamsil",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "蚕室（チャムシル）"
+ },
+ {
+  "id": "243bee764b",
+  "ko": "프로그래머",
+  "en": "Programmer",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "プログラマー"
+ },
+ {
+  "id": "bfc173041b",
+  "ko": "학생증",
+  "en": "Student ID card",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "学生証（がくせいしょう）"
+ },
+ {
+  "id": "22a2fcab70",
+  "ko": "국적",
+  "en": "Nationality",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "国籍（こくせき）"
+ },
+ {
+  "id": "6754425314",
+  "ko": "주소",
+  "en": "Address",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "住所（じゅうしょ）"
+ },
+ {
+  "id": "9e0007285b",
+  "ko": "이메일",
+  "en": "Email",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "メール"
+ },
+ {
+  "id": "0b9d3ceaab",
+  "ko": "이름이 뭐예요?",
+  "en": "What's your name?",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "名前（なまえ）は何（なん）ですか？"
+ },
+ {
+  "id": "17d844a577",
+  "ko": "앤디예요.",
+  "en": "It's Andy.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "アンディです。"
+ },
+ {
+  "id": "7feee4726c",
+  "ko": "이름이 앤디예요.",
+  "en": "My name is Andy.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "名前（なまえ）はアンディです。"
+ },
+ {
+  "id": "1ed5801b6b",
+  "ko": "요리사예요.",
+  "en": "I'm a cook.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "料理人（りょうりにん）です。"
+ },
+ {
+  "id": "2e3f5eb136",
+  "ko": "두 개 있어요.",
+  "en": "There are two.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "2つ（ふたつ）あります。"
+ },
+ {
+  "id": "8ea4871195",
+  "ko": "6월 25일이에요.",
+  "en": "It's June 25th.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "6月（がつ）25日（にち）です。"
+ },
+ {
+  "id": "1be8bb2c80",
+  "ko": "세 명 있어요.",
+  "en": "There are three people.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "3人（さんにん）います。"
+ },
+ {
+  "id": "24b561bcee",
+  "ko": "02-705-8088이에요.",
+  "en": "It's 02-705-8088.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "02-705-8088です。"
+ },
+ {
+  "id": "dcf790f3ec",
+  "ko": "여기가 어디예요?",
+  "en": "Where is this?",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "ここはどこですか？"
+ },
+ {
+  "id": "68d4e58ccc",
+  "ko": "학교예요.",
+  "en": "This is a school.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "学校（がっこう）です。"
+ },
+ {
+  "id": "1a6244c14c",
+  "ko": "앤디 씨가 어디에 있어요?",
+  "en": "Where is Andy?",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "アンディさんはどこにいますか？"
+ },
+ {
+  "id": "df2be2ea78",
+  "ko": "식당에 있어요.",
+  "en": "He's in the cafeteria.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "食堂（しょくどう）にいます。"
+ },
+ {
+  "id": "15cb568075",
+  "ko": "미나 씨가 영화관에 있어요.",
+  "en": "Mina is at the movie theater.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "ミナさんは映画館（えいがかん）にいます。"
+ },
+ {
+  "id": "4e3584bb1b",
+  "ko": "은행이 어디에 있어요?",
+  "en": "Where is the bank?",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "銀行（ぎんこう）はどこにありますか？"
+ },
+ {
+  "id": "aa6e562d05",
+  "ko": "1층에 있어요.",
+  "en": "It's on the first floor.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "1階（かい）にあります。"
+ },
+ {
+  "id": "039ce59cae",
+  "ko": "노트북이 책상 위에 있어요.",
+  "en": "The laptop is on the desk.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "ノートパソコンが机（つくえ）の上（うえ）にあります。"
+ },
+ {
+  "id": "0d93b7c8de",
+  "ko": "강아지가 어디에 있어요?",
+  "en": "Where is the puppy?",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "子犬（こいぬ）はどこにいますか？"
+ },
+ {
+  "id": "c387a090f7",
+  "ko": "강아지가 침대 위에 있어요.",
+  "en": "The puppy is on the bed.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "子犬（こいぬ）がベッドの上（うえ）にいます。"
+ },
+ {
+  "id": "d1ed0f9524",
+  "ko": "실례합니다. 앤디 씨가 여기에 있어요?",
+  "en": "Excuse me. Is Andy here?",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "失礼（しつれい）します。アンディさんはここにいますか？"
+ },
+ {
+  "id": "4d85ef3a61",
+  "ko": "아니요, 없어요.",
+  "en": "No, he isn't.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "いいえ、いません。"
+ },
+ {
+  "id": "70db302c35",
+  "ko": "그럼 어디에 있어요?",
+  "en": "Then where is he?",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "では、どこにいますか？"
+ },
+ {
+  "id": "560120335a",
+  "ko": "여보세요. 가브리엘 씨, 지금 어디에 있어요?",
+  "en": "Hello? Gabriel, where are you now?",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "もしもし。ガブリエルさん、今（いま）どこにいますか？"
+ },
+ {
+  "id": "50115cc5b3",
+  "ko": "교실에 있어요.",
+  "en": "I'm in the classroom.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "教室（きょうしつ）にいます。"
+ },
+ {
+  "id": "996dfa1e63",
+  "ko": "아, 그래요? 혹시 제 책이 교실에 있어요?",
+  "en": "Oh, really? Is my book in the classroom by any chance?",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "あ、そうですか。もしかして私（わたし）の本（ほん）が教室（きょうしつ）にありますか？"
+ },
+ {
+  "id": "c793c11909",
+  "ko": "네, 책상 위에 있어요.",
+  "en": "Yes, it's on the desk.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "はい、机（つくえ）の上（うえ）にあります。"
+ },
+ {
+  "id": "0b1c1ca150",
+  "ko": "미나 씨, 이 근처에 ATM이 있어요?",
+  "en": "Mina, is there an ATM around here?",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "ミナさん、この近（ちか）くにATMがありますか？"
+ },
+ {
+  "id": "4067d137fc",
+  "ko": "네, C빌딩에 있어요.",
+  "en": "Yes, it's in C Building.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "はい、Cビルにあります。"
+ },
+ {
+  "id": "fb01002d64",
+  "ko": "C빌딩이 어디에 있어요?",
+  "en": "Where is C Building?",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "Cビルはどこにありますか？"
+ },
+ {
+  "id": "1e1ee74252",
+  "ko": "K빌딩 알아요? K빌딩 앞에 있어요.",
+  "en": "Do you know K Building? It's in front of K Building.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "Kビルを知（し）っていますか。Kビルの前（まえ）にあります。"
+ },
+ {
+  "id": "d9773257c2",
+  "ko": "감사합니다.",
+  "en": "Thank you.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "ありがとうございます。"
+ },
+ {
+  "id": "d5a0717fc3",
+  "ko": "아니에요.",
+  "en": "Don't mention it.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "どういたしまして。"
+ },
+ {
+  "id": "502631d872",
+  "ko": "저기요, 카페가 어디에 있어요?",
+  "en": "Excuse me, where is the café?",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "すみません、カフェはどこにありますか？"
+ },
+ {
+  "id": "4210a44fb8",
+  "ko": "아이스크림 가게 왼쪽에 있어요.",
+  "en": "It's to the left of the ice cream shop.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "アイスクリーム屋（や）の左（ひだり）にあります。"
+ },
+ {
+  "id": "7ebb6bc560",
+  "ko": "저는 완이에요.",
+  "en": "I'm Wan.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "私（わたし）はワンです。"
+ },
+ {
+  "id": "4e3264a3ee",
+  "ko": "태국 사람이에요.",
+  "en": "I'm Thai.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "タイ人（じん）です。"
+ },
+ {
+  "id": "0f2d573a0b",
+  "ko": "고향이 방콕이에요.",
+  "en": "My hometown is Bangkok.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "故郷（こきょう）はバンコクです。"
+ },
+ {
+  "id": "31f1b6421e",
+  "ko": "학생이에요.",
+  "en": "I'm a student.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "学生（がくせい）です。"
+ },
+ {
+  "id": "523f1af00c",
+  "ko": "생일이 10월 19일이에요.",
+  "en": "My birthday is October 19th.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "誕生日（たんじょうび）は10月（がつ）19日（にち）です。"
+ },
+ {
+  "id": "43553b130e",
+  "ko": "핸드폰 번호가 010-2717-3843이에요.",
+  "en": "My cell phone number is 010-2717-3843.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "携帯番号（けいたいばんごう）は010-2717-3843です。"
+ },
+ {
+  "id": "7cfe8e0966",
+  "ko": "집이 광화문에 있어요.",
+  "en": "My house is in Gwanghwamun.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "家（いえ）は光化門（クァンファムン）にあります。"
+ },
+ {
+  "id": "605f307035",
+  "ko": "저는 사라예요.",
+  "en": "I'm Sarah.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "私（わたし）はサラです。"
+ },
+ {
+  "id": "7d216fbfda",
+  "ko": "프랑스 사람이에요.",
+  "en": "I'm French.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "フランス人（じん）です。"
+ },
+ {
+  "id": "6e92059161",
+  "ko": "고향이 파리예요.",
+  "en": "My hometown is Paris.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "故郷（こきょう）はパリです。"
+ },
+ {
+  "id": "cdecf009a0",
+  "ko": "학생이에요. 한국 영화를 좋아해요.",
+  "en": "I'm a student. I like Korean movies.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "学生（がくせい）です。韓国映画（かんこくえいが）が好（す）きです。"
+ },
+ {
+  "id": "29d7041cab",
+  "ko": "생일이 7월 28일이에요.",
+  "en": "My birthday is July 28th.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "誕生日（たんじょうび）は7月（がつ）28日（にち）です。"
+ },
+ {
+  "id": "b53190b782",
+  "ko": "핸드폰 번호가 010-5920-7245예요.",
+  "en": "My cell phone number is 010-5920-7245.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "携帯番号（けいたいばんごう）は010-5920-7245です。"
+ },
+ {
+  "id": "c8b3ccf530",
+  "ko": "집이 신촌에 있어요.",
+  "en": "My house is in Sinchon.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "家（いえ）は新村（シンチョン）にあります。"
+ },
+ {
+  "id": "7e419e0023",
+  "ko": "현대 백화점 뒤에 있어요.",
+  "en": "It's behind the Hyundai Department Store.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "現代（ヒョンデ）デパートの後（うし）ろにあります。"
+ },
+ {
+  "id": "fe6386aca0",
+  "ko": "저는 가브리엘이에요.",
+  "en": "I'm Gabriel.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "私（わたし）はガブリエルです。"
+ },
+ {
+  "id": "4984664fc2",
+  "ko": "고향이 상파울루예요.",
+  "en": "My hometown is São Paulo.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "故郷（こきょう）はサンパウロです。"
+ },
+ {
+  "id": "ac4be2324e",
+  "ko": "상파울루가 브라질에 있어요.",
+  "en": "São Paulo is in Brazil.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "サンパウロはブラジルにあります。"
+ },
+ {
+  "id": "20f6461e1f",
+  "ko": "프로그래머예요.",
+  "en": "I'm a programmer.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "プログラマーです。"
+ },
+ {
+  "id": "aa30c72c78",
+  "ko": "생일이 9월 30일이에요.",
+  "en": "My birthday is September 30th.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "誕生日（たんじょうび）は9月（がつ）30日（にち）です。"
+ },
+ {
+  "id": "3c170c3982",
+  "ko": "핸드폰 번호가 010-9983-2312이에요.",
+  "en": "My cell phone number is 010-9983-2312.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "携帯番号（けいたいばんごう）は010-9983-2312です。"
+ },
+ {
+  "id": "519d859db0",
+  "ko": "집이 잠실에 있어요.",
+  "en": "My house is in Jamsil.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "家（いえ）は蚕室（チャムシル）にあります。"
+ },
+ {
+  "id": "d017f96a37",
+  "ko": "집 앞에 공원이 있어요.",
+  "en": "There is a park in front of my house.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "家（いえ）の前（まえ）に公園（こうえん）があります。"
+ },
+ {
+  "id": "96707b2344",
+  "ko": "집이 어디에 있어요?",
+  "en": "Where is your house?",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "家（いえ）はどこにありますか？"
+ },
+ {
+  "id": "a172548bb8",
+  "ko": "집 앞에 뭐가 있어요?",
+  "en": "What is in front of your house?",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "家（いえ）の前（まえ）に何（なに）がありますか？"
+ },
+ {
+  "id": "112a8ee3ab",
+  "ko": "여기는 서강대학교예요.",
+  "en": "This is Sogang University.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "ここは西江大学（ソガンだいがく）です。"
+ },
+ {
+  "id": "0faab9e1ea",
+  "ko": "한국어 교실이 A빌딩에 있어요.",
+  "en": "The Korean classroom is in A Building.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "韓国語（かんこくご）の教室（きょうしつ）はAビルにあります。"
+ },
+ {
+  "id": "55c968e30b",
+  "ko": "여보세요.",
+  "en": "Hello?",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "もしもし。"
+ },
+ {
+  "id": "2e79ee0ab4",
+  "ko": "앤디 씨, 안녕하세요? 미나예요.",
+  "en": "Andy, hello? This is Mina.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "アンディさん、こんにちは。ミナです。"
+ },
+ {
+  "id": "49bcd6ce12",
+  "ko": "안녕하세요? 미나 씨.",
+  "en": "Hello, Mina.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "こんにちは、ミナさん。"
+ },
+ {
+  "id": "5ad0804f4a",
+  "ko": "제 친구들하고 같이 식사해요.",
+  "en": "I'm having a meal together with my friends.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "私（わたし）の友達（ともだち）と一緒（いっしょ）に食事（しょくじ）します。"
+ },
+ {
+  "id": "a41cc478db",
+  "ko": "앤디 씨가 지금 미나 씨하고 전화해요.",
+  "en": "Andy is on the phone with Mina now.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "アンディさんは今（いま）ミナさんと電話（でんわ）しています。"
+ },
+ {
+  "id": "d03f048066",
+  "ko": "앤디 씨는 스터디 카페에 있어요.",
+  "en": "Andy is at the study café.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "アンディさんはスタディカフェにいます。"
+ },
+ {
+  "id": "12593510a2",
+  "ko": "스터디 카페가 A빌딩 3층에 있어요.",
+  "en": "The study café is on the third floor of A Building.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "スタディカフェはAビルの3階（かい）にあります。"
+ },
+ {
+  "id": "7e8a619a28",
+  "ko": "미나 씨는 학교 앞 식당에 있어요.",
+  "en": "Mina is at a restaurant in front of the school.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "ミナさんは学校（がっこう）の前（まえ）の食堂（しょくどう）にいます。"
+ },
+ {
+  "id": "cabb46be02",
+  "ko": "미나 씨 생일이 4월 15일이에요.",
+  "en": "Mina's birthday is April 15th.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "ミナさんの誕生日（たんじょうび）は4月（がつ）15日（にち）です。"
+ },
+ {
+  "id": "970996c9db",
+  "ko": "4월 15일에 앤디 씨가 미나 씨를 만나요.",
+  "en": "On April 15th Andy meets Mina.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "4月（がつ）15日（にち）にアンディさんがミナさんに会（あ）います。"
+ },
+ {
+  "id": "e5445cba4c",
+  "ko": "안녕하세요? 바야르예요.",
+  "en": "Hello? This is Bayar.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "こんにちは。バヤルです。"
+ },
+ {
+  "id": "da3de6e339",
+  "ko": "지금 어디에 있어요?",
+  "en": "Where are you now?",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "今（いま）どこにいますか？"
+ },
+ {
+  "id": "4b69d14a5a",
+  "ko": "모자가 어디에 있어요?",
+  "en": "Where is the hat?",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "帽子（ぼうし）はどこにありますか？"
+ },
+ {
+  "id": "d568a783b1",
+  "ko": "책상 위에 있어요.",
+  "en": "It's on the desk.",
+  "tags": [
+   "Book1A::Unit1::Sentences"
+  ],
+  "ja": "机（つくえ）の上（うえ）にあります。"
+ },
+ {
+  "id": "6df47d6597",
+  "ko": "오전",
+  "en": "Morning, AM",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "午前（ごぜん）"
+ },
+ {
+  "id": "3d3c14d00d",
+  "ko": "오후",
+  "en": "Afternoon, PM",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "午後（ごご）"
+ },
+ {
+  "id": "c394ea9844",
+  "ko": "시",
+  "en": "(marks the hour when telling time)",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "～時（じ）"
+ },
+ {
+  "id": "4924ffede4",
+  "ko": "분",
+  "en": "(marks the minute when telling time)",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "～分（ふん）"
+ },
+ {
+  "id": "174d2f3b09",
+  "ko": "한 시",
+  "en": "One o'clock",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "1時（いちじ）"
+ },
+ {
+  "id": "3e36115f5c",
+  "ko": "두 시",
+  "en": "Two o'clock",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "2時（にじ）"
+ },
+ {
+  "id": "8e127f8f19",
+  "ko": "세 시",
+  "en": "Three o'clock",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "3時（さんじ）"
+ },
+ {
+  "id": "807ea99619",
+  "ko": "네 시",
+  "en": "Four o'clock",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "4時（よじ）"
+ },
+ {
+  "id": "04d5f6df46",
+  "ko": "다섯 시",
+  "en": "Five o'clock",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "5時（ごじ）"
+ },
+ {
+  "id": "0e16a13d11",
+  "ko": "여섯 시",
+  "en": "Six o'clock",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "6時（ろくじ）"
+ },
+ {
+  "id": "d6b1184bb5",
+  "ko": "일곱 시",
+  "en": "Seven o'clock",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "7時（しちじ）"
+ },
+ {
+  "id": "d0c8b1ba89",
+  "ko": "여덟 시",
+  "en": "Eight o'clock",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "8時（はちじ）"
+ },
+ {
+  "id": "e10e0af7f0",
+  "ko": "아홉 시",
+  "en": "Nine o'clock",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "9時（くじ）"
+ },
+ {
+  "id": "cecb76096f",
+  "ko": "열 시",
+  "en": "Ten o'clock",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "10時（じゅうじ）"
+ },
+ {
+  "id": "b2a5eaa274",
+  "ko": "열한 시",
+  "en": "Eleven o'clock",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "11時（じゅういちじ）"
+ },
+ {
+  "id": "3e423623a3",
+  "ko": "열두 시",
+  "en": "Twelve o'clock",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "12時（じゅうにじ）"
+ },
+ {
+  "id": "1110897cb2",
+  "ko": "일어나요.",
+  "en": "(Someone) gets up.",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "起（お）きます。"
+ },
+ {
+  "id": "df1df84ae8",
+  "ko": "자요.",
+  "en": "(Someone) sleeps.",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "寝（ね）ます。"
+ },
+ {
+  "id": "226f9ffd4f",
+  "ko": "가요.",
+  "en": "(Someone) goes.",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "行（い）きます。"
+ },
+ {
+  "id": "74971a27c6",
+  "ko": "와요.",
+  "en": "(Someone) comes.",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "来（き）ます。"
+ },
+ {
+  "id": "40de8ee2e9",
+  "ko": "체육관",
+  "en": "Gymnasium",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "体育館（たいいくかん）"
+ },
+ {
+  "id": "ab9fe33ab7",
+  "ko": "공항",
+  "en": "Airport",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "空港（くうこう）"
+ },
+ {
+  "id": "6b224f4cbc",
+  "ko": "병원",
+  "en": "Hospital",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "病院（びょういん）"
+ },
+ {
+  "id": "96a32637e4",
+  "ko": "학생 식당",
+  "en": "Student cafeteria",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "学生食堂（がくせいしょくどう）"
+ },
+ {
+  "id": "724c877209",
+  "ko": "공부하다",
+  "en": "To study",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "勉強（べんきょう）する"
+ },
+ {
+  "id": "d2eaaca280",
+  "ko": "일하다",
+  "en": "To work",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "働（はたら）く"
+ },
+ {
+  "id": "6ceadd0ea2",
+  "ko": "요리하다",
+  "en": "To cook",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "料理（りょうり）する"
+ },
+ {
+  "id": "f797c467b6",
+  "ko": "식사하다",
+  "en": "To have a meal",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "食事（しょくじ）する"
+ },
+ {
+  "id": "61f844041f",
+  "ko": "이야기하다",
+  "en": "To talk",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "話（はな）す"
+ },
+ {
+  "id": "f08e6dc553",
+  "ko": "전화하다",
+  "en": "To make a phone call",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "電話（でんわ）する"
+ },
+ {
+  "id": "d8c2b874c5",
+  "ko": "운동하다",
+  "en": "To exercise",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "運動（うんどう）する"
+ },
+ {
+  "id": "dc9675400a",
+  "ko": "쇼핑하다",
+  "en": "To shop",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "ショッピングする"
+ },
+ {
+  "id": "e649a0014c",
+  "ko": "숙제하다",
+  "en": "To do one's homework",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "宿題（しゅくだい）をする"
+ },
+ {
+  "id": "b3fd0e6d65",
+  "ko": "세수하다",
+  "en": "To wash one's face",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "顔（かお）を洗（あら）う"
+ },
+ {
+  "id": "84f569e95d",
+  "ko": "샤워하다",
+  "en": "To take a shower",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "シャワーを浴（あ）びる"
+ },
+ {
+  "id": "435d4766a5",
+  "ko": "게임하다",
+  "en": "To play video games",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "ゲームをする"
+ },
+ {
+  "id": "7cd7a4164c",
+  "ko": "저녁 식사하다",
+  "en": "To have dinner",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "夕食（ゆうしょく）を食（た）べる"
+ },
+ {
+  "id": "4b557412a2",
+  "ko": "지금",
+  "en": "Now",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "今（いま）"
+ },
+ {
+  "id": "9107348152",
+  "ko": "저도",
+  "en": "I/me too",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "私（わたし）も"
+ },
+ {
+  "id": "a646780049",
+  "ko": "같이",
+  "en": "Together",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "一緒（いっしょ）に"
+ },
+ {
+  "id": "9f4eff5501",
+  "ko": "그럼",
+  "en": "Then, in that case",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "じゃあ"
+ },
+ {
+  "id": "54eb19fcd9",
+  "ko": "명동",
+  "en": "Myeongdong",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "ミョンドン（明洞）"
+ },
+ {
+  "id": "4638a63c8d",
+  "ko": "남산 서울타워",
+  "en": "Namsan Seoul Tower",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "ナムサンソウルタワー"
+ },
+ {
+  "id": "289966ef10",
+  "ko": "한강 공원",
+  "en": "Hangang Park",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "ハンガン（漢江）公園（こうえん）"
+ },
+ {
+  "id": "b62483ff9d",
+  "ko": "롯데월드",
+  "en": "Lotte World",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "ロッテワールド"
+ },
+ {
+  "id": "50a96bc452",
+  "ko": "보통",
+  "en": "Usually",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "普通（ふつう）"
+ },
+ {
+  "id": "d3682ac77b",
+  "ko": "아침 식사해요.",
+  "en": "(Someone) has breakfast.",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "朝食（ちょうしょく）を食（た）べます。"
+ },
+ {
+  "id": "fee6a9f07d",
+  "ko": "점심 식사해요.",
+  "en": "(Someone) has lunch.",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "昼食（ちゅうしょく）を食（た）べます。"
+ },
+ {
+  "id": "642c093c4d",
+  "ko": "샌프란시스코",
+  "en": "San Francisco",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "サンフランシスコ"
+ },
+ {
+  "id": "e38ad6c27f",
+  "ko": "사람들",
+  "en": "People",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "人（ひと）たち"
+ },
+ {
+  "id": "e83616f838",
+  "ko": "학생들",
+  "en": "Students",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "学生（がくせい）たち"
+ },
+ {
+  "id": "ad057d7178",
+  "ko": "길",
+  "en": "Way, road",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "道（みち）"
+ },
+ {
+  "id": "6888cd4285",
+  "ko": "자동차가 많아요.",
+  "en": "There are a lot of cars.",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "車（くるま）が多（おお）いです。"
+ },
+ {
+  "id": "bec72c222b",
+  "ko": "시험",
+  "en": "Test",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "試験（しけん）"
+ },
+ {
+  "id": "877876681a",
+  "ko": "호주",
+  "en": "Australia",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "オーストラリア"
+ },
+ {
+  "id": "307d4c4cf0",
+  "ko": "시드니",
+  "en": "Sydney",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "シドニー"
+ },
+ {
+  "id": "b03a66a062",
+  "ko": "베를린",
+  "en": "Berlin",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "ベルリン"
+ },
+ {
+  "id": "151e326db3",
+  "ko": "친구",
+  "en": "Friend",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "友達（ともだち）"
+ },
+ {
+  "id": "52193cedf1",
+  "ko": "수업",
+  "en": "Class",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "授業（じゅぎょう）"
+ },
+ {
+  "id": "59b2a47db2",
+  "ko": "밤",
+  "en": "Night",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "夜（よる）"
+ },
+ {
+  "id": "8934039c6c",
+  "ko": "조용해요.",
+  "en": "It is quiet.",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "静（しず）かです。"
+ },
+ {
+  "id": "baaebf9827",
+  "ko": "방",
+  "en": "Room",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "部屋（へや）"
+ },
+ {
+  "id": "3ecb40d7f5",
+  "ko": "회의",
+  "en": "Meeting",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "会議（かいぎ）"
+ },
+ {
+  "id": "dceabf6158",
+  "ko": "내일",
+  "en": "Tomorrow",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "明日（あした）"
+ },
+ {
+  "id": "c89bf8989f",
+  "ko": "저녁",
+  "en": "Evening",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "夕方（ゆうがた）"
+ },
+ {
+  "id": "7f163fd3e4",
+  "ko": "정말요?",
+  "en": "Really?",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "本当（ほんとう）ですか？"
+ },
+ {
+  "id": "437d885ce0",
+  "ko": "누가",
+  "en": "Who",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "誰（だれ）が"
+ },
+ {
+  "id": "651cc0bd6f",
+  "ko": "미안해요.",
+  "en": "I'm sorry.",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "ごめんなさい。"
+ },
+ {
+  "id": "62242780ca",
+  "ko": "약속이 있어요.",
+  "en": "I have plans.",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "約束（やくそく）があります。"
+ },
+ {
+  "id": "9c8ae2fe51",
+  "ko": "다음에",
+  "en": "Next time, another time",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "今度（こんど）"
+ },
+ {
+  "id": "085f3e85ec",
+  "ko": "제 친구",
+  "en": "My friend",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "私（わたし）の友達（ともだち）"
+ },
+ {
+  "id": "f6f843a933",
+  "ko": "내일 같이 만나요.",
+  "en": "See you tomorrow.",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "明日（あした）また会（あ）いましょう。"
+ },
+ {
+  "id": "678750ec1f",
+  "ko": "지금 몇 시예요?",
+  "en": "What time is it now?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "今（いま）何時（なんじ）ですか？"
+ },
+ {
+  "id": "9e085b5180",
+  "ko": "한 시예요.",
+  "en": "It's 1:00.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "1時（いちじ）です。"
+ },
+ {
+  "id": "1a7b9c805c",
+  "ko": "오전 다섯 시 이십 분이에요.",
+  "en": "It's 5:20 AM.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "午前（ごぜん）5時（ごじ）20分（にじゅっぷん）です。"
+ },
+ {
+  "id": "c8b2d02946",
+  "ko": "한 시 삼십 분이에요.",
+  "en": "It's 1:30.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "1時（いちじ）30分（さんじゅっぷん）です。"
+ },
+ {
+  "id": "15f7aba27d",
+  "ko": "한 시 반이에요.",
+  "en": "It's half past one.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "1時半（いちじはん）です。"
+ },
+ {
+  "id": "56737e9e77",
+  "ko": "몇 시에 일어나요?",
+  "en": "What time do you get up?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "何時（なんじ）に起（お）きますか？"
+ },
+ {
+  "id": "b06c19cff1",
+  "ko": "일곱 시에 일어나요.",
+  "en": "I get up at 7:00.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "7時（しちじ）に起（お）きます。"
+ },
+ {
+  "id": "cc00dd92d9",
+  "ko": "몇 시에 자요?",
+  "en": "What time do you go to bed?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "何時（なんじ）に寝（ね）ますか？"
+ },
+ {
+  "id": "e68c25e790",
+  "ko": "어디에 가요?",
+  "en": "Where are you going?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "どこに行（い）きますか？"
+ },
+ {
+  "id": "7b466c72fc",
+  "ko": "회사에 가요.",
+  "en": "I'm going to the office.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "会社（かいしゃ）に行（い）きます。"
+ },
+ {
+  "id": "cf9524e03f",
+  "ko": "한 시에 어디에 가요?",
+  "en": "Where do you go at 1:00?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "1時（いちじ）にどこに行（い）きますか？"
+ },
+ {
+  "id": "8cfb127b80",
+  "ko": "(한 시에) 학생 식당에 가요.",
+  "en": "I go to the student cafeteria (at 1:00).",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "（1時（いちじ）に）学生食堂（がくせいしょくどう）に行（い）きます。"
+ },
+ {
+  "id": "305039eee4",
+  "ko": "9시에 학교에 와요.",
+  "en": "I come to school at 9:00.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "9時（くじ）に学校（がっこう）に来（き）ます。"
+ },
+ {
+  "id": "8d21b911b8",
+  "ko": "몇 시에 식당에 가요?",
+  "en": "What time do you go to the restaurant?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "何時（なんじ）に食堂（しょくどう）に行（い）きますか？"
+ },
+ {
+  "id": "e233708c70",
+  "ko": "한 시에 (식당에) 가요.",
+  "en": "I go (to the restaurant) at 1:00.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "1時（いちじ）に（食堂（しょくどう）に）行（い）きます。"
+ },
+ {
+  "id": "9f13433641",
+  "ko": "뭐 해요?",
+  "en": "What are you doing?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "何（なに）をしていますか？"
+ },
+ {
+  "id": "7d10e26111",
+  "ko": "공부해요.",
+  "en": "I'm studying.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "勉強（べんきょう）します。"
+ },
+ {
+  "id": "9cf9f77c13",
+  "ko": "일해요.",
+  "en": "I'm working.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "働（はたら）きます。"
+ },
+ {
+  "id": "03af2d47ff",
+  "ko": "오후 세 시에 뭐 해요?",
+  "en": "What do you do at 3:00 pm?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "午後（ごご）3時（さんじ）に何（なに）をしますか？"
+ },
+ {
+  "id": "8059274c00",
+  "ko": "(세 시에) 숙제해요.",
+  "en": "I do my homework (at 3:00).",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "（3時（さんじ）に）宿題（しゅくだい）をします。"
+ },
+ {
+  "id": "e01ca6c4f1",
+  "ko": "몇 시에 숙제해요?",
+  "en": "What time do you do your homework?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "何時（なんじ）に宿題（しゅくだい）をしますか？"
+ },
+ {
+  "id": "75564643de",
+  "ko": "세 시에 숙제해요.",
+  "en": "I do my homework at 3:00.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "3時（さんじ）に宿題（しゅくだい）をします。"
+ },
+ {
+  "id": "01c7b0c3fb",
+  "ko": "앤디 씨, 안녕하세요? 지금 어디에 가요?",
+  "en": "Hello, Andy. Where are you going now?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "アンディさん、こんにちは。今（いま）どこに行（い）きますか？"
+ },
+ {
+  "id": "0ff308f5a6",
+  "ko": "체육관에 가요. 수잔 씨는 어디에 가요?",
+  "en": "I'm going to the gym. Where are you going, Susan?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "体育館（たいいくかん）に行（い）きます。スーザンさんはどこに行（い）きますか？"
+ },
+ {
+  "id": "36e22e986a",
+  "ko": "저도 체육관에 가요.",
+  "en": "I'm going to the gym, too.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "私（わたし）も体育館（たいいくかん）に行（い）きます。"
+ },
+ {
+  "id": "c182fb14bb",
+  "ko": "아, 그래요? 같이 가요.",
+  "en": "Oh, really? Let's go together.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "あ、そうですか。一緒（いっしょ）に行（い）きましょう。"
+ },
+ {
+  "id": "22db42321f",
+  "ko": "렌핑 씨, 오늘 오후에 공부해요?",
+  "en": "Lenping, are you studying this afternoon?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "レンピンさん、今日（きょう）の午後（ごご）に勉強（べんきょう）しますか？"
+ },
+ {
+  "id": "f80864a2d1",
+  "ko": "아니요.",
+  "en": "No.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "いいえ。"
+ },
+ {
+  "id": "529225ad04",
+  "ko": "그럼 뭐 해요?",
+  "en": "So what are you doing?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "じゃあ、何（なに）をしますか？"
+ },
+ {
+  "id": "8f57530dd4",
+  "ko": "명동에 가요.",
+  "en": "I'm going to Myeongdong.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "ミョンドンに行（い）きます。"
+ },
+ {
+  "id": "34ccef96aa",
+  "ko": "한스 씨는 보통 몇 시에 일어나요?",
+  "en": "Hans, what time do you usually get up?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "ハンスさんは普通（ふつう）何時（なんじ）に起（お）きますか？"
+ },
+ {
+  "id": "2b32718c7e",
+  "ko": "여섯 시 삼십 분에 일어나요. 윤호 씨는요?",
+  "en": "I get up at 6:30. How about you, Yunho?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "6時（ろくじ）30分（さんじゅっぷん）に起（お）きます。ユノさんは？"
+ },
+ {
+  "id": "c08ef0592c",
+  "ko": "저는 여섯 시에 일어나요. 그럼 몇 시에 자요?",
+  "en": "I get up at 6:00. So what time do you go to bed?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "私（わたし）は6時（ろくじ）に起（お）きます。じゃあ、何時（なんじ）に寝（ね）ますか？"
+ },
+ {
+  "id": "b63b88ecea",
+  "ko": "열한 시에 자요.",
+  "en": "I go to bed at 11:00.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "11時（じゅういちじ）に寝（ね）ます。"
+ },
+ {
+  "id": "b56025cca5",
+  "ko": "학교에 와요.",
+  "en": "I come to school.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "学校（がっこう）に来（き）ます。"
+ },
+ {
+  "id": "555172fa92",
+  "ko": "말하기 수업이 끝나요.",
+  "en": "The speaking class ends.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "スピーキングの授業（じゅぎょう）が終（お）わります。"
+ },
+ {
+  "id": "20a2b04f1f",
+  "ko": "쉬는 시간이에요.",
+  "en": "It's break time.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "休（やす）み時間（じかん）です。"
+ },
+ {
+  "id": "ba3875b740",
+  "ko": "한국어 수업이 끝나요.",
+  "en": "The Korean class ends.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "韓国語（かんこくご）の授業（じゅぎょう）が終（お）わります。"
+ },
+ {
+  "id": "adfccce632",
+  "ko": "투안 씨는 보통 몇 시에 일어나요?",
+  "en": "Tuan, what time do you usually get up?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "トゥアンさんは普通（ふつう）何時（なんじ）に起（お）きますか？"
+ },
+ {
+  "id": "912a263c2a",
+  "ko": "일곱 시 반에 일어나요. 앤디 씨는 몇 시에 일어나요?",
+  "en": "I get up at 7:30. Andy, what time do you get up?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "7時半（しちじはん）に起（お）きます。アンディさんは何時（なんじ）に起（お）きますか？"
+ },
+ {
+  "id": "c2c163bfac",
+  "ko": "일곱 시에 일어나요. 그럼 몇 시에 세수해요?",
+  "en": "I get up at 7:00. So what time do you wash your face?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "7時（しちじ）に起（お）きます。じゃあ、何時（なんじ）に顔（かお）を洗（あら）いますか？"
+ },
+ {
+  "id": "086fb9e73a",
+  "ko": "앤디 씨가 지금 친구하고 전화해요.",
+  "en": "Andy is on the phone with a friend now.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "アンディさんが今（いま）友達（ともだち）と電話（でんわ）しています。"
+ },
+ {
+  "id": "0db9f3485c",
+  "ko": "친구가 미국 샌프란시스코에 있어요.",
+  "en": "His friend is in San Francisco, USA.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "友達（ともだち）はアメリカのサンフランシスコにいます。"
+ },
+ {
+  "id": "f1937252d7",
+  "ko": "지금 한국 서울은 오전 여덟 시예요.",
+  "en": "It's 8:00 AM now in Seoul, Korea.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "今（いま）韓国（かんこく）のソウルは午前（ごぜん）8時（はちじ）です。"
+ },
+ {
+  "id": "71567853cb",
+  "ko": "사람들이 회사에 가요.",
+  "en": "People are going to work.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "人（ひと）たちが会社（かいしゃ）に行（い）きます。"
+ },
+ {
+  "id": "8c933dca63",
+  "ko": "학생들이 학교에 가요.",
+  "en": "Students are going to school.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "学生（がくせい）たちが学校（がっこう）に行（い）きます。"
+ },
+ {
+  "id": "d97ef1334e",
+  "ko": "길에 자동차가 많아요.",
+  "en": "There are a lot of cars on the road.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "道（みち）に車（くるま）が多（おお）いです。"
+ },
+ {
+  "id": "60d2d62e55",
+  "ko": "미나 씨가 도서관에 있어요.",
+  "en": "Mina is at the library.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "ミナさんは図書館（としょかん）にいます。"
+ },
+ {
+  "id": "d5f0abbede",
+  "ko": "오후에 시험이 있어요.",
+  "en": "She has a test in the afternoon.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "午後（ごご）に試験（しけん）があります。"
+ },
+ {
+  "id": "5c926576e1",
+  "ko": "지금 호주 시드니는 오전 아홉 시예요.",
+  "en": "It's 9:00 AM now in Sydney, Australia.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "今（いま）オーストラリアのシドニーは午前（ごぜん）9時（くじ）です。"
+ },
+ {
+  "id": "91957bd909",
+  "ko": "시드니에 앤디 씨 친구가 있어요.",
+  "en": "Andy's friend is in Sydney.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "シドニーにアンディさんの友達（ともだち）がいます。"
+ },
+ {
+  "id": "1fb32e96e7",
+  "ko": "이름이 제니예요.",
+  "en": "Her name is Jenny.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "名前（なまえ）はジェニーです。"
+ },
+ {
+  "id": "7b23463b03",
+  "ko": "제니 씨가 지금 공원에 있어요.",
+  "en": "Jenny is at the park now.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "ジェニーさんは今（いま）公園（こうえん）にいます。"
+ },
+ {
+  "id": "dfc6ff7440",
+  "ko": "운동해요.",
+  "en": "She is exercising.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "運動（うんどう）します。"
+ },
+ {
+  "id": "d6b8d5fae4",
+  "ko": "오전에 수업이 없어요.",
+  "en": "She has no class in the morning.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "午前（ごぜん）に授業（じゅぎょう）がありません。"
+ },
+ {
+  "id": "34bdc98ded",
+  "ko": "오후에 학교에 가요.",
+  "en": "She goes to school in the afternoon.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "午後（ごご）に学校（がっこう）に行（い）きます。"
+ },
+ {
+  "id": "74f6aa3b9b",
+  "ko": "지금 독일 베를린은 밤 열두 시예요.",
+  "en": "It's 12:00 at night now in Berlin, Germany.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "今（いま）ドイツのベルリンは夜（よる）12時（じゅうにじ）です。"
+ },
+ {
+  "id": "0e79384dd9",
+  "ko": "길에 사람이 없어요.",
+  "en": "There is nobody on the road.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "道（みち）に人（ひと）がいません。"
+ },
+ {
+  "id": "55e9d5ae98",
+  "ko": "조용해요.",
+  "en": "It is quiet.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "静（しず）かです。"
+ },
+ {
+  "id": "94304d0983",
+  "ko": "한스 씨가 방에 있어요.",
+  "en": "Hans is in his room.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "ハンスさんは部屋（へや）にいます。"
+ },
+ {
+  "id": "cb99579598",
+  "ko": "지금 자요.",
+  "en": "He is sleeping now.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "今（いま）寝（ね）ています。"
+ },
+ {
+  "id": "7754d84ce4",
+  "ko": "오전 여섯 시에 일어나요.",
+  "en": "He gets up at 6:00 AM.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "午前（ごぜん）6時（ろくじ）に起（お）きます。"
+ },
+ {
+  "id": "5398ff3e64",
+  "ko": "일곱 시에 회의가 있어요.",
+  "en": "He has a meeting at 7:00.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "7時（しちじ）に会議（かいぎ）があります。"
+ },
+ {
+  "id": "e3ce499ccb",
+  "ko": "서울은 지금 몇 시예요?",
+  "en": "What time is it in Seoul now?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "ソウルは今（いま）何時（なんじ）ですか？"
+ },
+ {
+  "id": "dac7fd53fe",
+  "ko": "미나 씨가 어디에 있어요?",
+  "en": "Where is Mina?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "ミナさんはどこにいますか？"
+ },
+ {
+  "id": "dc1bc38ad5",
+  "ko": "미나 씨가 뭐 해요? 왜요?",
+  "en": "What is Mina doing? Why?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "ミナさんは何（なに）をしていますか。どうしてですか？"
+ },
+ {
+  "id": "265bd0f23e",
+  "ko": "지금 시드니는 밤이에요?",
+  "en": "Is it night in Sydney now?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "今（いま）シドニーは夜（よる）ですか？"
+ },
+ {
+  "id": "831a77ad6a",
+  "ko": "제니 씨가 오후에 어디에 가요?",
+  "en": "Where does Jenny go in the afternoon?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "ジェニーさんは午後（ごご）にどこに行（い）きますか？"
+ },
+ {
+  "id": "e2fd2ba870",
+  "ko": "지금 베를린은 몇 시예요?",
+  "en": "What time is it in Berlin now?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "今（いま）ベルリンは何時（なんじ）ですか？"
+ },
+ {
+  "id": "8e56ce95c7",
+  "ko": "한스 씨는 몇 시에 회의가 있어요?",
+  "en": "What time does Hans have a meeting?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "ハンスさんは何時（なんじ）に会議（かいぎ）がありますか？"
+ },
+ {
+  "id": "be7a744a81",
+  "ko": "지금 한국 서울은 오전 여덟 시예요. 미나 씨가 도서관에 있어요.",
+  "en": "It's 8:00 AM now in Seoul, Korea. Mina is at the library.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "今（いま）韓国（かんこく）のソウルは午前（ごぜん）8時（はちじ）です。ミナさんは図書館（としょかん）にいます。"
+ },
+ {
+  "id": "8a3bba5538",
+  "ko": "앤디 씨, 내일 저녁 여섯 시에 시간 있어요?",
+  "en": "Andy, are you free tomorrow at 6:00 in the evening?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "アンディさん、明日（あした）の夕方（ゆうがた）6時（ろくじ）に時間（じかん）がありますか？"
+ },
+ {
+  "id": "4e427e1927",
+  "ko": "네, 있어요. 왜요?",
+  "en": "Yes, I am. Why do you ask?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "はい、あります。どうしてですか？"
+ },
+ {
+  "id": "8d13923616",
+  "ko": "제 친구들하고 같이 식사해요. 앤디 씨 반 친구들도 같이 오세요.",
+  "en": "I'm having a meal with my friends. Andy, please bring your classmates too.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "私（わたし）の友達（ともだち）と一緒（いっしょ）に食事（しょくじ）します。アンディさんのクラスメートも一緒（いっしょ）に来（き）てください。"
+ },
+ {
+  "id": "ea53ad26ff",
+  "ko": "정말요? 좋아요.",
+  "en": "Really? That sounds good.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "本当（ほんとう）ですか。いいですね。"
+ },
+ {
+  "id": "3ebb89ee07",
+  "ko": "누가 내일 시간이 있어요?",
+  "en": "Who is free tomorrow?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "誰（だれ）が明日（あした）時間（じかん）がありますか？"
+ },
+ {
+  "id": "9c768517b9",
+  "ko": "완 씨가 내일 몇 시에 공항에 가요?",
+  "en": "What time is Wan going to the airport tomorrow?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "ワンさんは明日（あした）何時（なんじ）に空港（くうこう）に行（い）きますか？"
+ },
+ {
+  "id": "b26a3a7498",
+  "ko": "완 씨가 내일 왜 공항에 가요?",
+  "en": "Why is Wan going to the airport tomorrow?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "ワンさんは明日（あした）どうして空港（くうこう）に行（い）きますか？"
+ },
+ {
+  "id": "51a9a2b4d4",
+  "ko": "사라 씨가 내일 시간이 있어요? 왜요?",
+  "en": "Is Sarah free tomorrow? Why?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "サラさんは明日（あした）時間（じかん）がありますか。どうしてですか？"
+ },
+ {
+  "id": "bde6f24d4c",
+  "ko": "사라 씨가 누구하고 영화관에 가요?",
+  "en": "Who is Sarah going to the movie theater with?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "サラさんは誰（だれ）と映画館（えいがかん）に行（い）きますか？"
+ },
+ {
+  "id": "33bc8a312e",
+  "ko": "완 씨, 내일 뭐 해요? 내일 저녁에 시간 있어요? 같이 식사해요.",
+  "en": "Wan, what are you doing tomorrow? Are you free tomorrow evening? Let's have a meal together.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "ワンさん、明日（あした）何（なに）をしますか。明日（あした）の夕方（ゆうがた）時間（じかん）がありますか。一緒（いっしょ）に食事（しょくじ）しましょう。"
+ },
+ {
+  "id": "dfdee262ab",
+  "ko": "몇 시에 공항에 가요?",
+  "en": "What time are you going to the airport?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "何時（なんじ）に空港（くうこう）に行（い）きますか？"
+ },
+ {
+  "id": "f5b9ff9a2f",
+  "ko": "아, 그래요?",
+  "en": "Oh, really?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "あ、そうですか？"
+ },
+ {
+  "id": "845e7c6911",
+  "ko": "미안해요.",
+  "en": "I'm sorry.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "ごめんなさい。"
+ },
+ {
+  "id": "891b9e0421",
+  "ko": "그럼 내일 저녁 여섯 시에 시간이 있어요?",
+  "en": "Then are you free tomorrow at 6:00 in the evening?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "じゃあ、明日（あした）の夕方（ゆうがた）6時（ろくじ）に時間（じかん）がありますか？"
+ },
+ {
+  "id": "2e40b23a4f",
+  "ko": "내일 완 씨는 공항에 가요.",
+  "en": "Tomorrow Wan is going to the airport.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "明日（あした）ワンさんは空港（くうこう）に行（い）きます。"
+ },
+ {
+  "id": "8d6fca1b82",
+  "ko": "완 씨 친구가 한국에 와요.",
+  "en": "Wan's friend is coming to Korea.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "ワンさんの友達（ともだち）が韓国（かんこく）に来（き）ます。"
+ },
+ {
+  "id": "8c29a8b8dd",
+  "ko": "사라 씨는 내일 바야르 씨하고 영화관에 가요.",
+  "en": "Tomorrow Sarah is going to the movie theater with Bayar.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "サラさんは明日（あした）バヤルさんと映画館（えいがかん）に行（い）きます。"
+ },
+ {
+  "id": "e31bd1dd3b",
+  "ko": "내일 완 씨하고 사라 씨는 시간이 없어요.",
+  "en": "Tomorrow Wan and Sarah are not free.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "明日（あした）ワンさんとサラさんは時間（じかん）がありません。"
+ },
+ {
+  "id": "7283fb8de8",
+  "ko": "한스 씨는 시간이 있어요.",
+  "en": "Hans is free.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "ハンスさんは時間（じかん）があります。"
+ },
+ {
+  "id": "46562c8493",
+  "ko": "내일 앤디 씨는 미나 씨하고 한스 씨하고 같이 식사해요.",
+  "en": "Tomorrow Andy is having a meal with Mina and Hans.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "明日（あした）アンディさんはミナさんとハンスさんと一緒（いっしょ）に食事（しょくじ）します。"
+ },
+ {
+  "id": "47f0a6526c",
+  "ko": "내일 저녁에 시간 있어요? 같이 식사해요.",
+  "en": "Are you free tomorrow evening? Let's have a meal together.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "明日（あした）の夕方（ゆうがた）時間（じかん）がありますか。一緒（いっしょ）に食事（しょくじ）しましょう。"
+ },
+ {
+  "id": "3d07af6633",
+  "ko": "내일 오후에 회사에 가요?",
+  "en": "Are you going to the office tomorrow afternoon?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "明日（あした）の午後（ごご）に会社（かいしゃ）に行（い）きますか？"
+ },
+ {
+  "id": "99014b81ac",
+  "ko": "아니요, 왜요?",
+  "en": "No, why do you ask?",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "いいえ、どうしてですか？"
+ },
+ {
+  "id": "e2ba707f2d",
+  "ko": "네, 좋아요.",
+  "en": "Yes, that sounds good.",
+  "tags": [
+   "Book1A::Unit2::Sentences"
+  ],
+  "ja": "はい、いいですね。"
+ },
+ {
+  "id": "af395b1107",
+  "ko": "(비자를) 받다",
+  "en": "To receive (a visa)",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "ビザをもらう"
+ },
+ {
+  "id": "05158131db",
+  "ko": "(친구를) 만나다",
+  "en": "To meet (a friend)",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "友達（ともだち）に会（あ）う"
+ },
+ {
+  "id": "dbbaea66f7",
+  "ko": "(옷을) 사다",
+  "en": "To buy (clothing)",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "服（ふく）を買（か）う"
+ },
+ {
+  "id": "fbdd6f2f8b",
+  "ko": "(영화를) 보다",
+  "en": "To watch (a movie)",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "映画（えいが）を見（み）る"
+ },
+ {
+  "id": "22ea94421f",
+  "ko": "(밥을) 먹다",
+  "en": "To eat (rice)",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "ご飯（はん）を食（た）べる"
+ },
+ {
+  "id": "d319bbe6ff",
+  "ko": "(책을) 읽다",
+  "en": "To read (a book)",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "本（ほん）を読（よ）む"
+ },
+ {
+  "id": "e83f657985",
+  "ko": "(영어를) 가르치다",
+  "en": "To teach (English)",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "英語（えいご）を教（おし）える"
+ },
+ {
+  "id": "868721b178",
+  "ko": "(커피를) 마시다",
+  "en": "To drink (coffee)",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "コーヒーを飲（の）む"
+ },
+ {
+  "id": "5efe331337",
+  "ko": "(책을) 빌리다",
+  "en": "To borrow (a book)",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "本（ほん）を借（か）りる"
+ },
+ {
+  "id": "c7bf995cd7",
+  "ko": "(테니스를) 배우다",
+  "en": "To learn (tennis)",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "テニスを習（なら）う"
+ },
+ {
+  "id": "d6217221ea",
+  "ko": "(춤을) 추다",
+  "en": "To dance",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "ダンスを踊（おど）る"
+ },
+ {
+  "id": "9978a734e2",
+  "ko": "(음악을) 듣다",
+  "en": "To listen (to music)",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "音楽（おんがく）を聞（き）く"
+ },
+ {
+  "id": "3fa7d8a56e",
+  "ko": "싫어해요.",
+  "en": "(I) don't like (something).",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "嫌（きら）いです。"
+ },
+ {
+  "id": "5c2ee82877",
+  "ko": "한국 음식",
+  "en": "Korean food",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "韓国（かんこく）の食（た）べ物（もの）"
+ },
+ {
+  "id": "c1302974e5",
+  "ko": "김밥",
+  "en": "Gimbap",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "キンパ"
+ },
+ {
+  "id": "a4dc7b4ac0",
+  "ko": "요가",
+  "en": "Yoga",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "ヨガ"
+ },
+ {
+  "id": "cf31a57f27",
+  "ko": "테니스장",
+  "en": "Tennis court",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "テニスコート"
+ },
+ {
+  "id": "922ddc0051",
+  "ko": "일본어",
+  "en": "Japanese language",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "日本語（にほんご）"
+ },
+ {
+  "id": "339a09255e",
+  "ko": "테니스를 치다",
+  "en": "To play tennis",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "テニスをする"
+ },
+ {
+  "id": "67ab5fd970",
+  "ko": "요가를 하다",
+  "en": "To do yoga",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "ヨガをする"
+ },
+ {
+  "id": "b37c704026",
+  "ko": "한국 요리",
+  "en": "Korean cooking",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "韓国料理（かんこくりょうり）"
+ },
+ {
+  "id": "b848e0dbb9",
+  "ko": "요리 교실",
+  "en": "Culinary classroom",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "料理教室（りょうりきょうしつ）"
+ },
+ {
+  "id": "972bdd6a83",
+  "ko": "친구 집",
+  "en": "A friend's house",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "友達（ともだち）の家（いえ）"
+ },
+ {
+  "id": "6df9e9f152",
+  "ko": "댄스 교실",
+  "en": "Dance classroom",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "ダンス教室（きょうしつ）"
+ },
+ {
+  "id": "af4d100537",
+  "ko": "축구하다",
+  "en": "To play football/soccer",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "サッカーをする"
+ },
+ {
+  "id": "485532f5ed",
+  "ko": "운동장",
+  "en": "Sports field",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "運動場（うんどうじょう）"
+ },
+ {
+  "id": "1cd000985a",
+  "ko": "산책하다",
+  "en": "To take a walk",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "散歩（さんぽ）する"
+ },
+ {
+  "id": "6ae77f0bfd",
+  "ko": "월요일",
+  "en": "Monday",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "月曜日（げつようび）"
+ },
+ {
+  "id": "3f27729ae1",
+  "ko": "화요일",
+  "en": "Tuesday",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "火曜日（かようび）"
+ },
+ {
+  "id": "2297ac9c1c",
+  "ko": "수요일",
+  "en": "Wednesday",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "水曜日（すいようび）"
+ },
+ {
+  "id": "536d523353",
+  "ko": "목요일",
+  "en": "Thursday",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "木曜日（もくようび）"
+ },
+ {
+  "id": "2506379f36",
+  "ko": "금요일",
+  "en": "Friday",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "金曜日（きんようび）"
+ },
+ {
+  "id": "4af8366281",
+  "ko": "토요일",
+  "en": "Saturday",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "土曜日（どようび）"
+ },
+ {
+  "id": "40fb8ff5a3",
+  "ko": "일요일",
+  "en": "Sunday",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "日曜日（にちようび）"
+ },
+ {
+  "id": "9654ee26a0",
+  "ko": "태권도",
+  "en": "Taekwondo",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "テコンドー"
+ },
+ {
+  "id": "a684d98d1a",
+  "ko": "중국 음식",
+  "en": "Chinese food",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "中華料理（ちゅうかりょうり）"
+ },
+ {
+  "id": "4f22797cf3",
+  "ko": "아주",
+  "en": "Very",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "とても"
+ },
+ {
+  "id": "6053a32085",
+  "ko": "불고기",
+  "en": "Bulgogi",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "プルコギ"
+ },
+ {
+  "id": "513293b496",
+  "ko": "만들다",
+  "en": "To make",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "作（つく）る"
+ },
+ {
+  "id": "ecabcc3757",
+  "ko": "여행하다",
+  "en": "To travel",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "旅行（りょこう）する"
+ },
+ {
+  "id": "4841c42f40",
+  "ko": "월요일부터",
+  "en": "From Monday",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "月曜日（げつようび）から"
+ },
+ {
+  "id": "3299570757",
+  "ko": "금요일까지",
+  "en": "To Friday",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "金曜日（きんようび）まで"
+ },
+ {
+  "id": "f2766d44a8",
+  "ko": "바빠요.",
+  "en": "I'm busy.",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "忙（いそが）しいです。"
+ },
+ {
+  "id": "a256a8e0c3",
+  "ko": "등산하다",
+  "en": "To go hiking",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "山登（やまのぼ）りをする"
+ },
+ {
+  "id": "e68188830d",
+  "ko": "영화표",
+  "en": "Movie tickets",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "映画（えいが）のチケット"
+ },
+ {
+  "id": "1010c72e8d",
+  "ko": "무슨 영화예요?",
+  "en": "What movie is it?",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "何（なん）の映画（えいが）ですか？"
+ },
+ {
+  "id": "7cf7c701e9",
+  "ko": "그 영화",
+  "en": "That movie",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "その映画（えいが）"
+ },
+ {
+  "id": "30861068e0",
+  "ko": "재미있어요.",
+  "en": "It's fun.",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "おもしろいです。"
+ },
+ {
+  "id": "32fc5aea8d",
+  "ko": "몰라요.",
+  "en": "(I) don't know (something).",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "知（し）りません。"
+ },
+ {
+  "id": "add67168e7",
+  "ko": "용산 역",
+  "en": "Yongsan Station",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "龍山駅（ヨンサンえき）"
+ },
+ {
+  "id": "1488e3cc5d",
+  "ko": "1번 출구",
+  "en": "Exit 1",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "1番出口（いちばんでぐち）"
+ },
+ {
+  "id": "fe672ecaef",
+  "ko": "아메리카노를 좋아해요?",
+  "en": "Do you like Americano?",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "アメリカーノが好（す）きですか？"
+ },
+ {
+  "id": "1fb50b02e3",
+  "ko": "네, 아메리카노를 좋아해요.",
+  "en": "Yes, I like Americano.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "はい、アメリカーノが好（す）きです。"
+ },
+ {
+  "id": "fd3b8c8f1a",
+  "ko": "아메리카노를 좋아해요.",
+  "en": "I like Americano.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "アメリカーノが好（す）きです。"
+ },
+ {
+  "id": "07793aff56",
+  "ko": "운동을 좋아해요?",
+  "en": "Do you like exercise?",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "運動（うんどう）が好（す）きですか？"
+ },
+ {
+  "id": "6080cd491b",
+  "ko": "네, 운동을 좋아해요.",
+  "en": "Yes, I like exercise.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "はい、運動（うんどう）が好（す）きです。"
+ },
+ {
+  "id": "85b18d34f0",
+  "ko": "아니요, 운동을 싫어해요.",
+  "en": "No, I don't like exercise.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "いいえ、運動（うんどう）は嫌（きら）いです。"
+ },
+ {
+  "id": "5c922c6e4b",
+  "ko": "뭐 해요?",
+  "en": "What are you doing?",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "何（なに）をしていますか？"
+ },
+ {
+  "id": "00bcc557b5",
+  "ko": "친구를 만나요.",
+  "en": "I'm meeting a friend.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "友達（ともだち）に会（あ）います。"
+ },
+ {
+  "id": "eaf83a49c1",
+  "ko": "비자를 받아요",
+  "en": "I receive a visa",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "ビザをもらいます"
+ },
+ {
+  "id": "383fef8c4e",
+  "ko": "옷을 사요",
+  "en": "I buy clothes",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "服（ふく）を買（か）います"
+ },
+ {
+  "id": "b774ae533e",
+  "ko": "영화를 봐요",
+  "en": "I watch a movie",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "映画（えいが）を見（み）ます"
+ },
+ {
+  "id": "6fe11dca97",
+  "ko": "밥을 먹어요",
+  "en": "I eat a meal",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "ご飯（はん）を食（た）べます"
+ },
+ {
+  "id": "2f9f83cb3e",
+  "ko": "책을 읽어요",
+  "en": "I read a book",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "本（ほん）を読（よ）みます"
+ },
+ {
+  "id": "98c080e254",
+  "ko": "영어를 가르쳐요",
+  "en": "I teach English",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "英語（えいご）を教（おし）えます"
+ },
+ {
+  "id": "78dfa29810",
+  "ko": "커피를 마셔요",
+  "en": "I drink coffee",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "コーヒーを飲（の）みます"
+ },
+ {
+  "id": "2c192e955e",
+  "ko": "책을 빌려요",
+  "en": "I borrow a book",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "本（ほん）を借（か）ります"
+ },
+ {
+  "id": "f115a7cacd",
+  "ko": "테니스를 배워요",
+  "en": "I learn tennis",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "テニスを習（なら）います"
+ },
+ {
+  "id": "a56f4aed26",
+  "ko": "춤을 춰요",
+  "en": "I dance",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "ダンスを踊（おど）ります"
+ },
+ {
+  "id": "2d3e2ce212",
+  "ko": "음악을 들어요",
+  "en": "I listen to music",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "音楽（おんがく）を聞（き）きます"
+ },
+ {
+  "id": "a50d7c21a1",
+  "ko": "지금 뭐 해요?",
+  "en": "What are you doing now?",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "今（いま）何（なに）をしていますか？"
+ },
+ {
+  "id": "75e0d46bb7",
+  "ko": "드라마를 봐요.",
+  "en": "I'm watching a drama.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "ドラマを見（み）ます。"
+ },
+ {
+  "id": "a0c8ff4a2b",
+  "ko": "어디에서 책을 빌려요?",
+  "en": "Where do you borrow books?",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "どこで本（ほん）を借（か）りますか？"
+ },
+ {
+  "id": "f74654acfa",
+  "ko": "도서관에서 빌려요.",
+  "en": "I borrow them at the library.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "図書館（としょかん）で借（か）ります。"
+ },
+ {
+  "id": "fea67d9d10",
+  "ko": "학교에서 한국어를 공부해요.",
+  "en": "I study Korean at school.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "学校（がっこう）で韓国語（かんこくご）を勉強（べんきょう）します。"
+ },
+ {
+  "id": "9897b5b226",
+  "ko": "어디에서 한국어를 공부해요?",
+  "en": "Where do you study Korean?",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "どこで韓国語（かんこくご）を勉強（べんきょう）しますか？"
+ },
+ {
+  "id": "fb2b8ca2bf",
+  "ko": "카페에서 한국어를 공부해요.",
+  "en": "I study Korean at the cafe.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "カフェで韓国語（かんこくご）を勉強（べんきょう）します。"
+ },
+ {
+  "id": "042e3bf419",
+  "ko": "도서관에서 한국어를 공부해요.",
+  "en": "I study Korean at the library.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "図書館（としょかん）で韓国語（かんこくご）を勉強（べんきょう）します。"
+ },
+ {
+  "id": "f4279d612a",
+  "ko": "학교에서 뭐 해요?",
+  "en": "What do you do at school?",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "学校（がっこう）で何（なに）をしますか？"
+ },
+ {
+  "id": "70b3c12a70",
+  "ko": "하루카 씨, 오늘 일본어를 가르쳐요?",
+  "en": "Haruka, are you teaching Japanese today?",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "ハルカさん、今日（きょう）日本語（にほんご）を教（おし）えますか？"
+ },
+ {
+  "id": "7ee25a53c1",
+  "ko": "아니요.",
+  "en": "No.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "いいえ。"
+ },
+ {
+  "id": "48d5766bcf",
+  "ko": "그럼 뭐 해요?",
+  "en": "Then what are you doing?",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "では何（なに）をしますか？"
+ },
+ {
+  "id": "62d18eed6a",
+  "ko": "영화를 봐요.",
+  "en": "I'm watching a movie.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "映画（えいが）を見（み）ます。"
+ },
+ {
+  "id": "2f1a885189",
+  "ko": "완 씨, 내일 뭐 해요?",
+  "en": "Wan, what are you doing tomorrow?",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "ワンさん、明日（あした）何（なに）をしますか？"
+ },
+ {
+  "id": "233b30b1b9",
+  "ko": "한국 요리를 배워요.",
+  "en": "I'm learning Korean cooking.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "韓国料理（かんこくりょうり）を習（なら）います。"
+ },
+ {
+  "id": "e6978b18e8",
+  "ko": "어디에서 한국 요리를 배워요?",
+  "en": "Where do you learn Korean cooking?",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "どこで韓国料理（かんこくりょうり）を習（なら）いますか？"
+ },
+ {
+  "id": "e3467c35cc",
+  "ko": "요리 교실에서 한국 요리를 배워요.",
+  "en": "I learn Korean cooking at the culinary classroom.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "料理教室（りょうりきょうしつ）で韓国料理（かんこくりょうり）を習（なら）います。"
+ },
+ {
+  "id": "f632d25454",
+  "ko": "가브리엘 씨, 금요일에 뭐 해요?",
+  "en": "Gabriel, what are you doing on Friday?",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "ガブリエルさん、金曜日（きんようび）に何（なに）をしますか？"
+ },
+ {
+  "id": "11eaac4c3b",
+  "ko": "축구해요.",
+  "en": "I play soccer.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "サッカーをします。"
+ },
+ {
+  "id": "51d1ae53c3",
+  "ko": "어디에서 축구해요?",
+  "en": "Where do you play soccer?",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "どこでサッカーをしますか？"
+ },
+ {
+  "id": "561d72efce",
+  "ko": "학교 운동장에서 축구해요.",
+  "en": "I play soccer at the school sports field.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "学校（がっこう）の運動場（うんどうじょう）でサッカーをします。"
+ },
+ {
+  "id": "926783cc91",
+  "ko": "사라 씨는 금요일에 뭐 해요?",
+  "en": "Sarah, what are you doing on Friday?",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "サラさんは金曜日（きんようび）に何（なに）をしますか？"
+ },
+ {
+  "id": "c0bad03adf",
+  "ko": "저는 친구를 만나요.",
+  "en": "I'm meeting a friend.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "私（わたし）は友達（ともだち）に会（あ）います。"
+ },
+ {
+  "id": "700558c04b",
+  "ko": "몇 번 알아요?",
+  "en": "Which number do you know?",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "何番（なんばん）を知（し）っていますか？"
+ },
+ {
+  "id": "5272877bee",
+  "ko": "3번 알아요.",
+  "en": "I know number 3.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "3番（ばん）を知（し）っています。"
+ },
+ {
+  "id": "1770b1b950",
+  "ko": "거기에서 밥을 먹어요?",
+  "en": "Do you eat there?",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "そこでご飯（はん）を食（た）べますか？"
+ },
+ {
+  "id": "81af7f2e93",
+  "ko": "거기에서 책을 읽어요?",
+  "en": "Do you read books there?",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "そこで本（ほん）を読（よ）みますか？"
+ },
+ {
+  "id": "a79e34fa26",
+  "ko": "거기에서 운동해요?",
+  "en": "Do you exercise there?",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "そこで運動（うんどう）しますか？"
+ },
+ {
+  "id": "c7132e5089",
+  "ko": "네, 운동해요.",
+  "en": "Yes, I exercise.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "はい、運動（うんどう）します。"
+ },
+ {
+  "id": "6446ebc3c9",
+  "ko": "체육관이에요?",
+  "en": "Is it the gymnasium?",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "体育館（たいいくかん）ですか？"
+ },
+ {
+  "id": "a2bf24dba6",
+  "ko": "네, 체육관이에요.",
+  "en": "Yes, it's the gymnasium.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "はい、体育館（たいいくかん）です。"
+ },
+ {
+  "id": "b4464ed6e3",
+  "ko": "저는 월요일에 체육관에서 태권도를 배워요.",
+  "en": "On Monday I learn Taekwondo at the gymnasium.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "私（わたし）は月曜日（げつようび）に体育館（たいいくかん）でテコンドーを習（なら）います。"
+ },
+ {
+  "id": "d50edf5b7b",
+  "ko": "화요일에 친구하고 점심 식사해요.",
+  "en": "On Tuesday I have lunch with a friend.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "火曜日（かようび）に友達（ともだち）と昼食（ちゅうしょく）をします。"
+ },
+ {
+  "id": "c583b5fcf3",
+  "ko": "식당에서 중국 음식을 먹어요.",
+  "en": "I eat Chinese food at the restaurant.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "食堂（しょくどう）で中華料理（ちゅうかりょうり）を食（た）べます。"
+ },
+ {
+  "id": "dd61b963e1",
+  "ko": "금요일에 친구 집에서 영화를 봐요.",
+  "en": "On Friday I watch a movie at my friend's house.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "金曜日（きんようび）に友達（ともだち）の家（いえ）で映画（えいが）を見（み）ます。"
+ },
+ {
+  "id": "29ff457b92",
+  "ko": "일요일에 게임을 해요.",
+  "en": "On Sunday I play games.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "日曜日（にちようび）にゲームをします。"
+ },
+ {
+  "id": "d7b676d974",
+  "ko": "게임을 아주 좋아해요.",
+  "en": "I like games very much.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "ゲームがとても好（す）きです。"
+ },
+ {
+  "id": "5b8a3e98a4",
+  "ko": "저는 월요일에 도서관에서 책을 빌려요.",
+  "en": "On Monday I borrow books at the library.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "私（わたし）は月曜日（げつようび）に図書館（としょかん）で本（ほん）を借（か）ります。"
+ },
+ {
+  "id": "3048aa4c6b",
+  "ko": "화요일에 친구하고 약속이 있어요.",
+  "en": "On Tuesday I have plans with a friend.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "火曜日（かようび）に友達（ともだち）と約束（やくそく）があります。"
+ },
+ {
+  "id": "bf27887eca",
+  "ko": "수요일에 백화점에서 쇼핑해요.",
+  "en": "On Wednesday I shop at the department store.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "水曜日（すいようび）にデパートで買（か）い物（もの）をします。"
+ },
+ {
+  "id": "04535320f7",
+  "ko": "금요일에 집에서 요리해요.",
+  "en": "On Friday I cook at home.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "金曜日（きんようび）に家（いえ）で料理（りょうり）をします。"
+ },
+ {
+  "id": "8cd40fc559",
+  "ko": "불고기를 만들어요.",
+  "en": "I make bulgogi.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "プルコギを作（つく）ります。"
+ },
+ {
+  "id": "0b656c0306",
+  "ko": "일요일에 여행해요.",
+  "en": "On Sunday I travel.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "日曜日（にちようび）に旅行（りょこう）します。"
+ },
+ {
+  "id": "2c256f05a1",
+  "ko": "여행을 좋아해요.",
+  "en": "I like traveling.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "旅行（りょこう）が好（す）きです。"
+ },
+ {
+  "id": "99c8c84a9b",
+  "ko": "저는 월요일부터 금요일까지 아주 바빠요.",
+  "en": "I'm very busy from Monday to Friday.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "私（わたし）は月曜日（げつようび）から金曜日（きんようび）までとても忙（いそが）しいです。"
+ },
+ {
+  "id": "ce75a8734c",
+  "ko": "오전에 학교에서 공부해요.",
+  "en": "In the morning I study at school.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "午前（ごぜん）に学校（がっこう）で勉強（べんきょう）します。"
+ },
+ {
+  "id": "28a4b215b3",
+  "ko": "그리고 오후에 회사에서 일해요.",
+  "en": "And in the afternoon I work at the company.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "そして午後（ごご）に会社（かいしゃ）で働（はたら）きます。"
+ },
+ {
+  "id": "1019c5fc08",
+  "ko": "수요일 오전 일곱 시에 테니스장에서 테니스를 쳐요.",
+  "en": "On Wednesday at seven in the morning I play tennis at the tennis court.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "水曜日（すいようび）の午前（ごぜん）7時（しちじ）にテニスコートでテニスをします。"
+ },
+ {
+  "id": "4033581a46",
+  "ko": "금요일 저녁에 친구를 만나요.",
+  "en": "On Friday evening I meet a friend.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "金曜日（きんようび）の夕方（ゆうがた）に友達（ともだち）に会（あ）います。"
+ },
+ {
+  "id": "08d6f6af56",
+  "ko": "일요일에 등산해요.",
+  "en": "On Sunday I go hiking.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "日曜日（にちようび）に山登（やまのぼ）りをします。"
+ },
+ {
+  "id": "7362ec50ff",
+  "ko": "렌핑 씨는 월요일에 체육관에서 태권도를 배워요.",
+  "en": "Renping learns Taekwondo at the gymnasium on Monday.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "レンピンさんは月曜日（げつようび）に体育館（たいいくかん）でテコンドーを習（なら）います。"
+ },
+ {
+  "id": "64e0bf2fa4",
+  "ko": "사라 씨한테 영화표가 있어요.",
+  "en": "Sarah has movie tickets.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "サラさんは映画（えいが）のチケットを持（も）っています。"
+ },
+ {
+  "id": "67c51ee533",
+  "ko": "그래서 사라 씨는 오늘 앤디 씨하고 영화를 봐요.",
+  "en": "So Sarah is watching a movie with Andy today.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "それでサラさんは今日（きょう）アンディさんと映画（えいが）を見（み）ます。"
+ },
+ {
+  "id": "2fabe70f89",
+  "ko": "사라 씨는 앤디 씨를 어디에서 만나요?",
+  "en": "Where does Sarah meet Andy?",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "サラさんはアンディさんとどこで会（あ）いますか？"
+ },
+ {
+  "id": "5dee37fd5b",
+  "ko": "오늘 바빠요?",
+  "en": "Are you busy today?",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "今日（きょう）忙（いそが）しいですか？"
+ },
+ {
+  "id": "834eb14193",
+  "ko": "그럼 용산 역 1번 출구에서 만나요.",
+  "en": "Then let's meet at Exit 1 of Yongsan Station.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "では龍山駅（ヨンサンえき）1番出口（いちばんでぐち）で会（あ）いましょう。"
+ },
+ {
+  "id": "f28aaf66fd",
+  "ko": "사라 씨가 오늘 앤디 씨하고 같이 영화를 봐요.",
+  "en": "Sarah watches a movie together with Andy today.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "サラさんは今日（きょう）アンディさんと一緒（いっしょ）に映画（えいが）を見（み）ます。"
+ },
+ {
+  "id": "541ca62b10",
+  "ko": "'해리포터'를 봐요.",
+  "en": "They watch 'Harry Potter'.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "「ハリー・ポッター」を見（み）ます。"
+ },
+ {
+  "id": "44bae6bf70",
+  "ko": "그 영화가 아주 재미있어요.",
+  "en": "That movie is very fun.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "その映画（えいが）はとてもおもしろいです。"
+ },
+ {
+  "id": "485b5bc27a",
+  "ko": "사라 씨는 6시에 용산 역에서 앤디 씨를 만나요.",
+  "en": "Sarah meets Andy at Yongsan Station at 6 o'clock.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "サラさんは6時（ろくじ）に龍山駅（ヨンサンえき）でアンディさんに会（あ）います。"
+ },
+ {
+  "id": "6662e7119e",
+  "ko": "왜냐하면 앤디 씨가 영화관을 몰라요.",
+  "en": "Because Andy doesn't know the movie theater.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "なぜならアンディさんは映画館（えいがかん）を知（し）らないからです。"
+ },
+ {
+  "id": "eb0f2c5314",
+  "ko": "영화 좋아해요?",
+  "en": "Do you like movies?",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "映画（えいが）が好（す）きですか？"
+ },
+ {
+  "id": "37745f793a",
+  "ko": "네, 좋아해요.",
+  "en": "Yes, I like them.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "はい、好（す）きです。"
+ },
+ {
+  "id": "f0e7a77ff1",
+  "ko": "영화표가 있어요.",
+  "en": "I have movie tickets.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "映画（えいが）のチケットがあります。"
+ },
+ {
+  "id": "06618d0c00",
+  "ko": "같이 영화 봐요.",
+  "en": "Let's watch a movie together.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "一緒（いっしょ）に映画（えいが）を見（み）ましょう。"
+ },
+ {
+  "id": "dcd48ab883",
+  "ko": "그래요? 좋아요.",
+  "en": "Really? Sounds good.",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "そうですか。いいですね。"
+ },
+ {
+  "id": "08561c55e4",
+  "ko": "무슨 영화예요?",
+  "en": "What movie is it?",
+  "tags": [
+   "Book1A::Unit3::Sentences"
+  ],
+  "ja": "何（なん）の映画（えいが）ですか？"
+ },
+ {
+  "id": "4dffbbc84e",
+  "ko": "오늘",
+  "en": "Today",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "今日（きょう）"
+ },
+ {
+  "id": "67fb258aff",
+  "ko": "어제",
+  "en": "Yesterday",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "昨日（きのう）"
+ },
+ {
+  "id": "b40b40ed0e",
+  "ko": "2일 전",
+  "en": "Two days ago",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "2日（ふつか）前（まえ）"
+ },
+ {
+  "id": "73e86f5014",
+  "ko": "3일 전",
+  "en": "Three days ago",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "3日（みっか）前（まえ）"
+ },
+ {
+  "id": "3fc8ffa610",
+  "ko": "이번 주",
+  "en": "This week",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "今週（こんしゅう）"
+ },
+ {
+  "id": "b6ded858f9",
+  "ko": "지난주",
+  "en": "Last week",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "先週（せんしゅう）"
+ },
+ {
+  "id": "7226418226",
+  "ko": "2주 전",
+  "en": "Two weeks ago",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "2週間（しゅうかん）前（まえ）"
+ },
+ {
+  "id": "76c02912b5",
+  "ko": "이번 달",
+  "en": "This month",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "今月（こんげつ）"
+ },
+ {
+  "id": "179fba40d5",
+  "ko": "지난달",
+  "en": "Last month",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "先月（せんげつ）"
+ },
+ {
+  "id": "5657986725",
+  "ko": "두 달 전",
+  "en": "Two months ago",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "2か月（かげつ）前（まえ）"
+ },
+ {
+  "id": "82e2e98bfd",
+  "ko": "올해",
+  "en": "This year",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "今年（ことし）"
+ },
+ {
+  "id": "c09e932399",
+  "ko": "작년",
+  "en": "Last year",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "去年（きょねん）"
+ },
+ {
+  "id": "779dd8c424",
+  "ko": "운동하다",
+  "en": "To exercise",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "運動（うんどう）する"
+ },
+ {
+  "id": "0be0b07c5a",
+  "ko": "친구를 만나다",
+  "en": "To meet a friend",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "友（とも）だちに会（あ）う"
+ },
+ {
+  "id": "4eef15021d",
+  "ko": "영화를 보다",
+  "en": "To watch a movie",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "映画（えいが）を見（み）る"
+ },
+ {
+  "id": "77233c75f5",
+  "ko": "책을 빌리다",
+  "en": "To borrow a book",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "本（ほん）を借（か）りる"
+ },
+ {
+  "id": "7a801a7010",
+  "ko": "테니스를 배우다",
+  "en": "To learn tennis",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "テニスを習（なら）う"
+ },
+ {
+  "id": "15e8b3794d",
+  "ko": "음악을 듣다",
+  "en": "To listen to music",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "音楽（おんがく）を聞（き）く"
+ },
+ {
+  "id": "15b35d5ee6",
+  "ko": "등산하다",
+  "en": "To go hiking",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "登山（とざん）する"
+ },
+ {
+  "id": "05f90aa17d",
+  "ko": "보통",
+  "en": "Usually",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "ふつう"
+ },
+ {
+  "id": "8322fdb2ec",
+  "ko": "매일",
+  "en": "Every day",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "毎日（まいにち）"
+ },
+ {
+  "id": "94fd666a9b",
+  "ko": "주말",
+  "en": "The weekend",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "週末（しゅうまつ）"
+ },
+ {
+  "id": "5369a58ba1",
+  "ko": "수업 후",
+  "en": "After class",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "授業（じゅぎょう）の後（あと）"
+ },
+ {
+  "id": "22f9c960bd",
+  "ko": "언제",
+  "en": "When",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "いつ"
+ },
+ {
+  "id": "8b3144ea17",
+  "ko": "수영",
+  "en": "Swimming",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "水泳（すいえい）"
+ },
+ {
+  "id": "b4354c6612",
+  "ko": "이사를 하다",
+  "en": "To move (to a new house)",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "引（ひ）っ越（こ）しをする"
+ },
+ {
+  "id": "9fb849da3d",
+  "ko": "핸드폰",
+  "en": "Mobile phone",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "携帯（けいたい）電話（でんわ）"
+ },
+ {
+  "id": "ee73892e0a",
+  "ko": "비자",
+  "en": "Visa",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "ビザ"
+ },
+ {
+  "id": "89d9a8458a",
+  "ko": "왜",
+  "en": "Why",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "なぜ"
+ },
+ {
+  "id": "1a9cd70ca9",
+  "ko": "점심을 먹다",
+  "en": "To eat lunch",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "昼（ひる）ご飯（はん）を食（た）べる"
+ },
+ {
+  "id": "f7aaadef7e",
+  "ko": "바쁘다",
+  "en": "To be busy",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "忙（いそが）しい"
+ },
+ {
+  "id": "aac93c842a",
+  "ko": "다리가 아프다",
+  "en": "To have pain in one's leg",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "足（あし）が痛（いた）い"
+ },
+ {
+  "id": "51226d5f34",
+  "ko": "일이 많다",
+  "en": "To have a lot of work",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "仕事（しごと）が多（おお）い"
+ },
+ {
+  "id": "4fde49d2a4",
+  "ko": "시간이 없다",
+  "en": "To not have any spare time",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "時間（じかん）がない"
+ },
+ {
+  "id": "659749476c",
+  "ko": "피곤하다",
+  "en": "To be tired",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "疲（つか）れる"
+ },
+ {
+  "id": "eba6cd08c2",
+  "ko": "축구하다",
+  "en": "To play soccer",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "サッカーをする"
+ },
+ {
+  "id": "8c6f66d4f8",
+  "ko": "요리(를) 하다",
+  "en": "To cook",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "料理（りょうり）をする"
+ },
+ {
+  "id": "2fc0012d93",
+  "ko": "청소(를) 하다",
+  "en": "To clean",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "掃除（そうじ）をする"
+ },
+ {
+  "id": "e8a5d30c8c",
+  "ko": "설거지(를) 하다",
+  "en": "To do the dishes",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "皿洗（さらあら）いをする"
+ },
+ {
+  "id": "f571c05508",
+  "ko": "빨래(를) 하다",
+  "en": "To do the laundry",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "洗濯（せんたく）をする"
+ },
+ {
+  "id": "0d8bcbec28",
+  "ko": "다리미질(을) 하다",
+  "en": "To do the ironing",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "アイロンがけをする"
+ },
+ {
+  "id": "1652a366ec",
+  "ko": "책상 정리(를) 하다",
+  "en": "To organize my desk",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "机（つくえ）の整理（せいり）をする"
+ },
+ {
+  "id": "8e5dca0f47",
+  "ko": "그래서",
+  "en": "For that reason, so",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "だから"
+ },
+ {
+  "id": "5c8552543c",
+  "ko": "초대하다",
+  "en": "To invite",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "招待（しょうたい）する"
+ },
+ {
+  "id": "65043845bc",
+  "ko": "파티",
+  "en": "Party",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "パーティー"
+ },
+ {
+  "id": "0541305058",
+  "ko": "준비하다",
+  "en": "To prepare, to get ready",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "準備（じゅんび）する"
+ },
+ {
+  "id": "928c4b6763",
+  "ko": "오전",
+  "en": "Morning, a.m.",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "午前（ごぜん）"
+ },
+ {
+  "id": "1949070638",
+  "ko": "그리고",
+  "en": "And (beginning of a sentence)",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "そして"
+ },
+ {
+  "id": "bff0a2c194",
+  "ko": "마트",
+  "en": "Supermarket",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "スーパー"
+ },
+ {
+  "id": "00ff62583a",
+  "ko": "과일",
+  "en": "Fruit",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "果物（くだもの）"
+ },
+ {
+  "id": "693ad783c1",
+  "ko": "주스",
+  "en": "Juice",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "ジュース"
+ },
+ {
+  "id": "51b478f252",
+  "ko": "오후",
+  "en": "Afternoon, p.m.",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "午後（ごご）"
+ },
+ {
+  "id": "f5df476ed8",
+  "ko": "불고기",
+  "en": "Bulgogi",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "プルコギ"
+ },
+ {
+  "id": "05b4ef979c",
+  "ko": "다 같이",
+  "en": "All together",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "みんな一緒（いっしょ）に"
+ },
+ {
+  "id": "0d0aae817f",
+  "ko": "맛있게",
+  "en": "Deliciously",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "おいしく"
+ },
+ {
+  "id": "1328428faf",
+  "ko": "많이",
+  "en": "Many, a lot",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "たくさん"
+ },
+ {
+  "id": "db7e2fb082",
+  "ko": "아홉 시쯤",
+  "en": "Around 9 o'clock",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "9時（じ）ごろ"
+ },
+ {
+  "id": "eb669e34a0",
+  "ko": "저녁 식사",
+  "en": "Dinner",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "夕食（ゆうしょく）"
+ },
+ {
+  "id": "a6d622b6cd",
+  "ko": "끝나다",
+  "en": "To end, to be over",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "終（お）わる"
+ },
+ {
+  "id": "5c99e090a4",
+  "ko": "그다음에",
+  "en": "After that",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "その次（つぎ）に"
+ },
+ {
+  "id": "7f4a8091b4",
+  "ko": "노래하다",
+  "en": "To sing",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "歌（うた）う"
+ },
+ {
+  "id": "4efd5aa9f5",
+  "ko": "춤을 추다",
+  "en": "To dance",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "踊（おど）る"
+ },
+ {
+  "id": "e1590c3449",
+  "ko": "정말",
+  "en": "Really, truly",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "本当（ほんとう）に"
+ },
+ {
+  "id": "035567c9b5",
+  "ko": "말하다",
+  "en": "To talk, to say, to speak",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "話（はな）す"
+ },
+ {
+  "id": "b9a54fbd85",
+  "ko": "음식",
+  "en": "Food",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "食（た）べ物（もの）"
+ },
+ {
+  "id": "6c1b8c429e",
+  "ko": "하지만",
+  "en": "But (beginning of a sentence)",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "しかし"
+ },
+ {
+  "id": "cca535162f",
+  "ko": "기분이 좋다",
+  "en": "To be in a good mood",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "気分（きぶん）がいい"
+ },
+ {
+  "id": "6d66621543",
+  "ko": "우와!",
+  "en": "Wow!",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "うわあ！"
+ },
+ {
+  "id": "bd4aa5078c",
+  "ko": "그런데",
+  "en": "By the way",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "ところで"
+ },
+ {
+  "id": "35b2d99186",
+  "ko": "기다리다",
+  "en": "To wait",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "待（ま）つ"
+ },
+ {
+  "id": "a7abb22a17",
+  "ko": "어제 뭐 했어요?",
+  "en": "What did you do yesterday?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "昨日（きのう）、何（なに）をしましたか？"
+ },
+ {
+  "id": "adecadbc0d",
+  "ko": "운동했어요.",
+  "en": "I exercised.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "運動（うんどう）しました。"
+ },
+ {
+  "id": "1feba18288",
+  "ko": "친구를 만났어요.",
+  "en": "I met a friend.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "友（とも）だちに会（あ）いました。"
+ },
+ {
+  "id": "ed79860cf3",
+  "ko": "한스 씨는 어제 뭐 했어요?",
+  "en": "Hans, what did you do yesterday?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "ハンスさんは昨日（きのう）、何（なに）をしましたか？"
+ },
+ {
+  "id": "d29cd1ca2c",
+  "ko": "저는 등산했어요.",
+  "en": "I went hiking.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "私（わたし）は登山（とざん）しました。"
+ },
+ {
+  "id": "a3f861badc",
+  "ko": "보통 아침을 먹어요?",
+  "en": "Do you usually eat breakfast?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "ふつう朝（あさ）ご飯（はん）を食（た）べますか？"
+ },
+ {
+  "id": "2d38d0d400",
+  "ko": "아니요, 안 먹어요.",
+  "en": "No, I don't eat it.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "いいえ、食（た）べません。"
+ },
+ {
+  "id": "00ecd928dd",
+  "ko": "밥을 안 먹어요.",
+  "en": "I don't eat rice.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "ご飯（はん）を食（た）べません。"
+ },
+ {
+  "id": "50b93b3fc9",
+  "ko": "밥을 먹어요.",
+  "en": "I eat rice.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "ご飯（はん）を食（た）べます。"
+ },
+ {
+  "id": "dfa6ef6816",
+  "ko": "옷을 사요.",
+  "en": "I buy clothes.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "服（ふく）を買（か）います。"
+ },
+ {
+  "id": "f06b5c3399",
+  "ko": "커피를 마셔요.",
+  "en": "I drink coffee.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "コーヒーを飲（の）みます。"
+ },
+ {
+  "id": "fd57b08970",
+  "ko": "음악을 들어요.",
+  "en": "I listen to music.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "音楽（おんがく）を聞（き）きます。"
+ },
+ {
+  "id": "4f6c27f563",
+  "ko": "운동을 해요.",
+  "en": "I exercise.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "運動（うんどう）をします。"
+ },
+ {
+  "id": "1dbea62b6f",
+  "ko": "일을 해요.",
+  "en": "I work.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "仕事（しごと）をします。"
+ },
+ {
+  "id": "a947e28ddd",
+  "ko": "날씨가 좋아요.",
+  "en": "The weather is nice.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "天気（てんき）がいいです。"
+ },
+ {
+  "id": "d7bce153e3",
+  "ko": "교실이 조용해요.",
+  "en": "The classroom is quiet.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "教室（きょうしつ）が静（しず）かです。"
+ },
+ {
+  "id": "1b628674ba",
+  "ko": "매일 요리해요?",
+  "en": "Do you cook every day?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "毎日（まいにち）料理（りょうり）しますか？"
+ },
+ {
+  "id": "1a2d9728a7",
+  "ko": "아니요, 매일 요리 안 해요.",
+  "en": "No, I don't cook every day.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "いいえ、毎日（まいにち）は料理（りょうり）しません。"
+ },
+ {
+  "id": "c4ce1e0749",
+  "ko": "매일 커피를 마셔요?",
+  "en": "Do you drink coffee every day?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "毎日（まいにち）コーヒーを飲（の）みますか？"
+ },
+ {
+  "id": "77fb25a3ea",
+  "ko": "아니요, 매일 커피를 안 마셔요.",
+  "en": "No, I don't drink coffee every day.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "いいえ、毎日（まいにち）はコーヒーを飲（の）みません。"
+ },
+ {
+  "id": "4c61853ec9",
+  "ko": "주말에 보통 영화를 봐요?",
+  "en": "Do you usually watch movies on the weekend?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "週末（しゅうまつ）はふつう映画（えいが）を見（み）ますか？"
+ },
+ {
+  "id": "505eedd896",
+  "ko": "어제 친구를 만났어요?",
+  "en": "Did you meet a friend yesterday?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "昨日（きのう）、友（とも）だちに会（あ）いましたか？"
+ },
+ {
+  "id": "ce92c90dae",
+  "ko": "요즘 바빠요?",
+  "en": "Are you busy these days?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "最近（さいきん）忙（いそが）しいですか？"
+ },
+ {
+  "id": "e2e831f08f",
+  "ko": "피곤해요?",
+  "en": "Are you tired?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "疲（つか）れていますか？"
+ },
+ {
+  "id": "451e945696",
+  "ko": "아니요, 운동을 안 해요.",
+  "en": "No, I don't exercise.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "いいえ、運動（うんどう）をしません。"
+ },
+ {
+  "id": "a0311ef758",
+  "ko": "아니요, 운동 안 해요.",
+  "en": "No, I don't exercise.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "いいえ、運動（うんどう）しません。"
+ },
+ {
+  "id": "fdd07f8bb1",
+  "ko": "마트에서 보통 뭐 사요?",
+  "en": "What do you usually buy at the supermarket?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "スーパーでふつう何（なに）を買（か）いますか？"
+ },
+ {
+  "id": "ab2c65adc4",
+  "ko": "사과를 사요. 그리고 우유도 사요.",
+  "en": "I buy apples. And I buy milk too.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "りんごを買（か）います。そして牛乳（ぎゅうにゅう）も買（か）います。"
+ },
+ {
+  "id": "f239272da7",
+  "ko": "주말에 보통 쇼핑을 해요. 그리고 운동도 해요.",
+  "en": "I usually go shopping on the weekend. And I exercise too.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "週末（しゅうまつ）はふつう買（か）い物（もの）をします。そして運動（うんどう）もします。"
+ },
+ {
+  "id": "819189815e",
+  "ko": "어제 영화를 봤어요. 그리고 책도 읽었어요.",
+  "en": "I watched a movie yesterday. And I read a book too.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "昨日（きのう）、映画（えいが）を見（み）ました。そして本（ほん）も読（よ）みました。"
+ },
+ {
+  "id": "35dbd7cb0c",
+  "ko": "보통 수업 후에 뭐 해요?",
+  "en": "What do you usually do after class?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "ふつう授業（じゅぎょう）の後（あと）に何（なに）をしますか？"
+ },
+ {
+  "id": "224a09256d",
+  "ko": "점심을 먹어요. 그리고 커피도 마셔요.",
+  "en": "I eat lunch. And I drink coffee too.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "昼（ひる）ご飯（はん）を食（た）べます。そしてコーヒーも飲（の）みます。"
+ },
+ {
+  "id": "94cdd4c447",
+  "ko": "주말에 보통 뭐 해요?",
+  "en": "What do you usually do on the weekend?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "週末（しゅうまつ）はふつう何（なに）をしますか？"
+ },
+ {
+  "id": "d46e57effa",
+  "ko": "책을 읽어요. 그리고 등산도 해요.",
+  "en": "I read books. And I go hiking too.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "本（ほん）を読（よ）みます。そして登山（とざん）もします。"
+ },
+ {
+  "id": "7caf6024c6",
+  "ko": "공원에서 뭐 해요?",
+  "en": "What do you do at the park?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "公園（こうえん）で何（なに）をしますか？"
+ },
+ {
+  "id": "f651822f26",
+  "ko": "어제 카페에서 뭐 했어요?",
+  "en": "What did you do at the cafe yesterday?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "昨日（きのう）、カフェで何（なに）をしましたか？"
+ },
+ {
+  "id": "95e1a824d0",
+  "ko": "어제 뭐 먹었어요?",
+  "en": "What did you eat yesterday?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "昨日（きのう）、何（なに）を食（た）べましたか？"
+ },
+ {
+  "id": "7edb74f579",
+  "ko": "렌핑 씨, 핸드폰 샀어요?",
+  "en": "Renping, did you buy a mobile phone?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "レンピンさん、携帯（けいたい）電話（でんわ）を買（か）いましたか？"
+ },
+ {
+  "id": "24d9412388",
+  "ko": "네, 샀어요.",
+  "en": "Yes, I bought one.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "はい、買（か）いました。"
+ },
+ {
+  "id": "3f03da7b82",
+  "ko": "언제 샀어요?",
+  "en": "When did you buy it?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "いつ買（か）いましたか？"
+ },
+ {
+  "id": "1d9987dcb0",
+  "ko": "3일 전에 샀어요.",
+  "en": "I bought it three days ago.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "3日（みっか）前（まえ）に買（か）いました。"
+ },
+ {
+  "id": "05b70e4512",
+  "ko": "투안 씨, 월요일에 도서관에 갔어요?",
+  "en": "Tuan, did you go to the library on Monday?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "トゥアンさん、月曜日（げつようび）に図書館（としょかん）へ行（い）きましたか？"
+ },
+ {
+  "id": "92822859df",
+  "ko": "아니요, 안 갔어요.",
+  "en": "No, I didn't go.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "いいえ、行（い）きませんでした。"
+ },
+ {
+  "id": "117e5ebf88",
+  "ko": "왜 안 갔어요?",
+  "en": "Why didn't you go?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "どうして行（い）かなかったんですか？"
+ },
+ {
+  "id": "31b646eaae",
+  "ko": "피곤했어요.",
+  "en": "I was tired.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "疲（つか）れていました。"
+ },
+ {
+  "id": "5c3272e085",
+  "ko": "가브리엘 씨, 어제 뭐 했어요?",
+  "en": "Gabriel, what did you do yesterday?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "ガブリエルさん、昨日（きのう）、何（なに）をしましたか？"
+ },
+ {
+  "id": "96a58f66c0",
+  "ko": "집에 있었어요.",
+  "en": "I was at home.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "家（いえ）にいました。"
+ },
+ {
+  "id": "8e720d0ae3",
+  "ko": "집에서 뭐 했어요?",
+  "en": "What did you do at home?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "家（いえ）で何（なに）をしましたか？"
+ },
+ {
+  "id": "9cd62a0840",
+  "ko": "요리했어요. 그리고 청소도 했어요.",
+  "en": "I cooked. And I cleaned too.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "料理（りょうり）しました。そして掃除（そうじ）もしました。"
+ },
+ {
+  "id": "c80c2fa6a0",
+  "ko": "작년 생일에 뭐 했어요?",
+  "en": "What did you do on your birthday last year?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "去年（きょねん）の誕生日（たんじょうび）に何（なに）をしましたか？"
+ },
+ {
+  "id": "4088baaeca",
+  "ko": "작년에 뭐 했어요?",
+  "en": "What did you do last year?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "去年（きょねん）、何（なに）をしましたか？"
+ },
+ {
+  "id": "60124d2cb1",
+  "ko": "5년 전에 뭐 했어요?",
+  "en": "What did you do five years ago?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "5年（ねん）前（まえ）に何（なに）をしましたか？"
+ },
+ {
+  "id": "6581974a96",
+  "ko": "지난 주말에 뭐 했어요?",
+  "en": "What did you do last weekend?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "先週末（せんしゅうまつ）、何（なに）をしましたか？"
+ },
+ {
+  "id": "ca40f32ac0",
+  "ko": "앤디 씨, 지난 주말에 친구하고 한강 공원에서 치킨을 먹었어요?",
+  "en": "Andy, did you eat chicken with a friend at Hangang Park last weekend?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "アンディさん、先週末（せんしゅうまつ）、友（とも）だちとハンガン公園（こうえん）でチキンを食（た）べましたか？"
+ },
+ {
+  "id": "de1517ad95",
+  "ko": "그럼 지난 주말에 뭐 했어요?",
+  "en": "Then what did you do last weekend?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "では、先週末（せんしゅうまつ）は何（なに）をしましたか？"
+ },
+ {
+  "id": "19a9503e85",
+  "ko": "한국 친구하고 체육관에서 농구했어요.",
+  "en": "I played basketball at the gym with a Korean friend.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "韓国人（かんこくじん）の友（とも）だちと体育館（たいいくかん）でバスケットボールをしました。"
+ },
+ {
+  "id": "45dbfe86fc",
+  "ko": "수잔 씨는 어제 오전에 파티를 준비했어요.",
+  "en": "Susan prepared for the party yesterday morning.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "スーザンさんは昨日（きのう）の午前（ごぜん）にパーティーの準備（じゅんび）をしました。"
+ },
+ {
+  "id": "82b32eb1b7",
+  "ko": "그리고 친구들하고 파티를 했어요.",
+  "en": "And she had a party with her friends.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "そして友（とも）だちとパーティーをしました。"
+ },
+ {
+  "id": "d19da95690",
+  "ko": "수잔 씨는 지난주에 이사했어요.",
+  "en": "Susan moved house last week.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "スーザンさんは先週（せんしゅう）引（ひ）っ越（こ）しました。"
+ },
+ {
+  "id": "b82bd455f5",
+  "ko": "그래서 어제 집에 친구들을 초대했어요.",
+  "en": "So she invited her friends to her house yesterday.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "だから昨日（きのう）、家（いえ）に友（とも）だちを招待（しょうたい）しました。"
+ },
+ {
+  "id": "ec90cb2213",
+  "ko": "집을 청소했어요.",
+  "en": "She cleaned the house.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "家（いえ）を掃除（そうじ）しました。"
+ },
+ {
+  "id": "3589934b1d",
+  "ko": "그리고 마트에 갔어요.",
+  "en": "And she went to the supermarket.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "そしてスーパーへ行（い）きました。"
+ },
+ {
+  "id": "0f018fd0fe",
+  "ko": "마트에서 과일을 샀어요.",
+  "en": "She bought fruit at the supermarket.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "スーパーで果物（くだもの）を買（か）いました。"
+ },
+ {
+  "id": "7ca7b3b437",
+  "ko": "그리고 주스도 샀어요.",
+  "en": "And she bought juice too.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "そしてジュースも買（か）いました。"
+ },
+ {
+  "id": "f24facb927",
+  "ko": "오후 세 시에 요리를 했어요.",
+  "en": "She cooked at three in the afternoon.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "午後（ごご）3時（じ）に料理（りょうり）をしました。"
+ },
+ {
+  "id": "5e66249a21",
+  "ko": "불고기를 만들었어요.",
+  "en": "She made bulgogi.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "プルコギを作（つく）りました。"
+ },
+ {
+  "id": "2e2d7be9ed",
+  "ko": "친구들이 일곱 시에 왔어요.",
+  "en": "Her friends came at seven o'clock.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "友（とも）だちが7時（じ）に来（き）ました。"
+ },
+ {
+  "id": "42fcf4d874",
+  "ko": "다 같이 저녁을 맛있게 먹었어요.",
+  "en": "They all ate dinner together and it was delicious.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "みんな一緒（いっしょ）に夕（ゆう）ご飯（はん）をおいしく食（た）べました。"
+ },
+ {
+  "id": "1fbfad502d",
+  "ko": "그리고 이야기도 많이 했어요.",
+  "en": "And they talked a lot too.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "そしてたくさん話（はな）しました。"
+ },
+ {
+  "id": "933b02e078",
+  "ko": "아홉 시쯤 저녁 식사가 끝났어요.",
+  "en": "Dinner ended around nine o'clock.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "9時（じ）ごろ夕食（ゆうしょく）が終（お）わりました。"
+ },
+ {
+  "id": "6aeee0a1ba",
+  "ko": "그다음에 노래했어요.",
+  "en": "After that they sang.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "その次（つぎ）に歌（うた）いました。"
+ },
+ {
+  "id": "b30f85e186",
+  "ko": "음악을 들었어요.",
+  "en": "They listened to music.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "音楽（おんがく）を聞（き）きました。"
+ },
+ {
+  "id": "79aabfd6e1",
+  "ko": "그리고 춤도 췄어요.",
+  "en": "And they danced too.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "そして踊（おど）りもしました。"
+ },
+ {
+  "id": "975aa976d8",
+  "ko": "파티가 정말 재미있었어요.",
+  "en": "The party was really fun.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "パーティーは本当（ほんとう）に楽（たの）しかったです。"
+ },
+ {
+  "id": "ae5c86ae12",
+  "ko": "투안 씨가 말했어요.",
+  "en": "Tuan said,",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "トゥアンさんが言（い）いました。"
+ },
+ {
+  "id": "2a6bd8979b",
+  "ko": "수잔 씨, 집이 아주 좋아요.",
+  "en": "Susan, your house is very nice.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "スーザンさん、家（いえ）がとてもいいですね。"
+ },
+ {
+  "id": "789d000981",
+  "ko": "음식이 아주 맛있어요.",
+  "en": "The food is very delicious.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "料理（りょうり）がとてもおいしいです。"
+ },
+ {
+  "id": "ffbf6970d2",
+  "ko": "고마워요.",
+  "en": "Thank you.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "ありがとう。"
+ },
+ {
+  "id": "22d414234d",
+  "ko": "파티가 밤 열한 시에 끝났어요.",
+  "en": "The party ended at eleven at night.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "パーティーは夜（よる）11時（じ）に終（お）わりました。"
+ },
+ {
+  "id": "89c504a9b8",
+  "ko": "수잔 씨는 피곤했어요.",
+  "en": "Susan was tired.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "スーザンさんは疲（つか）れていました。"
+ },
+ {
+  "id": "cc4197d583",
+  "ko": "하지만 기분이 아주 좋았어요.",
+  "en": "But she was in a very good mood.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "しかし気分（きぶん）はとてもよかったです。"
+ },
+ {
+  "id": "d7ef513a1d",
+  "ko": "수잔 씨는 왜 집에 친구들을 초대했어요?",
+  "en": "Why did Susan invite her friends to her house?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "スーザンさんはどうして家（いえ）に友（とも）だちを招待（しょうたい）しましたか？"
+ },
+ {
+  "id": "468cfb496d",
+  "ko": "수잔 씨는 어제 오전에 뭐 했어요?",
+  "en": "What did Susan do yesterday morning?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "スーザンさんは昨日（きのう）の午前（ごぜん）に何（なに）をしましたか？"
+ },
+ {
+  "id": "70c05f1a71",
+  "ko": "수잔 씨는 마트에서 뭐 샀어요?",
+  "en": "What did Susan buy at the supermarket?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "スーザンさんはスーパーで何（なに）を買（か）いましたか？"
+ },
+ {
+  "id": "a3381c1d23",
+  "ko": "친구들이 수잔 씨 집에서 뭐 했어요?",
+  "en": "What did the friends do at Susan's house?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "友（とも）だちはスーザンさんの家（いえ）で何（なに）をしましたか？"
+ },
+ {
+  "id": "c618ddfc86",
+  "ko": "파티가 언제 끝났어요?",
+  "en": "When did the party end?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "パーティーはいつ終（お）わりましたか？"
+ },
+ {
+  "id": "d8ed2403d6",
+  "ko": "수잔 씨가 이사했어요. 그래서 파티를 했어요.",
+  "en": "Susan moved house. So she had a party.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "スーザンさんが引（ひ）っ越（こ）しました。だからパーティーをしました。"
+ },
+ {
+  "id": "bd1f6d8cbd",
+  "ko": "언제 파티를 했어요?",
+  "en": "When did you have the party?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "いつパーティーをしましたか？"
+ },
+ {
+  "id": "4bb9c3b426",
+  "ko": "왜 파티를 했어요?",
+  "en": "Why did you have the party?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "どうしてパーティーをしましたか？"
+ },
+ {
+  "id": "da477b16b3",
+  "ko": "파티에 누가 왔어요?",
+  "en": "Who came to the party?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "パーティーに誰（だれ）が来（き）ましたか？"
+ },
+ {
+  "id": "89f1c7059c",
+  "ko": "어제 수잔 씨가 집에서 파티를 했어요.",
+  "en": "Susan had a party at her house yesterday.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "昨日（きのう）、スーザンさんが家（いえ）でパーティーをしました。"
+ },
+ {
+  "id": "eccd5edbe7",
+  "ko": "하지만 하루카 씨는 파티에 안 갔어요.",
+  "en": "But Haruka didn't go to the party.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "しかしハルカさんはパーティーに行（い）きませんでした。"
+ },
+ {
+  "id": "09759fd87f",
+  "ko": "하루카 씨는 어제 왜 파티에 안 갔어요?",
+  "en": "Why didn't Haruka go to the party yesterday?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "ハルカさんは昨日（きのう）、どうしてパーティーに行（い）かなかったんですか？"
+ },
+ {
+  "id": "8b5c5b5321",
+  "ko": "가브리엘 씨가 어제 수잔 씨 집에 갔어요.",
+  "en": "Gabriel went to Susan's house yesterday.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "ガブリエルさんが昨日（きのう）、スーザンさんの家（いえ）へ行（い）きました。"
+ },
+ {
+  "id": "5c6607b056",
+  "ko": "가브리엘 씨가 어제 한국 음식을 만들었어요.",
+  "en": "Gabriel made Korean food yesterday.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "ガブリエルさんが昨日（きのう）、韓国（かんこく）料理（りょうり）を作（つく）りました。"
+ },
+ {
+  "id": "031f25620c",
+  "ko": "하루카 씨가 어제 일본어를 가르쳤어요.",
+  "en": "Haruka taught Japanese yesterday.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "ハルカさんが昨日（きのう）、日本語（にほんご）を教（おし）えました。"
+ },
+ {
+  "id": "8c5d01e519",
+  "ko": "하루카 씨가 친구들을 기다렸어요.",
+  "en": "Haruka waited for her friends.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "ハルカさんが友（とも）だちを待（ま）ちました。"
+ },
+ {
+  "id": "e5a80153cc",
+  "ko": "파티가 밤 아홉 시에 끝났어요.",
+  "en": "The party ended at nine at night.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "パーティーは夜（よる）9時（じ）に終（お）わりました。"
+ },
+ {
+  "id": "401a521032",
+  "ko": "어제 수잔 씨 파티가 어땠어요?",
+  "en": "How was Susan's party yesterday?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "昨日（きのう）のスーザンさんのパーティーはどうでしたか？"
+ },
+ {
+  "id": "39dadfe4ee",
+  "ko": "가브리엘 씨가 수잔 씨 집에서 뭐 했어요?",
+  "en": "What did Gabriel do at Susan's house?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "ガブリエルさんはスーザンさんの家（いえ）で何（なに）をしましたか？"
+ },
+ {
+  "id": "3cbbe8ab8a",
+  "ko": "가브리엘 씨가 몇 시에 집에 갔어요?",
+  "en": "What time did Gabriel go home?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "ガブリエルさんは何時（なんじ）に家（いえ）へ帰（かえ）りましたか？"
+ },
+ {
+  "id": "b82c2b4192",
+  "ko": "하루카 씨가 왜 파티에 안 갔어요?",
+  "en": "Why didn't Haruka go to the party?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "ハルカさんはどうしてパーティーに行（い）かなかったんですか？"
+ },
+ {
+  "id": "260cc998f7",
+  "ko": "하루카 씨는 어제 몇 시에 일이 끝났어요?",
+  "en": "What time did Haruka's work end yesterday?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "ハルカさんは昨日（きのう）、何時（なんじ）に仕事（しごと）が終（お）わりましたか？"
+ },
+ {
+  "id": "03cd89e5fd",
+  "ko": "가브리엘 씨, 어제 수잔 씨 집에 갔어요?",
+  "en": "Gabriel, did you go to Susan's house yesterday?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "ガブリエルさん、昨日（きのう）、スーザンさんの家（いえ）へ行（い）きましたか？"
+ },
+ {
+  "id": "45560ce85c",
+  "ko": "그래요? 수잔 씨 집에서 뭐 했어요?",
+  "en": "Really? What did you do at Susan's house?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "そうですか。スーザンさんの家（いえ）で何（なに）をしましたか？"
+ },
+ {
+  "id": "3e931122b1",
+  "ko": "우와, 저녁도 먹었어요?",
+  "en": "Wow, did you eat dinner too?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "うわあ、夕（ゆう）ご飯（はん）も食（た）べましたか？"
+ },
+ {
+  "id": "a85ae50684",
+  "ko": "미안해요.",
+  "en": "I'm sorry.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "ごめんなさい。"
+ },
+ {
+  "id": "6d49c9304e",
+  "ko": "아니에요.",
+  "en": "It's nothing.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "いいえ、大丈夫（だいじょうぶ）です。"
+ },
+ {
+  "id": "3f39ab7e24",
+  "ko": "밤 아홉 시에 일이 끝났어요.",
+  "en": "My work ended at nine at night.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "夜（よる）9時（じ）に仕事（しごと）が終（お）わりました。"
+ },
+ {
+  "id": "535ff9e6c7",
+  "ko": "어제 수잔 씨 집에서 파티를 했어요.",
+  "en": "There was a party at Susan's house yesterday.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "昨日（きのう）、スーザンさんの家（いえ）でパーティーをしました。"
+ },
+ {
+  "id": "a427c9113e",
+  "ko": "가브리엘 씨가 파티에 갔어요.",
+  "en": "Gabriel went to the party.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "ガブリエルさんがパーティーに行（い）きました。"
+ },
+ {
+  "id": "ed3c577d8b",
+  "ko": "파티가 아주 재미있었어요.",
+  "en": "The party was very fun.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "パーティーはとても楽（たの）しかったです。"
+ },
+ {
+  "id": "df6a63833c",
+  "ko": "하지만 하루카 씨는 바빴어요.",
+  "en": "But Haruka was busy.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "しかしハルカさんは忙（いそが）しかったです。"
+ },
+ {
+  "id": "5c4ad2e0e3",
+  "ko": "그래서 파티에 안 갔어요.",
+  "en": "So she didn't go to the party.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "だからパーティーに行（い）きませんでした。"
+ },
+ {
+  "id": "51201ad1c7",
+  "ko": "어제 왜 파티에 안 왔어요?",
+  "en": "Why didn't you come to the party yesterday?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "昨日（きのう）、どうしてパーティーに来（こ）なかったんですか？"
+ },
+ {
+  "id": "9a32d2d9b0",
+  "ko": "일했어요.",
+  "en": "I worked.",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "仕事（しごと）をしました。"
+ },
+ {
+  "id": "6257c7a20b",
+  "ko": "일이 몇 시에 끝났어요?",
+  "en": "What time did your work end?",
+  "tags": [
+   "Book1A::Unit4::Sentences"
+  ],
+  "ja": "仕事（しごと）は何時（なんじ）に終（お）わりましたか？"
+ },
+ {
+  "id": "3edd714105",
+  "ko": "버스",
+  "en": "Bus",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "バス"
+ },
+ {
+  "id": "9832921e8d",
+  "ko": "지하철",
+  "en": "Subway",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "地下鉄（ちかてつ）"
+ },
+ {
+  "id": "6a9679419a",
+  "ko": "자동차",
+  "en": "Car",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "車（くるま）"
+ },
+ {
+  "id": "4a70969cc6",
+  "ko": "택시",
+  "en": "Taxi",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "タクシー"
+ },
+ {
+  "id": "97c2212c12",
+  "ko": "자전거",
+  "en": "Bicycle",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "自転車（じてんしゃ）"
+ },
+ {
+  "id": "3cd92be927",
+  "ko": "오토바이",
+  "en": "Motorcycle",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "バイク"
+ },
+ {
+  "id": "8c14fc9cb3",
+  "ko": "기차",
+  "en": "Train",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "電車（でんしゃ）"
+ },
+ {
+  "id": "8c48e63e6f",
+  "ko": "비행기",
+  "en": "Airplane",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "飛行機（ひこうき）"
+ },
+ {
+  "id": "14541fdd4e",
+  "ko": "걸어서",
+  "en": "(going somewhere) on foot",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "歩（ある）いて"
+ },
+ {
+  "id": "94e0c4b24a",
+  "ko": "친구하고 놀다",
+  "en": "To hang out with a friend",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "友達（ともだち）と遊（あそ）ぶ"
+ },
+ {
+  "id": "fbd5f4ba69",
+  "ko": "방학 때",
+  "en": "During school vacation",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "休（やす）みの時（とき）"
+ },
+ {
+  "id": "f1a305ca97",
+  "ko": "선물",
+  "en": "Present, gift",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "プレゼント"
+ },
+ {
+  "id": "c6649676fd",
+  "ko": "어떻게 가요?",
+  "en": "How do you get (somewhere)?",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "どうやって行（い）きますか？"
+ },
+ {
+  "id": "d8e81f0508",
+  "ko": "공항에서 집까지",
+  "en": "From the airport to one's house",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "空港（くうこう）から家（いえ）まで"
+ },
+ {
+  "id": "7d6b08aa85",
+  "ko": "이름을 쓰다",
+  "en": "To write one's name",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "名前（なまえ）を書（か）く"
+ },
+ {
+  "id": "8bc78d860e",
+  "ko": "쉬다",
+  "en": "To rest",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "休（やす）む"
+ },
+ {
+  "id": "c77ea796b7",
+  "ko": "23쪽",
+  "en": "Page 23",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "23ページ"
+ },
+ {
+  "id": "39eba75f5c",
+  "ko": "잘 듣다",
+  "en": "To listen carefully",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "よく聞（き）く"
+ },
+ {
+  "id": "c70b9d62c3",
+  "ko": "문장을 만들다",
+  "en": "To make a sentence",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "文（ぶん）を作（つく）る"
+ },
+ {
+  "id": "47cb539108",
+  "ko": "자리에서 일어나다",
+  "en": "To get up from one's seat",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "席（せき）から立（た）ち上（あ）がる"
+ },
+ {
+  "id": "df68e43632",
+  "ko": "노래를 하다",
+  "en": "To sing a song",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "歌（うた）を歌（うた）う"
+ },
+ {
+  "id": "16594dd1c7",
+  "ko": "인사를 하다",
+  "en": "To greet (someone)",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "あいさつをする"
+ },
+ {
+  "id": "9228e6a93f",
+  "ko": "창문을 열다",
+  "en": "To open the window",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "窓（まど）を開（あ）ける"
+ },
+ {
+  "id": "49214687bd",
+  "ko": "친구 얼굴을 그리다",
+  "en": "To draw a friend's face",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "友達（ともだち）の顔（かお）を描（か）く"
+ },
+ {
+  "id": "0c3c1a1245",
+  "ko": "저기",
+  "en": "Over there",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "あそこ"
+ },
+ {
+  "id": "6deaee2098",
+  "ko": "타다",
+  "en": "To get on, to take (e.g., a bus)",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "乗（の）る"
+ },
+ {
+  "id": "ffa52a4b5e",
+  "ko": "얼마나 걸려요?",
+  "en": "How long does it take?",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "どのくらいかかりますか？"
+ },
+ {
+  "id": "d5b0cc418f",
+  "ko": "30분쯤",
+  "en": "About 30 minutes",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "30分（ぷん）くらい"
+ },
+ {
+  "id": "c78ef73d6e",
+  "ko": "2호선",
+  "en": "Line 2 (on the subway)",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "2号線（にごうせん）"
+ },
+ {
+  "id": "def9b137d6",
+  "ko": "갈아타다",
+  "en": "To transfer (e.g., buses)",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "乗（の）り換（か）える"
+ },
+ {
+  "id": "16f14ab8c0",
+  "ko": "내리다",
+  "en": "To get off (e.g., the bus)",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "降（お）りる"
+ },
+ {
+  "id": "c57730d58c",
+  "ko": "세 시간",
+  "en": "Three hours",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "3時間（さんじかん）"
+ },
+ {
+  "id": "4ef004afc5",
+  "ko": "KTX",
+  "en": "Korea Train eXpress (a high-speed train)",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "KTX（韓国（かんこく）の高速鉄道（こうそくてつどう））"
+ },
+ {
+  "id": "69bbaf0305",
+  "ko": "ITX",
+  "en": "Intercity Train eXpress (a high-speed train)",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "ITX（都市間（としかん）特急（とっきゅう））"
+ },
+ {
+  "id": "f6897f0809",
+  "ko": "고속버스",
+  "en": "Express bus",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "高速（こうそく）バス"
+ },
+ {
+  "id": "c23d0af4ee",
+  "ko": "다니다",
+  "en": "To go regularly, to attend",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "通（かよ）う"
+ },
+ {
+  "id": "71c5664a4d",
+  "ko": "시작하다",
+  "en": "To begin",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "始（はじ）まる"
+ },
+ {
+  "id": "3a01eb6f3a",
+  "ko": "멀다",
+  "en": "To be far",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "遠（とお）い"
+ },
+ {
+  "id": "dab4144af3",
+  "ko": "첫날",
+  "en": "The first day",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "初日（しょにち）"
+ },
+ {
+  "id": "2a4526f9c2",
+  "ko": "왜냐하면",
+  "en": "That's because",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "なぜなら"
+ },
+ {
+  "id": "63f5c9ab5b",
+  "ko": "정류장",
+  "en": "(bus) stop",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "停留所（ていりゅうじょ）"
+ },
+ {
+  "id": "97dfa58e2f",
+  "ko": "가깝다",
+  "en": "To be close",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "近（ちか）い"
+ },
+ {
+  "id": "a67095fe2b",
+  "ko": "길이 막히다",
+  "en": "There is bad traffic",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "道（みち）が混（こ）む"
+ },
+ {
+  "id": "aa78dbd741",
+  "ko": "늦다",
+  "en": "To be late",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "遅（おく）れる"
+ },
+ {
+  "id": "18432b5095",
+  "ko": "다음 날",
+  "en": "The next day",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "次（つぎ）の日（ひ）"
+ },
+ {
+  "id": "a3ce6458aa",
+  "ko": "지하철역",
+  "en": "Subway station",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "地下鉄（ちかてつ）の駅（えき）"
+ },
+ {
+  "id": "e66dacf994",
+  "ko": "조금",
+  "en": "A little",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "少（すこ）し"
+ },
+ {
+  "id": "089b730ef5",
+  "ko": "걷다",
+  "en": "To walk",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "歩（ある）く"
+ },
+ {
+  "id": "a61bebaa09",
+  "ko": "빠르다",
+  "en": "To be fast",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "速（はや）い"
+ },
+ {
+  "id": "aa7606c433",
+  "ko": "일찍",
+  "en": "Early",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "早（はや）く"
+ },
+ {
+  "id": "e72c7b322e",
+  "ko": "도착하다",
+  "en": "To arrive",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "到着（とうちゃく）する"
+ },
+ {
+  "id": "6046e7d4bb",
+  "ko": "요즘",
+  "en": "Nowadays",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "最近（さいきん）"
+ },
+ {
+  "id": "a59078ad7a",
+  "ko": "이제",
+  "en": "Now, anymore",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "もう"
+ },
+ {
+  "id": "96c0298967",
+  "ko": "친구들한테서",
+  "en": "From one's friends",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "友達（ともだち）から"
+ },
+ {
+  "id": "5c4ad362cb",
+  "ko": "자주",
+  "en": "Frequently",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "よく、頻繁（ひんぱん）に"
+ },
+ {
+  "id": "cd303bad78",
+  "ko": "정말요?",
+  "en": "Really?",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "本当（ほんとう）ですか？"
+ },
+ {
+  "id": "219c3080b8",
+  "ko": "와!",
+  "en": "Wow!",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "わあ！"
+ },
+ {
+  "id": "a9d633ce9e",
+  "ko": "다음 주 어때요?",
+  "en": "How about next week?",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "来週（らいしゅう）はどうですか？"
+ },
+ {
+  "id": "fed65427be",
+  "ko": "어디에 가고 싶어요?",
+  "en": "Where do you want to go?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "どこに行（い）きたいですか？"
+ },
+ {
+  "id": "ccbd651e58",
+  "ko": "부산에 가고 싶어요.",
+  "en": "I want to go to Busan.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "釜山（プサン）に行（い）きたいです。"
+ },
+ {
+  "id": "6df32b2d44",
+  "ko": "자고 싶어요.",
+  "en": "I want to sleep.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "寝（ね）たいです。"
+ },
+ {
+  "id": "e409163894",
+  "ko": "점심에 뭐 먹고 싶어요?",
+  "en": "What do you want to eat for lunch?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "昼（ひる）ごはんに何（なに）が食（た）べたいですか？"
+ },
+ {
+  "id": "539cfa7279",
+  "ko": "김밥을 먹고 싶어요.",
+  "en": "I want to eat gimbap.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "キンパを食（た）べたいです。"
+ },
+ {
+  "id": "58cf0c497c",
+  "ko": "지금 뭐 하고 싶어요?",
+  "en": "What do you want to do now?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "今（いま）何（なに）がしたいですか？"
+ },
+ {
+  "id": "434f53014c",
+  "ko": "집에서 쉬고 싶어요.",
+  "en": "I want to rest at home.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "家（いえ）で休（やす）みたいです。"
+ },
+ {
+  "id": "39acbf9725",
+  "ko": "방학 때 뭐 하고 싶어요?",
+  "en": "What do you want to do during the school vacation?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "休（やす）みの時（とき）に何（なに）がしたいですか？"
+ },
+ {
+  "id": "886883abcc",
+  "ko": "생일이에요. 생일 선물 뭐 받고 싶어요?",
+  "en": "It's your birthday. What birthday present do you want to get?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "誕生日（たんじょうび）です。誕生日（たんじょうび）プレゼントは何（なに）がほしいですか？"
+ },
+ {
+  "id": "f7e2035f58",
+  "ko": "고향 친구가 한국에 와요. 친구하고 뭐 하고 싶어요?",
+  "en": "A friend from your hometown is coming to Korea. What do you want to do with your friend?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "故郷（こきょう）の友達（ともだち）が韓国（かんこく）に来（き）ます。友達（ともだち）と何（なに）がしたいですか？"
+ },
+ {
+  "id": "8a791b0632",
+  "ko": "기분이 안 좋아요. 그럼 뭐 하고 싶어요?",
+  "en": "You're in a bad mood. Then what do you want to do?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "気分（きぶん）がよくありません。では、何（なに）がしたいですか？"
+ },
+ {
+  "id": "0a5320c6ac",
+  "ko": "집에 버스로 가요? 지하철로 가요?",
+  "en": "Do you go home by bus? By subway?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "家（いえ）にバスで行（い）きますか。地下鉄（ちかてつ）で行（い）きますか？"
+ },
+ {
+  "id": "9a452556ae",
+  "ko": "버스로 가요.",
+  "en": "I go by bus.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "バスで行（い）きます。"
+ },
+ {
+  "id": "33d63dc30c",
+  "ko": "집에 어떻게 가요?",
+  "en": "How do you get home?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "家（いえ）にはどうやって行（い）きますか？"
+ },
+ {
+  "id": "89e3fa5859",
+  "ko": "고향 집에 어떻게 가요?",
+  "en": "How do you get to your hometown house?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "故郷（こきょう）の家（いえ）にはどうやって行（い）きますか？"
+ },
+ {
+  "id": "ed19c82b5a",
+  "ko": "인천 공항에서 나리타 공항까지 비행기로 가요.",
+  "en": "I go from Incheon Airport to Narita Airport by plane.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "仁川（インチョン）空港（くうこう）から成田（なりた）空港（くうこう）まで飛行機（ひこうき）で行（い）きます。"
+ },
+ {
+  "id": "937fefbf49",
+  "ko": "나리타 공항에서 도쿄 집까지 버스로 가요.",
+  "en": "I go from Narita Airport to my house in Tokyo by bus.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "成田（なりた）空港（くうこう）から東京（とうきょう）の家（いえ）までバスで行（い）きます。"
+ },
+ {
+  "id": "3a49155a6a",
+  "ko": "걸어서 가요.",
+  "en": "I go on foot.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "歩（ある）いて行（い）きます。"
+ },
+ {
+  "id": "5497a954b4",
+  "ko": "여기 보세요.",
+  "en": "Look over here.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "こちらを見（み）てください。"
+ },
+ {
+  "id": "269e84e7f7",
+  "ko": "친구하고 이야기하세요.",
+  "en": "Please talk with your friend.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "友達（ともだち）と話（はな）してください。"
+ },
+ {
+  "id": "517490c6df",
+  "ko": "춤을 추세요.",
+  "en": "Please dance.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "踊（おど）ってください。"
+ },
+ {
+  "id": "fd6e9e0dcf",
+  "ko": "교실에서 음식을 먹지 마세요.",
+  "en": "Please don't eat food in the classroom.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "教室（きょうしつ）で食（た）べ物（もの）を食（た）べないでください。"
+ },
+ {
+  "id": "bf77fc805a",
+  "ko": "명동에 어떻게 가요?",
+  "en": "How do I get to Myeongdong?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "明洞（ミョンドン）にはどうやって行（い）きますか？"
+ },
+ {
+  "id": "76db96c150",
+  "ko": "미나 씨, 명동에 어떻게 가요?",
+  "en": "Mina, how do I get to Myeongdong?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "ミナさん、明洞（ミョンドン）にはどうやって行（い）きますか？"
+ },
+ {
+  "id": "b58d956f7b",
+  "ko": "저기에서 604번 버스를 타세요.",
+  "en": "Take the number 604 bus over there.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "あそこで604番（ばん）のバスに乗（の）ってください。"
+ },
+ {
+  "id": "1814ed8c45",
+  "ko": "명동까지 얼마나 걸려요?",
+  "en": "How long does it take to Myeongdong?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "明洞（ミョンドン）までどのくらいかかりますか？"
+ },
+ {
+  "id": "3c8d4f0c5d",
+  "ko": "30분쯤 걸려요.",
+  "en": "It takes about 30 minutes.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "30分（ぷん）くらいかかります。"
+ },
+ {
+  "id": "a35df39ac4",
+  "ko": "고마워요.",
+  "en": "Thank you.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "ありがとうございます。"
+ },
+ {
+  "id": "3ca4f0642d",
+  "ko": "인사동에 어떻게 가요?",
+  "en": "How do I get to Insadong?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "仁寺洞（インサドン）にはどうやって行（い）きますか？"
+ },
+ {
+  "id": "e881e83b4e",
+  "ko": "실례합니다. 인사동에 어떻게 가요?",
+  "en": "Excuse me. How do I get to Insadong?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "すみません。仁寺洞（インサドン）にはどうやって行（い）きますか？"
+ },
+ {
+  "id": "1429c61aba",
+  "ko": "지하철 2호선을 타세요.",
+  "en": "Take subway line 2.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "地下鉄（ちかてつ）2号線（にごうせん）に乗（の）ってください。"
+ },
+ {
+  "id": "e17f4b04f1",
+  "ko": "그리고 을지로3가 역에서 3호선으로 갈아타세요.",
+  "en": "And then transfer to line 3 at Euljiro 3-ga Station.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "そして、乙支路（ウルチロ）3街（が）駅（えき）で3号線（さんごうせん）に乗（の）り換（か）えてください。"
+ },
+ {
+  "id": "4bfbb2bc77",
+  "ko": "어디에서 내려요?",
+  "en": "Where do I get off?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "どこで降（お）りますか？"
+ },
+ {
+  "id": "a5f9ec3371",
+  "ko": "안국 역에서 내리세요.",
+  "en": "Get off at Anguk Station.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "安国（アングク）駅（えき）で降（お）りてください。"
+ },
+ {
+  "id": "d00ec72bdd",
+  "ko": "감사합니다.",
+  "en": "Thank you.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "ありがとうございます。"
+ },
+ {
+  "id": "8c18287189",
+  "ko": "얼마나 걸려요?",
+  "en": "How long does it take?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "どのくらいかかりますか？"
+ },
+ {
+  "id": "97a5513461",
+  "ko": "바야르 씨, 방학 때 부산에 여행 가고 싶어요.",
+  "en": "Bayar, I want to travel to Busan during the school vacation.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "バヤルさん、休（やす）みの時（とき）に釜山（プサン）へ旅行（りょこう）に行（い）きたいです。"
+ },
+ {
+  "id": "1d53d18946",
+  "ko": "부산에 어떻게 가요?",
+  "en": "How do I get to Busan?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "釜山（プサン）にはどうやって行（い）きますか？"
+ },
+ {
+  "id": "71b8efdc1b",
+  "ko": "KTX로 가세요.",
+  "en": "Go by KTX.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "KTXで行（い）ってください。"
+ },
+ {
+  "id": "fdc5c6862f",
+  "ko": "부산까지 얼마나 걸려요?",
+  "en": "How long does it take to Busan?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "釜山（プサン）までどのくらいかかりますか？"
+ },
+ {
+  "id": "e4472b4504",
+  "ko": "KTX로 세 시간쯤 걸려요.",
+  "en": "It takes about three hours by KTX.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "KTXで3時間（さんじかん）くらいかかります。"
+ },
+ {
+  "id": "88ede58375",
+  "ko": "아, 그래요? 고마워요.",
+  "en": "Oh, really? Thank you.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "あ、そうですか。ありがとうございます。"
+ },
+ {
+  "id": "c1b3e7084e",
+  "ko": "북촌 한옥마을에 가고 싶어요. 어떻게 가요?",
+  "en": "I want to go to Bukchon Hanok Village. How do I get there?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "北村（プクチョン）韓屋村（ハノクマウル）に行（い）きたいです。どうやって行（い）きますか？"
+ },
+ {
+  "id": "41c9692460",
+  "ko": "어디 알아요?",
+  "en": "Do you know where it is?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "どこか知（し）っていますか？"
+ },
+ {
+  "id": "dcda9098b1",
+  "ko": "북촌 한옥마을 알아요.",
+  "en": "I know Bukchon Hanok Village.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "北村（プクチョン）韓屋村（ハノクマウル）を知（し）っています。"
+ },
+ {
+  "id": "76b0d6b605",
+  "ko": "신촌 역에서 지하철 2호선을 타세요.",
+  "en": "Take subway line 2 at Sinchon Station.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "新村（シンチョン）駅（えき）で地下鉄（ちかてつ）2号線（にごうせん）に乗（の）ってください。"
+ },
+ {
+  "id": "2b55f0cfc4",
+  "ko": "시간이 얼마나 걸려요?",
+  "en": "How much time does it take?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "時間（じかん）はどのくらいかかりますか？"
+ },
+ {
+  "id": "fc517ec5e7",
+  "ko": "45분쯤 걸려요.",
+  "en": "It takes about 45 minutes.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "45分（ふん）くらいかかります。"
+ },
+ {
+  "id": "079994797a",
+  "ko": "거기에서 뭐 해요?",
+  "en": "What do you do there?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "そこで何（なに）をしますか？"
+ },
+ {
+  "id": "5d73e10550",
+  "ko": "한옥을 구경해요.",
+  "en": "I look around the hanok houses.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "韓屋（ハノク）を見物（けんぶつ）します。"
+ },
+ {
+  "id": "c42be95efa",
+  "ko": "집이 어디예요?",
+  "en": "Where is your house?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "家（いえ）はどこですか？"
+ },
+ {
+  "id": "2bf5197d32",
+  "ko": "집이 학교에서 가까워요?",
+  "en": "Is your house close to school?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "家（いえ）は学校（がっこう）から近（ちか）いですか？"
+ },
+ {
+  "id": "89fd1e00f4",
+  "ko": "학교에 어떻게 가요?",
+  "en": "How do you get to school?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "学校（がっこう）にはどうやって行（い）きますか？"
+ },
+ {
+  "id": "643e909b43",
+  "ko": "완 씨는 학교에 걸어서 가요.",
+  "en": "Wan goes to school on foot.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "ワンさんは学校（がっこう）に歩（ある）いて行（い）きます。"
+ },
+ {
+  "id": "fd2a3f4fc1",
+  "ko": "수잔 씨는 학교에 지하철로 가요.",
+  "en": "Susan goes to school by subway.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "スーザンさんは学校（がっこう）に地下鉄（ちかてつ）で行（い）きます。"
+ },
+ {
+  "id": "d8dd297671",
+  "ko": "앤디 씨는 요즘 어떻게 학교에 가요?",
+  "en": "How does Andy get to school nowadays?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "アンディさんは最近（さいきん）どうやって学校（がっこう）に行（い）きますか？"
+ },
+ {
+  "id": "bcb2994c9c",
+  "ko": "앤디 씨는 지난달부터 학교에 다녀요.",
+  "en": "Andy has been attending school since last month.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "アンディさんは先月（せんげつ）から学校（がっこう）に通（かよ）っています。"
+ },
+ {
+  "id": "6f4f8953fb",
+  "ko": "수업이 아홉 시에 시작해요.",
+  "en": "Class starts at nine o'clock.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "授業（じゅぎょう）は9時（くじ）に始（はじ）まります。"
+ },
+ {
+  "id": "a027638526",
+  "ko": "그런데 앤디 씨 집이 학교에서 멀어요.",
+  "en": "But Andy's house is far from school.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "でも、アンディさんの家（いえ）は学校（がっこう）から遠（とお）いです。"
+ },
+ {
+  "id": "22ba0f733a",
+  "ko": "그래서 첫날 앤디 씨는 버스로 학교에 갔어요.",
+  "en": "So on the first day Andy went to school by bus.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "それで、初日（しょにち）アンディさんはバスで学校（がっこう）に行（い）きました。"
+ },
+ {
+  "id": "39d3037f2c",
+  "ko": "왜냐하면 버스 정류장이 집에서 가까워요.",
+  "en": "That's because the bus stop is close to his house.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "なぜなら、バス停留所（ていりゅうじょ）が家（いえ）から近（ちか）いからです。"
+ },
+ {
+  "id": "0a9fd044c2",
+  "ko": "그런데 길이 많이 막혔어요.",
+  "en": "But there was a lot of traffic.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "でも、道（みち）がとても混（こ）んでいました。"
+ },
+ {
+  "id": "9b71c3f7ed",
+  "ko": "집에서 학교까지 50분 걸렸어요.",
+  "en": "It took 50 minutes from his house to school.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "家（いえ）から学校（がっこう）まで50分（ぷん）かかりました。"
+ },
+ {
+  "id": "0d821e8baf",
+  "ko": "그래서 수업 시간에 늦었어요.",
+  "en": "So he was late for class.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "それで、授業（じゅぎょう）に遅（おく）れました。"
+ },
+ {
+  "id": "b029bef700",
+  "ko": "다음 날 앤디 씨는 지하철을 탔어요.",
+  "en": "The next day Andy took the subway.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "次（つぎ）の日（ひ）、アンディさんは地下鉄（ちかてつ）に乗（の）りました。"
+ },
+ {
+  "id": "61b3bbfe26",
+  "ko": "지하철역은 집에서 조금 멀어요.",
+  "en": "The subway station is a little far from his house.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "地下鉄（ちかてつ）の駅（えき）は家（いえ）から少（すこ）し遠（とお）いです。"
+ },
+ {
+  "id": "9aecaf5a3d",
+  "ko": "지하철역까지 많이 걸었어요.",
+  "en": "He walked a lot to the subway station.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "地下鉄（ちかてつ）の駅（えき）までたくさん歩（ある）きました。"
+ },
+ {
+  "id": "ac6b364d8e",
+  "ko": "그런데 지하철이 아주 빨랐어요.",
+  "en": "But the subway was very fast.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "でも、地下鉄（ちかてつ）はとても速（はや）かったです。"
+ },
+ {
+  "id": "0e32b8cde2",
+  "ko": "25분쯤 걸렸어요.",
+  "en": "It took about 25 minutes.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "25分（ふん）くらいかかりました。"
+ },
+ {
+  "id": "7414ec0fa6",
+  "ko": "그래서 학교에 일찍 도착했어요.",
+  "en": "So he arrived at school early.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "それで、学校（がっこう）に早（はや）く到着（とうちゃく）しました。"
+ },
+ {
+  "id": "93c744ab3b",
+  "ko": "앤디 씨는 요즘 지하철로 학교에 가요.",
+  "en": "Andy goes to school by subway nowadays.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "アンディさんは最近（さいきん）地下鉄（ちかてつ）で学校（がっこう）に行（い）きます。"
+ },
+ {
+  "id": "b7ac614b52",
+  "ko": "이제 학교에 안 늦어요.",
+  "en": "He isn't late for school anymore.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "もう学校（がっこう）に遅（おく）れません。"
+ },
+ {
+  "id": "965e1eb91a",
+  "ko": "앤디 씨는 첫날 버스를 탔어요. 학교에 일찍 도착했어요?",
+  "en": "Andy took the bus on the first day. Did he arrive at school early?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "アンディさんは初日（しょにち）バスに乗（の）りました。学校（がっこう）に早（はや）く到着（とうちゃく）しましたか？"
+ },
+ {
+  "id": "63274452a1",
+  "ko": "앤디 씨 집에서 지하철역까지 가까워요?",
+  "en": "Is it close from Andy's house to the subway station?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "アンディさんの家（いえ）から地下鉄（ちかてつ）の駅（えき）まで近（ちか）いですか？"
+ },
+ {
+  "id": "398bc592ee",
+  "ko": "앤디 씨는 다음 날 지하철을 탔어요. 뭐가 좋았어요?",
+  "en": "Andy took the subway the next day. What was good about it?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "アンディさんは次（つぎ）の日（ひ）地下鉄（ちかてつ）に乗（の）りました。何（なに）がよかったですか？"
+ },
+ {
+  "id": "fe830e8a25",
+  "ko": "앤디 씨 집에서 학교까지 얼마나 걸렸어요?",
+  "en": "How long did it take from Andy's house to school?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "アンディさんの家（いえ）から学校（がっこう）までどのくらいかかりましたか？"
+ },
+ {
+  "id": "5e23390936",
+  "ko": "앤디 씨는 요즘 어떻게 학교에 가요? 왜요?",
+  "en": "How does Andy get to school nowadays? Why?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "アンディさんは最近（さいきん）どうやって学校（がっこう）に行（い）きますか。どうしてですか？"
+ },
+ {
+  "id": "377c34514c",
+  "ko": "앤디 씨는 첫날 버스로 학교에 갔어요.",
+  "en": "Andy went to school by bus on the first day.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "アンディさんは初日（しょにち）バスで学校（がっこう）に行（い）きました。"
+ },
+ {
+  "id": "c88403a79d",
+  "ko": "집 근처에 지하철역이 있어요?",
+  "en": "Is there a subway station near your house?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "家（いえ）の近（ちか）くに地下鉄（ちかてつ）の駅（えき）がありますか？"
+ },
+ {
+  "id": "122da68f7d",
+  "ko": "네, 있어요. 걸어서 5분쯤 걸려요.",
+  "en": "Yes, there is. It takes about five minutes on foot.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "はい、あります。歩（ある）いて5分（ふん）くらいかかります。"
+ },
+ {
+  "id": "4ff1b274f1",
+  "ko": "집에서 지하철역이 가까워요?",
+  "en": "Is the subway station close to your house?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "家（いえ）から地下鉄（ちかてつ）の駅（えき）は近（ちか）いですか？"
+ },
+ {
+  "id": "b62fe1b8a2",
+  "ko": "인사동에 지하철로 어떻게 가요?",
+  "en": "How do I get to Insadong by subway?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "仁寺洞（インサドン）に地下鉄（ちかてつ）でどうやって行（い）きますか？"
+ },
+ {
+  "id": "9c7ac38d72",
+  "ko": "앤디 씨하고 미나 씨가 인사동에 대해서 이야기해요.",
+  "en": "Andy and Mina are talking about Insadong.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "アンディさんとミナさんが仁寺洞（インサドン）について話（はな）しています。"
+ },
+ {
+  "id": "809544b67d",
+  "ko": "미나 씨, 여기 알아요? 여기가 어디예요?",
+  "en": "Mina, do you know this place? Where is this?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "ミナさん、ここを知（し）っていますか。ここはどこですか？"
+ },
+ {
+  "id": "1addded785",
+  "ko": "아, 여기요? 인사동이에요.",
+  "en": "Oh, here? It's Insadong.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "あ、ここですか。仁寺洞（インサドン）です。"
+ },
+ {
+  "id": "0033396b73",
+  "ko": "여기가 인사동이에요? 친구들한테서 이야기를 많이 들었어요.",
+  "en": "This is Insadong? I've heard a lot about it from my friends.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "ここが仁寺洞（インサドン）ですか。友達（ともだち）から話（はなし）をたくさん聞（き）きました。"
+ },
+ {
+  "id": "29b5c4ec99",
+  "ko": "아, 그래요? 저도 인사동에 자주 가요.",
+  "en": "Oh, really? I go to Insadong often too.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "あ、そうですか。私（わたし）もよく仁寺洞（インサドン）に行（い）きます。"
+ },
+ {
+  "id": "687a406f06",
+  "ko": "정말요? 저도 인사동에 가고 싶어요.",
+  "en": "Really? I want to go to Insadong too.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "本当（ほんとう）ですか。私（わたし）も仁寺洞（インサドン）に行（い）きたいです。"
+ },
+ {
+  "id": "067a23551f",
+  "ko": "다음 주 어때요?",
+  "en": "How about next week?",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "来週（らいしゅう）はどうですか？"
+ },
+ {
+  "id": "cc6e5e86b7",
+  "ko": "친구들한테서 이야기를 많이 들었어요.",
+  "en": "I heard a lot about it from my friends.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "友達（ともだち）から話（はなし）をたくさん聞（き）きました。"
+ },
+ {
+  "id": "a695ff89b1",
+  "ko": "신촌에서 인사동까지 버스로 가요.",
+  "en": "You go from Sinchon to Insadong by bus.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "新村（シンチョン）から仁寺洞（インサドン）までバスで行（い）きます。"
+ },
+ {
+  "id": "31316a300f",
+  "ko": "신촌에서 273번 버스를 타요.",
+  "en": "You take the number 273 bus at Sinchon.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "新村（シンチョン）で273番（ばん）のバスに乗（の）ります。"
+ },
+ {
+  "id": "a8bc46305c",
+  "ko": "버스로 40분쯤 걸려요.",
+  "en": "It takes about 40 minutes by bus.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "バスで40分（ぷん）くらいかかります。"
+ },
+ {
+  "id": "0336c032aa",
+  "ko": "신촌에서 인사동까지 지하철로 가요.",
+  "en": "You go from Sinchon to Insadong by subway.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "新村（シンチョン）から仁寺洞（インサドン）まで地下鉄（ちかてつ）で行（い）きます。"
+ },
+ {
+  "id": "4fa4f0a953",
+  "ko": "신촌 역에서 지하철 2호선을 타요.",
+  "en": "You take subway line 2 at Sinchon Station.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "新村（シンチョン）駅（えき）で地下鉄（ちかてつ）2号線（にごうせん）に乗（の）ります。"
+ },
+ {
+  "id": "bddbedd53d",
+  "ko": "그리고 을지로3가 역에서 3호선으로 갈아타요.",
+  "en": "And then you transfer to line 3 at Euljiro 3-ga Station.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "そして、乙支路（ウルチロ）3街（が）駅（えき）で3号線（さんごうせん）に乗（の）り換（か）えます。"
+ },
+ {
+  "id": "f04757fc61",
+  "ko": "안국 역에서 내려요.",
+  "en": "You get off at Anguk Station.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "安国（アングク）駅（えき）で降（お）ります。"
+ },
+ {
+  "id": "96aafec612",
+  "ko": "지하철로 25분쯤 걸려요.",
+  "en": "It takes about 25 minutes by subway.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "地下鉄（ちかてつ）で25分（ふん）くらいかかります。"
+ },
+ {
+  "id": "cfd22b5692",
+  "ko": "저는 인사동을 좋아해요.",
+  "en": "I like Insadong.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "私（わたし）は仁寺洞（インサドン）が好（す）きです。"
+ },
+ {
+  "id": "1c34ac5963",
+  "ko": "주말에 자주 가요.",
+  "en": "I go there often on weekends.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "週末（しゅうまつ）によく行（い）きます。"
+ },
+ {
+  "id": "52f09761fc",
+  "ko": "신촌에서 인사동까지 지하철로 25분쯤 걸려요.",
+  "en": "It takes about 25 minutes from Sinchon to Insadong by subway.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "新村（シンチョン）から仁寺洞（インサドン）まで地下鉄（ちかてつ）で25分（ふん）くらいかかります。"
+ },
+ {
+  "id": "c999a372ce",
+  "ko": "604번 버스를 타세요.",
+  "en": "Take the number 604 bus.",
+  "tags": [
+   "Book1A::Unit5::Sentences"
+  ],
+  "ja": "604番（ばん）のバスに乗（の）ってください。"
+ },
+ {
+  "id": "a1b40e1808",
+  "ko": "올해",
+  "en": "This year",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "今年（ことし）"
+ },
+ {
+  "id": "d55a6e00ec",
+  "ko": "내년",
+  "en": "Next year",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "来年（らいねん）"
+ },
+ {
+  "id": "20fe46cd86",
+  "ko": "이번 달",
+  "en": "This month",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "今月（こんげつ）"
+ },
+ {
+  "id": "38500ba169",
+  "ko": "다음 달",
+  "en": "Next month",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "来月（らいげつ）"
+ },
+ {
+  "id": "da1aa187f3",
+  "ko": "두 달 후",
+  "en": "Two months later",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "二（ふた）か月後（げつご）"
+ },
+ {
+  "id": "1d4ed723c6",
+  "ko": "오늘",
+  "en": "Today",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "今日（きょう）"
+ },
+ {
+  "id": "55907c45c6",
+  "ko": "내일",
+  "en": "Tomorrow",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "明日（あした）"
+ },
+ {
+  "id": "b720d409ac",
+  "ko": "2일 후",
+  "en": "Two days later",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "二日後（ふつかご）"
+ },
+ {
+  "id": "7f4afe4a4c",
+  "ko": "이번 주",
+  "en": "This week",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "今週（こんしゅう）"
+ },
+ {
+  "id": "181e1cee6b",
+  "ko": "다음 주",
+  "en": "Next week",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "来週（らいしゅう）"
+ },
+ {
+  "id": "844d0ff894",
+  "ko": "2주 후",
+  "en": "Two weeks later",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "二週間後（にしゅうかんご）"
+ },
+ {
+  "id": "3b5fb18ad7",
+  "ko": "환전을 하다",
+  "en": "To change money",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "両替（りょうがえ）をする"
+ },
+ {
+  "id": "77ac9542a0",
+  "ko": "사진을 찍다",
+  "en": "To take a photograph",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "写真（しゃしん）を撮（と）る"
+ },
+ {
+  "id": "29ec7b7749",
+  "ko": "옷을 바꾸다",
+  "en": "To change clothes",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "服（ふく）を取（と）り替（か）える"
+ },
+ {
+  "id": "016528e9b1",
+  "ko": "택배를 보내다",
+  "en": "To send a package",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "宅配便（たくはいびん）を送（おく）る"
+ },
+ {
+  "id": "2ef9661302",
+  "ko": "머리를 자르다",
+  "en": "To get a haircut",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "髪（かみ）を切（き）る"
+ },
+ {
+  "id": "b047d0eb76",
+  "ko": "쇼핑몰",
+  "en": "Shopping mall",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "ショッピングモール"
+ },
+ {
+  "id": "a72efcc0a3",
+  "ko": "영어",
+  "en": "English language",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "英語（えいご）"
+ },
+ {
+  "id": "2ab657d655",
+  "ko": "커피를 사다",
+  "en": "To buy coffee",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "コーヒーを買（か）う"
+ },
+ {
+  "id": "06f9d46788",
+  "ko": "마트",
+  "en": "Supermarket, mart",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "スーパー"
+ },
+ {
+  "id": "0224a6aae9",
+  "ko": "편의점",
+  "en": "Convenience store",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "コンビニ"
+ },
+ {
+  "id": "674343af53",
+  "ko": "은행",
+  "en": "Bank",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "銀行（ぎんこう）"
+ },
+ {
+  "id": "08170c0d6b",
+  "ko": "체육관",
+  "en": "Gym",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "体育館（たいいくかん）"
+ },
+ {
+  "id": "ff8dc5f76f",
+  "ko": "친구 집",
+  "en": "A friend's house",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "友（とも）だちの家（いえ）"
+ },
+ {
+  "id": "a720b74790",
+  "ko": "비빔밥",
+  "en": "Bibimbap",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "ビビンバ"
+ },
+ {
+  "id": "3b4991253c",
+  "ko": "김치찌개",
+  "en": "Kimchi stew",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "キムチチゲ"
+ },
+ {
+  "id": "97f9450ac6",
+  "ko": "주스",
+  "en": "Juice",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "ジュース"
+ },
+ {
+  "id": "04ea4d8ba6",
+  "ko": "샌드위치",
+  "en": "Sandwich",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "サンドイッチ"
+ },
+ {
+  "id": "ab11134bc8",
+  "ko": "김밥",
+  "en": "Gimbap",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "キンパ"
+ },
+ {
+  "id": "a086c50d3f",
+  "ko": "등산하다",
+  "en": "To go hiking, to climb a mountain",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "登山（とざん）する"
+ },
+ {
+  "id": "44ae56778c",
+  "ko": "영어를 가르치다",
+  "en": "To teach English",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "英語（えいご）を教（おし）える"
+ },
+ {
+  "id": "c53bd960ea",
+  "ko": "노래를 듣다",
+  "en": "To listen to music",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "歌（うた）を聞（き）く"
+ },
+ {
+  "id": "6031a803f9",
+  "ko": "친구하고 놀다",
+  "en": "To hang out with friends",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "友（とも）だちと遊（あそ）ぶ"
+ },
+ {
+  "id": "8ef2b8cc1f",
+  "ko": "점심을 먹으러 가다",
+  "en": "To go to eat lunch",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "昼（ひる）ご飯（はん）を食（た）べに行（い）く"
+ },
+ {
+  "id": "c343596672",
+  "ko": "시험공부하다",
+  "en": "To study for an exam",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "試験勉強（しけんべんきょう）をする"
+ },
+ {
+  "id": "3e74a1614e",
+  "ko": "책을 빌리다",
+  "en": "To borrow a book",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "本（ほん）を借（か）りる"
+ },
+ {
+  "id": "5a6afaaf7c",
+  "ko": "산책하다",
+  "en": "To take a walk",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "散歩（さんぽ）する"
+ },
+ {
+  "id": "02fbdae742",
+  "ko": "자전거를 타다",
+  "en": "To ride a bicycle",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "自転車（じてんしゃ）に乗（の）る"
+ },
+ {
+  "id": "b57dcba01d",
+  "ko": "구경하다",
+  "en": "To look around, to sightsee",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "見物（けんぶつ）する"
+ },
+ {
+  "id": "fff2e87459",
+  "ko": "옷을 사다",
+  "en": "To buy clothes",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "服（ふく）を買（か）う"
+ },
+ {
+  "id": "ecc2884cfa",
+  "ko": "북한산",
+  "en": "Mt. Bukhansan",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "北漢山（プッカンサン）"
+ },
+ {
+  "id": "0b82c4703b",
+  "ko": "관악산",
+  "en": "Mt. Gwanaksan",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "冠岳山（クァナクサン）"
+ },
+ {
+  "id": "9a1df4571d",
+  "ko": "명동",
+  "en": "Myeongdong",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "明洞（ミョンドン）"
+ },
+ {
+  "id": "51c15ead72",
+  "ko": "홍대",
+  "en": "Hongdae",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "弘大（ホンデ）"
+ },
+ {
+  "id": "9ffeb4d843",
+  "ko": "코엑스",
+  "en": "COEX",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "コエックス"
+ },
+ {
+  "id": "e3cd8ff100",
+  "ko": "용산",
+  "en": "Yongsan",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "龍山（ヨンサン）"
+ },
+ {
+  "id": "a5caeb2e9e",
+  "ko": "서울숲",
+  "en": "Seoul Forest",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "ソウルの森（もり）"
+ },
+ {
+  "id": "79bcd9eda3",
+  "ko": "한강 공원",
+  "en": "Han River Park",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "漢江公園（ハンガンこうえん）"
+ },
+ {
+  "id": "5b2ccd6a99",
+  "ko": "휴가",
+  "en": "Vacation, leave (from work or school)",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "休暇（きゅうか）"
+ },
+ {
+  "id": "5b173733c0",
+  "ko": "서핑을 하다",
+  "en": "To surf",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "サーフィンをする"
+ },
+ {
+  "id": "4f2e8af69c",
+  "ko": "시티투어버스를 타다",
+  "en": "To take the city tour bus",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "シティツアーバスに乗（の）る"
+ },
+ {
+  "id": "8c7e2a6c36",
+  "ko": "해운대",
+  "en": "Haeundae",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "海雲台（ヘウンデ）"
+ },
+ {
+  "id": "2d6f3a0d8d",
+  "ko": "부산 음식",
+  "en": "Busan food",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "釜山（プサン）の料理（りょうり）"
+ },
+ {
+  "id": "05036c8931",
+  "ko": "버킷 리스트",
+  "en": "Bucket list",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "バケットリスト"
+ },
+ {
+  "id": "f6022fec55",
+  "ko": "롯데월드",
+  "en": "Lotte World",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "ロッテワールド"
+ },
+ {
+  "id": "102b01c0bf",
+  "ko": "바이킹",
+  "en": "Pirate ship ride",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "バイキング（遊具（ゆうぐ））"
+ },
+ {
+  "id": "0aaf9cc8d1",
+  "ko": "제주도",
+  "en": "Jeju Island",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "済州島（チェジュド）"
+ },
+ {
+  "id": "0c50a3a11b",
+  "ko": "드라이브",
+  "en": "A drive",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "ドライブ"
+ },
+ {
+  "id": "e1836d2967",
+  "ko": "잡채",
+  "en": "Japchae",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "チャプチェ"
+ },
+ {
+  "id": "802e3b981a",
+  "ko": "아르바이트를 하다",
+  "en": "To do a part-time job",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "アルバイトをする"
+ },
+ {
+  "id": "6c544310cc",
+  "ko": "새 친구들",
+  "en": "New friends",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "新（あたら）しい友（とも）だち"
+ },
+ {
+  "id": "042dbc0828",
+  "ko": "반 친구들",
+  "en": "Friends from class",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "クラスの友（とも）だち"
+ },
+ {
+  "id": "6bb6149eaa",
+  "ko": "낮잠을 자다",
+  "en": "To take a nap",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "昼寝（ひるね）をする"
+ },
+ {
+  "id": "ad07217d02",
+  "ko": "주중",
+  "en": "During the week",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "平日（へいじつ）"
+ },
+ {
+  "id": "9ed76264be",
+  "ko": "손님",
+  "en": "Guest, customer",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "お客（きゃく）さん"
+ },
+ {
+  "id": "b4827a7150",
+  "ko": "이번",
+  "en": "This (time)",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "今回（こんかい）の"
+ },
+ {
+  "id": "fdf123b5e1",
+  "ko": "소개하다",
+  "en": "To introduce",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "紹介（しょうかい）する"
+ },
+ {
+  "id": "1cfc7b33f2",
+  "ko": "식사하다",
+  "en": "To have a meal",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "食事（しょくじ）する"
+ },
+ {
+  "id": "ea0e1711f1",
+  "ko": "학생 식당",
+  "en": "Student cafeteria",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "学生食堂（がくせいしょくどう）"
+ },
+ {
+  "id": "132971b3d3",
+  "ko": "왜냐하면",
+  "en": "Because",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "なぜなら"
+ },
+ {
+  "id": "ac2c2f26a2",
+  "ko": "방학",
+  "en": "School vacation",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "休（やす）み（学校（がっこう）の）"
+ },
+ {
+  "id": "5ce1836adb",
+  "ko": "유럽",
+  "en": "Europe",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "ヨーロッパ"
+ },
+ {
+  "id": "12d7079d1a",
+  "ko": "혼자",
+  "en": "By oneself, alone",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "一人（ひとり）で"
+ },
+ {
+  "id": "1523bf81e5",
+  "ko": "박물관",
+  "en": "Museum",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "博物館（はくぶつかん）"
+ },
+ {
+  "id": "35822abc7d",
+  "ko": "그리고 또",
+  "en": "And then",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "そしてまた"
+ },
+ {
+  "id": "f209b12f14",
+  "ko": "파리에만",
+  "en": "Only in/to Paris",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "パリにだけ"
+ },
+ {
+  "id": "e6296e1c29",
+  "ko": "이탈리아에도",
+  "en": "Also in/to Italy",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "イタリアにも"
+ },
+ {
+  "id": "6ea65449c2",
+  "ko": "로마",
+  "en": "Rome",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "ローマ"
+ },
+ {
+  "id": "fee66870cd",
+  "ko": "베네치아",
+  "en": "Venice",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "ベネチア"
+ },
+ {
+  "id": "0615e03f50",
+  "ko": "나중에",
+  "en": "Later",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "後（あと）で"
+ },
+ {
+  "id": "b13915483c",
+  "ko": "사진을 보여주세요.",
+  "en": "Please show me your photographs.",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "写真（しゃしん）を見（み）せてください。"
+ },
+ {
+  "id": "4df3c59ce6",
+  "ko": "여행 잘 다녀오세요.",
+  "en": "Have a nice trip.",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "旅行（りょこう）、気（き）をつけて行（い）ってきてください。"
+ },
+ {
+  "id": "56eb62398e",
+  "ko": "프랑스",
+  "en": "France",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "フランス"
+ },
+ {
+  "id": "11fd20a7a7",
+  "ko": "파리",
+  "en": "Paris",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "パリ"
+ },
+ {
+  "id": "898d4a1047",
+  "ko": "영국",
+  "en": "The UK",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "イギリス"
+ },
+ {
+  "id": "2e4e5051f3",
+  "ko": "런던",
+  "en": "London",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "ロンドン"
+ },
+ {
+  "id": "c36e141e96",
+  "ko": "스페인",
+  "en": "Spain",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "スペイン"
+ },
+ {
+  "id": "e0cbd149c1",
+  "ko": "바르셀로나",
+  "en": "Barcelona",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "バルセロナ"
+ },
+ {
+  "id": "c080570ab9",
+  "ko": "이탈리아",
+  "en": "Italy",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "イタリア"
+ },
+ {
+  "id": "a0a66e6184",
+  "ko": "체코",
+  "en": "Czechia",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "チェコ"
+ },
+ {
+  "id": "a11e6317d5",
+  "ko": "프라하",
+  "en": "Prague",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "プラハ"
+ },
+ {
+  "id": "9fe50d53b0",
+  "ko": "독일",
+  "en": "Germany",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "ドイツ"
+ },
+ {
+  "id": "98639ec0f1",
+  "ko": "프랑크푸르트",
+  "en": "Frankfurt",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "フランクフルト"
+ },
+ {
+  "id": "0e13283f67",
+  "ko": "네덜란드",
+  "en": "The Netherlands",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "オランダ"
+ },
+ {
+  "id": "f1ecbd03a7",
+  "ko": "암스테르담",
+  "en": "Amsterdam",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "アムステルダム"
+ },
+ {
+  "id": "50e3d4d5e8",
+  "ko": "어느 나라",
+  "en": "Which country",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "どの国（くに）"
+ },
+ {
+  "id": "67d5d2adc8",
+  "ko": "호텔",
+  "en": "Hotel",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "ホテル"
+ },
+ {
+  "id": "685b04acfc",
+  "ko": "어디에 가요?",
+  "en": "Where are you going?",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "どこに行（い）きますか？"
+ },
+ {
+  "id": "ae44c3b249",
+  "ko": "산책하러 공원에 가요.",
+  "en": "I'm going to the park to take a walk.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "散歩（さんぽ）しに公園（こうえん）に行（い）きます。"
+ },
+ {
+  "id": "86b11a38da",
+  "ko": "사과를 사러 마트에 가요.",
+  "en": "I'm going to the supermarket to buy apples.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "リンゴを買（か）いにスーパーに行（い）きます。"
+ },
+ {
+  "id": "bec517e979",
+  "ko": "커피를 사러 편의점에 가요.",
+  "en": "I'm going to the convenience store to buy coffee.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "コーヒーを買（か）いにコンビニに行（い）きます。"
+ },
+ {
+  "id": "86a04b84be",
+  "ko": "환전을 하러 은행에 가요.",
+  "en": "I'm going to the bank to change money.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "両替（りょうがえ）をしに銀行（ぎんこう）に行（い）きます。"
+ },
+ {
+  "id": "987d26de4c",
+  "ko": "아침에 뭐 먹어요?",
+  "en": "What do you eat in the morning?",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "朝（あさ）は何（なに）を食（た）べますか？"
+ },
+ {
+  "id": "17e3b0d918",
+  "ko": "사과나 바나나를 먹어요.",
+  "en": "I eat apples or bananas.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "リンゴかバナナを食（た）べます。"
+ },
+ {
+  "id": "e5315798a7",
+  "ko": "비빔밥이나 김치찌개를 먹어요.",
+  "en": "I eat bibimbap or kimchi stew.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "ビビンバかキムチチゲを食（た）べます。"
+ },
+ {
+  "id": "bf87da90b1",
+  "ko": "아침에 보통 뭐 먹어요?",
+  "en": "What do you usually eat in the morning?",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "朝（あさ）はふつう何（なに）を食（た）べますか？"
+ },
+ {
+  "id": "030312c7aa",
+  "ko": "샌드위치나 김밥을 먹어요.",
+  "en": "I eat a sandwich or gimbap.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "サンドイッチかキンパを食（た）べます。"
+ },
+ {
+  "id": "21e64b5837",
+  "ko": "밥이나 빵을 먹어요.",
+  "en": "I eat rice or bread.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "ご飯（はん）かパンを食（た）べます。"
+ },
+ {
+  "id": "279005e616",
+  "ko": "카페에서 보통 뭐 마셔요?",
+  "en": "What do you usually drink at a cafe?",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "カフェではふつう何（なに）を飲（の）みますか？"
+ },
+ {
+  "id": "b7e3e0cda8",
+  "ko": "시간이 있어요. 그럼 뭐 배우고 싶어요?",
+  "en": "You have time. So what do you want to learn?",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "時間（じかん）があります。では何（なに）を習（なら）いたいですか？"
+ },
+ {
+  "id": "5cb53c6627",
+  "ko": "수업 후에 어디에서 공부해요?",
+  "en": "Where do you study after class?",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "授業（じゅぎょう）の後（あと）にどこで勉強（べんきょう）しますか？"
+ },
+ {
+  "id": "eb5ea50b5f",
+  "ko": "친구를 만나요. 그럼 보통 어디에 가요?",
+  "en": "You meet a friend. So where do you usually go?",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "友（とも）だちに会（あ）います。ではふつうどこに行（い）きますか？"
+ },
+ {
+  "id": "ab5ebdcda9",
+  "ko": "부산에 어떻게 가요?",
+  "en": "How do you get to Busan?",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "釜山（プサン）にはどうやって行（い）きますか？"
+ },
+ {
+  "id": "d35da83bcf",
+  "ko": "내일 뭐 할 거예요?",
+  "en": "What are you going to do tomorrow?",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "明日（あした）、何（なに）をするつもりですか？"
+ },
+ {
+  "id": "298f9bd9e5",
+  "ko": "영화를 볼 거예요.",
+  "en": "I'm going to watch a movie.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "映画（えいが）を見（み）るつもりです。"
+ },
+ {
+  "id": "1804cc06eb",
+  "ko": "등산할 거예요.",
+  "en": "I'm going to go hiking.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "登山（とざん）するつもりです。"
+ },
+ {
+  "id": "364b209a7d",
+  "ko": "시험공부할 거예요.",
+  "en": "I'm going to study for an exam.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "試験勉強（しけんべんきょう）をするつもりです。"
+ },
+ {
+  "id": "812a39d9f3",
+  "ko": "친구하고 쇼핑할 거예요.",
+  "en": "I'm going to go shopping with a friend.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "友（とも）だちとショッピングするつもりです。"
+ },
+ {
+  "id": "ea67e326e0",
+  "ko": "책을 빌리러 도서관에 갈 거예요.",
+  "en": "I'm going to go to the library to borrow a book.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "本（ほん）を借（か）りに図書館（としょかん）に行（い）くつもりです。"
+ },
+ {
+  "id": "b805cfd8d7",
+  "ko": "앤디 씨, 어디에 가요?",
+  "en": "Andy, where are you going?",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "アンディさん、どこに行（い）きますか？"
+ },
+ {
+  "id": "2fadbc815c",
+  "ko": "공원에 가요.",
+  "en": "I'm going to the park.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "公園（こうえん）に行（い）きます。"
+ },
+ {
+  "id": "13251891d5",
+  "ko": "산책하러 가요?",
+  "en": "Are you going to take a walk?",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "散歩（さんぽ）しに行（い）くんですか？"
+ },
+ {
+  "id": "20afa52046",
+  "ko": "아니요, 자전거를 타러 가요.",
+  "en": "No, I'm going to ride a bicycle.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "いいえ、自転車（じてんしゃ）に乗（の）りに行（い）きます。"
+ },
+ {
+  "id": "fd9b9f8a68",
+  "ko": "이번 주 토요일에 뭐 할 거예요?",
+  "en": "What are you going to do this Saturday?",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "今週（こんしゅう）の土曜日（どようび）に何（なに）をするつもりですか？"
+ },
+ {
+  "id": "fd99a3a0f0",
+  "ko": "등산하러 갈 거예요.",
+  "en": "I'm going to go hiking.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "登山（とざん）しに行（い）くつもりです。"
+ },
+ {
+  "id": "33d4ca8c6b",
+  "ko": "어디에 갈 거예요?",
+  "en": "Where are you going to go?",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "どこに行（い）くつもりですか？"
+ },
+ {
+  "id": "51a9018a91",
+  "ko": "북한산이나 관악산에 갈 거예요.",
+  "en": "I'm going to go to Mt. Bukhansan or Mt. Gwanaksan.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "北漢山（プッカンサン）か冠岳山（クァナクサン）に行（い）くつもりです。"
+ },
+ {
+  "id": "15bb761adc",
+  "ko": "휴가가 언제예요?",
+  "en": "When is your vacation?",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "休暇（きゅうか）はいつですか？"
+ },
+ {
+  "id": "609f844bef",
+  "ko": "이번 주 금요일부터 다음 주 화요일까지예요.",
+  "en": "It's from this Friday to next Tuesday.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "今週（こんしゅう）の金曜日（きんようび）から来週（らいしゅう）の火曜日（かようび）までです。"
+ },
+ {
+  "id": "a6950cafd1",
+  "ko": "휴가 때 뭐 할 거예요?",
+  "en": "What are you going to do during your vacation?",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "休暇（きゅうか）のときに何（なに）をするつもりですか？"
+ },
+ {
+  "id": "6691513a19",
+  "ko": "부산에 갈 거예요.",
+  "en": "I'm going to go to Busan.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "釜山（プサン）に行（い）くつもりです。"
+ },
+ {
+  "id": "bceebb6e8e",
+  "ko": "부산에서 뭐 할 거예요?",
+  "en": "What are you going to do in Busan?",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "釜山（プサン）で何（なに）をするつもりですか？"
+ },
+ {
+  "id": "6cd5dcbe31",
+  "ko": "해운대에 갈 거예요.",
+  "en": "I'm going to go to Haeundae.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "海雲台（ヘウンデ）に行（い）くつもりです。"
+ },
+ {
+  "id": "2a251ae266",
+  "ko": "앤디 씨는 한국에서 버킷 리스트가 뭐예요?",
+  "en": "Andy, what's on your bucket list for Korea?",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "アンディさんの韓国（かんこく）でのバケットリストは何（なん）ですか？"
+ },
+ {
+  "id": "79f3661a27",
+  "ko": "롯데월드에 갈 거예요. 거기에서 바이킹을 탈 거예요.",
+  "en": "I'm going to go to Lotte World. I'm going to ride the pirate ship there.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "ロッテワールドに行（い）くつもりです。そこでバイキングに乗（の）るつもりです。"
+ },
+ {
+  "id": "b6c0013676",
+  "ko": "제주도에 가고 싶어요. 드라이브를 할 거예요.",
+  "en": "I want to go to Jeju Island. I'm going to go for a drive.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "済州島（チェジュド）に行（い）きたいです。ドライブをするつもりです。"
+ },
+ {
+  "id": "6fd65f06dd",
+  "ko": "한국 요리를 배울 거예요. 잡채를 배우고 싶어요.",
+  "en": "I'm going to learn Korean cooking. I want to learn japchae.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "韓国料理（かんこくりょうり）を習（なら）うつもりです。チャプチェを習（なら）いたいです。"
+ },
+ {
+  "id": "7f4bcda440",
+  "ko": "사라 씨는 수업 후에 반 친구들하고 점심을 먹으러 식당에 가요.",
+  "en": "After class Sarah goes to a restaurant with her classmates to eat lunch.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "サラさんは授業（じゅぎょう）の後（あと）、クラスの友（とも）だちと昼（ひる）ご飯（はん）を食（た）べに食堂（しょくどう）に行（い）きます。"
+ },
+ {
+  "id": "d4dd254214",
+  "ko": "학생 식당이나 학교 근처 식당에서 식사해요.",
+  "en": "She eats at the student cafeteria or at a restaurant near the school.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "学生食堂（がくせいしょくどう）か学校（がっこう）の近（ちか）くの食堂（しょくどう）で食事（しょくじ）します。"
+ },
+ {
+  "id": "678fa5bf55",
+  "ko": "미나 씨는 방학 때 유럽에 여행 갈 거예요.",
+  "en": "Mina is going to travel to Europe during the school vacation.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "ミナさんは休（やす）みのときにヨーロッパへ旅行（りょこう）に行（い）くつもりです。"
+ },
+ {
+  "id": "7d5e710004",
+  "ko": "미나 씨는 어느 나라에 여행 갈 거예요?",
+  "en": "Which country is Mina going to travel to?",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "ミナさんはどの国（くに）に旅行（りょこう）に行（い）くつもりですか？"
+ },
+ {
+  "id": "30716f30e2",
+  "ko": "미나 씨는 프랑스하고 스페인에 여행 갈 거예요.",
+  "en": "Mina is going to travel to France and Spain.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "ミナさんはフランスとスペインに旅行（りょこう）に行（い）くつもりです。"
+ },
+ {
+  "id": "07b6c09cc9",
+  "ko": "미나 씨는 혼자 여행 갈 거예요.",
+  "en": "Mina is going to travel alone.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "ミナさんは一人（ひとり）で旅行（りょこう）に行（い）くつもりです。"
+ },
+ {
+  "id": "64d8c78434",
+  "ko": "미나 씨는 파리에서 호텔에 있을 거예요.",
+  "en": "Mina is going to stay at a hotel in Paris.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "ミナさんはパリでホテルに泊（と）まるつもりです。"
+ },
+ {
+  "id": "e081473e4a",
+  "ko": "미나 씨는 파리에서 쇼핑을 안 할 거예요.",
+  "en": "Mina isn't going to go shopping in Paris.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "ミナさんはパリでショッピングをしないつもりです。"
+ },
+ {
+  "id": "4693495ecc",
+  "ko": "미나 씨는 이탈리아에서 사진을 많이 찍을 거예요.",
+  "en": "Mina is going to take a lot of photographs in Italy.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "ミナさんはイタリアで写真（しゃしん）をたくさん撮（と）るつもりです。"
+ },
+ {
+  "id": "150b44eb04",
+  "ko": "미나 씨, 이번 방학 때 뭐 할 거예요?",
+  "en": "Mina, what are you going to do during this vacation?",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "ミナさん、今回（こんかい）の休（やす）みに何（なに）をするつもりですか？"
+ },
+ {
+  "id": "6dd2e201a2",
+  "ko": "유럽에 여행 갈 거예요.",
+  "en": "I'm going to travel to Europe.",
+  "tags": [
+   "Book1A::Unit6::Sentences"
+  ],
+  "ja": "ヨーロッパへ旅行（りょこう）に行（い）くつもりです。"
  }
 ]
