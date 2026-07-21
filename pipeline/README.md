@@ -203,7 +203,7 @@ In particular, and in addition to the list below:
 
 ## Current content (as of this file)
 
-**1583 cards.**
+**1711 cards.**
 
 The alphabet and phrase sections, from the "서강한국어 1A 한글" (Sogang Korean 1A
 Hangul) intro unit slide decks — Hangul 1 (25 basics), Hangul 2 (63, plain
@@ -231,6 +231,16 @@ docstring records what was deliberately left uncarded and why. Its word list
 lives in the repo as `hangul_words.json` rather than in a scratch directory,
 so unlike the other generators it can be re-run from a clean checkout.
 
+`add_slide_words.py` then added 86 more Hangul cards from the publisher's own
+class decks (`slide_words.json`, same in-repo arrangement). Those decks are
+한글N *말하기* — speaking — and teach a substantially different word set from
+the book, so they are a parallel source, not a corrective one: only 11 of the
+50 Hangul 3 cards appear on the Hangul 3 slides at all. A word absent from the
+slides is not thereby wrong, and nothing was removed. The same script re-filed
+우유/여우/아야 into Hangul 2, where they belong; the Hangul 1 copies stay,
+because the freeze forbids deleting cards that may already carry review
+history.
+
 Preparatory Units 1–4 and Units 1–6, book pp.16–169:
 
 | Tag | Vocab / Sentences / Grammar | Book pages |
@@ -238,13 +248,13 @@ Preparatory Units 1–4 and Units 1–6, book pp.16–169:
 | `Book1A::PrepUnit1::*` | 28 / 39 / 2 | 16–25 |
 | `Book1A::PrepUnit2::*` | 31 / 17 / 3 | 26–35 |
 | `Book1A::PrepUnit3::*` | 48 / 22 / 4 | 36–45 |
-| `Book1A::PrepUnit4::*` | 56 / 22 / 4 | 46–55 |
-| `Book1A::Unit1::*` | 70 / 74 / 3 | 58–75 |
-| `Book1A::Unit2::*` | 72 / 95 / 6 | 76–93 |
-| `Book1A::Unit3::*` | 51 / 85 / 3 | 96–113 |
-| `Book1A::Unit4::*` | 70 / 117 / 4 | 114–131 |
-| `Book1A::Unit5::*` | 58 / 102 / 6 | 134–151 |
-| `Book1A::Unit6::*` | 104 / 64 / 3 | 152–169 |
+| `Book1A::PrepUnit4::*` | 57 / 22 / 4 | 46–55 |
+| `Book1A::Unit1::*` | 72 / 74 / 3 | 58–75 |
+| `Book1A::Unit2::*` | 76 / 95 / 6 | 76–93 |
+| `Book1A::Unit3::*` | 59 / 85 / 3 | 96–113 |
+| `Book1A::Unit4::*` | 77 / 117 / 4 | 114–131 |
+| `Book1A::Unit5::*` | 75 / 102 / 6 | 134–151 |
+| `Book1A::Unit6::*` | 107 / 64 / 3 | 152–169 |
 
 The four Culture Corners are one section each rather than a vocab/sentences
 pair — each is a two-page spread, and splitting would give sections of three
@@ -275,6 +285,32 @@ Grammar points per unit are recorded in `GRAMMAR_NOTES.md`.
 photographed; the book's owner confirmed on 2026-07-21 that it is a full-page
 opening photograph with no vocabulary and no example sentences. Nothing is
 lost. Everything from pp.16–171 is covered.
+
+**The Prep and Unit sections were checked against a second source on
+2026-07-21 and no card was misfiled.** All 264 Prep/Unit slides of the
+publisher's class decks were read and compared against the deck, which was
+built from photographs of the book. Zero misattributions. That is the strongest
+evidence there is that the photo transcription was sound; `add_unit_words.py`
+added the 42 words the slides teach that the book pages did not, and its
+docstring records the 24 that were deliberately left out.
+
+**Nothing has ever verified the English or Japanese.** Not one slide in any of
+the fourteen publisher decks prints a translation in any language — Korean,
+pictures and occasional romanization only. So the 2026-07-21 sweep could not
+check a single gloss, and "no gloss conflicts found" means no evidence existed,
+not that the glosses are right. Every gloss in this deck is ours, checked
+against dictionaries and against nothing else.
+
+**Japanese glosses are inconsistent about furigana, and the Hangul sections are
+the offenders.** The convention is furigana in full-width parens after each
+kanji run (`名前（なまえ）を書（か）く`), and Korean place names as hanja plus the
+Korean reading in katakana (`海雲台（ヘウンデ）`). Book1A follows it in 96% of the
+cards that contain kanji; the Hangul sections, whose cards were mostly added on
+2026-07-21, manage 17%. So a beginner meets 牛乳 and 石けん with no reading in
+exactly the sections aimed at someone who has just learned the alphabet. Fixing
+this means editing `ja` on ~136 existing cards, which the freeze permits — `ja`
+is display text and carries no review history — but it is a separate change and
+has not been done.
 
 **A word can legitimately have more than one card.** 129 words did before the
 Hangul backfill and ~23 more do after it — 칫솔 is in two Preparatory Units,

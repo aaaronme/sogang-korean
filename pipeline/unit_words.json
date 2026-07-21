@@ -1,0 +1,226 @@
+{
+ "Book1A::PrepUnit4::Vocab": [
+  [
+   "다섯 개",
+   "Five (things)",
+   "5個（こ）"
+  ]
+ ],
+ "Book1A::Unit1::Vocab": [
+  [
+   "며칠",
+   "What day of the month; how many days",
+   "何日（なんにち）"
+  ],
+  [
+   "몇 개",
+   "How many (things)",
+   "何個（なんこ）"
+  ]
+ ],
+ "Book1A::Unit2::Vocab": [
+  [
+   "한국어 수업",
+   "Korean class",
+   "韓国語（かんこくご）の授業（じゅぎょう）"
+  ],
+  [
+   "점심 식사",
+   "Lunch, the midday meal",
+   "昼食（ちゅうしょく）"
+  ],
+  [
+   "숙제",
+   "Homework",
+   "宿題（しゅくだい）"
+  ],
+  [
+   "게임",
+   "Game",
+   "ゲーム"
+  ]
+ ],
+ "Book1A::Unit3::Vocab": [
+  [
+   "밀크티",
+   "Milk tea",
+   "ミルクティー"
+  ],
+  [
+   "머핀",
+   "Muffin",
+   "マフィン"
+  ],
+  [
+   "크루아상",
+   "Croissant",
+   "クロワッサン"
+  ],
+  [
+   "베이글",
+   "Bagel",
+   "ベーグル"
+  ],
+  [
+   "영화",
+   "Movie",
+   "映画（えいが）"
+  ],
+  [
+   "춤",
+   "A dance; dancing (noun)",
+   "ダンス、踊（おど）り"
+  ],
+  [
+   "일본어를 가르치다",
+   "To teach Japanese",
+   "日本語（にほんご）を教（おし）える"
+  ],
+  [
+   "요가를 배우다",
+   "To learn yoga",
+   "ヨガを習（なら）う"
+  ]
+ ],
+ "Book1A::Unit4::Vocab": [
+  [
+   "해리포터를 보다",
+   "To watch Harry Potter",
+   "ハリー・ポッターを見（み）る"
+  ],
+  [
+   "비자를 받다",
+   "To get a visa",
+   "ビザを取（と）る"
+  ],
+  [
+   "수영을 배우다",
+   "To learn swimming, to take swimming lessons",
+   "水泳（すいえい）を習（なら）う"
+  ],
+  [
+   "핸드폰을 사다",
+   "To buy a mobile phone",
+   "携帯電話（けいたいでんわ）を買（か）う"
+  ],
+  [
+   "5년 전",
+   "Five years ago",
+   "5年前（ねんまえ）"
+  ],
+  [
+   "도서관에 가다",
+   "To go to the library",
+   "図書館（としょかん）に行（い）く"
+  ],
+  [
+   "책을 읽다",
+   "To read a book",
+   "本（ほん）を読（よ）む"
+  ]
+ ],
+ "Book1A::Unit5::Vocab": [
+  [
+   "집에 가다",
+   "To go home",
+   "家（いえ）に帰（かえ）る"
+  ],
+  [
+   "한국에서 살다",
+   "To live in Korea",
+   "韓国（かんこく）に住（す）む"
+  ],
+  [
+   "커피를 마시다",
+   "To drink coffee",
+   "コーヒーを飲（の）む"
+  ],
+  [
+   "친구하고 이야기하다",
+   "To talk with a friend",
+   "友達（ともだち）と話（はな）す"
+  ],
+  [
+   "청소를 하다",
+   "To clean (up)",
+   "掃除（そうじ）をする"
+  ],
+  [
+   "강남",
+   "Gangnam (district in Seoul)",
+   "江南（カンナム）"
+  ],
+  [
+   "동대문",
+   "Dongdaemun (historic east gate & market area in Seoul)",
+   "東大門（トンデムン）"
+  ],
+  [
+   "여의도",
+   "Yeouido (island district in Seoul)",
+   "汝矣島（ヨイド）"
+  ],
+  [
+   "합정",
+   "Hapjeong (neighborhood in Seoul)",
+   "合井（ハプチョン）"
+  ],
+  [
+   "교보문고",
+   "Kyobo Book Centre (bookshop chain)",
+   "教保文庫（キョボムンゴ）"
+  ],
+  [
+   "충정로",
+   "Chungjeongno (neighborhood in Seoul)",
+   "忠正路（チュンジョンノ）"
+  ],
+  [
+   "고속터미널",
+   "Express Bus Terminal (area & subway station in Seoul)",
+   "高速（こうそく）バスターミナル"
+  ],
+  [
+   "인천",
+   "Incheon (city west of Seoul)",
+   "仁川（インチョン）"
+  ],
+  [
+   "춘천",
+   "Chuncheon (city east of Seoul)",
+   "春川（チュンチョン）"
+  ],
+  [
+   "덕수궁",
+   "Deoksugung Palace",
+   "徳寿宮（トクスグン）"
+  ],
+  [
+   "한옥을 구경하다",
+   "To look around a hanok (traditional house)",
+   "韓屋（ハノク）を見物（けんぶつ）する"
+  ],
+  [
+   "한복을 입다",
+   "To wear hanbok (traditional clothing)",
+   "韓服（ハンボク）を着（き）る"
+  ]
+ ],
+ "Book1A::Unit6::Vocab": [
+  [
+   "해운대에 가다",
+   "To go to Haeundae (beach in Busan)",
+   "海雲台（ヘウンデ）に行（い）く"
+  ],
+  [
+   "부산 음식을 먹다",
+   "To eat Busan food",
+   "釜山（プサン）の料理（りょうり）を食（た）べる"
+  ],
+  [
+   "이번 주말",
+   "This weekend",
+   "今週末（こんしゅうまつ）"
+  ]
+ ]
+}

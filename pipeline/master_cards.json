@@ -15890,5 +15890,383 @@
    "Hangul2"
   ],
   "ja": "いたっ"
+ },
+ {
+  "id": "c8d913d69e",
+  "ko": "다섯 개",
+  "en": "Five (things)",
+  "tags": [
+   "Book1A::PrepUnit4::Vocab"
+  ],
+  "ja": "5個（こ）"
+ },
+ {
+  "id": "70869abfd1",
+  "ko": "며칠",
+  "en": "What day of the month; how many days",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "何日（なんにち）"
+ },
+ {
+  "id": "2b2e6c26e4",
+  "ko": "몇 개",
+  "en": "How many (things)",
+  "tags": [
+   "Book1A::Unit1::Vocab"
+  ],
+  "ja": "何個（なんこ）"
+ },
+ {
+  "id": "7d1a1097ca",
+  "ko": "한국어 수업",
+  "en": "Korean class",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "韓国語（かんこくご）の授業（じゅぎょう）"
+ },
+ {
+  "id": "a65f528539",
+  "ko": "점심 식사",
+  "en": "Lunch, the midday meal",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "昼食（ちゅうしょく）"
+ },
+ {
+  "id": "11fe1fef49",
+  "ko": "숙제",
+  "en": "Homework",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "宿題（しゅくだい）"
+ },
+ {
+  "id": "2552c1ef2a",
+  "ko": "게임",
+  "en": "Game",
+  "tags": [
+   "Book1A::Unit2::Vocab"
+  ],
+  "ja": "ゲーム"
+ },
+ {
+  "id": "b9b1f8fe33",
+  "ko": "밀크티",
+  "en": "Milk tea",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "ミルクティー"
+ },
+ {
+  "id": "91b98a5bdf",
+  "ko": "머핀",
+  "en": "Muffin",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "マフィン"
+ },
+ {
+  "id": "1cf1ac022d",
+  "ko": "크루아상",
+  "en": "Croissant",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "クロワッサン"
+ },
+ {
+  "id": "a32b93c2c1",
+  "ko": "베이글",
+  "en": "Bagel",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "ベーグル"
+ },
+ {
+  "id": "f2871cba24",
+  "ko": "영화",
+  "en": "Movie",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "映画（えいが）"
+ },
+ {
+  "id": "fae64e4ddb",
+  "ko": "춤",
+  "en": "A dance; dancing (noun)",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "ダンス、踊（おど）り"
+ },
+ {
+  "id": "03fd67b811",
+  "ko": "일본어를 가르치다",
+  "en": "To teach Japanese",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "日本語（にほんご）を教（おし）える"
+ },
+ {
+  "id": "19cf28ec17",
+  "ko": "요가를 배우다",
+  "en": "To learn yoga",
+  "tags": [
+   "Book1A::Unit3::Vocab"
+  ],
+  "ja": "ヨガを習（なら）う"
+ },
+ {
+  "id": "c5b75f0dcf",
+  "ko": "해리포터를 보다",
+  "en": "To watch Harry Potter",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "ハリー・ポッターを見（み）る"
+ },
+ {
+  "id": "b81d26fe16",
+  "ko": "비자를 받다",
+  "en": "To get a visa",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "ビザを取（と）る"
+ },
+ {
+  "id": "4e6e15b9d3",
+  "ko": "수영을 배우다",
+  "en": "To learn swimming, to take swimming lessons",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "水泳（すいえい）を習（なら）う"
+ },
+ {
+  "id": "2937351e87",
+  "ko": "핸드폰을 사다",
+  "en": "To buy a mobile phone",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "携帯電話（けいたいでんわ）を買（か）う"
+ },
+ {
+  "id": "0a6ce36330",
+  "ko": "5년 전",
+  "en": "Five years ago",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "5年前（ねんまえ）"
+ },
+ {
+  "id": "22a2ddbc4c",
+  "ko": "도서관에 가다",
+  "en": "To go to the library",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "図書館（としょかん）に行（い）く"
+ },
+ {
+  "id": "0593949d6c",
+  "ko": "책을 읽다",
+  "en": "To read a book",
+  "tags": [
+   "Book1A::Unit4::Vocab"
+  ],
+  "ja": "本（ほん）を読（よ）む"
+ },
+ {
+  "id": "6f3ba88bb9",
+  "ko": "집에 가다",
+  "en": "To go home",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "家（いえ）に帰（かえ）る"
+ },
+ {
+  "id": "215272a490",
+  "ko": "한국에서 살다",
+  "en": "To live in Korea",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "韓国（かんこく）に住（す）む"
+ },
+ {
+  "id": "84f16437e7",
+  "ko": "커피를 마시다",
+  "en": "To drink coffee",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "コーヒーを飲（の）む"
+ },
+ {
+  "id": "b006317253",
+  "ko": "친구하고 이야기하다",
+  "en": "To talk with a friend",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "友達（ともだち）と話（はな）す"
+ },
+ {
+  "id": "f57ebff93d",
+  "ko": "청소를 하다",
+  "en": "To clean (up)",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "掃除（そうじ）をする"
+ },
+ {
+  "id": "4ab980cf55",
+  "ko": "강남",
+  "en": "Gangnam (district in Seoul)",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "江南（カンナム）"
+ },
+ {
+  "id": "17c57497fe",
+  "ko": "동대문",
+  "en": "Dongdaemun (historic east gate & market area in Seoul)",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "東大門（トンデムン）"
+ },
+ {
+  "id": "c9304fa85f",
+  "ko": "여의도",
+  "en": "Yeouido (island district in Seoul)",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "汝矣島（ヨイド）"
+ },
+ {
+  "id": "536f7aa444",
+  "ko": "합정",
+  "en": "Hapjeong (neighborhood in Seoul)",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "合井（ハプチョン）"
+ },
+ {
+  "id": "d19c25eacb",
+  "ko": "교보문고",
+  "en": "Kyobo Book Centre (bookshop chain)",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "教保文庫（キョボムンゴ）"
+ },
+ {
+  "id": "35feb1c0a0",
+  "ko": "충정로",
+  "en": "Chungjeongno (neighborhood in Seoul)",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "忠正路（チュンジョンノ）"
+ },
+ {
+  "id": "1128855807",
+  "ko": "고속터미널",
+  "en": "Express Bus Terminal (area & subway station in Seoul)",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "高速（こうそく）バスターミナル"
+ },
+ {
+  "id": "b12017aecc",
+  "ko": "인천",
+  "en": "Incheon (city west of Seoul)",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "仁川（インチョン）"
+ },
+ {
+  "id": "eeb3547d5b",
+  "ko": "춘천",
+  "en": "Chuncheon (city east of Seoul)",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "春川（チュンチョン）"
+ },
+ {
+  "id": "e62bf03d5b",
+  "ko": "덕수궁",
+  "en": "Deoksugung Palace",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "徳寿宮（トクスグン）"
+ },
+ {
+  "id": "3dc4638ba7",
+  "ko": "한옥을 구경하다",
+  "en": "To look around a hanok (traditional house)",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "韓屋（ハノク）を見物（けんぶつ）する"
+ },
+ {
+  "id": "94022c91e4",
+  "ko": "한복을 입다",
+  "en": "To wear hanbok (traditional clothing)",
+  "tags": [
+   "Book1A::Unit5::Vocab"
+  ],
+  "ja": "韓服（ハンボク）を着（き）る"
+ },
+ {
+  "id": "e62803a812",
+  "ko": "해운대에 가다",
+  "en": "To go to Haeundae (beach in Busan)",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "海雲台（ヘウンデ）に行（い）く"
+ },
+ {
+  "id": "ef4b7b4465",
+  "ko": "부산 음식을 먹다",
+  "en": "To eat Busan food",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "釜山（プサン）の料理（りょうり）を食（た）べる"
+ },
+ {
+  "id": "6d7625244a",
+  "ko": "이번 주말",
+  "en": "This weekend",
+  "tags": [
+   "Book1A::Unit6::Vocab"
+  ],
+  "ja": "今週末（こんしゅうまつ）"
  }
 ]

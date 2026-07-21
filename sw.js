@@ -11,10 +11,10 @@
 //                       This is what makes the app work offline for whatever
 //                       someone has already studied.
 //
-// a84ab16c72d9 is substituted by build.py with a hash of index.html, so a new
+// 1a1b2fec63de is substituted by build.py with a hash of index.html, so a new
 // build gets a new shell cache and the old one is deleted on activate.
 
-const VERSION = "a84ab16c72d9";
+const VERSION = "1a1b2fec63de";
 const SHELL_CACHE = `sogang-shell-${VERSION}`;
 const AUDIO_CACHE = "sogang-audio-v1"; // survives shell updates; clips never change
 
