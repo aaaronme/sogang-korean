@@ -133,6 +133,14 @@
   #card .en{font-size:19px;color:var(--accent);margin-top:14px;display:none;line-height:1.4;}
   #card.flipped .en{display:block;}
 
+  /* Reversed direction (recall / type / half of mix): the gloss is the prompt and
+     the Korean is the answer. The gloss shows large up front and shrinks to a
+     subtitle once the Korean is revealed above it. */
+  #card.dir-en .ko{display:none;}
+  #card.dir-en.flipped .ko{display:block;}
+  #card.dir-en .en{display:block;color:var(--text);font-size:23px;font-weight:600;margin-top:0;}
+  #card.dir-en.flipped .en{color:var(--muted);font-size:14px;font-weight:400;margin-top:12px;}
+
   /* Grammar cards. A pattern needs room for a rule and worked examples, so the
      card grows and left-aligns rather than centring one big word. */
   #card.grammar{align-items:stretch;text-align:left;padding:30px 22px 26px;}
@@ -195,6 +203,25 @@
   .flip-hint{
     color:var(--muted);font-size:13px;margin-top:2px;
   }
+
+  /* Type mode: answer box under the card, sized like the grade row it replaces. */
+  .type-row{display:flex;gap:8px;width:100%;}
+  .type-row.hidden{display:none;}
+  #typeInput{
+    flex:1;min-width:0;background:var(--card);border:1px solid var(--card-border);
+    color:var(--text);border-radius:14px;padding:13px 15px;font-size:20px;
+    text-align:center;font-family:inherit;
+  }
+  #typeInput:focus{outline:none;border-color:var(--accent);}
+  #typeSubmit{
+    flex:none;border:none;border-radius:14px;padding:13px 20px;
+    background:var(--accent);color:#fff;font-size:14px;font-weight:600;cursor:pointer;
+  }
+  .type-result{font-size:14px;font-weight:600;margin-top:10px;text-align:center;}
+  .type-result:empty{display:none;} /* no blank gap under the card in read/recall */
+  .type-result.ok{color:var(--good);}
+  .type-result.bad{color:var(--again);}
+  .type-result.skip{color:var(--muted);}
 
   /* Browse: the whole section at a glance, no grading, just read and listen.
      Deliberately not tied to the SRS queue — skimming isn't reviewing. */
@@ -263,6 +290,17 @@
   .switch input:checked ~ .track{background:var(--good);}
   .switch input:checked ~ .thumb{transform:translateX(19px);}
   .switch input:focus-visible ~ .track{outline:2px solid var(--accent);outline-offset:2px;}
+  /* Study-mode picker: a four-way segmented control. Its own row above so the
+     buttons get the full width rather than being squeezed beside a label. */
+  #menuSheet .row.modehead{border-bottom:none;padding-bottom:2px;}
+  #menuSheet .seg{
+    display:flex;gap:6px;padding:4px 0 14px;border-bottom:1px solid var(--card-border);
+  }
+  #menuSheet .seg button{
+    flex:1;background:var(--card-border);border:none;color:var(--muted);
+    border-radius:10px;padding:9px 4px;font-size:12px;font-weight:600;cursor:pointer;
+  }
+  #menuSheet .seg button.active{background:var(--accent);color:#fff;}
   #emptySections{color:var(--muted);font-size:14px;line-height:1.6;padding:18px 4px;display:none;}
   input[type=file]{display:none;}
   .toast{
@@ -314,6 +352,12 @@
         <div class="hint" id="cardHint">Tap card to reveal</div>
       </div>
     </div>
+    <form class="type-row hidden" id="typeRow" autocomplete="off">
+      <input id="typeInput" type="text" lang="ko" inputmode="text" autocomplete="off"
+             autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="done">
+      <button type="submit" id="typeSubmit">Check</button>
+    </form>
+    <div class="type-result" id="typeResult"></div>
     <div class="grade-row hidden" id="gradeRow">
       <button class="grade-btn again" data-grade="0"><span id="gAgain">Again</span><small id="ivAgain"></small></button>
       <button class="grade-btn hard" data-grade="1"><span id="gHard">Hard</span><small id="ivHard"></small></button>
@@ -333,6 +377,15 @@
 <div id="menuSheet">
   <div class="sheet">
     <h3 id="menuTitleText">Progress &amp; sync</h3>
+    <div class="row modehead">
+      <div class="name"><span id="modeLabelText">Study mode</span><small id="modeHintText"></small></div>
+    </div>
+    <div class="seg" id="modeSeg" role="group" aria-label="Study mode">
+      <button type="button" data-mode="read" id="modeRead">Read</button>
+      <button type="button" data-mode="recall" id="modeRecall">Recall</button>
+      <button type="button" data-mode="type" id="modeType">Type</button>
+      <button type="button" data-mode="mix" id="modeMix">Mix</button>
+    </div>
     <div class="row">
       <div class="name"><span id="shuffleLabelText">Shuffle card order</span><small id="shuffleHintText"></small></div>
       <label class="switch"><input type="checkbox" id="shuffleToggle"><span class="track"></span><span class="thumb"></span></label>
@@ -498,6 +551,16 @@ const STRINGS = {
     emptySections: "No sections are switched on. Tap Edit above to pick some.",
     shuffleLabel: "Shuffle card order",
     shuffleHint: "Mix up the order within each session",
+    modeLabel: "Study mode",
+    modeHint: "Which side of the card you see first",
+    modeRead: "Read", modeRecall: "Recall", modeType: "Type", modeMix: "Mix",
+    hintRecall: "Recall the Korean, then tap",
+    hintType: "Type the Korean, then check",
+    typePlaceholder: "Type in Korean…",
+    typeCheck: "Check",
+    typeCorrect: "✓ Correct",
+    typeWrong: "✗ Not quite — the answer is above",
+    typeSkipped: "Answer shown above",
     close: "Close",
     toastDownloaded: "Progress downloaded",
     toastImported: "Progress imported",
@@ -529,6 +592,16 @@ const STRINGS = {
     emptySections: "オンになっているセクションがありません。上の「編集」から選んでください。",
     shuffleLabel: "カードの順番をシャッフル",
     shuffleHint: "セッションごとに順番を入れ替えます",
+    modeLabel: "学習モード",
+    modeHint: "カードのどちらの面を先に見るか",
+    modeRead: "読む", modeRecall: "思い出す", modeType: "入力", modeMix: "ミックス",
+    hintRecall: "韓国語を思い出してタップ",
+    hintType: "韓国語を入力して確認",
+    typePlaceholder: "韓国語で入力…",
+    typeCheck: "確認",
+    typeCorrect: "✓ 正解",
+    typeWrong: "✗ 惜しい — 上に答えがあります",
+    typeSkipped: "上に答えを表示しました",
     close: "閉じる",
     toastDownloaded: "進捗をダウンロードしました",
     toastImported: "進捗をインポートしました",
@@ -593,6 +666,35 @@ function shuffled(list){
   }
   return a;
 }
+
+// ---- study mode ----
+// How a card is presented — a display preference, not progress, so it gets its
+// own key and never touches STORAGE_KEY. A card's SRS state is keyed by id no
+// matter which way it was shown, so switching modes (or running an older cached
+// build that predates them) can never split or lose anyone's review history.
+//   read   : Korean on the front, tap to reveal the gloss + audio (the original)
+//   recall : gloss on the front, recall the Korean, tap to reveal it + audio
+//   type   : gloss on the front, type the Korean, check it, then grade
+//   mix    : each card is read or recall at random
+const MODE_KEY = "sogangKoreanMode_v1";
+const MODES = ["read","recall","type","mix"];
+const storedMode = localStorage.getItem(MODE_KEY);
+let studyMode = MODES.includes(storedMode) ? storedMode : "read";
+function saveMode(){ try{ localStorage.setItem(MODE_KEY, studyMode); }catch(e){} }
+
+// A card's front is Korean ("ko") or the gloss ("en"). Grammar cards are always
+// Korean-front: their answer is a pattern with worked examples, not one word to
+// recall or type, so recall/type/mix don't apply to them.
+function directionFor(card){
+  if(isGrammar(card)) return "ko";
+  if(studyMode === "recall" || studyMode === "type") return "en";
+  if(studyMode === "mix") return Math.random() < 0.5 ? "ko" : "en";
+  return "ko";
+}
+// Compare typed Korean forgivingly: normalize to NFC and ignore spacing, so a
+// beginner isn't failed on 커피를 마시다 for a missing space. Everything else
+// must match, and the real answer is shown either way.
+function normKo(s){ return (s||"").normalize("NFC").replace(/\s+/g,"").trim(); }
 
 function tagHasCards(tag){ return CARDS.some(c => c.tags.includes(tag)); }
 function visibleTags(){ return TAG_ORDER.filter(tag => tagHasCards(tag) && isTagVisible(tag)); }
@@ -815,6 +917,8 @@ let currentTag = null;
 let currentCard = null;
 let revealed = false;
 let audioEl = null;
+let currentDir = "ko";   // "ko" or "en" — which side is the prompt this card
+let typingActive = false; // type mode, and not a grammar card
 
 let sessionTotal = 0;
 
@@ -857,13 +961,19 @@ function nextCard(){
     return;
   }
   currentCard = queue[0];
-  document.getElementById("card").classList.remove("flipped");
+  currentDir = directionFor(currentCard);
+  typingActive = studyMode === "type" && !isGrammar(currentCard);
+
+  const cardEl = document.getElementById("card");
+  cardEl.classList.remove("flipped");
+  cardEl.classList.toggle("dir-en", currentDir === "en");
   document.getElementById("cardKo").textContent = currentCard.ko;
   document.getElementById("cardEn").textContent = currentCard[lang] || currentCard.en;
   document.getElementById("cardTag").textContent = (currentCard.tags[0]||"").split("::").pop();
-  document.getElementById("cardHint").textContent = t().tapReveal;
+  document.getElementById("cardHint").textContent = frontHint();
   document.getElementById("gradeRow").classList.add("hidden");
   renderGrammarBody(currentCard);
+  setupTyping();
   updateSessionProgress();
 
   const labels = previewIntervals(getState(currentCard.id));
@@ -876,6 +986,56 @@ function nextCard(){
   // Grammar cards have no clip of their own; requesting one would 404 on every card.
   audioEl = isGrammar(currentCard) ? null : new Audio(audioUrl(currentCard));
   document.getElementById("soundBtn").classList.remove("playing");
+  updateSoundBtn();
+}
+
+// One place decides the speaker's visibility, because renderGrammarBody also
+// touches it and the two must not fight. Hidden for grammar (no clip), and
+// hidden while the Korean is still the answer (recall/type) so the audio can't
+// give it away before the reveal.
+function updateSoundBtn(){
+  const hide = isGrammar(currentCard) || (currentDir === "en" && !revealed);
+  document.getElementById("soundBtn").style.display = hide ? "none" : "";
+}
+
+// The line under the card: what to do before flipping. Depends on the mode, and
+// typing has its own input box so it only needs a nudge.
+function frontHint(){
+  if(typingActive) return t().hintType;
+  if(currentDir === "en") return t().hintRecall;
+  return t().tapReveal;
+}
+
+// ---- typing ----
+function setupTyping(){
+  const row = document.getElementById("typeRow");
+  const input = document.getElementById("typeInput");
+  const result = document.getElementById("typeResult");
+  result.textContent = "";
+  result.className = "type-result";
+  input.value = "";
+  if(typingActive){
+    input.placeholder = t().typePlaceholder;
+    row.classList.remove("hidden");
+    // Focus so the keyboard is ready, but not on the very first paint or mobile
+    // Safari scrolls the card off-screen; a microtask is enough.
+    setTimeout(()=>{ if(typingActive && !revealed) input.focus(); }, 0);
+  } else {
+    row.classList.add("hidden");
+  }
+}
+
+function submitTyped(e){
+  if(e) e.preventDefault();
+  if(revealed || !typingActive) return;
+  const input = document.getElementById("typeInput");
+  const typed = input.value;
+  const ok = normKo(typed) === normKo(currentCard.ko);
+  const result = document.getElementById("typeResult");
+  result.className = "type-result " + (ok ? "ok" : (typed.trim() ? "bad" : "skip"));
+  result.textContent = ok ? t().typeCorrect : (typed.trim() ? t().typeWrong : t().typeSkipped);
+  input.blur(); // hand the number keys back to the grader
+  revealCard();
 }
 
 // ---- grammar cards ----
@@ -945,6 +1105,8 @@ function revealCard(){
   document.getElementById("card").classList.add("flipped");
   document.getElementById("cardHint").textContent = "";
   document.getElementById("gradeRow").classList.remove("hidden");
+  document.getElementById("typeRow").classList.add("hidden");
+  updateSoundBtn(); // answer is out now, so the speaker comes back (never for grammar)
   playAudio();
 }
 
@@ -977,6 +1139,10 @@ document.getElementById("doneBackBtn").addEventListener("click", backToDecks);
 
 document.addEventListener("keydown", (e)=>{
   if(studyArea.style.display !== "flex") return;
+  // While the answer box has focus, every key is for the box — Space is a space,
+  // digits are digits, Enter submits via the form. Only take the shortcuts back
+  // once typing is done (submit blurs the input).
+  if(document.activeElement === document.getElementById("typeInput")) return;
   if(e.code === "Space"){ e.preventDefault(); revealCard(); }
   if(revealed && ["1","2","3","4"].includes(e.key)){ grade(parseInt(e.key,10)-1); }
 });
@@ -1065,6 +1231,26 @@ shuffleToggle.addEventListener("change", ()=>{
   // you mid-card, which would lose your place for no benefit.
 });
 
+// ---- study-mode picker ----
+const MODE_BTNS = {read:"modeRead", recall:"modeRecall", type:"modeType", mix:"modeMix"};
+function renderModeButtons(){
+  Object.keys(MODE_BTNS).forEach(m=>{
+    document.getElementById(MODE_BTNS[m]).classList.toggle("active", studyMode === m);
+  });
+}
+document.getElementById("modeSeg").addEventListener("click", (e)=>{
+  const btn = e.target.closest("button[data-mode]");
+  if(!btn) return;
+  studyMode = btn.dataset.mode;
+  saveMode();
+  renderModeButtons();
+  // Applies to the next card drawn, like shuffle — it doesn't rewrite the card
+  // you're already looking at.
+});
+
+// ---- typing ----
+document.getElementById("typeRow").addEventListener("submit", submitTyped);
+
 function toast(msg){
   const toastEl = document.getElementById("toast");
   toastEl.textContent = msg;
@@ -1136,6 +1322,14 @@ function applyStaticStrings(){
   document.getElementById("browseBackBtn").textContent = s.allSets;
   document.getElementById("shuffleLabelText").textContent = s.shuffleLabel;
   document.getElementById("shuffleHintText").textContent = s.shuffleHint;
+  document.getElementById("modeLabelText").textContent = s.modeLabel;
+  document.getElementById("modeHintText").textContent = s.modeHint;
+  document.getElementById("modeRead").textContent = s.modeRead;
+  document.getElementById("modeRecall").textContent = s.modeRecall;
+  document.getElementById("modeType").textContent = s.modeType;
+  document.getElementById("modeMix").textContent = s.modeMix;
+  document.getElementById("typeSubmit").textContent = s.typeCheck;
+  renderModeButtons();
   document.getElementById("gAgain").textContent = s.again;
   document.getElementById("gHard").textContent = s.hard;
   document.getElementById("gGood").textContent = s.good;
@@ -1165,7 +1359,9 @@ document.getElementById("langBtn").addEventListener("click", ()=>{
     // refresh the in-progress card + grade-button interval previews in the new language
     document.getElementById("cardEn").textContent = currentCard[lang] || currentCard.en;
     renderGrammarBody(currentCard); // examples carry their own per-language gloss
-    document.getElementById("cardHint").textContent = revealed ? "" : t().tapReveal;
+    updateSoundBtn(); // renderGrammarBody just reset the speaker; re-hide if recall/type
+    document.getElementById("cardHint").textContent = revealed ? "" : frontHint();
+    if(typingActive && !revealed){ document.getElementById("typeInput").placeholder = t().typePlaceholder; }
     document.getElementById("deckLabel").textContent = currentTag === "__ALL__" ? t().allCards(visibleCards().length) : (TAG_LABELS[lang][currentTag]||currentTag);
     const labels = previewIntervals(getState(currentCard.id));
     document.getElementById("ivAgain").textContent = labels[0];

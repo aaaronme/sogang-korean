@@ -171,6 +171,18 @@ original behaviour. Also a display preference, also separate from `STORAGE_KEY`.
 It applies at `startSession()` only — flipping it mid-session doesn't reorder
 the queue under the student's current card.
 
+`MODE_KEY` (`"sogangKoreanMode_v1"`) holds one of `read` / `recall` / `type` /
+`mix`, chosen under ⋯ → *Study mode*, **defaulting to `read`** (the original
+Korean-front behaviour). It only changes how a card is *shown* — the front is
+the Korean or the gloss, and `type` adds an answer box — so a card's SRS state
+stays keyed by its `id` regardless of mode, and no history is split or lost by
+switching. Grammar cards ignore it and stay Korean-front (their answer is a
+pattern with examples, not one word to recall or type). An unrecognised stored
+value falls back to `read`, so an older cached build that predates the feature,
+or a hand-edited key, degrades safely. Direction is decided per card in
+`directionFor()`; typed answers are compared through `normKo()`, which NFC-
+normalises and ignores spacing so a missing space in 커피를 마시다 isn't a fail.
+
 ## Things that must never change (backward compatibility)
 
 **The app was shared with students on 2026-07-20. From that date real people
