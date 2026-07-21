@@ -15116,5 +15116,779 @@
    "Hangul3"
   ],
   "ja": "寝る"
+ },
+ {
+  "id": "0c5386fb70",
+  "ko": "이모",
+  "en": "Aunt (mother's sister)",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "母方のおば"
+ },
+ {
+  "id": "2b27d560da",
+  "ko": "나라",
+  "en": "Country",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "国"
+ },
+ {
+  "id": "5f8ce0c3e6",
+  "ko": "오로라",
+  "en": "Aurora",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "オーロラ"
+ },
+ {
+  "id": "70de8adcca",
+  "ko": "나",
+  "en": "I, me (informal)",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "僕、俺（親しい間柄で使うくだけた言い方）"
+ },
+ {
+  "id": "e307a6fe13",
+  "ko": "너",
+  "en": "You (informal)",
+  "tags": [
+   "Hangul1"
+  ],
+  "ja": "君、お前"
+ },
+ {
+  "id": "ebe39cba53",
+  "ko": "야구",
+  "en": "Baseball",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "野球"
+ },
+ {
+  "id": "3b9003289e",
+  "ko": "고기",
+  "en": "Meat",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "肉"
+ },
+ {
+  "id": "bc4988ed20",
+  "ko": "고구마",
+  "en": "Sweet potato",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "さつまいも"
+ },
+ {
+  "id": "ffd91277e8",
+  "ko": "라디오",
+  "en": "Radio",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "ラジオ"
+ },
+ {
+  "id": "fa567dd3fd",
+  "ko": "반",
+  "en": "Half; (also) class, school group",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "半分（学級・クラスの意味もある）"
+ },
+ {
+  "id": "7bf1e7797b",
+  "ko": "감",
+  "en": "Persimmon",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "柿"
+ },
+ {
+  "id": "4670ef51e1",
+  "ko": "귤",
+  "en": "Tangerine",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "みかん"
+ },
+ {
+  "id": "cc2fe3c4e4",
+  "ko": "용",
+  "en": "Dragon",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "竜"
+ },
+ {
+  "id": "10758bad26",
+  "ko": "구름",
+  "en": "Cloud",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "雲"
+ },
+ {
+  "id": "16429d8586",
+  "ko": "바람",
+  "en": "Wind",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "風"
+ },
+ {
+  "id": "0a50075627",
+  "ko": "남자",
+  "en": "Man",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "男性"
+ },
+ {
+  "id": "f60f5a556f",
+  "ko": "강",
+  "en": "River",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "川"
+ },
+ {
+  "id": "94c63e4c3b",
+  "ko": "두부",
+  "en": "Tofu",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "豆腐"
+ },
+ {
+  "id": "8db978d720",
+  "ko": "감자",
+  "en": "Potato",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "じゃがいも"
+ },
+ {
+  "id": "ca42826a1e",
+  "ko": "이름",
+  "en": "Name",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "名前"
+ },
+ {
+  "id": "7d2b379d15",
+  "ko": "신발",
+  "en": "Shoes",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "靴"
+ },
+ {
+  "id": "309be2805c",
+  "ko": "아시아",
+  "en": "Asia",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "アジア"
+ },
+ {
+  "id": "251fd46717",
+  "ko": "아이돌",
+  "en": "Idol (pop star)",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "アイドル"
+ },
+ {
+  "id": "03caee9041",
+  "ko": "수영장",
+  "en": "Swimming pool",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "プール"
+ },
+ {
+  "id": "a24f105833",
+  "ko": "가을",
+  "en": "Autumn",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "秋"
+ },
+ {
+  "id": "f501e85d61",
+  "ko": "배",
+  "en": "Boat",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "船"
+ },
+ {
+  "id": "39c89eb733",
+  "ko": "가게",
+  "en": "Shop",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "店"
+ },
+ {
+  "id": "65a9e68559",
+  "ko": "웨딩드레스",
+  "en": "Wedding dress",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "ウェディングドレス"
+ },
+ {
+  "id": "6d2b20e21a",
+  "ko": "왼손",
+  "en": "Left hand",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "左手"
+ },
+ {
+  "id": "38196bef06",
+  "ko": "카드",
+  "en": "Card",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "カード"
+ },
+ {
+  "id": "51bd757e7f",
+  "ko": "카메라",
+  "en": "Camera",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "カメラ"
+ },
+ {
+  "id": "8ba6f2f219",
+  "ko": "코",
+  "en": "Nose",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "鼻"
+ },
+ {
+  "id": "114bdc977a",
+  "ko": "스키",
+  "en": "Skiing; skis",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "スキー"
+ },
+ {
+  "id": "8539705a32",
+  "ko": "케이크",
+  "en": "Cake",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "ケーキ"
+ },
+ {
+  "id": "5ba904a1e0",
+  "ko": "사탕",
+  "en": "Candy",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "あめ、キャンディー"
+ },
+ {
+  "id": "f9238e8fa3",
+  "ko": "테니스",
+  "en": "Tennis",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "テニス"
+ },
+ {
+  "id": "a9dca49091",
+  "ko": "토마토",
+  "en": "Tomato",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "トマト"
+ },
+ {
+  "id": "9125412b79",
+  "ko": "스케이트",
+  "en": "Skating; skates",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "スケート"
+ },
+ {
+  "id": "d86088dda9",
+  "ko": "피자",
+  "en": "Pizza",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "ピザ"
+ },
+ {
+  "id": "3e5c871abd",
+  "ko": "허리",
+  "en": "Waist; lower back",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "腰"
+ },
+ {
+  "id": "16d92f503c",
+  "ko": "곧",
+  "en": "Soon",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "すぐに"
+ },
+ {
+  "id": "4258c4ae54",
+  "ko": "젖소",
+  "en": "Dairy cow",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "乳牛"
+ },
+ {
+  "id": "a2fa9caa1c",
+  "ko": "헬리콥터",
+  "en": "Helicopter",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "ヘリコプター"
+ },
+ {
+  "id": "98a37ab0fd",
+  "ko": "해",
+  "en": "Sun",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "太陽"
+ },
+ {
+  "id": "db18699ba9",
+  "ko": "텐트",
+  "en": "Tent",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "テント"
+ },
+ {
+  "id": "9a7060c974",
+  "ko": "랜턴",
+  "en": "Lantern",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "ランタン"
+ },
+ {
+  "id": "685961f1db",
+  "ko": "캠핑카",
+  "en": "Camper van",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "キャンピングカー"
+ },
+ {
+  "id": "19add2a220",
+  "ko": "포크",
+  "en": "Fork",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "フォーク"
+ },
+ {
+  "id": "a592228c18",
+  "ko": "프라이팬",
+  "en": "Frying pan",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "フライパン"
+ },
+ {
+  "id": "bc22c75833",
+  "ko": "삼겹살",
+  "en": "Samgyeopsal (pork belly)",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "サムギョプサル"
+ },
+ {
+  "id": "c9739364c9",
+  "ko": "마시멜로",
+  "en": "Marshmallow",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "マシュマロ"
+ },
+ {
+  "id": "374d6ae946",
+  "ko": "게",
+  "en": "Crab",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "カニ"
+ },
+ {
+  "id": "f99517d87e",
+  "ko": "노래",
+  "en": "Song",
+  "tags": [
+   "Hangul3"
+  ],
+  "ja": "歌"
+ },
+ {
+  "id": "460146d8f0",
+  "ko": "얘기",
+  "en": "Talk, story (contraction of 이야기)",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "話（이야기の縮約形）"
+ },
+ {
+  "id": "7d535ab2ec",
+  "ko": "더워요",
+  "en": "It's hot (weather)",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "暑いです"
+ },
+ {
+  "id": "e59879a803",
+  "ko": "까만색",
+  "en": "Black",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "黒色"
+ },
+ {
+  "id": "e94992d0d7",
+  "ko": "어깨",
+  "en": "Shoulder",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "肩"
+ },
+ {
+  "id": "6a3f0da329",
+  "ko": "꿀",
+  "en": "Honey",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "はちみつ"
+ },
+ {
+  "id": "dda8ee1f30",
+  "ko": "꿈",
+  "en": "Dream",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "夢"
+ },
+ {
+  "id": "073fc0adc6",
+  "ko": "토끼",
+  "en": "Rabbit",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "うさぎ"
+ },
+ {
+  "id": "726b91313a",
+  "ko": "딸기",
+  "en": "Strawberry",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "いちご"
+ },
+ {
+  "id": "13cf4799e2",
+  "ko": "떡",
+  "en": "Tteok (rice cake)",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "トック（餅）"
+ },
+ {
+  "id": "f3de2afccb",
+  "ko": "똑똑",
+  "en": "Knock knock",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "コンコン（ノックの音）"
+ },
+ {
+  "id": "509ac13481",
+  "ko": "뚜껑",
+  "en": "Lid",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "ふた"
+ },
+ {
+  "id": "f06ba7c0cd",
+  "ko": "뜨거워요",
+  "en": "It's hot (to the touch)",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "熱いです"
+ },
+ {
+  "id": "af1f04ab48",
+  "ko": "빨간색",
+  "en": "Red",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "赤色"
+ },
+ {
+  "id": "9a69c9216a",
+  "ko": "빵",
+  "en": "Bread",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "パン"
+ },
+ {
+  "id": "d0a394c4a9",
+  "ko": "예뻐요",
+  "en": "It's pretty",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "きれいです"
+ },
+ {
+  "id": "887ed30c7f",
+  "ko": "싸요",
+  "en": "It's cheap",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "安いです"
+ },
+ {
+  "id": "1e8148ac22",
+  "ko": "날씨",
+  "en": "Weather",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "天気"
+ },
+ {
+  "id": "d90ed8819f",
+  "ko": "날짜",
+  "en": "Date (calendar)",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "日付"
+ },
+ {
+  "id": "eac9ee5911",
+  "ko": "팔찌",
+  "en": "Bracelet",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "ブレスレット"
+ },
+ {
+  "id": "4d3dd57167",
+  "ko": "찜질방",
+  "en": "Jjimjilbang (Korean sauna)",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "チムジルバン（韓国式サウナ）"
+ },
+ {
+  "id": "0e144842db",
+  "ko": "솥",
+  "en": "Cooking pot",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "釜"
+ },
+ {
+  "id": "11726d2467",
+  "ko": "팥빙수",
+  "en": "Patbingsu (shaved ice with red beans)",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "パッピンス（小豆入りかき氷）"
+ },
+ {
+  "id": "6b7f8d950c",
+  "ko": "숯불",
+  "en": "Charcoal fire",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "炭火"
+ },
+ {
+  "id": "65379162e2",
+  "ko": "오빠",
+  "en": "Older brother (of a female)",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "お兄さん（女性から見て）"
+ },
+ {
+  "id": "de4d1e35bc",
+  "ko": "엄마",
+  "en": "Mom",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "お母さん"
+ },
+ {
+  "id": "3de65a1800",
+  "ko": "아빠",
+  "en": "Dad",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "お父さん"
+ },
+ {
+  "id": "b7d9413d45",
+  "ko": "키위",
+  "en": "Kiwi",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "キウイ"
+ },
+ {
+  "id": "3991ba379f",
+  "ko": "꼬치",
+  "en": "Skewer",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "串"
+ },
+ {
+  "id": "400e9e6883",
+  "ko": "와플",
+  "en": "Waffle",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "ワッフル"
+ },
+ {
+  "id": "d5bfad1418",
+  "ko": "과자",
+  "en": "Snacks, cookies",
+  "tags": [
+   "Hangul4"
+  ],
+  "ja": "お菓子"
+ },
+ {
+  "id": "c32eefa33b",
+  "ko": "우유",
+  "en": "Milk",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "牛乳（ぎゅうにゅう）"
+ },
+ {
+  "id": "e7da5ee092",
+  "ko": "여우",
+  "en": "Fox",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "キツネ"
+ },
+ {
+  "id": "93859d8936",
+  "ko": "아야",
+  "en": "Ouch",
+  "tags": [
+   "Hangul2"
+  ],
+  "ja": "いたっ"
  }
 ]
