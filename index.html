@@ -35,17 +35,17 @@
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
     display:flex;
     flex-direction:column;
-    min-height:100vh;
-    min-height:100dvh;
-    /* Feature D: the app owns its scroll. The body is pinned to the viewport and
-       #main scrolls internally, so the header stays in normal flow at the top
-       (always visible) while the list beneath it moves. Making the header itself
-       position:sticky does NOT hold when it's a flex child of the body — verified
-       in Chromium — so the scroll container lives on #main instead. The 100vh
-       fallback keeps #main bounded (and scrollable) on engines without dvh. */
-    height:100vh;
-    height:100dvh;
+    /* Feature D: the app owns its scroll. The shell is hard-pinned to the
+       viewport with position:fixed (NOT just height + overflow:hidden — iOS
+       Safari doesn't reliably lock body scrolling that way, so the whole page
+       scrolls and the in-flow header rides up with it). With the body fixed,
+       only #main scrolls and the header stays put. Making the header itself
+       position:sticky does NOT hold as a flex child of the body either
+       (verified in Chromium), so the scroll container lives on #main. */
+    position:fixed;
+    inset:0;
     overflow:hidden;
+    overscroll-behavior:none;
     /* The top safe-area inset is applied on <header> instead (its opaque
        background then fills the notch strip); only the bottom inset stays here. */
     padding-bottom:env(safe-area-inset-bottom);
@@ -76,6 +76,10 @@
 
   main{
     flex:1;
+    /* min-height:0 lets this flex child shrink below its content so it actually
+       scrolls, instead of growing to content height and being clipped by the
+       fixed body (the classic flexbox scroll gotcha). */
+    min-height:0;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -85,6 +89,7 @@
     justify-content:safe center;
     padding:10px 18px 18px;
     overflow-y:auto;
+    overscroll-behavior:contain;
     -webkit-overflow-scrolling:touch;
   }
 
