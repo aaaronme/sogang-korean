@@ -1722,8 +1722,13 @@ function renderWorkshopExample(card){
       }
     }
   }
-  if(!ex){
-    const hit = CARDS.find(c => (c.tags || []).some(tg => tg.endsWith("::Sentences")) && c.ko.includes(card.ko));
+  // Match the link generator's rules so the fallback can't invent a bogus
+  // example: only words of 2+ Hangul syllables get one (single-syllable
+  // particles/letters match everywhere and mean nothing), and the hit must be a
+  // clean word-boundary occurrence — otherwise 나 (I) would "match" the name
+  // 미나 inside 미나예요, which doesn't use 나 at all.
+  if(!ex && hangulLen(card.ko) >= 2){
+    const hit = CARDS.find(c => (c.tags || []).some(tg => tg.endsWith("::Sentences")) && occursClean(card.ko, c.ko));
     if(hit) ex = { ko: hit.ko, en: hit[lang] || hit.en || "" };
   }
   if(ex){
