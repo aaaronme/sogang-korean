@@ -89,11 +89,19 @@
        top when content is taller than the viewport, so a long list is never
        clipped above the scroll origin. */
     justify-content:safe center;
-    padding:10px 18px 18px;
+    /* No top padding: the sticky bars (#backBar/#browseBar/#deckHead) resolve
+       against main's content box, so any padding-top here becomes a strip ABOVE
+       them where the list scrolls through. Keep them flush under the header;
+       side/bottom breathing room stays. */
+    padding:0 18px 18px;
     overflow-y:auto;
     overscroll-behavior:contain;
     -webkit-overflow-scrolling:touch;
   }
+  /* Restore a little breathing space at the very top of each screen, on the
+     sticky bar itself (part of the bar, so it scrolls with nothing above it)
+     rather than as main padding that would sit above the bar. */
+  #backBar,#browseBar{padding-top:10px;}
 
   #deckPicker{
     width:100%;
