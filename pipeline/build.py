@@ -32,18 +32,12 @@ cards = []
 missing_audio = []
 total_audio = 0
 for c in master:
-    card = {
-        "id": c["id"],
-        "ko": c["ko"],
-        "en": c["en"],
-        "ja": c.get("ja", c["en"]),  # fall back to English if a translation is ever missing
-        "tags": c["tags"],
-    }
-    # Optional fields, present only on grammar cards. Passed through rather than
-    # hardcoded so a future card kind doesn't need build.py changed again.
-    for key in ("type", "examples"):
-        if key in c:
-            card[key] = c[key]
+    # Pass every field through rather than naming a fixed set, so a new card
+    # kind or a new derived field (grammar's type/examples, the word-graph link
+    # fields from add_word_links.py, whatever comes next) ships without touching
+    # build.py. id/ko/en/tags are always present; ja falls back to English.
+    card = dict(c)
+    card["ja"] = c.get("ja", c["en"])
     cards.append(card)
 
     # A grammar card has no clip of its own — its pattern isn't a speakable

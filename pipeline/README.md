@@ -73,6 +73,7 @@ reading the book photographs.
 | `add_book1a_units.py` | vocabulary + sentence cards for all ten units |
 | `add_culture_cards.py` | the four Culture Corner sections |
 | `add_grammar_cards.py` | grammar cards (see below) |
+| `add_word_links.py` | cross-reference link fields (`inSentences`/`inGrammar`/`related`/`containsWords`) on existing cards — adds no cards or audio, only recomputes derived fields; run before `build.py` |
 | `strip_m4a_padding.py` | post-processes `audio/`; run after any clip generation |
 
 `add_book1a_units.py` also reports **near-duplicate** strings within a section:

@@ -33,6 +33,15 @@
     flex-direction:column;
     min-height:100vh;
     min-height:100dvh;
+    /* Feature D: the app owns its scroll. The body is pinned to the viewport and
+       #main scrolls internally, so the header stays in normal flow at the top
+       (always visible) while the list beneath it moves. Making the header itself
+       position:sticky does NOT hold when it's a flex child of the body — verified
+       in Chromium — so the scroll container lives on #main instead. The 100vh
+       fallback keeps #main bounded (and scrollable) on engines without dvh. */
+    height:100vh;
+    height:100dvh;
+    overflow:hidden;
     padding-top:env(safe-area-inset-top);
     padding-bottom:env(safe-area-inset-bottom);
   }
@@ -61,8 +70,13 @@
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:center;
+    /* `safe center` centres short screens (a single card) but falls back to the
+       top when content is taller than the viewport, so a long list is never
+       clipped above the scroll origin. */
+    justify-content:safe center;
     padding:10px 18px 18px;
+    overflow-y:auto;
+    -webkit-overflow-scrolling:touch;
   }
 
   #deckPicker{
@@ -309,6 +323,114 @@
     padding:10px 18px;border-radius:12px;font-size:13px;opacity:0;pointer-events:none;transition:opacity .25s;z-index:30;
   }
   .toast.show{opacity:1;}
+
+  /* ---- Feature D: sticky navigation ----
+     #main is the scroll container (see body/main above), so the back/browse/edit
+     bars — which live inside #main — stick to the TOP of #main (top:0), just
+     below the always-visible header. An opaque --bg background and a z-index
+     above the list keep them legible while the cards scroll under them. */
+  #backBar,#browseBar,#deckHead{
+    position:sticky;top:0;z-index:11;background:var(--bg);
+  }
+  #deckHead{padding:6px 0 4px;}
+  /* A long deck picker / edit list must top-align inside #main, or `safe center`
+     would still centre a list only slightly taller than the viewport. */
+  body.picking main{justify-content:flex-start;}
+
+  /* ---- Feature D: collapsible section groups (display only) ----
+     Grouping is derived from tag shape at render time; TAG_ORDER is untouched. */
+  .group{width:100%;margin-bottom:8px;}
+  .group-head{
+    display:flex;align-items:center;gap:10px;width:100%;
+    background:none;border:none;color:var(--text);cursor:pointer;
+    padding:9px 4px;font-size:15px;font-weight:600;text-align:left;
+  }
+  .group-head .chev{color:var(--muted);font-size:12px;transition:transform .15s ease;flex:none;width:12px;}
+  .group-head.collapsed .chev{transform:rotate(-90deg);}
+  .group-head .glabel{flex:1;min-width:0;}
+  .group-head .gcount{color:var(--muted);font-size:12px;font-weight:400;flex:none;}
+  .group-body{display:flex;flex-direction:column;gap:10px;padding:0 0 4px;}
+  .group-body.collapsed{display:none;}
+
+  /* ---- Feature C: cross-reference links on a card back and in browse rows ---- */
+  .xref{width:100%;text-align:left;}
+  .xref .xhead{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin:12px 0 6px;}
+  .xref .snip{
+    display:block;width:100%;text-align:left;background:#00000024;border:1px solid var(--card-border);
+    color:var(--text);border-radius:10px;padding:8px 11px;font-size:14px;margin-bottom:6px;cursor:pointer;
+    word-break:keep-all;line-height:1.35;font-family:inherit;
+  }
+  .xref .snip:active{background:var(--card-border);}
+  .xref .snip .sen{color:var(--muted);font-size:12px;margin-top:2px;}
+  .chiprow{display:flex;flex-wrap:wrap;gap:6px;}
+  .chip{
+    font-size:13px;background:#00000024;border:1px solid var(--card-border);color:var(--text);
+    border-radius:20px;padding:5px 11px;word-break:keep-all;
+  }
+  #card #xrefBody{display:none;}
+  #card.flipped #xrefBody{display:block;}
+
+  /* ---- Feature A: New Word Workshop ---- */
+  #card .newbadge{
+    position:absolute;top:14px;right:58px;font-size:10px;text-transform:uppercase;letter-spacing:.5px;
+    color:#fff;background:var(--accent2);padding:4px 9px;border-radius:20px;display:none;
+  }
+  #card.workshop .newbadge{display:inline-block;}
+  /* Only the encode touch grows/left-aligns (it carries an example + gloss); the
+     retrieve touches keep the ordinary centred single-prompt layout. */
+  #card.workshop.showex{align-items:stretch;text-align:left;}
+  #card.workshop.showex .ko{text-align:center;}
+  #workshopExample{
+    width:100%;text-align:left;border-top:1px solid var(--card-border);padding-top:12px;margin-top:14px;display:none;
+  }
+  #card.workshop.showex #workshopExample{display:block;}
+  #workshopExample .exlabel{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:5px;}
+  #workshopExample .exko{font-size:16px;font-weight:600;line-height:1.4;word-break:keep-all;}
+  #workshopExample .exen{font-size:12px;color:var(--muted);margin-top:2px;}
+  #knowRow{margin-top:12px;font-size:12px;color:var(--muted);line-height:1.6;display:none;}
+  #card.workshop.showex #knowRow.has{display:block;}
+  #knowRow b{color:var(--good);font-weight:600;}
+  .note-row{display:none;flex-direction:column;gap:8px;width:100%;}
+  .note-row.show{display:flex;}
+  #noteInput{
+    background:var(--card);border:1px solid var(--card-border);color:var(--text);
+    border-radius:14px;padding:12px 14px;font-size:15px;font-family:inherit;resize:none;min-height:60px;
+  }
+  #noteInput:focus{outline:none;border-color:var(--accent);}
+  #noteHint{font-size:12px;color:var(--muted);}
+  #noteAdvance{
+    border:none;border-radius:14px;padding:13px 20px;background:var(--accent);color:#fff;
+    font-size:15px;font-weight:600;cursor:pointer;
+  }
+  #noteAdvance:disabled{opacity:.4;cursor:default;}
+  .continue-row{display:none;width:100%;}
+  .continue-row.show{display:flex;}
+  #continueBtn{flex:1;border:none;border-radius:14px;padding:14px;background:var(--accent);color:#fff;font-size:15px;font-weight:600;cursor:pointer;}
+
+  /* ---- Feature B: My Words ---- */
+  .tag-btn.mywords{border-color:var(--accent2);}
+  .tag-btn .plusbtn{
+    background:#00000030;border:none;color:var(--muted);border-radius:10px;
+    width:34px;height:34px;font-size:20px;flex:none;cursor:pointer;line-height:1;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .tag-btn .plusbtn:active{background:var(--card-border);color:var(--text);}
+  #addWordBtn{font-size:22px;line-height:1;padding:2px 6px;}
+  .mw-actions{display:flex;gap:6px;flex:none;}
+  .mw-actions button{
+    background:#00000030;border:none;color:var(--muted);border-radius:10px;
+    width:38px;height:38px;font-size:15px;cursor:pointer;display:flex;align-items:center;justify-content:center;
+  }
+  .mw-actions button:active{background:var(--card-border);color:var(--text);}
+  #wordForm .field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;}
+  #wordForm .field label{font-size:13px;color:var(--muted);}
+  #wordForm .field input{
+    background:var(--bg);border:1px solid var(--card-border);color:var(--text);
+    border-radius:12px;padding:12px 14px;font-size:16px;font-family:inherit;
+  }
+  #wordForm .field input:focus{outline:none;border-color:var(--accent);}
+  #wordForm .formbtns{display:flex;gap:8px;margin-top:4px;}
+  #wordForm .formbtns button{flex:1;}
 </style>
 </head>
 <body>
@@ -328,6 +450,7 @@
   <div id="deckPicker">
     <div id="deckHead">
       <h2 id="studyPromptText">What do you want to study?</h2>
+      <button class="linkbtn" id="addWordBtn" aria-label="Add a word" title="Add a word">＋</button>
       <button class="linkbtn" id="editSectionsBtn">Edit</button>
     </div>
     <p id="studyHintText">Tap a set below. Cards you've already seen come back on their own schedule.</p>
@@ -345,10 +468,18 @@
     <div id="cardWrap">
       <div id="card">
         <div class="tagpill" id="cardTag"></div>
+        <div class="newbadge" id="newBadge"></div>
         <button id="soundBtn">🔊</button>
         <div class="ko" id="cardKo"></div>
         <div class="en" id="cardEn"></div>
         <div id="grammarBody"></div>
+        <div id="xrefBody"></div>
+        <div id="workshopExample">
+          <div class="exlabel" id="exLabel"></div>
+          <div class="exko" id="exKo"></div>
+          <div class="exen" id="exEn"></div>
+          <div id="knowRow"></div>
+        </div>
         <div class="hint" id="cardHint">Tap card to reveal</div>
       </div>
     </div>
@@ -358,6 +489,12 @@
       <button type="submit" id="typeSubmit">Check</button>
     </form>
     <div class="type-result" id="typeResult"></div>
+    <form class="note-row" id="noteRow" autocomplete="off">
+      <textarea id="noteInput" rows="2" placeholder=""></textarea>
+      <div id="noteHint"></div>
+      <button type="submit" id="noteAdvance"></button>
+    </form>
+    <div class="continue-row" id="continueRow"><button id="continueBtn"></button></div>
     <div class="grade-row hidden" id="gradeRow">
       <button class="grade-btn again" data-grade="0"><span id="gAgain">Again</span><small id="ivAgain"></small></button>
       <button class="grade-btn hard" data-grade="1"><span id="gHard">Hard</span><small id="ivHard"></small></button>
@@ -387,6 +524,10 @@
       <button type="button" data-mode="mix" id="modeMix">Mix</button>
     </div>
     <div class="row">
+      <div class="name"><span id="learnLabelText">New Word Workshop</span><small id="learnHintText"></small></div>
+      <label class="switch"><input type="checkbox" id="learnToggle"><span class="track"></span><span class="thumb"></span></label>
+    </div>
+    <div class="row">
       <div class="name"><span id="shuffleLabelText">Shuffle card order</span><small id="shuffleHintText"></small></div>
       <label class="switch"><input type="checkbox" id="shuffleToggle"><span class="track"></span><span class="thumb"></span></label>
     </div>
@@ -396,6 +537,29 @@
     <input type="file" id="importFile" accept="application/json">
     <button class="ghostbtn closeSheet" id="closeSheetBtn">Close</button>
   </div>
+</div>
+
+<div id="wordFormSheet" style="position:fixed;inset:0;background:#000000aa;display:none;align-items:flex-end;z-index:25;">
+  <form class="sheet" id="wordForm" autocomplete="off" style="background:var(--card);width:100%;border-radius:20px 20px 0 0;padding:20px 18px calc(20px + env(safe-area-inset-bottom));">
+    <h3 id="wordFormTitle" style="margin:0 0 14px;font-size:16px;">Add a word</h3>
+    <div class="field">
+      <label id="wordKoLabel" for="wordKoInput">Korean</label>
+      <input id="wordKoInput" type="text" lang="ko" inputmode="text" autocomplete="off"
+             autocapitalize="off" autocorrect="off" spellcheck="false" required>
+    </div>
+    <div class="field">
+      <label id="wordEnLabel" for="wordEnInput">Meaning (optional)</label>
+      <input id="wordEnInput" type="text" autocomplete="off">
+    </div>
+    <div class="field">
+      <label id="wordNoteLabel" for="wordNoteInput">Note (optional)</label>
+      <input id="wordNoteInput" type="text" autocomplete="off">
+    </div>
+    <div class="formbtns">
+      <button type="button" class="ghostbtn" id="wordCancelBtn" style="margin-top:0;">Cancel</button>
+      <button type="submit" class="pillbtn" id="wordSaveBtn">Save</button>
+    </div>
+  </form>
 </div>
 
 <div class="toast" id="toast"></div>
@@ -567,6 +731,35 @@ const STRINGS = {
     toastImportFail: "Couldn't read that file",
     toastReset: "Progress reset",
     confirmReset: "Reset all progress? This can't be undone.",
+    groupBasics: "Basics",
+    bookGroup: label => `Book ${label}`,
+    sectionCount: n => `${n} ${n === 1 ? "section" : "sections"}`,
+    learnLabel: "New Word Workshop",
+    learnHint: "Learn brand-new words in 3 steps first",
+    newBadge: n => `New · ${n}/3`,
+    exampleLabel: "Example",
+    notePlaceholder: "Make your own sentence, or a memory hook…",
+    noteHint: "Write a quick note to lock it in (needed to continue)",
+    noteAdvance: "Got it →",
+    knowPrefix: "You already know:",
+    usedInHead: "Used in",
+    relatedHead: "Related · may be related",
+    builtFromHead: "Built from",
+    continueLabel: "Continue",
+    glosslessPrompt: "Your word — recall the Korean",
+    yourWords: "Your words",
+    yourWordsEmpty: "Tap ＋ to add your own",
+    addWord: "Add a word",
+    editWord: "Edit word",
+    deleteWord: "Delete word",
+    wordKoLabel: "Korean",
+    wordEnLabel: "Meaning (optional)",
+    wordNoteLabel: "Note (optional)",
+    wordSave: "Save",
+    wordCancel: "Cancel",
+    confirmDeleteWord: "Delete this word? This can't be undone.",
+    toastWordSaved: "Word saved",
+    toastWordDeleted: "Word deleted",
     ivAgain: "<1m", ivLessDay: "<1d", ivDay: "1d", ivDays: n => `${n}d`, ivMonths: n => `${n}mo`,
   },
   ja: {
@@ -608,6 +801,35 @@ const STRINGS = {
     toastImportFail: "ファイルを読み込めませんでした",
     toastReset: "進捗をリセットしました",
     confirmReset: "すべての進捗をリセットしますか？元に戻せません。",
+    groupBasics: "ベーシック",
+    bookGroup: label => `教科書 ${label}`,
+    sectionCount: n => `${n}セクション`,
+    learnLabel: "新出単語ワークショップ",
+    learnHint: "新しい単語はまず3ステップで学ぶ",
+    newBadge: n => `新出 · ${n}/3`,
+    exampleLabel: "例文",
+    notePlaceholder: "自分で文を作るか、覚え方をメモ…",
+    noteHint: "定着のため一言メモを（続けるには必須）",
+    noteAdvance: "覚えた →",
+    knowPrefix: "すでに知っている単語:",
+    usedInHead: "使われている文",
+    relatedHead: "関連 · 関連かもしれません",
+    builtFromHead: "使われている単語",
+    continueLabel: "続ける",
+    glosslessPrompt: "マイ単語 — 韓国語を思い出す",
+    yourWords: "マイ単語",
+    yourWordsEmpty: "＋で自分の単語を追加",
+    addWord: "単語を追加",
+    editWord: "単語を編集",
+    deleteWord: "単語を削除",
+    wordKoLabel: "韓国語",
+    wordEnLabel: "意味（任意）",
+    wordNoteLabel: "メモ（任意）",
+    wordSave: "保存",
+    wordCancel: "キャンセル",
+    confirmDeleteWord: "この単語を削除しますか？元に戻せません。",
+    toastWordSaved: "単語を保存しました",
+    toastWordDeleted: "単語を削除しました",
     ivAgain: "<1分", ivLessDay: "<1日", ivDay: "1日", ivDays: n => `${n}日`, ivMonths: n => `${n}ヶ月`,
   },
 };
@@ -687,6 +909,9 @@ function saveMode(){ try{ localStorage.setItem(MODE_KEY, studyMode); }catch(e){}
 // recall or type, so recall/type/mix don't apply to them.
 function directionFor(card){
   if(isGrammar(card)) return "ko";
+  // A personal word with no gloss has nothing to show on the English side, so it
+  // stays Korean-front rather than prompting with (and revealing) the Korean.
+  if(card && card.glossless) return "ko";
   if(studyMode === "recall" || studyMode === "type") return "en";
   if(studyMode === "mix") return Math.random() < 0.5 ? "ko" : "en";
   return "ko";
@@ -771,6 +996,187 @@ function previewIntervals(state){
   return labels;
 }
 
+// ==========================================================================
+// Additive features: New Word Workshop, My Words, cross-reference links, and
+// collapsible section groups. Every one of these keeps its client-side state in
+// its OWN localStorage key and falls back to a sane default on a missing or
+// corrupt value — exactly like loadSectionPrefs()/getState() — so none of them
+// can ever touch or orphan a student's SRS progress under STORAGE_KEY.
+// ==========================================================================
+
+// ---- New Word Workshop toggle (default on) ----
+const LEARN_KEY = "sogangKoreanLearnNew_v1";
+let learnNewOn = localStorage.getItem(LEARN_KEY) !== "0";
+function saveLearn(){ try{ localStorage.setItem(LEARN_KEY, learnNewOn ? "1" : "0"); }catch(e){} }
+
+// ---- Workshop notes (the student's own sentence / memory hook per card) ----
+const NOTES_KEY = "sogangKoreanNotes_v1";
+function loadNotes(){
+  try{
+    const p = JSON.parse(localStorage.getItem(NOTES_KEY));
+    return (p && typeof p === "object" && !Array.isArray(p)) ? p : {};
+  }catch(e){ return {}; }
+}
+let workshopNotes = loadNotes();
+function persistNotes(){ try{ localStorage.setItem(NOTES_KEY, JSON.stringify(workshopNotes)); }catch(e){} }
+function saveNote(id, note){ workshopNotes[id] = note; persistNotes(); }
+
+// ---- My Words (personal quick-capture deck) ----
+const MYWORDS_KEY = "sogangKoreanMyWords_v1";
+const MYWORDS_TAG = "__MYWORDS__";
+function loadMyWords(){
+  try{
+    const p = JSON.parse(localStorage.getItem(MYWORDS_KEY));
+    if(!Array.isArray(p)) return [];
+    // Drop any malformed row so one bad entry can't break the whole deck.
+    return p.filter(w => w && typeof w === "object" && w.id && w.ko);
+  }catch(e){ return []; }
+}
+let myWords = loadMyWords();
+function saveMyWords(){
+  try{ localStorage.setItem(MYWORDS_KEY, JSON.stringify(myWords)); }catch(e){}
+  rebuildCardIndex();
+}
+// Personal words are handed to the rest of the app as ordinary card objects, so
+// they flow through getState()/schedule()/the Workshop ladder with no special
+// casing. `my:true` flags the few spots that must differ: speech instead of an
+// m4a clip, and edit/delete instead of read-only.
+function myWordsAsCards(){
+  return myWords.map(w => ({
+    id: w.id, ko: w.ko, en: w.en || w.ko, ja: w.en || w.ko,
+    // The gloss is optional. When it's absent we display the Korean so no row is
+    // blank, but flag it so a reversed prompt (recall/type/Workshop retrieve)
+    // never asks for the Korean while showing the Korean as its only cue.
+    glossless: !w.en,
+    tags: [MYWORDS_TAG], my: true,
+  }));
+}
+function newWordId(){
+  // The "my_" prefix can never collide with a real card id (sha1 hex, 10 chars).
+  let id;
+  do { id = "my_" + Math.random().toString(36).slice(2, 10); }
+  while(myWords.some(w => w.id === id));
+  return id;
+}
+
+// EFFECTIVE_CARDS = book cards + personal words. Used for the header due-count
+// and the cross-reference id lookup; the section/visibility system stays purely
+// book-scoped (personal words are pinned separately, outside TAG_ORDER).
+function effectiveVisibleCards(){ return visibleCards().concat(myWordsAsCards()); }
+
+// id -> card, spanning book cards and personal words. Rebuilt whenever the
+// personal list changes so cross-reference link ids always resolve.
+const cardById = {};
+function rebuildCardIndex(){
+  for(const k in cardById) delete cardById[k];
+  CARDS.forEach(c => { cardById[c.id] = c; });
+  myWordsAsCards().forEach(c => { cardById[c.id] = c; });
+}
+rebuildCardIndex();
+
+// ---- audio / speech ----
+// Book cards have an m4a clip; personal words have no audio pipeline, so they
+// fall back to the browser's speech synthesis where it exists and hide the
+// speaker where it doesn't — the same graceful degradation grammar cards use.
+function speechAvailable(){
+  return typeof window.speechSynthesis !== "undefined"
+      && typeof window.SpeechSynthesisUtterance !== "undefined";
+}
+function isMyWord(card){ return !!(card && card.my); }
+function cardHasAudio(card){
+  if(isGrammar(card)) return false;
+  if(isMyWord(card)) return speechAvailable();
+  return true;
+}
+function speakKo(text, btn){
+  if(!speechAvailable()) return;
+  try{
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = "ko-KR";
+    if(btn){
+      btn.classList.add("playing");
+      u.onend = () => btn.classList.remove("playing");
+      u.onerror = () => btn.classList.remove("playing");
+    }
+    window.speechSynthesis.speak(u);
+  }catch(e){ if(btn) btn.classList.remove("playing"); }
+}
+
+// ---- Feature D: collapsible groups derived from tag shape ----
+// One top-level group per distinct book label found in TAG_ORDER (Book 1A, then
+// Book 1B / 2A the moment their cards ship), plus a single "Basics" group for
+// everything that is NOT a book tag (Hangul*, Expressions::*, Numbers) — decided
+// by absence-of-match, never a hand-picked list. This only groups for display:
+// it reads TAG_ORDER, never reorders it, and needs no change for a future book.
+const BOOK_TAG_RE = /^Book(\w+)::/;
+function groupKeyForTag(tag){
+  const m = tag.match(BOOK_TAG_RE);
+  return m ? ("book:" + m[1]) : "basics";
+}
+function groupLabel(key){
+  if(key === "basics") return t().groupBasics;
+  return t().bookGroup(key.slice(5)); // strip "book:"
+}
+function orderedGroupKeys(tags){
+  const keys = [];
+  tags.forEach(tag => {
+    const k = groupKeyForTag(tag);
+    if(!keys.includes(k)) keys.push(k);
+  });
+  return keys;
+}
+// Expand/collapse state — a display preference, its own key, same pattern as
+// SECTIONS_KEY. Default expanded; an explicit stored choice wins either way.
+const GROUP_KEY = "sogangKoreanGroupState_v1";
+function loadGroupState(){
+  try{
+    const p = JSON.parse(localStorage.getItem(GROUP_KEY));
+    return (p && typeof p === "object" && !Array.isArray(p)) ? p : {};
+  }catch(e){ return {}; }
+}
+let groupState = loadGroupState();
+function saveGroupState(){ try{ localStorage.setItem(GROUP_KEY, JSON.stringify(groupState)); }catch(e){} }
+function isGroupCollapsed(key){ return groupState[key] === true; }
+
+// ---- Feature C helpers: resolve link ids and detect shared chunks ----
+function resolveCards(ids){ return (ids || []).map(id => cardById[id]).filter(Boolean); }
+function hangulLen(s){ return (String(s).match(/[가-힣]/g) || []).length; }
+function sharesHangulChunk(a, b){
+  for(let i = 0; i < a.length - 1; i++){
+    const pair = a.slice(i, i + 2);
+    if(/^[가-힣]{2}$/.test(pair) && b.includes(pair)) return true;
+  }
+  return false;
+}
+function escapeHtml(s){
+  return String(s == null ? "" : s).replace(/[&<>"']/g, ch =>
+    ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+}
+
+// ---- New Word Workshop ladder (session-only, never persisted) ----
+// A brand-new card (truly never studied: reps 0 AND due 0) is walked through
+// three in-session touches before it gets a real SRS due date. Only the third
+// touch writes to STORAGE_KEY; touches 1 and 2 just re-order the session queue.
+let ladder = {};            // cardId -> {step:1|2|3, resets:0..2}
+let workshopStep = 0;       // step of the card on screen (0 = ordinary review)
+let workshopOutcome = null; // pending pass/fail awaiting the touch-2 Continue tap
+
+function isNewCard(card){
+  const st = getState(card.id);
+  return st.reps === 0 && st.due === 0;
+}
+function workshopEligible(card){
+  // Grammar cards skip the ladder entirely, the same way they skip study-mode
+  // direction logic — their answer is a pattern with examples, not a word.
+  return learnNewOn && !isGrammar(card) && isNewCard(card);
+}
+function workshopStepFor(card){
+  if(!workshopEligible(card)) return 0;
+  const lad = ladder[card.id];
+  return lad ? lad.step : 1;
+}
+
 // ---- deck picker ----
 const tagGrid = document.getElementById("tagGrid");
 const deckPicker = document.getElementById("deckPicker");
@@ -786,6 +1192,7 @@ function cardsForTag(tag){
   // "All cards" means all *visible* cards — a section a student has switched
   // off must not leak back in through the all-cards deck.
   if(tag === "__ALL__") return visibleCards();
+  if(tag === MYWORDS_TAG) return myWordsAsCards();
   return CARDS.filter(c => c.tags.includes(tag));
 }
 function dueCount(cardList){
@@ -804,26 +1211,100 @@ function renderDeckPicker(){
   emptyEl.style.display = "none";
 
   if(editingSections){
-    // Every section with cards, on or off, each with its switch.
-    TAG_ORDER.filter(tagHasCards).forEach(tag=>{
-      tagGrid.appendChild(makeSectionRow(tag));
-    });
+    // Every section with cards, on or off, each with its switch — grouped for
+    // scanability exactly like the normal view.
+    renderGroups(TAG_ORDER.filter(tagHasCards), makeSectionRow);
   } else {
     const shown = visibleTags();
-    if(shown.length === 0){
-      // Every section switched off — say so rather than showing a blank screen.
+    // "Your words" is pinned above everything, outside TAG_ORDER and the
+    // section-visibility system — it isn't book content.
+    tagGrid.appendChild(makeMyWordsTile());
+    if(shown.length === 0 && myWords.length === 0){
+      // Every section off and no personal words — say so rather than blank.
       emptyEl.textContent = t().emptySections;
       emptyEl.style.display = "block";
-    } else {
+    } else if(shown.length > 0){
       const all = visibleCards();
       tagGrid.appendChild(makeTagBtn("__ALL__", t().allCards(all.length), all));
-      shown.forEach(tag=>{
-        tagGrid.appendChild(makeTagBtn(tag, TAG_LABELS[lang][tag] || tag, cardsForTag(tag)));
-      });
+      renderGroups(shown, tag => makeTagBtn(tag, TAG_LABELS[lang][tag] || tag, cardsForTag(tag)));
     }
   }
   updateHeaderStats();
   applyStaticStrings();
+}
+
+// Render a flat, TAG_ORDER-sorted tag list as collapsible groups. `makeRow`
+// builds the per-tag element (a deck button or an edit toggle), so the same
+// grouping serves both the picker and the Edit-sections view.
+function renderGroups(tags, makeRow){
+  orderedGroupKeys(tags).forEach(key => {
+    const groupTags = tags.filter(tg => groupKeyForTag(tg) === key);
+    if(!groupTags.length) return;
+    const collapsed = isGroupCollapsed(key);
+
+    const group = document.createElement("div");
+    group.className = "group";
+
+    const head = document.createElement("button");
+    head.type = "button";
+    head.className = "group-head" + (collapsed ? " collapsed" : "");
+    const chev = document.createElement("span"); chev.className = "chev"; chev.textContent = "▾";
+    const label = document.createElement("span"); label.className = "glabel"; label.textContent = groupLabel(key);
+    const count = document.createElement("span"); count.className = "gcount"; count.textContent = t().sectionCount(groupTags.length);
+    head.append(chev, label, count);
+
+    const body = document.createElement("div");
+    body.className = "group-body" + (collapsed ? " collapsed" : "");
+    groupTags.forEach(tg => body.appendChild(makeRow(tg)));
+
+    head.addEventListener("click", () => {
+      const nowCollapsed = !body.classList.contains("collapsed");
+      body.classList.toggle("collapsed", nowCollapsed);
+      head.classList.toggle("collapsed", nowCollapsed);
+      groupState[key] = nowCollapsed;
+      saveGroupState();
+    });
+
+    group.append(head, body);
+    tagGrid.appendChild(group);
+  });
+}
+
+// The pinned personal-words tile: tap to study, ☰ to manage (edit/delete),
+// ＋ to add. Always offered so a first word is one tap away.
+function makeMyWordsTile(){
+  const list = myWordsAsCards();
+  const btn = document.createElement("div");
+  btn.className = "tag-btn mywords";
+  const due = dueCount(list);
+
+  const labelEl = document.createElement("span");
+  labelEl.className = "label";
+  if(due > 0){ const dot = document.createElement("span"); dot.className = "due-dot"; labelEl.appendChild(dot); }
+  labelEl.appendChild(document.createTextNode(t().yourWords));
+
+  const count = document.createElement("span");
+  count.className = "count";
+  count.textContent = list.length ? t().dueTotal(due, list.length) : t().yourWordsEmpty;
+
+  btn.append(labelEl, count);
+  if(list.length){
+    const listBtn = document.createElement("button");
+    listBtn.className = "listbtn";
+    listBtn.textContent = "☰";
+    listBtn.setAttribute("aria-label", t().yourWords + " — list");
+    listBtn.addEventListener("click", (e) => { e.stopPropagation(); openBrowse(MYWORDS_TAG); });
+    btn.append(listBtn);
+  }
+  const plus = document.createElement("button");
+  plus.className = "plusbtn";
+  plus.textContent = "＋";
+  plus.setAttribute("aria-label", t().addWord);
+  plus.addEventListener("click", (e) => { e.stopPropagation(); openWordForm(null); });
+  btn.append(plus);
+
+  btn.onclick = () => list.length ? startSession(MYWORDS_TAG) : openWordForm(null);
+  return btn;
 }
 
 function makeTagBtn(tag, label, list){
@@ -897,8 +1378,9 @@ function toggleEditSections(){
 
 function updateHeaderStats(){
   // Counts only what the student can actually reach, so the badge never
-  // promises cards that no visible deck will hand them.
-  const dueAll = dueCount(visibleCards());
+  // promises cards that no visible deck will hand them. Personal words are
+  // reachable from their pinned tile, so they count here too.
+  const dueAll = dueCount(effectiveVisibleCards());
   headerStats.innerHTML = `<span>${t().dueHeader(dueAll)}</span>`;
 }
 
@@ -924,6 +1406,9 @@ let sessionTotal = 0;
 
 function startSession(tag){
   currentTag = tag;
+  // The Workshop ladder is session-scoped: a fresh sitting starts every new
+  // card at touch 1, never mid-ladder from a previous session.
+  ladder = {};
   const list = cardsForTag(tag);
   const nowTs = now();
   const due = list.filter(c => getState(c.id).due <= nowTs);
@@ -935,8 +1420,12 @@ function startSession(tag){
   browseArea.style.display = "none";
   doneScreen.style.display = "none";
   studyArea.style.display = "flex";
-  document.body.classList.remove("browsing");
-  document.getElementById("deckLabel").textContent = tag === "__ALL__" ? t().allCards(visibleCards().length) : (TAG_LABELS[lang][tag]||tag);
+  document.body.classList.remove("browsing", "picking");
+  document.getElementById("deckLabel").textContent =
+    tag === "__ALL__" ? t().allCards(visibleCards().length)
+    : tag === MYWORDS_TAG ? t().yourWords
+    : (TAG_LABELS[lang][tag] || tag);
+  scrollMainTop();
   nextCard();
 }
 
@@ -946,13 +1435,25 @@ function backToDecks(){
   doneScreen.style.display = "none";
   deckPicker.style.display = "block";
   document.body.classList.remove("browsing");
+  document.body.classList.add("picking"); // top-align the (possibly long) list
   progressRow.style.display = "none";
   stopBrowseAudio();
+  scrollMainTop();
   renderDeckPicker();
 }
 
 function nextCard(){
   revealed = false;
+  workshopOutcome = null;
+  // Clear any per-touch UI left over from the previous card.
+  document.getElementById("noteRow").classList.remove("show");
+  document.getElementById("continueRow").classList.remove("show");
+  document.getElementById("typeRow").classList.add("hidden");
+  document.getElementById("typeResult").textContent = "";
+  document.getElementById("typeResult").className = "type-result";
+  document.getElementById("xrefBody").innerHTML = "";
+  document.getElementById("newBadge").textContent = "";
+
   if(queue.length === 0){
     studyArea.style.display = "none";
     progressRow.style.display = "none";
@@ -961,19 +1462,18 @@ function nextCard(){
     return;
   }
   currentCard = queue[0];
-  currentDir = directionFor(currentCard);
-  typingActive = studyMode === "type" && !isGrammar(currentCard);
+  workshopStep = workshopStepFor(currentCard);
+  scrollMainTop(); // a fresh card starts at the top of the scroll area
 
   const cardEl = document.getElementById("card");
-  cardEl.classList.remove("flipped");
-  cardEl.classList.toggle("dir-en", currentDir === "en");
+  cardEl.classList.remove("flipped", "workshop", "showex");
+  cardEl.classList.toggle("dir-en", false);
   document.getElementById("cardKo").textContent = currentCard.ko;
   document.getElementById("cardEn").textContent = currentCard[lang] || currentCard.en;
-  document.getElementById("cardTag").textContent = (currentCard.tags[0]||"").split("::").pop();
-  document.getElementById("cardHint").textContent = frontHint();
+  document.getElementById("cardTag").textContent =
+    workshopStep ? "" : isMyWord(currentCard) ? t().yourWords : (currentCard.tags[0]||"").split("::").pop();
   document.getElementById("gradeRow").classList.add("hidden");
   renderGrammarBody(currentCard);
-  setupTyping();
   updateSessionProgress();
 
   const labels = previewIntervals(getState(currentCard.id));
@@ -983,10 +1483,278 @@ function nextCard(){
   document.getElementById("ivEasy").textContent = labels[3];
 
   if(audioEl){ audioEl.pause(); }
-  // Grammar cards have no clip of their own; requesting one would 404 on every card.
-  audioEl = isGrammar(currentCard) ? null : new Audio(audioUrl(currentCard));
+  // Grammar cards and personal words have no m4a of their own — requesting one
+  // would 404 (grammar) or not exist (personal words, which use speech instead).
+  audioEl = (isGrammar(currentCard) || isMyWord(currentCard)) ? null : new Audio(audioUrl(currentCard));
   document.getElementById("soundBtn").classList.remove("playing");
+
+  if(workshopStep > 0){
+    renderWorkshop();
+    return;
+  }
+
+  // ---- ordinary review path ----
+  currentDir = directionFor(currentCard);
+  typingActive = studyMode === "type" && !isGrammar(currentCard);
+  cardEl.classList.toggle("dir-en", currentDir === "en");
+  document.getElementById("cardHint").textContent = frontHint();
+  buildCardXref(currentCard);
+  setupTyping();
   updateSoundBtn();
+}
+
+// ---- Feature C: cross-reference links on a card back / browse row ----
+// Degrades to nothing when the link fields are absent (an older cached build or
+// a card add_word_links.py hasn't processed), because every field is optional.
+function buildXref(card, container){
+  container.innerHTML = "";
+  if(isGrammar(card)) return;
+  const isSent = (card.tags || []).some(tg => tg.endsWith("::Sentences"));
+  const frag = document.createDocumentFragment();
+
+  if(isSent){
+    const words = resolveCards(card.containsWords);
+    if(words.length){
+      frag.appendChild(xhead(t().builtFromHead));
+      frag.appendChild(chipRow(words.map(c => c.ko)));
+    }
+  } else {
+    const sents = resolveCards(card.inSentences);
+    if(sents.length){
+      frag.appendChild(xhead(t().usedInHead));
+      sents.forEach(s => {
+        const b = document.createElement("button");
+        b.type = "button";
+        b.className = "snip";
+        b.appendChild(document.createTextNode(s.ko));
+        const en = document.createElement("div");
+        en.className = "sen";
+        en.textContent = s[lang] || s.en || "";
+        b.appendChild(en);
+        b.addEventListener("click", (e) => { e.stopPropagation(); playSnippet(s, b); });
+        frag.appendChild(b);
+      });
+    }
+    const rel = resolveCards(card.related);
+    if(rel.length){
+      frag.appendChild(xhead(t().relatedHead));
+      frag.appendChild(chipRow(rel.map(c => c.ko)));
+    }
+  }
+
+  if(frag.childNodes.length){
+    const wrap = document.createElement("div");
+    wrap.className = "xref";
+    wrap.appendChild(frag);
+    container.appendChild(wrap);
+  }
+}
+function xhead(text){ const d = document.createElement("div"); d.className = "xhead"; d.textContent = text; return d; }
+function chipRow(labels){
+  const row = document.createElement("div");
+  row.className = "chiprow";
+  labels.forEach(l => { const c = document.createElement("span"); c.className = "chip"; c.textContent = l; row.appendChild(c); });
+  return row;
+}
+function playSnippet(card, btn){
+  // Reuse the browse audio channel so a snippet and the card don't play at once.
+  stopBrowseAudio();
+  if(isMyWord(card)){ speakKo(card.ko, btn); browsePlayingBtn = btn; return; }
+  if(isGrammar(card)) return;
+  browseAudio = new Audio(audioUrl(card));
+  browsePlayingBtn = btn;
+  btn.classList.add("playing");
+  browseAudio.onended = () => btn.classList.remove("playing");
+  browseAudio.play().catch(() => btn.classList.remove("playing"));
+}
+function buildCardXref(card){ buildXref(card, document.getElementById("xrefBody")); }
+
+// ---- Feature A: New Word Workshop rendering + touch handlers ----
+function renderWorkshop(){
+  const cardEl = document.getElementById("card");
+  cardEl.classList.add("workshop");
+  document.getElementById("newBadge").textContent = t().newBadge(workshopStep);
+
+  if(workshopStep === 1){
+    // Touch 1 (encode): show everything — Korean, audio, gloss and an example.
+    // No test; the gate is a required memory hook. This touch must never call
+    // schedule()/setState().
+    currentDir = "ko";
+    typingActive = false;
+    revealed = true;
+    cardEl.classList.remove("dir-en");
+    cardEl.classList.add("flipped", "showex");
+    document.getElementById("cardHint").textContent = "";
+    renderWorkshopExample(currentCard);
+    renderKnowRow(currentCard);
+    const noteInput = document.getElementById("noteInput");
+    noteInput.value = workshopNotes[currentCard.id] || "";
+    noteInput.placeholder = t().notePlaceholder;
+    document.getElementById("noteHint").textContent = t().noteHint;
+    document.getElementById("noteAdvance").textContent = t().noteAdvance;
+    document.getElementById("noteAdvance").disabled = !noteInput.value.trim();
+    document.getElementById("noteRow").classList.add("show");
+    updateSoundBtn();
+    playAudio();
+    setTimeout(() => { if(workshopStep === 1) noteInput.focus(); }, 0);
+  } else {
+    // Touch 2 & 3 (retrieve): gloss-front, forced typed recall, no note in view.
+    currentDir = "en";
+    typingActive = false; // the workshop drives the type row itself
+    revealed = false;
+    cardEl.classList.add("dir-en");
+    cardEl.classList.remove("flipped", "showex");
+    // A glossless personal word has no English cue, so its `en` fell back to the
+    // Korean — which is the answer. Show a neutral prompt instead of revealing it.
+    if(isMyWord(currentCard) && currentCard.glossless){
+      document.getElementById("cardEn").textContent = t().glosslessPrompt;
+    }
+    document.getElementById("cardHint").textContent = t().hintType;
+    const input = document.getElementById("typeInput");
+    input.value = "";
+    input.placeholder = t().typePlaceholder;
+    document.getElementById("typeRow").classList.remove("hidden");
+    updateSoundBtn();
+    setTimeout(() => { if(workshopStep >= 2 && !revealed) input.focus(); }, 0);
+  }
+}
+
+// Touch-1 example: prefer the curated links from add_word_links.py (one source
+// of truth), falling back to an ad hoc scan of Sentences-tagged cards.
+function renderWorkshopExample(card){
+  const exLabel = document.getElementById("exLabel");
+  const exKo = document.getElementById("exKo");
+  const exEn = document.getElementById("exEn");
+  let ex = null;
+  for(const id of (card.inSentences || [])){
+    const c = cardById[id];
+    if(c){ ex = { ko: c.ko, en: c[lang] || c.en || "" }; break; }
+  }
+  if(!ex){
+    for(const id of (card.inGrammar || [])){
+      const g = cardById[id];
+      if(g && g.examples && g.examples.length){
+        const eg = g.examples.find(e => (e.ko || "").includes(card.ko)) || g.examples[0];
+        if(eg){ ex = { ko: eg.ko, en: eg[lang] || eg.en || "" }; break; }
+      }
+    }
+  }
+  if(!ex){
+    const hit = CARDS.find(c => (c.tags || []).some(tg => tg.endsWith("::Sentences")) && c.ko.includes(card.ko));
+    if(hit) ex = { ko: hit.ko, en: hit[lang] || hit.en || "" };
+  }
+  if(ex){
+    exLabel.textContent = t().exampleLabel;
+    exKo.textContent = ex.ko;
+    exEn.textContent = ex.en;
+  } else {
+    exLabel.textContent = "";
+    exKo.textContent = "";
+    exEn.textContent = "";
+  }
+}
+
+// Bonus: other cards the student has already studied that share a 2+ syllable
+// chunk with this one. Pure string matching against loaded cards.
+function renderKnowRow(card){
+  const el = document.getElementById("knowRow");
+  el.innerHTML = "";
+  el.classList.remove("has");
+  const ko = card.ko;
+  if(hangulLen(ko) < 2) return;
+  const known = [];
+  const seen = new Set([ko]);
+  for(const o of CARDS){
+    if(o.id === card.id || seen.has(o.ko)) continue;
+    if(getState(o.id).reps <= 0) continue; // only ones actually studied
+    if(sharesHangulChunk(ko, o.ko)){ known.push(o.ko); seen.add(o.ko); }
+    if(known.length >= 3) break;
+  }
+  if(known.length){
+    el.innerHTML = escapeHtml(t().knowPrefix) + " " + known.map(k => `<b>${escapeHtml(k)}</b>`).join(", ");
+    el.classList.add("has");
+  }
+}
+
+function respliceCurrent(gap){
+  // Move the on-screen card a few positions deeper so it resurfaces after a
+  // handful of others. Net queue length is unchanged (shift then insert), so the
+  // progress bar — which measures graduations — doesn't advance on a re-splice.
+  queue.shift();
+  const pos = Math.min(queue.length, gap);
+  queue.splice(pos, 0, currentCard);
+  nextCard();
+}
+
+// Reveal the Korean answer during a retrieve touch, without the normal grade row.
+function workshopReveal(){
+  revealed = true;
+  document.getElementById("card").classList.add("flipped");
+  document.getElementById("cardHint").textContent = "";
+  document.getElementById("typeRow").classList.add("hidden");
+  updateSoundBtn();
+  playAudio();
+}
+
+function workshopNoteAdvance(e){
+  if(e) e.preventDefault();
+  if(workshopStep !== 1) return;
+  const note = document.getElementById("noteInput").value.trim();
+  if(!note) return; // the hook is required to leave touch 1
+  saveNote(currentCard.id, note);
+  const lad = ladder[currentCard.id] || { step: 1, resets: 0 };
+  lad.step = 2;
+  ladder[currentCard.id] = lad;
+  respliceCurrent(3);
+}
+
+function workshopRetrieveSubmit(){
+  if(workshopStep < 2 || revealed) return;
+  const input = document.getElementById("typeInput");
+  const typed = input.value;
+  const ok = normKo(typed) === normKo(currentCard.ko);
+  input.blur();
+  workshopReveal(); // show + speak the answer either way
+  const result = document.getElementById("typeResult");
+  result.className = "type-result " + (ok ? "ok" : (typed.trim() ? "bad" : "skip"));
+  result.textContent = ok ? t().typeCorrect : (typed.trim() ? t().typeWrong : t().typeSkipped);
+
+  if(workshopStep === 3){
+    // Touch 3: this is the real first SRS review. Hand over the normal grade
+    // buttons — grade() persists to STORAGE_KEY and the card joins rotation.
+    document.getElementById("gradeRow").classList.remove("hidden");
+  } else {
+    // Touch 2: defer the pass/fail branch to a Continue tap so the answer stays
+    // on screen first.
+    workshopOutcome = ok;
+    document.getElementById("continueBtn").textContent = t().continueLabel;
+    document.getElementById("continueRow").classList.add("show");
+  }
+}
+
+function workshopContinue(){
+  document.getElementById("continueRow").classList.remove("show");
+  const lad = ladder[currentCard.id] || { step: 2, resets: 0 };
+  if(workshopOutcome){
+    lad.step = 3;
+    ladder[currentCard.id] = lad;
+    workshopOutcome = null;
+    respliceCurrent(6); // widest gap before the real review
+  } else if(lad.resets >= 2){
+    // Struggled through the reset cap — stop looping. The answer is already on
+    // screen; send it into the touch-3 grade flow so it gets a real due date.
+    lad.step = 3;
+    ladder[currentCard.id] = lad;
+    workshopStep = 3; // so grade() no longer treats this as the no-persist touch 2
+    workshopOutcome = null;
+    document.getElementById("gradeRow").classList.remove("hidden");
+  } else {
+    lad.resets += 1;
+    lad.step = 1;
+    ladder[currentCard.id] = lad;
+    workshopOutcome = null;
+    respliceCurrent(3); // back to encode
+  }
 }
 
 // One place decides the speaker's visibility, because renderGrammarBody also
@@ -994,7 +1762,9 @@ function nextCard(){
 // hidden while the Korean is still the answer (recall/type) so the audio can't
 // give it away before the reveal.
 function updateSoundBtn(){
-  const hide = isGrammar(currentCard) || (currentDir === "en" && !revealed);
+  // Hidden when there's nothing to play (grammar, or a personal word with no
+  // speech synthesis available) and while the Korean is still the answer.
+  const hide = !cardHasAudio(currentCard) || (currentDir === "en" && !revealed);
   document.getElementById("soundBtn").style.display = hide ? "none" : "";
 }
 
@@ -1027,6 +1797,9 @@ function setupTyping(){
 
 function submitTyped(e){
   if(e) e.preventDefault();
+  // The type row is shared with the Workshop's forced-recall touches, which
+  // have their own scoring and progression.
+  if(workshopStep >= 2){ workshopRetrieveSubmit(); return; }
   if(revealed || !typingActive) return;
   const input = document.getElementById("typeInput");
   const typed = input.value;
@@ -1092,11 +1865,14 @@ function renderGrammarBody(card){
 }
 
 function playAudio(){
+  const btn = document.getElementById("soundBtn");
+  // Personal words have no clip; speak them instead when the browser can.
+  if(isMyWord(currentCard)){ speakKo(currentCard.ko, btn); return; }
   if(!audioEl) return;
   audioEl.currentTime = 0;
-  document.getElementById("soundBtn").classList.add("playing");
+  btn.classList.add("playing");
   audioEl.play().catch(()=>{});
-  audioEl.onended = () => document.getElementById("soundBtn").classList.remove("playing");
+  audioEl.onended = () => btn.classList.remove("playing");
 }
 
 function revealCard(){
@@ -1112,6 +1888,10 @@ function revealCard(){
 
 function grade(g){
   if(!revealed) return;
+  // Only touch 3 (workshopStep 3) and ordinary reviews (workshopStep 0) may
+  // persist. Touch 1 reveals the card too (revealed===true) but must never
+  // write, so guard the whole 1..2 range rather than touch 2 alone.
+  if(workshopStep && workshopStep < 3) return;
   const state = getState(currentCard.id);
   const newState = schedule(state, g);
   setState(currentCard.id, newState);
@@ -1125,10 +1905,17 @@ function grade(g){
 
 document.getElementById("card").addEventListener("click", (e)=>{
   if(e.target.id === "soundBtn") return;
+  if(e.target.closest(".snip")) return; // a "Used in" snippet handles its own tap
+  if(workshopStep === 1) return;        // touch 1 advances via its note button
+  if(workshopStep >= 2){                // tapping to reveal counts as a recall attempt
+    if(!revealed) workshopRetrieveSubmit(); else playAudio();
+    return;
+  }
   revealCard();
 });
 document.getElementById("soundBtn").addEventListener("click", (e)=>{
   e.stopPropagation();
+  if(workshopStep >= 2 && !revealed) return; // hidden anyway; never reveal via speaker
   if(!revealed){ revealCard(); } else { playAudio(); }
 });
 document.querySelectorAll(".grade-btn").forEach(btn=>{
@@ -1139,10 +1926,18 @@ document.getElementById("doneBackBtn").addEventListener("click", backToDecks);
 
 document.addEventListener("keydown", (e)=>{
   if(studyArea.style.display !== "flex") return;
-  // While the answer box has focus, every key is for the box — Space is a space,
-  // digits are digits, Enter submits via the form. Only take the shortcuts back
-  // once typing is done (submit blurs the input).
+  // While the answer box (or the note box) has focus, every key is for it —
+  // Space is a space, digits are digits, Enter submits via the form. Only take
+  // the shortcuts back once focus is elsewhere.
   if(document.activeElement === document.getElementById("typeInput")) return;
+  if(document.activeElement === document.getElementById("noteInput")) return;
+  if(workshopStep === 1) return; // touch 1 has no keyboard shortcuts of its own
+  if(workshopStep >= 2){
+    if(e.code === "Space"){ e.preventDefault(); if(!revealed) workshopRetrieveSubmit(); }
+    // Only touch 3 grades; touch 2 stays inert until Continue.
+    if(workshopStep === 3 && revealed && ["1","2","3","4"].includes(e.key)){ grade(parseInt(e.key,10)-1); }
+    return;
+  }
   if(e.code === "Space"){ e.preventDefault(); revealCard(); }
   if(revealed && ["1","2","3","4"].includes(e.key)){ grade(parseInt(e.key,10)-1); }
 });
@@ -1157,11 +1952,13 @@ let browsePlayingBtn = null;
 
 function stopBrowseAudio(){
   if(browseAudio){ browseAudio.pause(); browseAudio = null; }
+  if(speechAvailable()){ try{ window.speechSynthesis.cancel(); }catch(e){} }
   if(browsePlayingBtn){ browsePlayingBtn.classList.remove("playing"); browsePlayingBtn = null; }
 }
 
 function playBrowse(card, btn){
   stopBrowseAudio();
+  if(isMyWord(card)){ speakKo(card.ko, btn); browsePlayingBtn = btn; return; }
   browseAudio = new Audio(audioUrl(card));
   browsePlayingBtn = btn;
   btn.classList.add("playing");
@@ -1186,10 +1983,35 @@ function openBrowse(tag){
     en.className = "ben";
     en.textContent = card[lang] || card.en;
     txt.append(ko, en);
+    // Feature C links inline in the browse row (degrades to nothing when absent).
+    const xr = document.createElement("div");
+    buildXref(card, xr);
+    if(xr.firstChild) txt.appendChild(xr);
 
     row.appendChild(txt);
-    // Grammar entries have no clip of their own, so they get no play button.
-    if(!isGrammar(card)){
+    if(isMyWord(card)){
+      // Personal words are editable and deletable, unlike read-only book cards.
+      const actions = document.createElement("div");
+      actions.className = "mw-actions";
+      if(cardHasAudio(card)){
+        const play = document.createElement("button");
+        play.textContent = "🔊";
+        play.setAttribute("aria-label", card.ko);
+        play.addEventListener("click", ()=> playBrowse(card, play));
+        actions.appendChild(play);
+      }
+      const edit = document.createElement("button");
+      edit.textContent = "✎";
+      edit.setAttribute("aria-label", t().editWord);
+      edit.addEventListener("click", ()=> openWordForm(card.id));
+      const del = document.createElement("button");
+      del.textContent = "🗑";
+      del.setAttribute("aria-label", t().deleteWord);
+      del.addEventListener("click", ()=> deleteWord(card.id));
+      actions.append(edit, del);
+      row.appendChild(actions);
+    } else if(!isGrammar(card)){
+      // Grammar entries have no clip of their own, so they get no play button.
       const play = document.createElement("button");
       play.className = "playbtn";
       play.textContent = "🔊";
@@ -1202,14 +2024,16 @@ function openBrowse(tag){
 
   document.getElementById("browseLabel").textContent =
     tag === "__ALL__" ? t().allCards(list.length)
-                      : (TAG_LABELS[lang][tag] || tag) + " · " + t().sectionCards(list.length);
+    : tag === MYWORDS_TAG ? t().yourWords + " · " + t().sectionCards(list.length)
+    : (TAG_LABELS[lang][tag] || tag) + " · " + t().sectionCards(list.length);
   deckPicker.style.display = "none";
   studyArea.style.display = "none";
   doneScreen.style.display = "none";
   progressRow.style.display = "none";
   browseArea.style.display = "flex";
   document.body.classList.add("browsing");
-  window.scrollTo(0, 0);
+  document.body.classList.remove("picking");
+  scrollMainTop();
 }
 
 document.getElementById("browseBackBtn").addEventListener("click", backToDecks);
@@ -1320,8 +2144,15 @@ function applyStaticStrings(){
   document.getElementById("editSectionsBtn").textContent = editingSections ? s.doneEditing : s.editSections;
   document.getElementById("backBtn").textContent = s.allSets;
   document.getElementById("browseBackBtn").textContent = s.allSets;
+  document.getElementById("learnLabelText").textContent = s.learnLabel;
+  document.getElementById("learnHintText").textContent = s.learnHint;
   document.getElementById("shuffleLabelText").textContent = s.shuffleLabel;
   document.getElementById("shuffleHintText").textContent = s.shuffleHint;
+  document.getElementById("wordKoLabel").textContent = s.wordKoLabel;
+  document.getElementById("wordEnLabel").textContent = s.wordEnLabel;
+  document.getElementById("wordNoteLabel").textContent = s.wordNoteLabel;
+  document.getElementById("wordSaveBtn").textContent = s.wordSave;
+  document.getElementById("wordCancelBtn").textContent = s.wordCancel;
   document.getElementById("modeLabelText").textContent = s.modeLabel;
   document.getElementById("modeHintText").textContent = s.modeHint;
   document.getElementById("modeRead").textContent = s.modeRead;
@@ -1356,13 +2187,35 @@ document.getElementById("langBtn").addEventListener("click", ()=>{
   if(browseArea.style.display === "flex"){
     openBrowse(currentTag); // rebuild the list with the other language's glosses
   } else if(studyArea.style.display === "flex"){
+    document.getElementById("deckLabel").textContent =
+      currentTag === "__ALL__" ? t().allCards(visibleCards().length)
+      : currentTag === MYWORDS_TAG ? t().yourWords
+      : (TAG_LABELS[lang][currentTag] || currentTag);
+    // A Workshop touch carries its own example/hint/badge. Refresh just those in
+    // the new language, leaving any in-progress note or typed answer untouched.
+    if(workshopStep){
+      document.getElementById("newBadge").textContent = t().newBadge(workshopStep);
+      if(workshopStep === 1){
+        renderWorkshopExample(currentCard);
+        renderKnowRow(currentCard);
+        document.getElementById("noteHint").textContent = t().noteHint;
+        document.getElementById("noteAdvance").textContent = t().noteAdvance;
+        document.getElementById("noteInput").placeholder = t().notePlaceholder;
+      } else {
+        document.getElementById("cardEn").textContent =
+          (isMyWord(currentCard) && currentCard.glossless) ? t().glosslessPrompt : (currentCard[lang] || currentCard.en);
+        if(!revealed) document.getElementById("cardHint").textContent = t().hintType;
+        document.getElementById("typeInput").placeholder = t().typePlaceholder;
+      }
+      return;
+    }
     // refresh the in-progress card + grade-button interval previews in the new language
     document.getElementById("cardEn").textContent = currentCard[lang] || currentCard.en;
     renderGrammarBody(currentCard); // examples carry their own per-language gloss
+    if(!workshopStep) buildCardXref(currentCard); // relink in the other language's glosses
     updateSoundBtn(); // renderGrammarBody just reset the speaker; re-hide if recall/type
     document.getElementById("cardHint").textContent = revealed ? "" : frontHint();
     if(typingActive && !revealed){ document.getElementById("typeInput").placeholder = t().typePlaceholder; }
-    document.getElementById("deckLabel").textContent = currentTag === "__ALL__" ? t().allCards(visibleCards().length) : (TAG_LABELS[lang][currentTag]||currentTag);
     const labels = previewIntervals(getState(currentCard.id));
     document.getElementById("ivAgain").textContent = labels[0];
     document.getElementById("ivHard").textContent = labels[1];
@@ -1373,6 +2226,84 @@ document.getElementById("langBtn").addEventListener("click", ()=>{
   }
 });
 
+// ---- Feature B: My Words add / edit / delete ----
+const wordFormSheet = document.getElementById("wordFormSheet");
+let editingWordId = null;
+
+function openWordForm(id){
+  editingWordId = id;
+  const w = id ? myWords.find(x => x.id === id) : null;
+  document.getElementById("wordFormTitle").textContent = w ? t().editWord : t().addWord;
+  document.getElementById("wordKoInput").value = w ? w.ko : "";
+  document.getElementById("wordEnInput").value = w ? (w.en || "") : "";
+  document.getElementById("wordNoteInput").value = w ? (w.note || "") : "";
+  wordFormSheet.style.display = "flex";
+  setTimeout(()=> document.getElementById("wordKoInput").focus(), 0);
+}
+function closeWordForm(){ wordFormSheet.style.display = "none"; editingWordId = null; }
+
+function submitWordForm(e){
+  if(e) e.preventDefault();
+  const ko = document.getElementById("wordKoInput").value.trim();
+  if(!ko) return; // Korean is required
+  const en = document.getElementById("wordEnInput").value.trim();
+  const note = document.getElementById("wordNoteInput").value.trim();
+  if(editingWordId){
+    const w = myWords.find(x => x.id === editingWordId);
+    if(w){ w.ko = ko; w.en = en; w.note = note; }
+  } else {
+    myWords.push({ id: newWordId(), ko: ko, en: en, note: note, createdAt: now() });
+  }
+  saveMyWords();
+  closeWordForm();
+  toast(t().toastWordSaved);
+  if(browseArea.style.display === "flex" && currentTag === MYWORDS_TAG) openBrowse(MYWORDS_TAG);
+  else renderDeckPicker();
+}
+
+function deleteWord(id){
+  if(!confirm(t().confirmDeleteWord)) return;
+  myWords = myWords.filter(w => w.id !== id);
+  // Personal words own their state, so remove it with them rather than orphaning
+  // progress/notes under a now-gone id.
+  if(progress[id]){ delete progress[id]; saveProgress(progress); }
+  if(workshopNotes[id]){ delete workshopNotes[id]; persistNotes(); }
+  if(ladder[id]) delete ladder[id];
+  saveMyWords();
+  toast(t().toastWordDeleted);
+  if(browseArea.style.display === "flex" && currentTag === MYWORDS_TAG){
+    if(myWords.length) openBrowse(MYWORDS_TAG); else backToDecks();
+  } else {
+    renderDeckPicker();
+  }
+}
+
+document.getElementById("addWordBtn").addEventListener("click", ()=> openWordForm(null));
+document.getElementById("wordCancelBtn").addEventListener("click", closeWordForm);
+document.getElementById("wordForm").addEventListener("submit", submitWordForm);
+wordFormSheet.addEventListener("click", (e)=>{ if(e.target === wordFormSheet) closeWordForm(); });
+
+// ---- New Word Workshop wiring ----
+const learnToggle = document.getElementById("learnToggle");
+learnToggle.checked = learnNewOn;
+learnToggle.addEventListener("change", ()=>{
+  learnNewOn = learnToggle.checked;
+  saveLearn();
+  // Applies to cards drawn next, like shuffle/mode — never rewrites the card on
+  // screen mid-session.
+});
+document.getElementById("noteRow").addEventListener("submit", workshopNoteAdvance);
+document.getElementById("noteInput").addEventListener("input", ()=>{
+  document.getElementById("noteAdvance").disabled = !document.getElementById("noteInput").value.trim();
+});
+document.getElementById("continueBtn").addEventListener("click", workshopContinue);
+
+// ---- Feature D: reset #main's scroll when switching screens ----
+// #main is the scroll container, so a new screen must start at its own top
+// rather than inheriting the previous screen's scroll offset.
+function scrollMainTop(){ const m = document.querySelector("main"); if(m) m.scrollTop = 0; }
+
+document.body.classList.add("picking"); // deck picker is the initial screen
 applyStaticStrings();
 renderDeckPicker();
 </script>
