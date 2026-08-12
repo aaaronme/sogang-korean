@@ -103,6 +103,20 @@
      rather than as main padding that would sit above the bar. */
   #backBar,#browseBar{padding-top:10px;}
 
+  /* On-screen keyboard (mobile). The keyboard shrinks the *visual* viewport but
+     not the layout viewport, and with the shell held at position:fixed the
+     browser can't scroll a focused input into view — so it shoves the whole
+     fixed page up and the prompt/word slides off the top. syncViewport() pins
+     the shell to the visual viewport while the keyboard is open; these rules
+     then drop the study block to the bottom of what's visible so the answer row
+     sits just above the keyboard and the word sits right above it. The bottom
+     anchor is an auto top-margin, NOT justify-content:flex-end: an auto margin
+     safely collapses to a normal top-aligned scroll when the content is taller
+     than the free space, so the top can never become unreachable. */
+  body.kb-open{padding-top:0;padding-bottom:0;}
+  body.kb-open main{justify-content:flex-start;}
+  body.kb-open #studyArea{margin-top:auto;padding-bottom:8px;}
+
   #deckPicker{
     width:100%;
     max-width:420px;
@@ -2393,6 +2407,33 @@ document.getElementById("continueBtn").addEventListener("click", workshopContinu
 // #main is the scroll container, so a new screen must start at its own top
 // rather than inheriting the previous screen's scroll offset.
 function scrollMainTop(){ const m = document.querySelector("main"); if(m) m.scrollTop = 0; }
+
+// ---- Mobile keyboard: keep the focused input above the keyboard ----
+// The software keyboard shrinks the visual viewport but not the layout viewport,
+// and because the shell is position:fixed the browser can't scroll a focused
+// input into view — instead it pushes the whole fixed page up until the prompt
+// is off-screen. We pin the shell to the visual viewport (height + scroll
+// offset) whenever the keyboard is open and flag body.kb-open so the CSS drops
+// the study block to just above the keyboard. Guarded on visualViewport, so old
+// browsers and desktop (where the delta stays ~0) are unaffected.
+const vv = window.visualViewport;
+function syncViewport(){
+  if(!vv) return;
+  const kbOpen = (window.innerHeight - vv.height) > 120; // keyboard eats >120px
+  document.body.classList.toggle("kb-open", kbOpen);
+  const s = document.body.style;
+  if(kbOpen){
+    s.top = vv.offsetTop + "px";
+    s.height = vv.height + "px";
+    s.bottom = "auto";
+  } else {
+    s.top = s.height = s.bottom = ""; // fall back to the CSS inset:0 shell
+  }
+}
+if(vv){
+  vv.addEventListener("resize", syncViewport);
+  vv.addEventListener("scroll", syncViewport);
+}
 
 document.body.classList.add("picking"); // deck picker is the initial screen
 applyStaticStrings();
