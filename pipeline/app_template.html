@@ -1186,6 +1186,27 @@ function sharesHangulChunk(a, b){
   }
   return false;
 }
+// Same word-boundary rule the link generator uses (add_word_links.py): a match
+// only counts if what follows it is a boundary — end/space/punct or a real
+// Korean particle/ending — so 아이 links to 아이가 but not to 아이돌.
+const SUFFIX_STARTS = new Set(
+  ("은는이가을를에의도만과와로으나랑께한부까보처마밖조씩" + "예입였" + "하해했할함되돼됐될" + "들님씨").split("")
+);
+function occursClean(word, text){
+  let i = text.indexOf(word);
+  while(i !== -1){
+    const after = text[i + word.length] || "";
+    if(!after || !/[가-힣]/.test(after) || SUFFIX_STARTS.has(after)) return true;
+    i = text.indexOf(word, i + 1);
+  }
+  return false;
+}
+function looksRelated(a, b){
+  if(a === b) return false;
+  if(a.indexOf(b) !== -1) return occursClean(b, a); // b contained in a — must be clean
+  if(b.indexOf(a) !== -1) return occursClean(a, b);
+  return sharesHangulChunk(a, b); // shared middle chunk, neither contains the other
+}
 function escapeHtml(s){
   return String(s == null ? "" : s).replace(/[&<>"']/g, ch =>
     ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
@@ -1705,7 +1726,7 @@ function renderKnowRow(card){
   for(const o of CARDS){
     if(o.id === card.id || seen.has(o.ko)) continue;
     if(getState(o.id).reps <= 0) continue; // only ones actually studied
-    if(sharesHangulChunk(ko, o.ko)){ known.push(o.ko); seen.add(o.ko); }
+    if(looksRelated(ko, o.ko)){ known.push(o.ko); seen.add(o.ko); }
     if(known.length >= 3) break;
   }
   if(known.length){

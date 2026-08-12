@@ -55,6 +55,21 @@ BOOK_RE = re.compile(r"^Book([^:]+)::([^:]+)")
 # don't drown the real vocabulary in a sentence.
 FUNCTION_WORD_TAGS = ("Hangul1", "Hangul2", "Hangul3", "Hangul4", "Expressions")
 
+# Plain substring matching over-links a short word into every longer word that
+# merely STARTS with it: 아이 (child) into 아이스크림 (ice cream), 아이돌 (idol).
+# The spec's "particles attach with no space" reasoning only holds when what
+# follows the word really is a particle/ending — so a match counts only if the
+# next character is a word boundary: a non-Hangul char (space/punct/end) or the
+# first syllable of a genuine Korean particle, copula, or common suffix. This is
+# Korean grammar (a closed class), not book-specific, so it generalises. Missing
+# an exotic ending at worst drops a rare true link; it never invents a false one.
+SUFFIX_STARTS = set(
+    "은는이가을를에의도만과와로으나랑께한부까보처마밖조씩"  # josa (particles)
+    "예입였"                                              # copula / predicate
+    "하해했할함되돼됐될"                                    # noun + 하다/되다 verbs
+    "들님씨"                                              # plural / honorific / -씨
+)
+
 MAX_IN_SENTENCES = 5
 MAX_IN_GRAMMAR = 5
 MAX_RELATED = 5
@@ -114,6 +129,32 @@ def hangul_bigrams(s):
         if HANGUL.match(a) and HANGUL.match(b):
             out.add(a + b)
     return out
+
+
+def occurs_clean(word, text):
+    """True if `word` appears in `text` at least once with a word boundary right
+    after it — end of string, a non-Hangul char, or a real particle/ending. This
+    is what separates 아이가/아이를/아이 (real) from 아이스크림/아이돌 (word merely
+    starts with 아이)."""
+    i = text.find(word)
+    while i != -1:
+        j = i + len(word)
+        after = text[j] if j < len(text) else ""
+        if not after or not HANGUL.match(after) or after in SUFFIX_STARTS:
+            return True
+        i = text.find(word, i + 1)
+    return False
+
+
+def related_ok(a, b):
+    """Whether two Vocab words should count as related. When one contains the
+    other it must be a clean occurrence (수업 in 수업료 is fine; 아이 in 아이돌 is
+    not); a shared middle chunk with neither containing the other is kept."""
+    if a in b:
+        return occurs_clean(a, b)
+    if b in a:
+        return occurs_clean(b, a)
+    return True
 
 
 def longest_common_hangul_run(a, b):
@@ -186,14 +227,14 @@ def main():
                 return 1
             return 2
 
-        in_sent = [s for s in sentences if s["id"] != c["id"] and ko in s["ko"]]
+        in_sent = [s for s in sentences if s["id"] != c["id"] and occurs_clean(ko, s["ko"])]
         in_sent.sort(key=lambda s: (priority(s), order[s["id"]]))
         in_sent_ids = dedup_by_ko([s["id"] for s in in_sent])[:MAX_IN_SENTENCES]
 
         # inGrammar — grammar cards using this word in a worked example.
         in_gram_ids = dedup_by_ko([
             g["id"] for g in grammar
-            if any(ko in eg.get("ko", "") for eg in g.get("examples", []))
+            if any(occurs_clean(ko, eg.get("ko", "")) for eg in g.get("examples", []))
         ])[:MAX_IN_GRAMMAR]
 
         # related — other Vocab sharing a 2+ syllable chunk, best overlap first.
@@ -206,7 +247,8 @@ def main():
                     if o["id"] == c["id"] or o["ko"] == ko or o["id"] in seen:
                         continue
                     seen.add(o["id"])
-                    candidates.append(o)
+                    if related_ok(ko, o["ko"]):  # drop 아이 → 아이돌 style prefix noise
+                        candidates.append(o)
             ranked = sorted(
                 candidates,
                 key=lambda o: (-longest_common_hangul_run(ko, o["ko"]), order[o["id"]]),
@@ -229,7 +271,7 @@ def main():
     contentful_vocab.sort(key=lambda c: -len(c["ko"]))
     for s in sentences:
         text = s["ko"]
-        hits = [c["id"] for c in contentful_vocab if c["ko"] in text]
+        hits = [c["id"] for c in contentful_vocab if occurs_clean(c["ko"], text)]
         contains = dedup_by_ko(hits)[:MAX_CONTAINS]
         set_field(s, "containsWords", contains)
         n_contains += bool(contains)
