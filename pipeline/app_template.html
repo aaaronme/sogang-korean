@@ -46,16 +46,18 @@
     inset:0;
     overflow:hidden;
     overscroll-behavior:none;
-    /* The top safe-area inset is applied on <header> instead (its opaque
-       background then fills the notch strip); only the bottom inset stays here. */
+    /* Safe-area insets are padding ON the fixed body: because the body never
+       scrolls, its opaque --bg background permanently fills the notch strip at
+       the top and the home-indicator strip at the bottom — nothing can show
+       through them. (Carrying the inset on <header> instead was fragile on iOS:
+       env() nested in calc() in a shorthand, and it relied on the header
+       painting all the way to y=0.) */
+    padding-top:env(safe-area-inset-top);
     padding-bottom:env(safe-area-inset-bottom);
   }
   header{
-    /* Opaque, and its top padding carries the safe-area inset so the header's
-       background fills the notch strip up to the very top of the screen —
-       no uncovered gap above it showing the scrolling list. */
     background:var(--bg);
-    padding:calc(14px + env(safe-area-inset-top)) 18px 10px;
+    padding:14px 18px 10px;
     display:flex;
     align-items:center;
     justify-content:space-between;
