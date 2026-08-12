@@ -24,6 +24,10 @@
   }
   *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
   html,body{height:100%;}
+  /* Paint the root the app colour too, so any strip the body doesn't cover
+     (notch inset, iOS toolbar collapse) is the same solid --bg, never a
+     see-through gap onto scrolling content. */
+  html{background:var(--bg);}
   body{
     margin:0;
     background:var(--bg);
@@ -42,11 +46,16 @@
     height:100vh;
     height:100dvh;
     overflow:hidden;
-    padding-top:env(safe-area-inset-top);
+    /* The top safe-area inset is applied on <header> instead (its opaque
+       background then fills the notch strip); only the bottom inset stays here. */
     padding-bottom:env(safe-area-inset-bottom);
   }
   header{
-    padding:14px 18px 10px;
+    /* Opaque, and its top padding carries the safe-area inset so the header's
+       background fills the notch strip up to the very top of the screen —
+       no uncovered gap above it showing the scrolling list. */
+    background:var(--bg);
+    padding:calc(14px + env(safe-area-inset-top)) 18px 10px;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -403,6 +412,16 @@
     font-size:15px;font-weight:600;cursor:pointer;
   }
   #noteAdvance:disabled{opacity:.4;cursor:default;}
+  /* Skip-a-note nudge: shown when advancing touch 1 with an empty note. */
+  #noteNudge{display:none;flex-direction:column;gap:10px;background:var(--card);border:1px solid var(--hard);border-radius:14px;padding:13px 14px;}
+  #noteRow.nudging #noteAdvance{display:none;}
+  #noteRow.nudging #noteHint{display:none;}
+  #noteRow.nudging #noteNudge{display:flex;}
+  #noteNudgeText{font-size:13px;color:var(--text);line-height:1.5;}
+  .nudge-btns{display:flex;gap:8px;}
+  .nudge-btns button{flex:1;border:none;border-radius:12px;padding:11px 8px;font-size:14px;font-weight:600;cursor:pointer;}
+  #noteBackBtn{background:var(--card-border);color:var(--text);}
+  #noteSkipBtn{background:var(--accent);color:#fff;}
   .continue-row{display:none;width:100%;}
   .continue-row.show{display:flex;}
   #continueBtn{flex:1;border:none;border-radius:14px;padding:14px;background:var(--accent);color:#fff;font-size:15px;font-weight:600;cursor:pointer;}
@@ -493,6 +512,13 @@
       <textarea id="noteInput" rows="2" placeholder=""></textarea>
       <div id="noteHint"></div>
       <button type="submit" id="noteAdvance"></button>
+      <div id="noteNudge">
+        <div id="noteNudgeText"></div>
+        <div class="nudge-btns">
+          <button type="button" id="noteBackBtn"></button>
+          <button type="button" id="noteSkipBtn"></button>
+        </div>
+      </div>
     </form>
     <div class="continue-row" id="continueRow"><button id="continueBtn"></button></div>
     <div class="grade-row hidden" id="gradeRow">
@@ -739,8 +765,11 @@ const STRINGS = {
     newBadge: n => `New · ${n}/3`,
     exampleLabel: "Example",
     notePlaceholder: "Make your own sentence, or a memory hook…",
-    noteHint: "Write a quick note to lock it in (needed to continue)",
+    noteHint: "Optional — a sentence or memory hook helps it stick",
     noteAdvance: "Got it →",
+    noteNudge: word => `No note for ${word}? Writing your own sentence with it is what makes it stick — even a silly one. Want to add one?`,
+    noteBack: "Add a note",
+    noteSkip: "No note — continue",
     knowPrefix: "You already know:",
     usedInHead: "Used in",
     relatedHead: "Related · may be related",
@@ -809,8 +838,11 @@ const STRINGS = {
     newBadge: n => `新出 · ${n}/3`,
     exampleLabel: "例文",
     notePlaceholder: "自分で文を作るか、覚え方をメモ…",
-    noteHint: "定着のため一言メモを（続けるには必須）",
+    noteHint: "任意 — 文や覚え方を書くと定着します",
     noteAdvance: "覚えた →",
+    noteNudge: word => `${word} のメモなし？ 自分で文を作ると記憶に残ります。おかしな文でも大丈夫。追加しますか？`,
+    noteBack: "メモを追加",
+    noteSkip: "メモなしで続ける",
     knowPrefix: "すでに知っている単語:",
     usedInHead: "使われている文",
     relatedHead: "関連 · 関連かもしれません",
@@ -1446,7 +1478,7 @@ function nextCard(){
   revealed = false;
   workshopOutcome = null;
   // Clear any per-touch UI left over from the previous card.
-  document.getElementById("noteRow").classList.remove("show");
+  document.getElementById("noteRow").classList.remove("show", "nudging");
   document.getElementById("continueRow").classList.remove("show");
   document.getElementById("typeRow").classList.add("hidden");
   document.getElementById("typeResult").textContent = "";
@@ -1592,8 +1624,9 @@ function renderWorkshop(){
     noteInput.placeholder = t().notePlaceholder;
     document.getElementById("noteHint").textContent = t().noteHint;
     document.getElementById("noteAdvance").textContent = t().noteAdvance;
-    document.getElementById("noteAdvance").disabled = !noteInput.value.trim();
-    document.getElementById("noteRow").classList.add("show");
+    const noteRow = document.getElementById("noteRow");
+    noteRow.classList.remove("nudging"); // clear any nudge left from a prior card
+    noteRow.classList.add("show");
     updateSoundBtn();
     playAudio();
     setTimeout(() => { if(workshopStep === 1) noteInput.focus(); }, 0);
@@ -1696,16 +1729,29 @@ function workshopReveal(){
   playAudio();
 }
 
-function workshopNoteAdvance(e){
-  if(e) e.preventDefault();
-  if(workshopStep !== 1) return;
-  const note = document.getElementById("noteInput").value.trim();
-  if(!note) return; // the hook is required to leave touch 1
-  saveNote(currentCard.id, note);
+function advanceFromEncode(note){
+  // Advance touch 1 -> touch 2. A note is optional; save it only if written.
+  if(note) saveNote(currentCard.id, note);
   const lad = ladder[currentCard.id] || { step: 1, resets: 0 };
   lad.step = 2;
   ladder[currentCard.id] = lad;
   respliceCurrent(3);
+}
+function showNoteNudge(){
+  // Encourage — don't force — a note. For a word with no natural hook (a number,
+  // a particle) the student can continue; for the rest this is the reminder that
+  // writing your own sentence is what makes it stick.
+  document.getElementById("noteNudgeText").textContent = t().noteNudge(currentCard.ko);
+  document.getElementById("noteBackBtn").textContent = t().noteBack;
+  document.getElementById("noteSkipBtn").textContent = t().noteSkip;
+  document.getElementById("noteRow").classList.add("nudging");
+}
+function workshopNoteAdvance(e){
+  if(e) e.preventDefault();
+  if(workshopStep !== 1) return;
+  const note = document.getElementById("noteInput").value.trim();
+  if(!note){ showNoteNudge(); return; } // offer the nudge rather than advancing
+  advanceFromEncode(note);
 }
 
 function workshopRetrieveSubmit(){
@@ -2294,7 +2340,16 @@ learnToggle.addEventListener("change", ()=>{
 });
 document.getElementById("noteRow").addEventListener("submit", workshopNoteAdvance);
 document.getElementById("noteInput").addEventListener("input", ()=>{
-  document.getElementById("noteAdvance").disabled = !document.getElementById("noteInput").value.trim();
+  // If they start writing after seeing the nudge, drop it and let them save.
+  if(document.getElementById("noteInput").value.trim()) document.getElementById("noteRow").classList.remove("nudging");
+});
+document.getElementById("noteBackBtn").addEventListener("click", ()=>{
+  document.getElementById("noteRow").classList.remove("nudging");
+  document.getElementById("noteInput").focus();
+});
+document.getElementById("noteSkipBtn").addEventListener("click", ()=>{
+  document.getElementById("noteRow").classList.remove("nudging");
+  advanceFromEncode(""); // continue with no note
 });
 document.getElementById("continueBtn").addEventListener("click", workshopContinue);
 
