@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover, interactive-widget=resizes-content">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="mobile-web-app-capable" content="yes">
@@ -113,9 +113,18 @@
      anchor is an auto top-margin, NOT justify-content:flex-end: an auto margin
      safely collapses to a normal top-aligned scroll when the content is taller
      than the free space, so the top can never become unreachable. */
-  body.kb-open{padding-top:0;padding-bottom:0;}
+  /* Keep the top (notch) inset so the word box can't slide under the notch;
+     the bottom (home-indicator) inset is behind the keyboard, so reclaim it. */
+  body.kb-open{padding-bottom:0;}
   body.kb-open main{justify-content:flex-start;}
   body.kb-open #studyArea{margin-top:auto;padding-bottom:8px;}
+  /* Reclaim vertical space so the word box + input + button all fit above the
+     keyboard (the card is 230px tall by default, most of it slack). The Back bar
+     is navigation you don't need mid-answer; the card shrinks but stays legible.
+     Everything here reverts the moment the keyboard closes (kb-open is dropped). */
+  body.kb-open #backBar{display:none;}
+  body.kb-open #cardWrap{margin-bottom:10px;}
+  body.kb-open #card{min-height:120px;padding:16px 26px;}
 
   #deckPicker{
     width:100%;
@@ -2414,30 +2423,55 @@ document.getElementById("continueBtn").addEventListener("click", workshopContinu
 function scrollMainTop(){ const m = document.querySelector("main"); if(m) m.scrollTop = 0; }
 
 // ---- Mobile keyboard: keep the focused input above the keyboard ----
-// The software keyboard shrinks the visual viewport but not the layout viewport,
-// and because the shell is position:fixed the browser can't scroll a focused
-// input into view — instead it pushes the whole fixed page up until the prompt
-// is off-screen. We pin the shell to the visual viewport (height + scroll
-// offset) whenever the keyboard is open and flag body.kb-open so the CSS drops
-// the study block to just above the keyboard. Guarded on visualViewport, so old
-// browsers and desktop (where the delta stays ~0) are unaffected.
+// The on-screen keyboard shrinks the *visual* viewport; whether it also shrinks
+// the *layout* viewport depends on the browser. The viewport meta asks for
+// `interactive-widget=resizes-content`, so a supporting browser (Chrome, and
+// WebKit where available) shrinks the layout viewport too — the position:fixed
+// inset:0 shell then becomes exactly the visible area on its own and the study
+// block bottom-anchors right above the keyboard with no scroll-fighting.
+//
+// Two things still need JS:
+//  1) Detecting "keyboard open" in BOTH worlds. With resizes-content the layout
+//     viewport (window.innerHeight) shrinks, so the old innerHeight-vs-visual
+//     test reads ~0 and never fires; we also compare innerHeight against the
+//     tallest height seen with no keyboard (baseH).
+//  2) A fallback for browsers that only resize the visual viewport (no
+//     resizes-content support): there the fixed shell still spans the full
+//     layout viewport, so we pin it to the visible region ourselves.
+// baseH is reset whenever nothing is being typed into, so an orientation change
+// (a legitimate innerHeight change) re-baselines instead of reading as a
+// keyboard. Guarded on visualViewport, so desktop/old browsers are unaffected.
 const vv = window.visualViewport;
+let baseH = window.innerHeight;
+function isTyping(){
+  const el = document.activeElement;
+  return !!el && (el.tagName === "INPUT" || el.tagName === "TEXTAREA");
+}
 function syncViewport(){
   if(!vv) return;
-  const kbOpen = (window.innerHeight - vv.height) > 120; // keyboard eats >120px
+  if(!isTyping()){ baseH = window.innerHeight; } // re-baseline when not typing
+  else { baseH = Math.max(baseH, window.innerHeight); }
+  const visualGap = window.innerHeight - vv.height; // visual-only shrink
+  const layoutGap = baseH - window.innerHeight;     // layout viewport shrank
+  const kbOpen = isTyping() && (visualGap > 120 || layoutGap > 120);
   document.body.classList.toggle("kb-open", kbOpen);
   const s = document.body.style;
-  if(kbOpen){
+  if(kbOpen && visualGap > 120){
+    // Visual-viewport-only browser: pin the still-full-height shell ourselves.
     s.top = vv.offsetTop + "px";
     s.height = vv.height + "px";
     s.bottom = "auto";
   } else {
-    s.top = s.height = s.bottom = ""; // fall back to the CSS inset:0 shell
+    // resizes-content (layout viewport already the visible area) or no keyboard:
+    // let the CSS inset:0 shell stand on its own.
+    s.top = s.height = s.bottom = "";
   }
 }
 if(vv){
   vv.addEventListener("resize", syncViewport);
   vv.addEventListener("scroll", syncViewport);
+  window.addEventListener("focusin", syncViewport);
+  window.addEventListener("focusout", syncViewport);
 }
 
 document.body.classList.add("picking"); // deck picker is the initial screen
