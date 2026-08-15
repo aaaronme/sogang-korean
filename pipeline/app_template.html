@@ -21,6 +21,10 @@
     --again:#e5484d;
     --easy:#4f8cff;
     --radius:18px;
+    /* The app is one centred column and this is its width, so adapting to a
+       bigger screen is a one-variable change (see the tablet block at the end
+       of this stylesheet) rather than a per-screen rewrite. */
+    --col:420px;
   }
   *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
   html,body{height:100%;}
@@ -128,7 +132,7 @@
 
   #deckPicker{
     width:100%;
-    max-width:420px;
+    max-width:var(--col);
     text-align:center;
   }
   #deckHead{display:flex;align-items:baseline;justify-content:space-between;gap:10px;}
@@ -173,7 +177,7 @@
   .tag-btn.editing .label{flex-direction:column;align-items:flex-start;gap:2px;}
   .tag-btn.editing .label small{color:var(--muted);font-size:12px;}
 
-  #studyArea{width:100%;max-width:420px;display:none;flex-direction:column;align-items:center;}
+  #studyArea{width:100%;max-width:var(--col);display:none;flex-direction:column;align-items:center;}
   #cardWrap{width:100%;perspective:1200px;margin-bottom:22px;}
   #card{
     position:relative;
@@ -286,7 +290,7 @@
 
   /* Browse: the whole section at a glance, no grading, just read and listen.
      Deliberately not tied to the SRS queue — skimming isn't reviewing. */
-  #browseArea{width:100%;max-width:420px;display:none;flex-direction:column;}
+  #browseArea{width:100%;max-width:var(--col);display:none;flex-direction:column;}
   /* A long browse list must start at the top of the viewport, not be centred
      into it — centring clips the first rows above the scroll origin. */
   body.browsing main{justify-content:flex-start;}
@@ -319,7 +323,7 @@
   }
 
   #backBar, #browseBar{
-    width:100%;max-width:420px;display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;gap:10px;
+    width:100%;max-width:var(--col);display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;gap:10px;
   }
   #backBar button, #browseBar button{background:none;border:none;color:var(--muted);font-size:14px;cursor:pointer;padding:6px 0;flex:none;}
   #browseLabel{color:var(--muted);font-size:13px;text-align:right;min-width:0;}
@@ -479,6 +483,18 @@
     width:38px;height:38px;font-size:15px;cursor:pointer;display:flex;align-items:center;justify-content:center;
   }
   .mw-actions button:active{background:var(--card-border);color:var(--text);}
+  /* Same bottom-sheet treatment as the menu. These lived as inline styles on the
+     markup, which no media query can override — moving them here is what lets
+     the tablet block below turn both sheets into centred dialogs. */
+  #wordFormSheet{
+    position:fixed;inset:0;background:#000000aa;display:none;align-items:flex-end;z-index:25;
+  }
+  #wordFormSheet .sheet{
+    background:var(--card);width:100%;border-radius:20px 20px 0 0;
+    padding:20px 18px calc(20px + env(safe-area-inset-bottom));
+  }
+  #wordFormTitle{margin:0 0 14px;font-size:16px;}
+  #wordCancelBtn{margin-top:0;}
   #wordForm .field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;}
   #wordForm .field label{font-size:13px;color:var(--muted);}
   #wordForm .field input{
@@ -488,6 +504,85 @@
   #wordForm .field input:focus{outline:none;border-color:var(--accent);}
   #wordForm .formbtns{display:flex;gap:8px;margin-top:4px;}
   #wordForm .formbtns button{flex:1;}
+
+  /* ---- Tablet / iPad ----
+     Everything above is phone-shaped, and on an iPad it rendered as a 420px
+     strip down the middle of a 1200px display with the header stranded at the
+     far edges. These blocks widen the column and enlarge only the things that
+     genuinely read better big — the card, the sheets, and on a landscape-sized
+     screen the lists. Phones match none of it and are untouched. */
+  @media (min-width:700px){
+    :root{--col:560px;}
+    /* Line the chrome up with the column, instead of the title sitting at one
+       edge of the screen and the ⋯ button at the other with nothing between. */
+    header,#progressRow{width:100%;max-width:var(--col);margin-inline:auto;}
+    header{padding:18px 0 10px;}
+    /* Same reason as #deckHead below: let the title take the slack so the stats
+       and buttons stay grouped at the right instead of drifting apart. */
+    header h1{font-size:18px;flex:1;}
+    #progressRow{padding:2px 0 8px;}
+    #deckPicker h2{font-size:26px;}
+    #deckPicker p{font-size:15px;}
+    /* space-between across three items strands the ＋ in the middle of a wide
+       row; letting the heading take the slack keeps both controls on the right. */
+    #deckHead h2{flex:1;}
+
+    /* The card is the thing you're actually looking at, so it gets the room. */
+    #card{min-height:300px;padding:44px 32px;}
+    #card .ko{font-size:44px;}
+    #card .en{font-size:22px;}
+    #card.dir-en .en{font-size:28px;}
+    #card.dir-en.flipped .en{font-size:15px;}
+    #card.grammar .ko{font-size:32px;}
+    #typeInput{font-size:24px;padding:16px 18px;}
+    .grade-btn{padding:16px 4px 12px;font-size:14px;}
+    #doneScreen{max-width:460px;}
+
+    /* Both sheets become centred dialogs. A sheet pinned to the bottom edge of a
+       tablet is a long way from where you're looking, and stretched to the full
+       width it leaves 46px toggles marooned beside a metre of empty row. */
+    #menuSheet,#wordFormSheet{align-items:center;justify-content:center;padding:20px;}
+    #menuSheet .sheet,#wordFormSheet .sheet{
+      width:100%;max-width:460px;border-radius:20px;padding-bottom:22px;
+    }
+
+    /* The keyboard-reclaim rules exist for a phone with ~300px of usable height
+       left. A tablet has room to keep its navigation and a legible card. */
+    body.kb-open #backBar{display:flex;}
+    body.kb-open #card{min-height:200px;padding:26px 30px;}
+  }
+
+  /* Landscape-sized screens. One 560px column down the middle of a 1200px
+     display wastes half of it, so the lists go two-up. The study card stays
+     narrow deliberately — a flashcard as wide as the screen reads worse. */
+  @media (min-width:1000px){
+    #deckPicker,#browseArea,#browseBar{max-width:900px;}
+    /* The chrome follows the widest screen rather than resizing per screen:
+       header wider than the card is ordinary, header narrower reads broken. */
+    header,#progressRow{max-width:900px;}
+    .tag-grid,.group-body,#browseList{
+      display:grid;grid-template-columns:repeat(2,1fr);gap:10px;align-content:start;
+    }
+    /* A group carries its own heading, so it spans both columns and lays its
+       own sections out two-up inside itself. (.group-body.collapsed is more
+       specific than this, so collapsing still wins.) */
+    .tag-grid > .group{grid-column:1 / -1;}
+  }
+
+  /* Trackpad, mouse, or a hovering Apple Pencil. Touch-only phones match none of
+     this, so it can't leave a state stuck on after a tap. */
+  @media (hover:hover){
+    .tag-btn:not(.editing):hover{background:#20242e;}
+    .tag-btn .listbtn:hover,.tag-btn .plusbtn:hover,
+    .mw-actions button:hover{background:var(--card-border);color:var(--text);}
+    .browse-row .playbtn:hover,#soundBtn:hover,
+    #grammarBody .eg .egplay:hover{background:var(--card-border);}
+    .grade-btn:hover,.pillbtn:hover,#typeSubmit:hover,
+    #noteAdvance:not(:disabled):hover,#continueBtn:hover{filter:brightness(1.12);}
+    .group-head:hover .glabel,.linkbtn:hover{color:var(--accent);}
+    .xref .snip:hover{background:var(--card-border);}
+    .ghostbtn:hover{color:var(--text);border-color:var(--muted);}
+  }
 </style>
 </head>
 <body>
@@ -603,9 +698,9 @@
   </div>
 </div>
 
-<div id="wordFormSheet" style="position:fixed;inset:0;background:#000000aa;display:none;align-items:flex-end;z-index:25;">
-  <form class="sheet" id="wordForm" autocomplete="off" style="background:var(--card);width:100%;border-radius:20px 20px 0 0;padding:20px 18px calc(20px + env(safe-area-inset-bottom));">
-    <h3 id="wordFormTitle" style="margin:0 0 14px;font-size:16px;">Add a word</h3>
+<div id="wordFormSheet">
+  <form class="sheet" id="wordForm" autocomplete="off">
+    <h3 id="wordFormTitle">Add a word</h3>
     <div class="field">
       <label id="wordKoLabel" for="wordKoInput">Korean</label>
       <input id="wordKoInput" type="text" lang="ko" inputmode="text" autocomplete="off"
@@ -620,7 +715,7 @@
       <input id="wordNoteInput" type="text" autocomplete="off">
     </div>
     <div class="formbtns">
-      <button type="button" class="ghostbtn" id="wordCancelBtn" style="margin-top:0;">Cancel</button>
+      <button type="button" class="ghostbtn" id="wordCancelBtn">Cancel</button>
       <button type="submit" class="pillbtn" id="wordSaveBtn">Save</button>
     </div>
   </form>
